@@ -1,0 +1,7 @@
+---
+# Playbook zur Konfiguration von Gateway Servern 
+- hosts: gateways
+  roles:
+    - common
+    - fastd
+
