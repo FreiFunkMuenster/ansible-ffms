@@ -14,7 +14,10 @@ parad0x  ansible_ssh_host=5.9.67.189
 
 # Supernode Server 
 [supernodes]
-fussel   ansible_ssh_host=37.120.168.53
-sense    ansible_ssh_host=176.221.46.161
+sn-fanlin-1   ansible_ssh_host=85.14.254.16  
+fussel        ansible_ssh_host=37.120.168.53
+#sn-parad0x-1  ansible_ssh_host= to be defined 
+sense         ansible_ssh_host=176.221.46.161
+sn-sense-2    ansible_ssh_host=134.119.20.233
 
 
