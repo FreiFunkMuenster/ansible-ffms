@@ -6,14 +6,15 @@ monitoring  ansible_ssh_host=178.62.2.100
 services    ansible_ssh_host=217.79.181.126 ansible_ssh_port=2210
 webserver   ansible_ssh_host=89.163.231.227
 
-# Gateway Server 
-[gateways]
+# Backbone Server 
+[backbone]
 c1024    ansible_ssh_host=176.9.88.123
 fanlin   ansible_ssh_host=89.163.221.125 
-fussel   ansible_ssh_host=37.120.168.53
 parad0x  ansible_ssh_host=5.9.67.189
+
+# Supernode Server 
+[supernodes]
+fussel   ansible_ssh_host=37.120.168.53
 sense    ansible_ssh_host=176.221.46.161
 
-# Supernodes 
-[supernodes]
 
