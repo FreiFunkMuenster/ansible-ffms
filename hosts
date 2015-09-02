@@ -19,4 +19,4 @@ fussel        ansible_ssh_host=37.120.168.53
 sn-parad0x-1  ansible_ssh_host=5.9.166.66
 sense         ansible_ssh_host=176.221.46.161
 sn-sense-2    ansible_ssh_host=134.119.20.233
-sn-kgbvax-1      ansible_ssh_host=146.0.40.106
+sn-kgbvax-1   ansible_ssh_host=146.0.40.106
