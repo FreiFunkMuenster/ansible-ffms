@@ -1,5 +1,6 @@
 ---
 # Playbook zur Konfiguration von Gateway Servern 
+
 - hosts: gateways
   vars:
     graphite_host: 10.43.0.12

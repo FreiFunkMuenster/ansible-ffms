@@ -1,4 +1,5 @@
 ---
 # Hauptdatei, includiert lediglich die einzelnen Playbooks 
+- include: all.yml
 - include: gateways.yml
 

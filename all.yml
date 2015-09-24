@@ -1,0 +1,9 @@
+---
+# Playbook zur Konfiguration von allen Servern 
+
+- hosts: all 
+  roles:
+    - hostname
+
+
+
