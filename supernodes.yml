@@ -2,10 +2,6 @@
 # Playbook zur Konfiguration von Supernode Servern 
 
 - hosts: supernodes
-  vars:
-    graphite_host: 10.43.0.12
-    graphite_port: 2003
-    graphite_prefix: host.
   roles:
     - ipforwarding
     - collectd
