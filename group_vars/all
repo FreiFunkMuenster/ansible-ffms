@@ -19,6 +19,10 @@ ff_network:
 
 # Konfigurationen für die Verbindung zum Freifunk Rheinland 
 ffrl:
+
+  # AS Nummer des Freifunk Rheinland 
+  as_number: 201701
+
   # MTU der GRE Tunnel
   tun_mtu: 1400   
 
