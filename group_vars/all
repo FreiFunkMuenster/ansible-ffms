@@ -44,6 +44,13 @@ dhcp:
   # Maximale Lease Time
   lease_max: 1200 
  
+# Einstellungen für fastd
+fastd:
+  # Port auf dem fastd laufen soll
+  port: 14242
+  # soll fastd traffic über iptables rule 42 laufen (nur bei backbone server)
+  ip_rule_42: False
+
 
 # Zielserver für Graphite Daten 
 graphite_data_target:
