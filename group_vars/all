@@ -4,6 +4,10 @@
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42
 
+# Hostgruppen, mit denen ein GRE-Tunnel aufgebaut werden soll
+gre_ffms:
+  groups: "{{None}}"
+#  groups: "{{groups['backbone']}}" # Example
 
 # Parameter für das eigene Freifunk-Netzwerk
 ff_network:
