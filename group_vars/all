@@ -4,6 +4,10 @@
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42
 
+# Hostgruppen, mit denen ein GRE-Tunnel aufgebaut werden soll
+gre_ffms:
+  groups: "{{None}}"
+#  groups: "{{groups['backbone']}}" # Example
 
 # Parameter für das eigene Freifunk-Netzwerk
 ff_network:
@@ -44,6 +48,13 @@ dhcp:
   # Maximale Lease Time
   lease_max: 1200 
  
+# Einstellungen für fastd
+fastd:
+  # Port auf dem fastd laufen soll
+  port: 14242
+  # soll fastd traffic über iptables rule 42 laufen (nur bei backbone server)
+  ip_rule_42: False
+
 
 # Zielserver für Graphite Daten 
 graphite_data_target:
