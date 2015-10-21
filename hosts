@@ -26,3 +26,4 @@ sn-kgbvax-1   ansible_ssh_host=46.38.239.30
 sn-descilla-1 ansible_ssh_host=5.9.86.154
 # sn-descilla-2 ansible_ssh_host=5.9.86.145
 sn-kgbvax-2   ansible_ssh_host=136.243.99.72
+sn-kgbvax-3   ansible_ssh_host=136.243.99.49
