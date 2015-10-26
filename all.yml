@@ -4,6 +4,7 @@
 - hosts: all 
   roles:
     - hostname
+    - fastd
 
 
 
