@@ -40,7 +40,7 @@ batman:
 
 
 # Einstellungen für DHCP Server 
-dhcp:
+dhcp_global:
   # MTU, die an die Clients im Netzwerk propagiert wird
   mtu: 1280 
   # Default-Lease Time 
