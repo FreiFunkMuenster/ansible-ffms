@@ -47,6 +47,13 @@ dhcp_global:
   lease_default: 240
   # Maximale Lease Time
   lease_max: 1200 
+
+
+# Einstellungen für RADVD 
+radvd:
+  # MTU, die an die Clients im Netzwerk propagiert wird 
+  mtu: 1280
+
  
 # Einstellungen für fastd
 fastd:
