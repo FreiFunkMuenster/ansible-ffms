@@ -1,0 +1,10 @@
+---
+# Playbook zur Konfiguration von allen Servern 
+
+- hosts: domaene-01 
+  roles:
+    - hostname
+    - fastd
+
+
+

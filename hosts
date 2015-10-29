@@ -30,4 +30,4 @@ sn-kgbvax-3   ansible_ssh_host=136.243.99.49
 
 
 [domaene-01]
-ffms-sn-01	ansible_ssh_host=ffms-sn-01.yadn.de ansible_ssh_user=root
+remue-01	ansible_ssh_host=148.251.208.170 ansible_ssh_user=root
