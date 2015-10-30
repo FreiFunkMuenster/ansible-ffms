@@ -2,6 +2,7 @@
 # Playbook zur Konfiguration von Backbone Servern 
 
 - hosts: backbone
+  remote_user: root
   roles:
     - ipforwarding
     - tunearpcache

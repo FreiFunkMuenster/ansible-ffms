@@ -2,6 +2,7 @@
 # Playbook zur Konfiguration von Supernode Servern 
 
 - hosts: supernodes
+  remote_user: root
   roles:
     - ipforwarding
     - tunearpcache

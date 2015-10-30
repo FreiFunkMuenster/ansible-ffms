@@ -2,6 +2,7 @@
 # Playbook zur Konfiguration von allen Servern 
 
 - hosts: all 
+  remote_user: root
   roles:
     - hostname
     - fastd

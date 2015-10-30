@@ -30,5 +30,5 @@ sn-kgbvax-3   ansible_ssh_host=136.243.99.49
 
 
 [domaene-01]
-remue-01	ansible_ssh_host=148.251.208.170 ansible_ssh_user=root
-sense-02	ansible_ssh_host=134.119.20.233  ansible_ssh_user=root
+remue-01	ansible_ssh_host=148.251.208.170
+sense-02	ansible_ssh_host=134.119.20.233
