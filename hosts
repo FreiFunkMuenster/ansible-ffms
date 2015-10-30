@@ -20,7 +20,6 @@ sn-fanlin-1   ansible_ssh_host=85.14.245.16
 sn-fanlin-2   ansible_ssh_host=213.202.222.143
 sn-parad0x-1  ansible_ssh_host=5.9.166.66
 sense         ansible_ssh_host=176.221.46.161
-sn-sense-2    ansible_ssh_host=134.119.20.233
 sn-sense-3    ansible_ssh_host=134.119.36.210 
 sn-sense-4    ansible_ssh_host=134.119.42.10 
 sn-kgbvax-1   ansible_ssh_host=46.38.239.30
