@@ -1,10 +1,9 @@
----
 # Playbook zur Konfiguration von allen Servern 
 
-- hosts: all 
+- hosts: domaene-01 
   remote_user: root
   roles:
     - hostname
-
-
+    - common
+    - fastd
 
