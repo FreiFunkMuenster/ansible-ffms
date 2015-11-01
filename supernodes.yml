@@ -4,8 +4,8 @@
 - hosts: supernodes
   remote_user: root
   roles:
+#    - fastd # 
     - ipforwarding
-    - tunearpcache
     - collectd
 
 
