@@ -68,4 +68,12 @@ collectd:
   graphite_prefix: host.
 
  
+administratorenteam:
+  - "parad0x"
+  - "void" 
+  - "kgbvax"
+  - "fanlin"
+  - "fungur"
+  - "descilla"
+  - "mpw"
 
