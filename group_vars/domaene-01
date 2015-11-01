@@ -17,7 +17,7 @@ ff_network:
   v4_network: 10.43.8.0/21
 
   # IPv6 adressraum
-  v6_network: 2a03:2260:115:8:/64 
+  v6_network: 2a03:2260:115:8::/64 
 
 
 # Konfigurationen für die Verbindung zum Freifunk Rheinland 

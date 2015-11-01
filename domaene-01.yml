@@ -10,4 +10,5 @@
     - interfaces_batman
     - interfaces_bridge
     - interfaces_gretap
+    - dhcp
 
