@@ -6,6 +6,7 @@ monitoring  ansible_ssh_host=178.62.2.100
 services    ansible_ssh_host=217.79.181.126 ansible_ssh_port=2210
 webserver   ansible_ssh_host=89.163.231.227
 
+
 # Backbone Server 
 [backbone]
 c1024    ansible_ssh_host=176.9.88.123
@@ -29,7 +30,13 @@ sn-kgbvax-2   ansible_ssh_host=136.243.99.72
 sn-kgbvax-3   ansible_ssh_host=136.243.99.49
 
 
+# Domänen
 [domaene-01]
 remue-01	ansible_ssh_host=148.251.208.170
 greyworm-01     ansible_ssh_host=89.163.247.45
 sense-02	ansible_ssh_host=134.119.20.233
+
+
+# Sonstige Server
+[ffms-arbeitsmittel]
+ffms-ansible    ansible_ssh_host=148.251.208.168
