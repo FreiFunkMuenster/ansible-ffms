@@ -1,0 +1,8 @@
+---
+# Playbook zur Konfiguration aller Server auf denen Arbeitsmittel liegen.
+
+ - hosts: ffms-arbeitsmittel
+   remote_user: root
+   roles:
+     - hostname
+     - common
