@@ -11,4 +11,5 @@
     - interfaces_bridge
     - interfaces_gretap
     - dhcp
+    - bird
 
