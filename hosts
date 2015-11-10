@@ -1,4 +1,3 @@
-
 # Allgemeine Infrastruktur-Server 
 [common]
 buildserver ansible_ssh_host=217.79.181.126 ansible_ssh_port=2215
@@ -6,14 +5,12 @@ monitoring  ansible_ssh_host=178.62.2.100
 services    ansible_ssh_host=217.79.181.126 ansible_ssh_port=2210
 webserver   ansible_ssh_host=89.163.231.227
 
-
 # Backbone Server 
 [backbone]
 c1024    ansible_ssh_host=176.9.88.123
 fanlin   ansible_ssh_host=89.163.221.125 
-fussel        ansible_ssh_host=37.120.168.53
+fussel   ansible_ssh_host=37.120.168.53
 parad0x  ansible_ssh_host=5.9.67.189
-
 
 # Supernode Server 
 [supernodes]
@@ -29,14 +26,15 @@ sn-descilla-1 ansible_ssh_host=5.9.86.154
 sn-kgbvax-2   ansible_ssh_host=136.243.99.72
 sn-kgbvax-3   ansible_ssh_host=136.243.99.49
 
-
 # Domänen
 [domaene-01]
 remue-01	ansible_ssh_host=148.251.208.170
 greyworm-01     ansible_ssh_host=89.163.247.45
 sense-02	ansible_ssh_host=134.119.20.233
 
-
 # Sonstige Server
 [ffms-arbeitsmittel]
 ffms-ansible    ansible_ssh_host=148.251.208.168
+
+[ffms-mapserver]
+ffms-map    ansible_ssh_host=2a01:4f8:162:10d2:5:23:d0:0f

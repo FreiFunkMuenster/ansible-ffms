@@ -1,0 +1,11 @@
+---
+# Playbook zur Konfiguration vom Mapdaten-Sammel-Server
+
+- hosts: ffms-mapserver
+  remote_user: root
+  roles:
+    - hostname
+    - common
+    - fastd_mapserver
+#    - interfaces_batman_mapserver
+
