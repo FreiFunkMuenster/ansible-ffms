@@ -14,8 +14,12 @@ ff_network:
 ff_instances:
   bat0:
     number: '0'
+    mac: 22:e9:a1:76:44:00
+    ipv6: fe80::20e9:a1ff:fe76:4400
   bat1:
     number: '1'
+    mac: 22:e9:a1:76:44:01
+    ipv6: fe80::20e9:a1ff:fe76:4401
 
 ff_peers:
   des1:
