@@ -8,4 +8,5 @@
     - common
     - fastd_mapserver
     - interfaces_batman_mapserver
-
+    - alfred_json
+    - ffmap_backend
