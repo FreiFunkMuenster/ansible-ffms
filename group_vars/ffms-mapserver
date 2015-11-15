@@ -22,11 +22,11 @@ ff_instances:
     ipv6: fe80::20e9:a1ff:fe76:4401
 
 ff_peers:
-  des1:
-    key: "e4230f2b13f1d562bc9a8fd63bfe2d49abce2f8d8214f007b3b8f6dc3b2109a8"
-    ipv4: 5.9.86.144
-    port: 15242
-    instance: '0'
+#  des1:
+#    key: "e4230f2b13f1d562bc9a8fd63bfe2d49abce2f8d8214f007b3b8f6dc3b2109a8"
+#    ipv4: 5.9.86.144
+#    port: 15242
+#    instance: '0'
   des2:
     key: "e30dbb15197c4e7a66e7e431c0f71f463c1b6d0159a846b05c50e6924a857b59"
     ipv4: 5.9.86.145
