@@ -6,8 +6,7 @@ routing_table: 42
 
 # Hostgruppen, mit denen ein GRE-Tunnel aufgebaut werden soll
 gre_ffms:
-  groups: "{{None}}"
-#  groups: "{{groups['backbone']}}" # Example
+  groups: "{{groups['domaene-01']}}"
 
 # Parameter für das eigene Freifunk-Netzwerk
 ff_network:
@@ -15,10 +14,10 @@ ff_network:
   as_number: 64856 
   
   # IPv4 Adressraum
-  v4_network: 10.43.0.0/16
+  v4_network: 10.43.8.0/21
 
   # IPv6 adressraum
-  v6_network: 2a03:2260:115::/64 
+  v6_network: 2a03:2260:115:8:/64 
 
 
 # Konfigurationen für die Verbindung zum Freifunk Rheinland 
@@ -51,7 +50,7 @@ dhcp:
 # Einstellungen für fastd
 fastd:
   # Port auf dem fastd laufen soll
-  port: 14242
+  port: 14250
   # soll fastd traffic über iptables rule 42 laufen (nur bei backbone server)
   ip_rule_42: False
 
@@ -68,6 +67,7 @@ collectd:
   # Prefix für Graphite-Daten
   graphite_prefix: host.
 
+ 
 administratorenteam:
   - "parad0x"
   - "void" 
