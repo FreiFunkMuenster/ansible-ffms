@@ -1,8 +1,9 @@
 
 # Variablen für Server 
 
-id: 59
 server_besitzer: "Sven Culley / Sense"
 
-
+# ID des Servers. 
+# Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
+server_id: 59
 
