@@ -11,4 +11,5 @@
     - interfaces_gretap
     - dhcp
     - bird
+    - radvd
 
