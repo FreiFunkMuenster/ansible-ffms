@@ -1,5 +1,4 @@
-# Globale Variablen für alle Server 
-
+# Variablen für die Host-Gruppe domaene-01
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42

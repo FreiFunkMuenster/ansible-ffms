@@ -67,14 +67,3 @@ graphite_data_target:
 collectd:
   # Prefix für Graphite-Daten
   graphite_prefix: host.
-
-administratorenteam:
-  - "parad0x"
-  - "void" 
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "paulinsche"
-
