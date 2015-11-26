@@ -2,7 +2,8 @@
 [common]
 buildserver ansible_ssh_host=217.79.181.126 ansible_ssh_port=2215
 monitoring  ansible_ssh_host=178.62.2.100
-services    ansible_ssh_host=217.79.181.126 ansible_ssh_port=2210
+services-legacy ansible_ssh_host=217.79.181.126 ansible_ssh_port=2210
+services    ansible_ssh_host=89.163.231.228
 webserver   ansible_ssh_host=89.163.231.227
 
 # Backbone Server 

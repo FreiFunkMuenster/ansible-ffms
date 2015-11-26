@@ -1,7 +1,13 @@
 
-# Variablen für Server 
+# Variablen der Service-VM des Freifunk Netzes
+# Die Server-IP-Adresse wird durch von ansible bereitgestellte Variablen abgerufen (ansible_eth0.ipv4...)
 
-id: 10
+server_besitzer: "warpzone"
 
+# ID des Servers. 
+# Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
+server_id: 11
 
-
+administratorenteam:
+  - "void" 
+  - "fungur"
