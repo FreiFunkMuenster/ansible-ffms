@@ -30,5 +30,5 @@ ffrl_tun:
     
 # Bereich des DHCP Servers  (Start / Ende)    
 dhcp:
-  range_start: 10.43.24.1
-  range_end: 10.43.31.254
+  range_start: 10.43.160.1
+  range_end: 10.43.191.255
