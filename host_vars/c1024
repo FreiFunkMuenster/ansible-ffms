@@ -2,7 +2,7 @@
 # Variablen für Backbone-Server parad0x.gw.freifunk-muenster.de
 # Die Server-IP-Adresse wird durch von ansible bereitgestellte Variablen abgerufen (ansible_eth0.ipv4...)
 
-server_besitzer: ""
+server_besitzer: "Marcus Scholz / commander1024"
 
 # ID des Servers. 
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
