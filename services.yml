@@ -1,0 +1,7 @@
+# Playbook zur Konfiguration aller Servern von services
+
+- hosts: services
+  remote_user: root
+  roles:
+    - interfaces
+    - collectd
