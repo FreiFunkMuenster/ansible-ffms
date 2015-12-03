@@ -3,5 +3,11 @@
 - hosts: services
   remote_user: root
   roles:
-    - interfaces-gretap
+#    - interfaces-gretap
     - collectd
+    - common
+    - interfaces_services
+    - alfred_json
+    - ffmap_backend
+    - meshviewer
+
