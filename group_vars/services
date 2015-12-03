@@ -1,0 +1,12 @@
+# Variablen für die Host-Gruppe services
+
+# Hostgruppen, mit denen ein GRE-Tunnel aufgebaut werden soll
+gre_ffms:
+  groups: "{{groups['supernodes']}}"
+  groups: "{{groups['domaene-01']}}"
+  groups: "{{groups['domaene-test']}}"
+  
+  
+administratorenteam:
+  - "void" 
+  - "fungur"
