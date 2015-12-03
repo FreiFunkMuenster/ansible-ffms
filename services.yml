@@ -3,5 +3,5 @@
 - hosts: services
   remote_user: root
   roles:
-    - interfaces
+    - interfaces-gretap
     - collectd
