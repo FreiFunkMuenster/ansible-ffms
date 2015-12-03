@@ -5,7 +5,6 @@
   roles:
 #    - interfaces-gretap
     - collectd
-    - common
     - interfaces_services
     - alfred_json
     - ffmap_backend
