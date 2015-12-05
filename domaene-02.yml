@@ -1,7 +1,7 @@
 ---
 # Playbook zur Konfiguration von allen Servern 
 
-- hosts: domaene-01 
+- hosts: domaene-02 
   remote_user: root
   roles:
     - hostname
