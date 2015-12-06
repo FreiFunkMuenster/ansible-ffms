@@ -15,6 +15,10 @@ ff_instances:
     number: '1'
     mac: 22:e9:a1:76:45:01
     ipv6: fe80::20e9:a1ff:fe76:4501
+  bat1:
+    number: '2'
+    mac: 22:e9:a1:76:45:02
+    ipv6: fe80::20e9:a1ff:fe76:4502
 
   
 administratorenteam:
