@@ -20,6 +20,10 @@ ff_instances:
     number: '1'
     mac: 22:e9:a1:76:44:01
     ipv6: fe80::20e9:a1ff:fe76:4401
+  bat2:
+    number: '2'
+    mac: 22:e9:a1:76:44:02
+    ipv6: fe80::20e9:a1ff:fe76:4402
 
 ff_peers:
 #  des1:
@@ -47,6 +51,11 @@ ff_peers:
     ipv4: 148.251.208.170
     port: 14250
     instance: '1'
+  sense-03:
+    key: "e8f004c2d277c55d61a76292161a58ed069596f66d6f81259d39b6a18961702a"
+    ipv4: 134.119.36.210
+    port: 14250
+    instance: '2'
 
 # Batman Einstellungen 
 batman:
