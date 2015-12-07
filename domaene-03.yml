@@ -1,0 +1,16 @@
+---
+# Playbook zur Konfiguration von allen Servern 
+
+- hosts: domaene-03 
+  remote_user: root
+  roles:
+    - hostname
+    - common
+    - fastd
+    - interfaces_batman
+    - interfaces_gretap
+    - dhcp
+    - bird
+    - radvd
+    - bind
+
