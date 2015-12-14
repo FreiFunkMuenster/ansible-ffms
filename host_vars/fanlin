@@ -30,3 +30,8 @@ ffrl_tun:
 dhcp:
   range_start: 10.43.8.1
   range_end: 10.43.15.254
+
+ffms_tun_to:
+- host_name: greyworm-01
+  v4routing_net: 192.168.1.0/30
+  v6routing_net: 2a03:2260:115:ffa0:192:168:1:0/126
