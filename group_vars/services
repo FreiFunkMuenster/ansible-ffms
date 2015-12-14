@@ -1,25 +1,12 @@
 # Variablen für die Host-Gruppe services
 
-# Hostgruppen, mit denen ein GRE-Tunnel aufgebaut werden soll
-gre_ffms:
-  groups: "{{groups['supernodes']}}"
-  groups: "{{groups['domaene-01']}}"
-  groups: "{{groups['domaene-test']}}"
-  
 ff_instances:
-  bat0:
-    number: '0'
-    mac: 22:e9:a1:76:45:00
-    ipv6: fe80::20e9:a1ff:fe76:4500
-  bat1:
-    number: '1'
-    mac: 22:e9:a1:76:45:01
-    ipv6: fe80::20e9:a1ff:fe76:4501
-  bat1:
-    number: '2'
-    mac: 22:e9:a1:76:45:02
-    ipv6: fe80::20e9:a1ff:fe76:4502
-
+  domaene-test:
+    number: 0
+  domaene-01:
+    number: 1
+  domaene-02:
+    number: 2
   
 administratorenteam:
   - "void" 
