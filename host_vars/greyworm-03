@@ -28,8 +28,8 @@ server_besitzer: "Ingomar Otter / kgbvax"
     
 # Bereich des DHCP Servers  (Start / Ende)    
 dhcp:
-  range_start: 10.43.29.1
-  range_end: 10.43.31.254
+  range_start: 10.43.26.1
+  range_end: 10.43.27.254
 
 
 
