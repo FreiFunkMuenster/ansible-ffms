@@ -1,6 +1,3 @@
----
-# Playbook zur Konfiguration von allen Servern 
-
 - hosts: domaene-03 
   remote_user: root
   roles:
@@ -10,7 +7,8 @@
     - interfaces_batman
     - interfaces_gretap
     - dhcp
-    - bird
-    - radvd
     - bind
-
+    - bird_supernodes
+    - backports-kernel
+    - interfaces_ffms_supernodes
+    - ip_forwarding
