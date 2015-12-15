@@ -24,6 +24,10 @@ ff_instances:
     number: '2'
     mac: 22:e9:a1:76:44:02
     ipv6: fe80::20e9:a1ff:fe76:4402
+  bat2:
+    number: '3'
+    mac: 22:e9:a1:76:44:03
+    ipv6: fe80::20e9:a1ff:fe76:4403
 
 ff_peers:
 #  des1:
@@ -56,6 +60,21 @@ ff_peers:
     ipv4: 134.119.36.210
     port: 14250
     instance: '2'
+  greyworm-02:
+    key: "15ba6182c017735c0504cf38323110438ad679848d6b780f6e6bbfc22df1730b"
+    ipv4: 89.163.247.46
+    port: 14250
+    instance: '2'
+  greyworm-03:
+    key: "fc6e8287fde745ece23da5f36bbc249db5a15de7a8ce57cf1886c8051aa501b5"
+    ipv4: 89.163.253.62
+    port: 14250
+    instance: '3'
+  remue-02:
+    key: "e7f01993456da8d953570707395018214854acaa40f1ff6df5a0635e42f2142d"
+    ipv4: 148.251.208.171
+    port: 14250
+    instance: '3'
 
 # Batman Einstellungen 
 batman:
