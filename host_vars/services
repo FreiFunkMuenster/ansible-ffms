@@ -8,6 +8,3 @@ server_besitzer: "warpzone"
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
 server_id: 11
 
-administratorenteam:
-  - "void" 
-  - "fungur"
