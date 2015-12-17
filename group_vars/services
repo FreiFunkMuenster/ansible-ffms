@@ -7,6 +7,8 @@ ff_instances:
     number: 1
   domaene-02:
     number: 2
+  domaene-03:
+    number: 3
   
 administratorenteam:
   - "void" 
