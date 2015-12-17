@@ -66,6 +66,8 @@ graphite_data_target:
 collectd:
   # Prefix für Graphite-Daten
   graphite_prefix: host.
+  collect_dhcp: true
+  collect_fastd: true
 
  
 administratorenteam:

@@ -74,6 +74,10 @@ graphite_data_target:
 collectd:
   # Prefix für Graphite-Daten
   graphite_prefix: host.
+  # Sollen Daten über den DHCP Server erfasst werden?
+  collect_dhcp: true
+  # Sollen Daten über den fastd Server erfasst werden?
+  collect_fastd: true
 
 administratorenteam:
   - "parad0x"

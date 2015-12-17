@@ -1,0 +1,6 @@
+# Globale Variablen für Backbone only Server
+collectd:
+  # Prefix für Graphite-Daten
+  graphite_prefix: backbone.
+  collect_dhcp: false
+  collect_fastd: false
