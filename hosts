@@ -43,6 +43,10 @@ sense-03	ansible_ssh_host=134.119.36.210
 remue-02	ansible_ssh_host=148.251.208.171 
 greyworm-03     ansible_ssh_host=89.163.253.62 
 
+[domaene-04]
+greyworm-04     ansible_ssh_host=89.163.253.84
+#Remü-03
+
 # Sonstige Server
 [ffms-arbeitsmittel]
 ffms-ansible    ansible_ssh_host=148.251.208.168

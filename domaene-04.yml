@@ -1,0 +1,14 @@
+- hosts: domaene-04 
+  remote_user: root
+  roles:
+    - hostname
+    - common
+    - fastd
+    - interfaces_batman
+    - interfaces_gretap
+    - dhcp
+    - bind
+    - bird_supernodes
+    - backports-kernel
+    - interfaces_ffms_supernodes
+    - ip_forwarding
