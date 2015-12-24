@@ -12,3 +12,4 @@
     - backports-kernel
     - interfaces_ffms_supernodes
     - ip_forwarding
+    - collectd

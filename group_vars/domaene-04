@@ -58,14 +58,14 @@ fastd:
 # Zielserver für Graphite Daten 
 graphite_data_target:
   # IP Adresse
-  host: 10.43.0.12
+  host: 5.9.86.154
   # Port des Carbon-Dienstes 
   port: 2003  
   
 # Collectd Konfiguration 
 collectd:
   # Prefix für Graphite-Daten
-  graphite_prefix: host.
+  graphite_prefix: domaene-04.
   collect_dhcp: true
   collect_fastd: true
 
