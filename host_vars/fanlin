@@ -41,3 +41,6 @@ ffms_tun_to:
 - host_name: greyworm-04
   v4routing_net: 192.168.32.0/30
   v6routing_net: 2a03:2260:115:ffa0:192:168:32:0/126
+- host_name: sense-04
+  v4routing_net: 192.168.40.0/30
+  v6routing_net: 2a03:2260:115:ffa0:192:168:40:0/126

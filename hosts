@@ -20,12 +20,9 @@ parad0x  ansible_ssh_host=5.9.67.189
 [supernodes]
 sn-fanlin-1   ansible_ssh_host=85.14.245.16
 sn-fanlin-2   ansible_ssh_host=213.202.222.143
-sn-parad0x-1  ansible_ssh_host=5.9.166.66
 sense         ansible_ssh_host=176.221.46.161
-sn-sense-4    ansible_ssh_host=134.119.42.10 
 sn-kgbvax-1   ansible_ssh_host=46.38.239.30
 sn-descilla-1 ansible_ssh_host=5.9.86.154
-# sn-descilla-2 ansible_ssh_host=5.9.86.145
 sn-kgbvax-2   ansible_ssh_host=136.243.99.72
 sn-kgbvax-3   ansible_ssh_host=136.243.99.49
 
@@ -46,6 +43,10 @@ greyworm-03     ansible_ssh_host=89.163.253.62
 [domaene-04]
 greyworm-04     ansible_ssh_host=89.163.253.84
 remue-03	ansible_ssh_host=148.251.208.169 
+
+[domaene-05]
+parad0x-01	ansible_ssh_host=5.9.166.66
+sense-04	ansible_ssh_host=134.119.42.10
 
 # Sonstige Server
 [ffms-arbeitsmittel]
