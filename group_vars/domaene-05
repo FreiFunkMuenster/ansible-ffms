@@ -14,7 +14,7 @@ ff_network:
   as_number: 64856 
   
   # IPv4 Adressraum
-  v4_network: 10.43.36.0/21
+  v4_network: 10.43.40.0/21
 
   # IPv6 adressraum
   v6_network: 2a03:2260:115:500::/64 
