@@ -9,6 +9,10 @@ ff_instances:
     number: 2
   domaene-03:
     number: 3
+  domaene-04:
+    number: 4
+  domaene-05:
+    number: 5
   
 administratorenteam:
   - "void" 
