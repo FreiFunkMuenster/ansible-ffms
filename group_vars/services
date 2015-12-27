@@ -19,6 +19,9 @@ ff_instances:
   domaene-05:
     number: 5
     ipv6: "2a03:2260:115:500::{{ server_id }}"
+  domaene-06:
+    number: 6
+    ipv6: "2a03:2260:115:600::{{ server_id }}"
   
 administratorenteam:
   - "void" 
