@@ -4,3 +4,7 @@ server_besitzer: "Sebastian Danek / Parad0x"
 dhcp:
   range_start: 10.43.34.0
   range_end: 10.43.35.254
+bind:
+  ffms_zone_type: slave
+  ffms_zone_masters: 
+    - 10.43.8.2

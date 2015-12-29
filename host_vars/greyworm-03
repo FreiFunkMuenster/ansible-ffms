@@ -30,7 +30,10 @@ server_besitzer: "Ingomar Otter / kgbvax"
 dhcp:
   range_start: 10.43.26.1
   range_end: 10.43.27.254
-
+bind:
+  ffms_zone_type: slave
+  ffms_zone_masters: 
+    - 10.43.8.2
 
 
 

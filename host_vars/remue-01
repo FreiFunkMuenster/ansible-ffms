@@ -18,6 +18,7 @@ bind:
     - domaene-03
     - domaene-04
     - domaene-05
+    - domaene-06
   ffms_gw: true
 # ffms_bb: not correctly implemented, yet.
   ffms_bb: true

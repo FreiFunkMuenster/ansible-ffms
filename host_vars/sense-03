@@ -30,7 +30,10 @@ server_besitzer: "Sven Culley / Sense"
 dhcp:
   range_start: 10.43.16.26
   range_end: 10.43.20.255
-
+bind:
+  ffms_zone_type: slave
+  ffms_zone_masters: 
+    - 10.43.8.2
 
 
 
