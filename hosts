@@ -13,6 +13,7 @@ services    ansible_ssh_host=89.163.231.228
 [backbone]
 c1024    ansible_ssh_host=176.9.88.123
 fanlin   ansible_ssh_host=89.163.221.125 
+des1   ansible_ssh_host=5.9.86.144
 fussel   ansible_ssh_host=37.120.168.53
 parad0x  ansible_ssh_host=5.9.67.189
 
