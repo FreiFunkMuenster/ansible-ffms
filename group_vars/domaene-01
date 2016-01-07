@@ -47,6 +47,12 @@ dhcp:
   # Maximale Lease Time
   lease_max: 1200 
  
+#static_hosts:
+# - name: descilla
+#   v4_address: 10.43.8.42
+#   mac_address: d0:e1:40:XX:XX:XX
+
+
 # Einstellungen für fastd
 fastd:
   # Port auf dem fastd laufen soll
