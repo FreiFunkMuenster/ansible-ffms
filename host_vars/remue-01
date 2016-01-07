@@ -20,8 +20,8 @@ bind:
     - domaene-05
     - domaene-06
   ffms_gw: true
-# ffms_bb: not correctly implemented, yet.
   ffms_bb: true
+  ffms_services: true
 
 
 
