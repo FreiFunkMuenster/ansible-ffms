@@ -31,11 +31,10 @@ sn-kgbvax-3   ansible_ssh_host=136.243.99.49
 [domaene-01]
 remue-01	ansible_ssh_host=148.251.208.170
 greyworm-01     ansible_ssh_host=89.163.247.45
-sense-02	ansible_ssh_host=134.119.20.233
 
 [domaene-02]
 greyworm-02     ansible_ssh_host=89.163.247.46
-sense-03	ansible_ssh_host=134.119.36.210 
+remue-05	ansible_ssh_host=148.251.208.172 
 
 [domaene-03]
 remue-02	ansible_ssh_host=148.251.208.171 
@@ -47,7 +46,6 @@ remue-03	ansible_ssh_host=148.251.208.169
 
 [domaene-05]
 parad0x-01	ansible_ssh_host=5.9.166.66
-sense-04	ansible_ssh_host=134.119.42.10
 
 [domaene-06]
 remue-04	ansible_ssh_host=148.251.208.168
