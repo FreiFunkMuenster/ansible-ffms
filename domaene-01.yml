@@ -1,5 +1,4 @@
----
-# Playbook zur Konfiguration von allen Servern 
+# Playbook zur Konfiguration aller Servern von domaene-01
 
 - hosts: domaene-01 
   remote_user: root

@@ -1,0 +1,7 @@
+---
+# Playbook zur Konfiguration von ffms-Stadt Servern
+
+- hosts: domaene-test
+  remote_user: root
+  roles:
+  - common

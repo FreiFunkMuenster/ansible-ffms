@@ -1,7 +1,16 @@
 
 # Variablen für Server 
 
-id: 52
+server_besitzer: "Arnim Faryn / FanLin"
 
+# ID des Servers. 
+# Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
+server_id: 52
+
+
+# Bereich des DHCP Servers  (Start / Ende)    
+dhcp:
+  range_start:  10.43.88.1
+  range_end:  10.43.95.254;
 
 
