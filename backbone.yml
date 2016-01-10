@@ -4,8 +4,11 @@
 - hosts: backbone
   remote_user: root
   roles:
-    - ipforwarding
+    - hostname
+    - common
+    - ip_forwarding
     - tunearpcache
+    - interfaces_ffrl
+    - interfaces_ffms_backbone
+    - bird_backbone
     - collectd
-
-
