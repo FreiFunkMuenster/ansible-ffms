@@ -8,3 +8,18 @@ server_besitzer: "warpzone"
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
 server_id: 11
 
+bind:
+  ffms_zone_type: master
+  ns_name: ns01
+  ffms_for_groups:
+    - domaene-01
+    - domaene-02
+    - domaene-03
+    - domaene-04
+    - domaene-05
+    - domaene-06
+#    - domaene-waf
+  ffms_gw: true
+  ffms_bb: true
+  ffms_services: true
+

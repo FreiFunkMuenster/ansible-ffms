@@ -9,4 +9,5 @@
     - ffmap_backend
     - nginx
     - meshviewer
+    - bind
 
