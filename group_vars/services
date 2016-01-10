@@ -22,6 +22,9 @@ ff_instances:
   domaene-06:
     number: 6
     ipv6: "2a03:2260:115:600::{{ server_id }}"
+  domaene-waf:
+    number: 14
+    ipv6: "2a03:2260:115:fe03::{{ server_id }}"
   
 administratorenteam:
   - "void" 
