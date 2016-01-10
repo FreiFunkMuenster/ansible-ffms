@@ -1,4 +1,5 @@
 
+
 # Variablen für Server 
 
 Pro Server muss hier eine Datei angelegt werden, deren Name dem Servernamen entspricht

@@ -1,4 +1,4 @@
-# Variablen für Backbone-Server parad0x.gw.freifunk-muenster.de
+# Variablen für ffms-map
 # Die Server-IP-Adresse wird durch von ansible bereitgestellte Variablen abgerufen (ansible_eth0.ipv4...)
 
 # ID des Servers. 

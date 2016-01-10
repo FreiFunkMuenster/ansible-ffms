@@ -2,11 +2,12 @@
 # Variablen für Backbone-Server parad0x.gw.freifunk-muenster.de
 # Die Server-IP-Adresse wird durch von ansible bereitgestellte Variablen abgerufen (ansible_eth0.ipv4...)
 
+server_besitzer: "Marcus Scholz / commander1024"
+
 # ID des Servers. 
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
 server_id: 4
 
-server_besitzer: "Jan-Marten Brüggemann / Commander1024"
 # IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
 # Nur für Backbone-Server notwendig  
 server_ipv4_nat: 185.66.193.48/32
@@ -33,3 +34,8 @@ ffms_tun_to:
 - host_name: remue-03
 - host_name: remue-04
 - host_name: fanlin-03
+
+# Bereich des DHCP Servers  (Start / Ende)    
+dhcp:
+  range_start: 10.43.224.1
+  range_end: 10.43.255.254
