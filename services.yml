@@ -3,9 +3,7 @@
 - hosts: services
   remote_user: root
   roles:
-    #- collectd
     - backports-kernel
-#    - interfaces-gretap
     - interfaces_services
     - alfred_json
     - ffmap_backend
