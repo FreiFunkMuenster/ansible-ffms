@@ -4,8 +4,9 @@
 
 # ID des Servers. 
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
-server_id: 5
+server_id: 4
 
+server_besitzer: "Jan-Marten Brüggemann / Commander1024"
 # IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
 # Nur für Backbone-Server notwendig  
 server_ipv4_nat: 185.66.193.48/32
@@ -25,8 +26,9 @@ ffrl_tun:
   v4_remote: 100.64.0.110/31
   v6_local: 2a03:2260:0:3f::2/64
   v6_remote: 2a03:2260:0:3f::1/64
-    
-# Bereich des DHCP Servers  (Start / Ende)    
-dhcp:
-  range_start: 10.43.32.1
-  range_end: 10.43.39.254
+
+ffms_tun_to:
+- host_name: remue-01
+- host_name: remue-02
+- host_name: remue-03
+- host_name: remue-04

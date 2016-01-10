@@ -1,5 +1,7 @@
-# Globale Variablen für alle Server 
+# Globale Variablen für alle Server der Domäne 01
 
+# Eindeutige ID der Domäne
+domaenen_id: 4
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42

@@ -1,9 +1,9 @@
-# Variablen für Backbone-Server parad0x.gw.freifunk-muenster.de
+# Variablen für Backbone-Server des1
 # Die Server-IP-Adresse wird durch von ansible bereitgestellte Variablen abgerufen (ansible_eth0.ipv4...)
 
 # ID des Servers. 
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
-server_id: 2
+server_id: 3
 server_besitzer: "Simon Wüllhorst / descilla"
 # IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
 # Nur für Backbone-Server notwendig  
@@ -28,31 +28,12 @@ ffrl_tun:
   
 ffms_tun_to:
 - host_name: remue-01
-  v4routing_net: 192.168.28.0/30
-  v6routing_net: 2a03:2260:115:ffa0:192:168:28:0/126
 - host_name: remue-02
-  v4routing_net: 192.168.24.0/30
-  v6routing_net: 2a03:2260:115:ffa0:192:168:24:0/126
 - host_name: remue-03
-  v4routing_net: 192.168.36.0/30
-  v6routing_net: 2a03:2260:115:ffa0:192:168:36:0/126 
 - host_name: remue-04
-  v4routing_net: 192.168.52.0/30
-  v6routing_net: 2a03:2260:115:ffa0:192:168:52:0/126 
-- host_name: sense-02
-  v4routing_net: 192.168.1.4/30
-  v6routing_net: 2a03:2260:115:ffa0:192:168:1:4/126 
+#- host_name: sense-02
 - host_name: greyworm-02
-  v4routing_net: 192.168.1.8/30
-  v6routing_net: 2a03:2260:115:ffa0:192:168:1:8/126 
 - host_name: parad0x-01
-  v4routing_net: 192.168.44.0/30
-  v6routing_net: 2a03:2260:115:ffa0:192:168:44:0/126 
-# Bereich des DHCP Servers  (Start / Ende)    
-dhcp_range:
-  range_start: 10.1.161.1
-  range_end: 10.1.163.255
-
 
 
 

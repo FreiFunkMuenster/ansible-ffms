@@ -1,5 +1,7 @@
-# Globale Variablen für alle Server 
+# Globale Variablen für alle Server der Domäne 01
 
+# Eindeutige ID der Domäne
+domaenen_id: 1
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42
@@ -47,6 +49,7 @@ dhcp:
   # Maximale Lease Time
   lease_max: 1200 
  
+# Trägt statisches Lease in alle DHCP Server der Domäne ein, sowie ein DNS Eintrag im DNS Server. Die Entsprechenden Rollen müssen auf den entsprechenden Maschinen ausgeführt werden.
 #static_hosts:
 # - name: descilla
 #   v4_address: 10.43.8.42
