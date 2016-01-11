@@ -9,5 +9,6 @@
     - { role: ffmap_backend, tags: "ffmap_backend"}
     - { role: nginx, tags: "nginx"}
     - { role: meshviewer, tags: "meshviewer"}
+    - { role: node-stats, tags: "node-stats"}
     - { role: bind, tags: "bind"}
 
