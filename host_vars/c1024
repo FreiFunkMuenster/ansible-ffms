@@ -33,6 +33,7 @@ ffms_tun_to:
 - host_name: remue-02
 - host_name: remue-03
 - host_name: remue-04
+- host_name: remue-05
 - host_name: fanlin-03
 
 # Bereich des DHCP Servers  (Start / Ende)    

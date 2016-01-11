@@ -1,10 +1,9 @@
 ---
-# Playbook zur Konfiguration von allen Servern 
+# Playbook zur Basis-Konfiguration von allen Servern 
 
 - hosts: all 
   remote_user: root
   roles:
-    - hostname
-    - common
-
+    - { role: hostname, tags: "hostname"}
+    - { role: common, tags: "common"}
 

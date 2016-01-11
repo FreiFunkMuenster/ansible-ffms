@@ -3,11 +3,11 @@
 - hosts: services
   remote_user: root
   roles:
-    - backports-kernel
-    - interfaces_services
-    - alfred_json
-    - ffmap_backend
-    - nginx
-    - meshviewer
-    - bind
+    - { role: backports-kernel, tags: "backports-kernel"}
+    - { role: interfaces_services, tags: "interfaces_services"}
+    - { role: alfred_json, tags: "alfred_json"}
+    - { role: ffmap_backend, tags: "ffmap_backend"}
+    - { role: nginx, tags: "nginx"}
+    - { role: meshviewer, tags: "meshviewer"}
+    - { role: bind, tags: "bind"}
 

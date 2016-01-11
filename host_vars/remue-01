@@ -4,21 +4,4 @@ server_besitzer: "Sebastian Danek / Parad0x"
 dhcp:
   range_start: 10.43.8.26
   range_end: 10.43.10.160
-bind:
-  ffms_zone_type: master
-  ns_name: ns01
-  ffms_for_groups:
-    - domaene-01
-    - domaene-02
-    - domaene-03
-    - domaene-04
-    - domaene-05
-    - domaene-06
-  ffms_gw: true
-  ffms_bb: true
-  ffms_services: true
-
-
-
-
 

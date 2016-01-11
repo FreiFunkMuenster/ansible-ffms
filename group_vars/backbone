@@ -25,7 +25,14 @@ ffms_routing:
   - group_name: domaene-06
     v6_net: 2a03:2260:115:600::/56
 
-# Globale Variablen für Backbone only Server
+# Zielserver für Graphite Daten 
+graphite_data_target:
+  # IP Adresse
+  host: 5.9.86.154
+  # Port des Carbon-Dienstes 
+  port: 2003  
+  
+# Collectd Konfiguration 
 collectd:
   # Prefix für Graphite-Daten
   graphite_prefix: backbone.

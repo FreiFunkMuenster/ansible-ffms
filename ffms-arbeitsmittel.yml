@@ -4,5 +4,6 @@
  - hosts: ffms-arbeitsmittel
    remote_user: root
    roles:
-     - hostname
-     - common
+    - { role: hostname, tags: "hostname"}
+    - { role: common, tags: "common"}
+

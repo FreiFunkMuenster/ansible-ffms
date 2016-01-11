@@ -71,6 +71,11 @@ collectd:
   collect_dhcp: true
   collect_fastd: true
 
+# Bind Konfiguration
+bind:
+  ffms_zone_type: slave
+  ffms_zone_masters:
+    - 10.43.16.11
  
 administratorenteam:
   - "parad0x"

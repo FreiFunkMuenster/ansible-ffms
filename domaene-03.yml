@@ -1,15 +1,20 @@
-- hosts: domaene-03 
+---
+# Playbook zur Konfiguration aller Servern von domaene-03
+# Aufruf einer einzelnen Rolle möglich. Beispiel nur fastd: "ansible-playbook domaene-03.yml --tags=fastd"
+
+- hosts: domaene-03
   remote_user: root
   roles:
-    - hostname
-    - common
-    - fastd
-    - interfaces_batman
-    - interfaces_gretap
-    - dhcp
-    - bind
-    - bird_supernodes
-    - backports-kernel
-    - interfaces_ffms_supernodes
-    - ip_forwarding
-    - collectd
+    - { role: hostname, tags: "hostname"}
+    - { role: common, tags: "common"}
+    - { role: fastd, tags: "fastd"}
+    - { role: interfaces_batman, tags: "interfaces_batman"}
+    - { role: interfaces_gretap, tags: "interfaces_gretap"}
+    - { role: dhcp, tags: "dhcp"}
+    - { role: bind, tags: "bind"}
+    - { role: bird_supernodes, tags: "bird_supernodes"}
+    - { role: backports-kernel, tags: "backports-kernel"}
+    - { role: interfaces_ffms_supernodes, tags: "interfaces_ffms_supernodes"}
+    - { role: ip_forwarding, tags: "ip_forwarding"}
+    - { role: collectd, tags: "collectd"}
+

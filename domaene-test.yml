@@ -1,7 +1,8 @@
 ---
-# Playbook zur Konfiguration von ffms-Stadt Servern
+# Playbook zur Konfiguration der Server der Test-Domaene (ffms-Stadt)
 
 - hosts: domaene-test
   remote_user: root
   roles:
-  - common
+    - { role: common, tags: "common"}
+

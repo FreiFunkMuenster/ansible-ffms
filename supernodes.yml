@@ -4,8 +4,7 @@
 - hosts: supernodes
   remote_user: root
   roles:
-#    - fastd # 
-    - ipforwarding
-    - collectd
-
+#    - { role: fastd, tags: "fastd"} # 
+    - { role: ipforwarding, tags: "ip_forwarding"}
+    - { role: collectd, tags: "collectd"}
 

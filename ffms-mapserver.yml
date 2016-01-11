@@ -4,10 +4,11 @@
 - hosts: ffms-mapserver
   remote_user: root
   roles:
-    - hostname
-    - common
-    - fastd_mapserver
-    - interfaces_batman_mapserver
-    - alfred_json
-    - ffmap_backend
-    - meshviewer
+    - { role: hostname, tags: "hostname"}
+    - { role: common, tags: "common"}
+    - { role: fastd_mapserver, tags: "fastd_mapserver"}
+    - { role: interfaces_batman_mapserver, tags: "interfaces_batman_mapserver"}
+    - { role: alfred_json, tags: "alfred_json"}
+    - { role: ffmap_backend, tags: "ffmap_backend"}
+    - { role: meshviewer, tags: "meshviewer"}
+
