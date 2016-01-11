@@ -10,6 +10,7 @@
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: interfaces_ffrl, tags: "interfaces_ffrl"}
     - { role: interfaces_ffms_backbone, tags: "interfaces_ffms_backbone"}
+    - { role: interfaces_ffms_interbackbone, tags: "interfaces_ffms_interbackbone"}
     - { role: bird_backbone, tags: "bird_backbone"}
     - { role: collectd, tags: "collectd"}
 

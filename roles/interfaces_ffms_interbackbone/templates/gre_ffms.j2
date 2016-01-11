@@ -1,0 +1,32 @@
+# This file is managed by ansible, don't make changes here - they will be overwritten.
+{% for host in groups['backbone'] %}
+{% if ansible_ssh_host != hostvars[host].ansible_ssh_host %}
+
+
+# GRE Tunnel to host {{host}} ({{hostvars[host].ansible_ssh_host}})
+auto gre-{{host}}
+iface gre-{{host}} inet static
+{% if server_id < hostvars[host].server_id %}
+        address 192.168.{{server_id}}.{{hostvars[host].server_id*4+1}}
+{% else %}
+        address 192.168.{{hostvars[host].server_id}}.{{server_id*4+2}}
+{% endif %}
+        netmask 30
+        pre-up ip link add $IFACE type gre local {{ansible_default_ipv4.address}} remote {{hostvars[host].ansible_ssh_host}} ttl 255
+        pre-up ip link set $IFACE up multicast on
+        post-up ip rule add iif $IFACE table ffnet
+        pre-down ip rule del iif $IFACE table ffnet ||:
+iface gre-{{host}} inet6 static
+{% if server_id < hostvars[host].server_id %}
+        address 2a03:2260:115:ffa0:0:{{server_id}}:{{hostvars[host].server_id}}:1
+{% else %}
+        address 2a03:2260:115:ffa0:0:{{hostvars[host].server_id}}:{{server_id}}:2
+{% endif %}
+        netmask 126
+        post-up ip -6 rule add iif $IFACE table ffnet
+        pre-down ip -6 rule del iif $IFACE table ffnet ||:
+        post-down ip link delete $IFACE
+{% endif %}
+{% endfor %}
+
+
