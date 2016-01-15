@@ -1,7 +1,7 @@
 # ID des Servers. 
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
 server_id: 2
-server_besitzer: "Sebastian Danek / Parad0x"
+server_besitzer: "Sven Culley / Sense"
     
 # Bereich des DHCP Servers  (Start / Ende)    
 dhcp:
