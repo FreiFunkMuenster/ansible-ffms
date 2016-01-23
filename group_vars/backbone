@@ -38,6 +38,7 @@ collectd:
   graphite_prefix: backbone.
   collect_dhcp: false
   collect_fastd: false
+  collect_ipv4ipv6: true
 
 administratorenteam:
   - "parad0x"

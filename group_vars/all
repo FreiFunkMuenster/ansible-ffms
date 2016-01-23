@@ -78,7 +78,8 @@ collectd:
   collect_dhcp: true
   # Sollen Daten über den fastd Server erfasst werden?
   collect_fastd: true
-
+  # Sollen Daten über den IP Traffic (für v4 und v6) erfasst werden?
+  collect_ipv4ipv6: false
 administratorenteam:
   - "parad0x"
   - "void" 

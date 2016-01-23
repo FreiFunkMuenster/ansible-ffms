@@ -70,6 +70,7 @@ collectd:
   graphite_prefix: domaene-06.
   collect_dhcp: true
   collect_fastd: true
+  collect_ipv4ipv6: true
 
 # Bind Konfiguration
 bind:
