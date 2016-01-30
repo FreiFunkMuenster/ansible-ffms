@@ -6,6 +6,7 @@
   roles:
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
+    - { role: backports-kernel, tags: "backports-kernel"}
     - { role: ip_forwarding, tags: "ip_forwarding"}
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: interfaces_ffrl, tags: "interfaces_ffrl"}

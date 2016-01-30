@@ -40,3 +40,4 @@ ffms_tun_to:
 - host_name: greyworm-05
 - host_name: fanlin-03
 - host_name: remue-06
+- host_name: ffwaf-srv4

@@ -62,6 +62,10 @@ greyworm-05	ansible_ssh_host=89.163.139.196
 ffwaf-srv2	ansible_ssh_host=109.75.184.228
 ffwaf-srv3	ansible_ssh_host=109.75.188.244
 
+[domaene-14]
+ffwaf-srv4	ansible_ssh_host=89.187.208.59
+remue-07	ansible_ssh_host=148.251.208.174
+
 # Sonstige Server
 #[ffms-arbeitsmittel]
 #ffms-ansible    ansible_ssh_host=148.251.208.168

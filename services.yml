@@ -11,4 +11,5 @@
     - { role: meshviewer, tags: "meshviewer"}
     - { role: node-stats, tags: "node-stats"}
     - { role: bind, tags: "bind"}
+    - { role: ffapi, tags: "ffapi"}
 
