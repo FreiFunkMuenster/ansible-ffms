@@ -6,8 +6,7 @@ routing_table: 42
 
 # Hostgruppen, mit denen ein GRE-Tunnel aufgebaut werden soll
 gre_ffms:
-  groups: "{{groups['domaene-test']}}"
-  groups: "{{groups['services']}}"
+  groups: "{{groups['domaene-test']}} + {{groups['services']}}"
 
 # Parameter für das eigene Freifunk-Netzwerk
 ff_network:
