@@ -13,4 +13,5 @@
     - { role: interfaces_ffms_backbone, tags: "interfaces_ffms_backbone"}
 #    - { role: bird_backbone, tags: "bird_backbone"}
     - { role: collectd, tags: "collectd"}
+    - { role: bind_backbone, tags: "bind_backbone"}
 

@@ -1,7 +1,7 @@
-server_id: 14
-server_besitzer: "paulinsche"
-
+server_id: 2
+server_besitzer: "Paulo da Silva / Paulinsche"
+    
 dhcp:
-  range_start: 10.43.119.0
-  range_end: 10.43.120.254
+  range_start: 10.43.112.26
+  range_end: 10.43.115.255
 

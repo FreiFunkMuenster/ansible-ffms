@@ -10,6 +10,6 @@
     - { role: nginx, tags: "nginx"}
     - { role: meshviewer, tags: "meshviewer"}
     - { role: node-stats, tags: "node-stats"}
-    - { role: bind, tags: "bind"}
+    - { role: bind_services, tags: "bind_services"}
     - { role: ffapi, tags: "ffapi"}
 

@@ -11,7 +11,7 @@
     - { role: interfaces_batman, tags: "interfaces_batman"}
     - { role: interfaces_gretap, tags: "interfaces_gretap"}
     - { role: dhcp, tags: "dhcp"}
-    - { role: bind, tags: "bind"}
+    - { role: bind_gateway, tags: "bind_gateway"}
     - { role: bird_supernodes, tags: "bird_supernodes"}
     - { role: backports-kernel, tags: "backports-kernel"}
     - { role: interfaces_ffms_supernodes, tags: "interfaces_ffms_supernodes"}

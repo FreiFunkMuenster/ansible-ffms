@@ -38,6 +38,12 @@ collectd:
   graphite_prefix: backbone.
   collect_dhcp: false
   collect_fastd: false
+  collect_ipv4ipv6: true
+
+bind:
+  ffms_zone_type: slave
+  ffms_zone_masters:
+    - 89.163.231.228
 
 administratorenteam:
   - "parad0x"
