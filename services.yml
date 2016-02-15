@@ -12,4 +12,6 @@
     - { role: node-stats, tags: "node-stats"}
     - { role: bind_services, tags: "bind_services"}
     - { role: ffapi, tags: "ffapi"}
+    - { role: docker, tags: "docker"}
+    - { role: graphite, tags: "graphite"}
 
