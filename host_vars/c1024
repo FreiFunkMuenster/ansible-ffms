@@ -35,6 +35,7 @@ ffms_tun_to:
 - host_name: remue-05
 - host_name: greyworm-01
 - host_name: remue-07
+- host_name: remue-08
 
 # Bereich des DHCP Servers  (Start / Ende)    
 dhcp:
