@@ -18,7 +18,9 @@ bind:
     - domaene-04
     - domaene-05
     - domaene-06
-#    - domaene-waf
+    - domaene-07
+    - domaene-08
+    - domaene-14
   ffms_gw: true
   ffms_bb: true
   ffms_services: true

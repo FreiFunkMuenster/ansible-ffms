@@ -22,9 +22,16 @@ ff_instances:
   domaene-06:
     number: 6
     ipv6: "2a03:2260:115:600::{{ server_id }}"
-  domaene-waf:
-    number: 14
-    ipv6: "2a03:2260:115:fe03::{{ server_id }}"
+  domaene-07:
+    number: 7
+    ipv6: "2a03:2260:115:700::{{ server_id }}"
+  domaene-08:
+    number: 8
+    ipv6: "2a03:2260:115:800::{{ server_id }}"
+# In Domäne 14 und 15 sind Multi-Domänen-Server. Ansible ist dafür noch nicht bereit.
+#  domaene-14:
+#    number: 14
+#    ipv6: "2a03:2260:115:1400::{{ server_id }}"
   
 administratorenteam:
   - "void" 
