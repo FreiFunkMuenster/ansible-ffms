@@ -2,9 +2,6 @@
 
 # Parameter für das eigene Freifunk-Netzwerk
 ff_network:
-  # Eindeutige AS-Nummer des Netzwerk
-  as_number: 64856 
-  
   # IPv4 Adressraum
   v4_network: 127.0.0.1/32
 

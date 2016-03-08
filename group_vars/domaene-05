@@ -12,9 +12,6 @@ gre_ffms:
 
 # Parameter für das eigene Freifunk-Netzwerk
 ff_network:
-  # Eindeutige AS-Nummer des Netzwerk
-  as_number: 64856 
-  
   # IPv4 Adressraum
   v4_network: 10.43.40.0/21
 
