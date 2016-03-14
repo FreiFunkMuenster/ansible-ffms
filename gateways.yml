@@ -1,0 +1,15 @@
+---
+- hosts: gateways 
+  remote_user: root
+  roles:
+    - { role: hostname, tags: "hostname"}
+    - { role: common, tags: "common"}
+    - { role: gateways_batman, tags: "gateways_batman"}
+#    - { role: interfaces_gretap, tags: "interfaces_gretap"}
+#    - { role: dhcp, tags: "dhcp"}
+#    - { role: bind_gateway, tags: "bind_gateway"}
+#    - { role: bird_supernodes, tags: "bird_supernodes"}
+#    - { role: backports-kernel, tags: "backports-kernel"}
+#    - { role: interfaces_ffms_supernodes, tags: "interfaces_ffms_supernodes"}
+#    - { role: ip_forwarding, tags: "ip_forwarding"}
+#    - { role: collectd, tags: "collectd"}
