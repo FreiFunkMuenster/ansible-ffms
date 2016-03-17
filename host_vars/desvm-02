@@ -1,5 +1,5 @@
 server_id: 2
-server_besitzer: "Simon Wüllhorst"
+server_besitzer: "Simon Wüllhorst / descilla"
 
 dhcp:
   range_start: 10.43.88.26

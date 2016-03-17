@@ -35,6 +35,7 @@ ffms_tun_to:
 - host_name: remue-06
 - host_name: greyworm-02
 - host_name: parad0x-01
+- host_name: desvm-02
 
 ff_network:
    as_number: 64856 
