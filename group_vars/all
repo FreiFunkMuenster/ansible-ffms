@@ -1,11 +1,61 @@
 # Globale Variablen für alle Server 
 domaenen:
+  "00":
+    name: Test (Burse)
+    ffv4_network: 10.1.160.0/20
+    ffv6_network: 2a03:2260:115:ffff::/64
+  "01":
+    name: Münster
+    ffv4_network: 10.43.08.0/21
+    ffv6_network: 2a03:2260:115:100::/64
+  "02":
+    name: Kreis Coesfeld
+    ffv4_network: 10.43.16.0/21
+    ffv6_network: 2a03:2260:115:200::/64
+  "03":
+    name: Kreis Steinfurt West
+    ffv4_network: 10.43.24.0/21
+    ffv6_network: 2a03:2260:115:300::/64
+  "04":
+    name: Kreis Steinfurt Ost
+    ffv4_network: 10.43.32.0/21
+    ffv6_network: 2a03:2260:115:400::/64
+  "05":
+    name: Münster Süd
+    ffv4_network: 10.43.40.0/21
+    ffv6_network: 2a03:2260:115:500::/64
+  "06":
+    name: Westmünsterland
+    ffv4_network: 10.43.48.0/21
+    ffv6_network: 2a03:2260:115:600::/64
+  "07":
+    name: L2TP-Test
+    ffv4_network: 10.43.56.0/21
+    ffv6_network: 2a03:2260:115:700::/64
+  "08":
+    name: Stadtlohn
+    ffv4_network: 10.43.64.0/21
+    ffv6_network: 2a03:2260:115:800::/64
   "09":
+    name: Multidomänentest 1
     ffv4_network: 10.43.72.0/21
     ffv6_network: 2a03:2260:115:900::/64
   "10":
+    name: Multidomänentest 2
     ffv4_network: 10.43.80.0/21
     ffv6_network: 2a03:2260:115:1000::/64
+  "11":
+    name: Bocholt
+    ffv4_network: 10.43.88.0/21
+    ffv6_network: 2a03:2260:115:900::/64
+  "14":
+    name: Kreis Warendorf
+    ffv4_network: 10.43.112.0/21
+    ffv6_network: 2a03:2260:115:1402::/64
+  "15":
+    name: Kreis Warendorf-Test
+    ffv4_network: 10.43.120.0/21
+    ffv6_network: 2a03:2260:115:1401::/64
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42

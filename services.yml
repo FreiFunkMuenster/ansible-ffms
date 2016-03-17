@@ -4,12 +4,12 @@
   remote_user: root
   roles:
     - { role: backports-kernel, tags: "backports-kernel"}
-    - { role: interfaces_services, tags: "interfaces_services"}
+    - { role: services_interfaces, tags: "services_interfaces"}
     - { role: alfred_json, tags: "alfred_json"}
-    - { role: ffmap_backend, tags: "ffmap_backend"}
-    - { role: nginx, tags: "nginx"}
-    - { role: meshviewer, tags: "meshviewer"}
-    - { role: node-stats, tags: "node-stats"}
-    - { role: bind_services, tags: "bind_services"}
-    - { role: ffapi, tags: "ffapi"}
+    - { role: services_ffmap_backend, tags: "services_ffmap_backend"}
+    - { role: services_ngix, tags: "services_ngix"}
+    - { role: services_meshviewer, tags: "services_meshviewer"}
+    - { role: services_node-stats, tags: "services_node-stats"}
+    - { role: services_bind, tags: "services_bind"}
+    - { role: services_ffapi, tags: "services_ffapi"}
 
