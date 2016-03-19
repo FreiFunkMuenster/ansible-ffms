@@ -7,7 +7,7 @@ domaenen:
     map_scale: 0.9
   "01":
     name: Münster
-    ffv4_network: 10.43.08.0/21
+    ffv4_network: 10.43.8.0/21
     ffv6_network: 2a03:2260:115:100::/64
     map_scale: 0.9
   "02":
