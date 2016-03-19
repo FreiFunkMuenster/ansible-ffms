@@ -20,8 +20,5 @@ bind:
     - domaene-06
     - domaene-07
     - domaene-08
+    - domaene-11
     - domaene-14
-  ffms_gw: true
-  ffms_bb: true
-  ffms_services: true
-
