@@ -58,7 +58,7 @@ domaenen:
   "11":
     name: Bocholt
     ffv4_network: 10.43.88.0/21
-    ffv6_network: 2a03:2260:115:900::/64
+    ffv6_network: 2a03:2260:115:1100::/64
     map_scale: 0.9
   "14":
     name: Kreis Warendorf
