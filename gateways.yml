@@ -11,6 +11,6 @@
     - { role: gateways_gretap, tags: "gateways_gretap"}
     - { role: gateways_l2tp, tags: "gateways_l2tp"}
     - { role: gateways_bird, tags: "gateways_bird"}
-#    - { role: dhcp, tags: "dhcp"}
+    - { role: gateways_dhcp, tags: "gateways_dhcp"}
 #    - { role: bind_gateway, tags: "bind_gateway"}
 #    - { role: collectd, tags: "collectd"}
