@@ -69,6 +69,8 @@ greyworm-07	ansible_ssh_host=89.163.129.16
 # Domänen 9+10
 greyworm-06	ansible_ssh_host=89.163.129.14
 fanlin-02	ansible_ssh_host=213.202.222.143
+
+[gateways-waf]
 # Domänen 14+15
 ffwaf-srv4	ansible_ssh_host=89.187.208.59
 remue-07	ansible_ssh_host=148.251.208.174
