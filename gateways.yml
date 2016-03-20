@@ -9,6 +9,7 @@
     - { role: gateways_gre, tags: "gateways_gre"}
     - { role: gateways_batman, tags: "gateways_batman"}
     - { role: gateways_gretap, tags: "gateways_gretap"}
+    - { role: gateways_l2tp, tags: "gateways_l2tp"}
 #    - { role: dhcp, tags: "dhcp"}
 #    - { role: bind_gateway, tags: "bind_gateway"}
 #    - { role: bird_supernodes, tags: "bird_supernodes"}
