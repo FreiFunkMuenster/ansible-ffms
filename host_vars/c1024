@@ -7,6 +7,7 @@ server_besitzer: "Marcus Scholz / commander1024"
 # ID des Servers. 
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
 server_id: 4
+vm_id: 4
 
 # IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
 # Nur für Backbone-Server notwendig  
@@ -29,14 +30,15 @@ ffrl_tun:
   v6_remote: 2a03:2260:0:3f::1/64
 
 ffms_tun_to:
+- host_name: dray-01
+- host_name: greyworm-01
+- host_name: greyworm-06
 - host_name: remue-02
 - host_name: remue-03
 - host_name: remue-04
 - host_name: remue-05
-- host_name: greyworm-01
 - host_name: remue-07
 - host_name: remue-08
-- host_name: dray-01
 
 # Bereich des DHCP Servers  (Start / Ende)    
 dhcp:

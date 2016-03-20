@@ -7,6 +7,7 @@ server_besitzer: "Arnim Faryn / FanLin"
 # ID des Servers. 
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
 server_id: 2
+vm_id: 2
 
 # IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
 # Nur für Backbone-Server notwendig  
@@ -35,11 +36,11 @@ dhcp:
 
 ffms_tun_to:
 - host_name: fanlin-01
+- host_name: fanlin-02
 - host_name: fanlin-03
+- host_name: ffwaf-srv4
 - host_name: greyworm-03
 - host_name: greyworm-04
 - host_name: greyworm-05
 - host_name: greyworm-07
-- host_name: fanlin-03
 - host_name: remue-06
-- host_name: ffwaf-srv4

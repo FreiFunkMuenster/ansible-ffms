@@ -4,6 +4,7 @@
 # ID des Servers. 
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
 server_id: 3
+vm_id: 3
 server_besitzer: "Simon Wüllhorst / descilla"
 # IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
 # Nur für Backbone-Server notwendig  
