@@ -12,4 +12,5 @@
     - { role: services_node-stats, tags: "services_node-stats"}
     - { role: services_bind, tags: "services_bind"}
     - { role: services_ffapi, tags: "services_ffapi"}
+    - { role: graphite, tags: "graphite"}
 
