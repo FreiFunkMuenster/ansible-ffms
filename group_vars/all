@@ -1,7 +1,7 @@
 # Globale Variablen für alle Server 
 domaenen:
   "00":
-    name: Test (Burse)
+    name: Prototyp (Burse)
     ffv4_network: 10.1.160.0/20
     ffv6_network: 2a03:2260:115:ffff::/64
     map_scale: 0.9
@@ -36,22 +36,17 @@ domaenen:
     ffv6_network: 2a03:2260:115:600::/64
     map_scale: 1.0
   "07":
-    name: L2TP-Test
+    name: L2TP-Test (wird deaktiviert)
     ffv4_network: 10.43.56.0/21
     ffv6_network: 2a03:2260:115:700::/64
     map_scale: 0.8
-  "08":
-    name: Stadtlohn
-    ffv4_network: 10.43.64.0/21
-    ffv6_network: 2a03:2260:115:800::/64
-    map_scale: 0.9
   "09":
-    name: Multidomänentest 1
+    name: Stadtlohn
     ffv4_network: 10.43.72.0/21
     ffv6_network: 2a03:2260:115:900::/64
     map_scale: 0.9
   "10":
-    name: Multidomänentest 2
+    name: Multidomänen-L2TP-Test
     ffv4_network: 10.43.80.0/21
     ffv6_network: 2a03:2260:115:1000::/64
     map_scale: 0.9
@@ -61,12 +56,12 @@ domaenen:
     ffv6_network: 2a03:2260:115:1100::/64
     map_scale: 0.9
   "14":
-    name: Kreis Warendorf
+    name: Kreis Warendorf 1
     ffv4_network: 10.43.112.0/21
     ffv6_network: 2a03:2260:115:1402::/64
     map_scale: 1.6
   "15":
-    name: Kreis Warendorf-Test
+    name: Kreis Warendorf 2
     ffv4_network: 10.43.120.0/21
     ffv6_network: 2a03:2260:115:1401::/64
     map_scale: 0.9
