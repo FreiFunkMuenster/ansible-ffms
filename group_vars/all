@@ -35,11 +35,6 @@ domaenen:
     ffv4_network: 10.43.48.0/21
     ffv6_network: 2a03:2260:115:600::/64
     map_scale: 1.0
-  "07":
-    name: L2TP-Test (wird deaktiviert)
-    ffv4_network: 10.43.56.0/21
-    ffv6_network: 2a03:2260:115:700::/64
-    map_scale: 0.8
   "09":
     name: Stadtlohn
     ffv4_network: 10.43.72.0/21

@@ -11,3 +11,13 @@ domaenenliste:
       dhcp_ende: 10.43.84.255
       server_id: 3
     
+administratorenteam:
+  - "parad0x"
+  - "void" 
+  - "kgbvax"
+  - "fanlin"
+  - "fungur"
+  - "descilla"
+  - "mpw"
+  - "paulinsche"
+  - "sandmann"
