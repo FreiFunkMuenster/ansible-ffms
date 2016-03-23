@@ -51,18 +51,6 @@ fastd:
   # soll fastd traffic über iptables rule 42 laufen (nur bei backbone server)
   ip_rule_42: False
 
-# Zielserver für Graphite Daten 
-graphite_data_target:
-  # IP Adresse
-  host: 10.43.0.12
-  # Port des Carbon-Dienstes 
-  port: 2003  
-  
-# Collectd Konfiguration 
-collectd:
-  # Prefix für Graphite-Daten
-  graphite_prefix: host.
-
 # Bind Konfiguration
 bind:
   ffms_zone_type: slave
