@@ -1,5 +1,11 @@
 # Variablen für die Host-Gruppe services
   
+# Collectd Konfiguration 
+collectd:
+  collect_dhcp: false
+  collect_fastd: false
+  collect_ipv4ipv6: false
+
 administratorenteam:
   - "void" 
   - "fungur"

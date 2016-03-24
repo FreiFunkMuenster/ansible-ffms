@@ -3,6 +3,8 @@
 - hosts: services
   remote_user: root
   roles:
+    - { role: hostname, tags: "hostname"}
+    - { role: common, tags: "common"}
     - { role: backports-kernel, tags: "backports-kernel"}
     - { role: services_interfaces, tags: "services_interfaces"}
     - { role: alfred_json, tags: "alfred_json"}
@@ -13,4 +15,5 @@
     - { role: services_bind, tags: "services_bind"}
     - { role: services_ffapi, tags: "services_ffapi"}
     - { role: services_graphite, tags: "services_graphite"}
+    - { role: collectd, tags: "collectd"}
 
