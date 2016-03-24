@@ -10,51 +10,61 @@ domaenen:
     ffv4_network: 10.43.8.0/21
     ffv6_network: 2a03:2260:115:100::/64
     map_scale: 0.9
+    firmware: domaene01/
   "02":
     name: Kreis Coesfeld
     ffv4_network: 10.43.16.0/21
     ffv6_network: 2a03:2260:115:200::/64
     map_scale: 1.1
+    firmware: domaene02/
   "03":
     name: Kreis Steinfurt West
     ffv4_network: 10.43.24.0/21
     ffv6_network: 2a03:2260:115:300::/64
     map_scale: 1.1
+    firmware: domaene03/
   "04":
     name: Kreis Steinfurt Ost
     ffv4_network: 10.43.32.0/21
     ffv6_network: 2a03:2260:115:400::/64
     map_scale: 1.1
+    firmware: domaene04/
   "05":
     name: Münster Süd
     ffv4_network: 10.43.40.0/21
     ffv6_network: 2a03:2260:115:500::/64
     map_scale: 1.0
+    firmware: domaene05/
   "06":
     name: Westmünsterland
     ffv4_network: 10.43.48.0/21
     ffv6_network: 2a03:2260:115:600::/64
     map_scale: 1.0
+    firmware: domaene06/
   "09":
     name: Stadtlohn
     ffv4_network: 10.43.72.0/21
     ffv6_network: 2a03:2260:115:900::/64
     map_scale: 0.9
+    firmware: domaene09/
   "10":
     name: Multidomänen-L2TP-Test
     ffv4_network: 10.43.80.0/21
     ffv6_network: 2a03:2260:115:1000::/64
     map_scale: 0.9
+    firmware: domaene10/
   "11":
     name: Bocholt
     ffv4_network: 10.43.88.0/21
     ffv6_network: 2a03:2260:115:1100::/64
     map_scale: 0.9
+    firmware: domaene11/
   "14":
     name: Kreis Warendorf 1
     ffv4_network: 10.43.112.0/21
     ffv6_network: 2a03:2260:115:1402::/64
     map_scale: 1.6
+    firmware: https://freifunk-muensterland.net/images/
   "15":
     name: Kreis Warendorf 2
     ffv4_network: 10.43.120.0/21
