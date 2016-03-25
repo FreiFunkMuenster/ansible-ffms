@@ -10,6 +10,22 @@ domaenenliste:
       dhcp_start: 10.43.80.26
       dhcp_ende: 10.43.83.255
       server_id: 2
+   "07":
+      dhcp_start: 10.43.60.0
+      dhcp_ende: 10.43.63.254
+      server_id: 3
+   "08":
+      dhcp_start: 10.43.68.0
+      dhcp_ende: 10.43.71.254
+      server_id: 3
+   "11":
+      dhcp_start: 10.43.100.0
+      dhcp_ende: 10.43.103.254
+      server_id: 3
+   "08":
+      dhcp_start: 10.43.108.0
+      dhcp_ende: 10.43.111.254
+      server_id: 3
 
 administratorenteam:
   - "parad0x"
