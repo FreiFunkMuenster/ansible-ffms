@@ -19,12 +19,12 @@ domaenenliste:
       dhcp_ende: 10.43.71.254
       server_id: 3
    "11":
+      dhcp_start: 10.43.92.0
+      dhcp_ende: 10.43.95.254
+      server_id: 3
+   "12":
       dhcp_start: 10.43.100.0
       dhcp_ende: 10.43.103.254
-      server_id: 3
-   "08":
-      dhcp_start: 10.43.108.0
-      dhcp_ende: 10.43.111.254
       server_id: 3
 
 administratorenteam:
