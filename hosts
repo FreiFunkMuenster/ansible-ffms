@@ -53,15 +53,6 @@ remue-06	ansible_ssh_host=148.251.208.173
 remue-04	ansible_ssh_host=148.251.208.168
 greyworm-05	ansible_ssh_host=89.163.139.196
 
-#[domaene-08]
-#fanlin-01	ansible_ssh_host=85.14.245.16
-#dray-01		ansible_ssh_host=136.243.156.57
-#desvm-01	ansible_ssh_host=5.9.180.40
-
-[domaene-11]
-desvm-02	ansible_ssh_host=5.9.180.41
-greyworm-07	ansible_ssh_host=89.163.129.16
-
 [gateways]
 # Domänen 9+10
 greyworm-06	ansible_ssh_host=89.163.129.14
