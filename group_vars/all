@@ -108,6 +108,8 @@ dhcp_global:
   # Maximale Lease Time
   lease_max: 1200 
 
+hostname_suffix: ".servers.freifunk-muensterland.de"
+
 administratorenteam:
   - "parad0x"
   - "void" 
