@@ -10,6 +10,7 @@
     - { role: ip_forwarding, tags: "ip_forwarding"}
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: net_netfilter, tags: "net_netfilter"}
+    - { role: iptables, tags: "iptables"}
     - { role: interfaces_ffrl, tags: "interfaces_ffrl"}
     - { role: interfaces_ffms_backbone, tags: "interfaces_ffms_backbone"}
     - { role: bird_backbone, tags: "bird_backbone"}
