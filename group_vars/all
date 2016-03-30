@@ -48,7 +48,7 @@ domaenen:
     map_scale: 1.0
     firmware: domaene07/
   "08":
-    name: Unbestimmt
+    name: Gescher
     ffv4_network: 10.43.64.0/21
     ffv6_network: 2a03:2260:115:800::/64
     map_scale: 1.0
@@ -72,13 +72,13 @@ domaenen:
     map_scale: 0.9
     firmware: domaene11/
   "12":
-    name: Bocholt
+    name: Undefiniert
     ffv4_network: 10.43.96.0/21
     ffv6_network: 2a03:2260:115:1200::/64
     map_scale: 1.0
     firmware: domaene12/
   "14":
-    name: Kreis Warendorf 1
+    name: Kreis Warendorf
     ffv4_network: 10.43.112.0/21
     ffv6_network: 2a03:2260:115:1402::/64
     map_scale: 1.6
