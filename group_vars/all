@@ -72,11 +72,17 @@ domaenen:
     map_scale: 0.9
     firmware: domaene11/
   "12":
-    name: Undefiniert
+    name: Dülmen
     ffv4_network: 10.43.96.0/21
     ffv6_network: 2a03:2260:115:1200::/64
-    map_scale: 1.0
+    map_scale: 0.9
     firmware: domaene12/
+  "13":
+    name: Rorup
+    ffv4_network: 10.43.104.0/21
+    ffv6_network: 2a03:2260:115:1300::/64
+    map_scale: 0.9
+    firmware: domaene13/
   "14":
     name: Kreis Warendorf
     ffv4_network: 10.43.112.0/21
