@@ -65,6 +65,7 @@ fastd:
 collectd:
   collect_dhcp: true
   collect_fastd: true
+  collect_l2tp: false
   collect_ipv4ipv6: true
 
 bind:
