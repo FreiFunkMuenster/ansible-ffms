@@ -125,3 +125,9 @@ administratorenteam:
   - "descilla"
   - "mpw"
   - "paulinsche"
+
+collectd:
+  collect_dhcp: false
+  collect_fastd: false
+  collect_l2tp: false
+  collect_ipv4ipv6: false

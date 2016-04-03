@@ -1,0 +1,5 @@
+collectd:
+  collect_dhcp: true
+  collect_fastd: false
+  collect_l2tp: true
+  collect_ipv4ipv6: true
