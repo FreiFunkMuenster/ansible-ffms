@@ -8,24 +8,50 @@ vm_id: 3
 server_besitzer: "Simon Wüllhorst / descilla"
 # IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
 # Nur für Backbone-Server notwendig  
-server_ipv4_nat: 185.66.193.52/32
+# server_ipv4_nat: 185.66.193.52/32
+server_ipv4_nat: 185.66.195.21/32
+
 # !!!!In bird wird die Netzadresse benötigt, in if_lo /32
     
 #GRE-Einstellungen zum Freifunk Rheinland
 #Bei v6 ist die ...::1 remote und die ...::2 lokal
 ffrl_tun:
 - name: ber1
+  gre_target: 185.66.195.0
+  v4_local: 100.64.5.103/31
+  v4_remote: 100.64.5.102/31
+  v6_local: 2a03:2260:0:2a7::2/64
+  v6_remote: 2a03:2260:0:2a7::1/64
+- name: ber2
   gre_target: 185.66.195.1
   v4_local: 100.64.1.137/31
   v4_remote: 100.64.1.136/31
   v6_local: 2a03:2260:0:cc::2/64
   v6_remote: 2a03:2260:0:cc::1/64
 - name: fra1
+  gre_target: 185.66.194.0
+  v4_local: 100.64.5.105/31
+  v4_remote: 100.64.5.104/31
+  v6_local: 2a03:2260:0:2a8::2/64
+  v6_remote: 2a03:2260:0:2a8::1/64
+- name: fra2
   gre_target: 185.66.194.1
   v4_local: 100.64.1.141/31
   v4_remote: 100.64.1.140/31
   v6_local: 2a03:2260:0:ce::2/64
   v6_remote: 2a03:2260:0:ce::1/64
+- name: dus1
+  gre_target: 185.66.193.0
+  v4_local: 100.64.5.107/31
+  v4_remote: 100.64.5.106/31
+  v6_local: 2a03:2260:0:2a9::2/64
+  v6_remote: 2a03:2260:0:2a9::1/64
+- name: dus2
+  gre_target:  185.66.193.1
+  v4_local: 100.64.5.109/31
+  v4_remote: 100.64.5.108/31
+  v6_local: 2a03:2260:0:2aa::2/64
+  v6_remote: 2a03:2260:0:2aa::1/64
   
 ffms_tun_to:
 - host_name: remue-01
@@ -39,9 +65,4 @@ ffms_tun_to:
 - host_name: greyworm-04
 - host_name: greyworm-05
 - host_name: parad0x-01
-- host_name: desvm-02
-
-ff_network:
-   as_number: 64856 
-   v4_network: 10.43.0.0/16
-   v6_network: 2a03:2260:115::/64 
+#- host_name: desvm-02
