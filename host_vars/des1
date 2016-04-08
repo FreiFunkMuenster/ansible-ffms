@@ -69,4 +69,4 @@ ffms_tun_to:
 - host_name: greyworm-04
 - host_name: greyworm-05
 - host_name: greyworm-06
-#- host_name: desvm-02
+- host_name: des2

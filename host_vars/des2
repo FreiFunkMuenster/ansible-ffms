@@ -1,0 +1,18 @@
+vm_id: 16
+server_besitzer: "Simon Wüllhorst / Descilla"
+    
+domaenenliste:
+   "16":
+      dhcp_start: 10.43.128.26
+      dhcp_ende: 10.43.131.255
+      server_id: 2
+
+administratorenteam:
+  - "parad0x"
+  - "void" 
+  - "kgbvax"
+  - "fanlin"
+  - "fungur"
+  - "descilla"
+  - "mpw"
+  - "paulinsche"
