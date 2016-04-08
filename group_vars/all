@@ -2,59 +2,69 @@
 domaenen:
   "00":
     name: Prototyp (Burse)
+    community: Münster
     ffv4_network: 10.1.160.0/20
     ffv6_network: 2a03:2260:115:ffff::/64
     map_scale: 0.9
   "01":
     name: Münster
+    community: Münster
     ffv4_network: 10.43.8.0/21
     ffv6_network: 2a03:2260:115:100::/64
     map_scale: 0.9
     firmware: domaene01/
   "02":
     name: Kreis Coesfeld
+    community: Kreis Coesfeld
     ffv4_network: 10.43.16.0/21
     ffv6_network: 2a03:2260:115:200::/64
     map_scale: 1.1
     firmware: domaene02/
   "03":
     name: Kreis Steinfurt West
+    community: Kreis Steinfurt
     ffv4_network: 10.43.24.0/21
     ffv6_network: 2a03:2260:115:300::/64
     map_scale: 1.1
     firmware: domaene03/
   "04":
     name: Kreis Steinfurt Ost
+    community: Kreis Steinfurt
     ffv4_network: 10.43.32.0/21
     ffv6_network: 2a03:2260:115:400::/64
     map_scale: 1.1
     firmware: domaene04/
   "05":
     name: Münster Süd
+    community: Münster
     ffv4_network: 10.43.40.0/21
     ffv6_network: 2a03:2260:115:500::/64
     map_scale: 1.0
     firmware: domaene05/
   "06":
     name: Westmünsterland
+    community: Westmünsterland
     ffv4_network: 10.43.48.0/21
     ffv6_network: 2a03:2260:115:600::/64
     map_scale: 1.0
     firmware: domaene06/
   "07":
     name: Telgte
+    community: Kreis Warendorf
     ffv4_network: 10.43.56.0/21
     ffv6_network: 2a03:2260:115:700::/64
     map_scale: 1.0
     firmware: domaene07/
   "08":
     name: Gescher
+    community: Westmünsterland
     ffv4_network: 10.43.64.0/21
     ffv6_network: 2a03:2260:115:800::/64
     map_scale: 1.0
     firmware: domaene08/
   "09":
     name: Stadtlohn
+    community: Westmünsterland
     ffv4_network: 10.43.72.0/21
     ffv6_network: 2a03:2260:115:900::/64
     map_scale: 0.9
@@ -67,30 +77,35 @@ domaenen:
     firmware: domaene10/
   "11":
     name: Bocholt
+    community: Westmünsterland
     ffv4_network: 10.43.88.0/21
     ffv6_network: 2a03:2260:115:1100::/64
     map_scale: 0.9
     firmware: domaene11/
   "12":
     name: Dülmen
+    community: Kreis Coesfeld
     ffv4_network: 10.43.96.0/21
     ffv6_network: 2a03:2260:115:1200::/64
     map_scale: 0.9
     firmware: domaene12/
   "13":
     name: Rorup
+    community: Kreis Coesfeld
     ffv4_network: 10.43.104.0/21
     ffv6_network: 2a03:2260:115:1300::/64
     map_scale: 0.9
     firmware: domaene13/
   "14":
     name: Kreis Warendorf
+    community: Kreis Warendorf
     ffv4_network: 10.43.112.0/21
     ffv6_network: 2a03:2260:115:1402::/64
     map_scale: 1.6
     firmware: https://freifunk-muensterland.net/images/
   "15":
     name: Kreis Warendorf 2
+    community: Kreis Warendorf
     ffv4_network: 10.43.120.0/21
     ffv6_network: 2a03:2260:115:1401::/64
     map_scale: 0.9
