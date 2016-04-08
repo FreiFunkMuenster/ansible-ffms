@@ -110,7 +110,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:1401::/64
     map_scale: 0.9
   "16":
-    name: Rorup
+    name: Münster Promenade
     ffv4_network: 10.43.128.0/21
     ffv6_network: 2a03:2260:115:1600::/64
     map_scale: 0.9
