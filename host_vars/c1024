@@ -30,12 +30,21 @@ ffrl_tun:
   v6_remote: 2a03:2260:0:3f::1/64
 
 ffms_tun_to:
+- host_name: fanlin-03
+- host_name: remue-01
 - host_name: remue-02
 - host_name: remue-03
 - host_name: remue-04
 - host_name: remue-05
 - host_name: remue-07
 - host_name: remue-08
+- host_name: parad0x-01
+- host_name: greyworm-01
+- host_name: greyworm-02
+- host_name: greyworm-03
+- host_name: greyworm-04
+- host_name: greyworm-05
+- host_name: greyworm-06
 
 # Bereich des DHCP Servers  (Start / Ende)    
 dhcp:

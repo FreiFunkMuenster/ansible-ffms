@@ -35,12 +35,19 @@ dhcp:
   range_end: 10.43.15.254
 
 ffms_tun_to:
-- host_name: fanlin-01
-- host_name: fanlin-02
 - host_name: fanlin-03
 - host_name: ffwaf-srv4
+- host_name: remue-01
+- host_name: remue-02
+- host_name: remue-03
+- host_name: remue-04
+- host_name: remue-05
+- host_name: remue-07
+- host_name: remue-08
+- host_name: parad0x-01
+- host_name: greyworm-01
+- host_name: greyworm-02
 - host_name: greyworm-03
 - host_name: greyworm-04
 - host_name: greyworm-05
-- host_name: greyworm-07
-- host_name: remue-06
+- host_name: greyworm-06
