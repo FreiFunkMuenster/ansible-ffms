@@ -135,6 +135,15 @@ dhcp_global:
   # Maximale Lease Time
   lease_max: 1200 
 
+# Parameter für das eigene Freifunk-Netzwerk
+ff_network:
+  # Eindeutige AS-Nummer des Netzwerk
+  as_number: 65251
+  # IPv4 Adressraum
+  v4_network: 10.43.0.0/16
+  # IPv6 adressraum
+  v6_network: 2a03:2260:115::/48 
+
 hostname_suffix: ".servers.freifunk-muensterland.de"
 
 administratorenteam:
