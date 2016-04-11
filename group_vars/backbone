@@ -32,6 +32,7 @@ collectd:
   collect_fastd: false
   collect_l2tp: false
   collect_ipv4ipv6: true
+  collect_sysctl: true
 
 bind:
   ffms_zone_type: slave
