@@ -14,6 +14,8 @@
     - { role: bind_gateway, tags: "bind_gateway"}
     - { role: bird_supernodes, tags: "bird_supernodes"}
     - { role: backports-kernel, tags: "backports-kernel"}
+    - { role: net_netfilter, tags: "net_netfilter"}
+    - { role: tunearpcache, tags: "tunearpcache"}
     - { role: interfaces_ffms_supernodes, tags: "interfaces_ffms_supernodes"}
     - { role: ip_forwarding, tags: "ip_forwarding"}
     - { role: collectd, tags: "collectd"}

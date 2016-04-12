@@ -5,6 +5,8 @@
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
     - { role: backports-kernel, tags: "backports-kernel"}
+    - { role: net_netfilter, tags: "net_netfilter"}
+    - { role: tunearpcache, tags: "tunearpcache"}
     - { role: ip_forwarding, tags: "ip_forwarding"}
     - { role: gateways_gre, tags: "gateways_gre"}
     - { role: gateways_batman, tags: "gateways_batman"}
