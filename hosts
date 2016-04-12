@@ -26,9 +26,6 @@ sn-kgbvax-1   ansible_ssh_host=46.38.239.30
 sn-descilla-1 ansible_ssh_host=5.9.86.154
 
 # Domänen
-[domaene-test]
-des2-alt	ansible_ssh_host=5.9.86.145
-
 [domaene-01]
 remue-01	ansible_ssh_host=148.251.208.170
 greyworm-01     ansible_ssh_host=89.163.247.45
@@ -55,9 +52,10 @@ remue-04	ansible_ssh_host=148.251.208.168
 greyworm-05	ansible_ssh_host=89.163.139.196
 
 [gateways]
-# Domänen 9+10
+# Domänen 7-13
 greyworm-06	ansible_ssh_host=89.163.129.14
 remue-08	ansible_ssh_host=148.251.208.175
+# Domäne 16
 des2		ansible_ssh_host=5.9.180.43 
 #fanlin-02	ansible_ssh_host=213.202.222.143
 

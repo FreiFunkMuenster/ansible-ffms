@@ -1,11 +1,5 @@
 # Globale Variablen für alle Server 
 domaenen:
-  "00":
-    name: Prototyp (Burse)
-    community: Münster
-    ffv4_network: 10.1.160.0/20
-    ffv6_network: 2a03:2260:115:ffff::/64
-    map_scale: 0.9
   "01":
     name: Münster
     community: Münster
@@ -111,6 +105,7 @@ domaenen:
     map_scale: 0.9
   "16":
     name: Münster Promenade
+    community: Münster
     ffv4_network: 10.43.128.0/21
     ffv6_network: 2a03:2260:115:1600::/64
     map_scale: 0.9
