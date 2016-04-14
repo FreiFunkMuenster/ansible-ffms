@@ -2,6 +2,10 @@ vm_id: 16
 server_besitzer: "Simon Wüllhorst / Descilla"
     
 domaenenliste:
+   "13":
+      dhcp_start: 10.43.104.26
+      dhcp_ende: 10.43.107.255
+      server_id: 2
    "16":
       dhcp_start: 10.43.128.26
       dhcp_ende: 10.43.131.255
