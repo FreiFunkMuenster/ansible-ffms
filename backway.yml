@@ -1,0 +1,23 @@
+---
+- hosts: gateways 
+  remote_user: root
+  roles:
+    - { role: hostname, tags: "hostname"}
+    - { role: common, tags: "common"}
+    - { role: backports-kernel, tags: "backports-kernel"}
+    - { role: net_netfilter, tags: "net_netfilter"}
+    - { role: tunearpcache, tags: "tunearpcache"}
+    - { role: ip_forwarding, tags: "ip_forwarding"}
+    - { role: iptables, tags: "iptables", when: inventory_hostname in groups.backbone }
+    - { role: interfaces_ffrl, tags: "interfaces_ffrl", when: inventory_hostname in groups.backbone }
+    - { role: interfaces_ffms_backbone, tags: "interfaces_ffms_backbone", when: inventory_hostname in groups.backbone }
+    - { role: gateways_gre, tags: "gateways_gre"}
+    - { role: gateways_batman, tags: "gateways_batman"}
+    - { role: gateways_gretap, tags: "gateways_gretap"}
+    - { role: gateways_l2tp, tags: "gateways_l2tp"}
+    - { role: bird, tags: "gateways_bird"}
+    - { role: gateways_dhcp, tags: "gateways_dhcp"}
+    - { role: gateways_bind, tags: "gateways_bind"}
+    - { role: collectd, tags: "collectd"}
+
+
