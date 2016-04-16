@@ -15,7 +15,7 @@
     - { role: gateways_batman, tags: "gateways_batman"}
     - { role: gateways_gretap, tags: "gateways_gretap"}
     - { role: gateways_l2tp, tags: "gateways_l2tp"}
-    - { role: bird, tags: "gateways_bird"}
+    - { role: bird, tags: "bird"}
     - { role: gateways_dhcp, tags: "gateways_dhcp"}
     - { role: gateways_bind, tags: "gateways_bind"}
     - { role: collectd, tags: "collectd"}
