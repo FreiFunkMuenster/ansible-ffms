@@ -8,9 +8,9 @@
     - { role: net_netfilter, tags: "net_netfilter"}
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: ip_forwarding, tags: "ip_forwarding"}
-    - { role: iptables, tags: "iptables", when: inventory_hostname in groups.backbone }
-    - { role: interfaces_ffrl, tags: "interfaces_ffrl", when: inventory_hostname in groups.backbone }
-    - { role: interfaces_ffms_backbone, tags: "interfaces_ffms_backbone", when: inventory_hostname in groups.backbone }
+    - { role: iptables, tags: "iptables", when: ffrl_tun is defined }
+    - { role: backbone_gre_ffrl, tags: "backbone_gre_ffrl", when: ffrl_tun is defined }
+    - { role: backbone_gre_ffms, tags: "backbone_gre_ffms", when: ffrl_tun is defined }
     - { role: gateways_gre, tags: "gateways_gre"}
     - { role: gateways_batman, tags: "gateways_batman"}
     - { role: gateways_gretap, tags: "gateways_gretap"}
