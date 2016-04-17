@@ -12,8 +12,8 @@
     - { role: net_netfilter, tags: "net_netfilter"}
     - { role: iptables, tags: "iptables"}
     - { role: backbone_gre_ffrl, tags: "backbone_gre_ffrl"}
-    - { role: backbone_gre_ffms, tags: "backbon_gre_ffms"}
-    - { role: bird_backbone, tags: "bird_backbone"}
+    - { role: backbone_gre_ffms, tags: "backbone_gre_ffms"}
+    - { role: bird, tags: "bird"}
     - { role: bind_backbone, tags: "bind_backbone"}
     - { role: collectd, tags: "collectd"}
 
