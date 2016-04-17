@@ -109,7 +109,13 @@ domaenen:
     ffv4_network: 10.43.128.0/21
     ffv6_network: 2a03:2260:115:1600::/64
     map_scale: 0.9
-    firmware: domaene13/
+    firmware: domaene16/
+  "17":
+    name: Backway-Test
+    ffv4_network: 10.43.136.0/21
+    ffv6_network: 2a03:2260:115:1700::/64
+    map_scale: 0.9
+    firmware: domaene17/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42
