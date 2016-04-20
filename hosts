@@ -58,6 +58,7 @@ remue-08	ansible_ssh_host=148.251.208.175
 des2		ansible_ssh_host=5.9.180.43 
 #fanlin-02	ansible_ssh_host=213.202.222.143
 parad0x		ansible_ssh_host=5.9.67.189		# Direktanbindung FFRL
+barristan	ansible_ssh_host=163.172.131.76		# Direktanbindung FFRL
 
 [gateways-waf]
 # Domänen 14+15

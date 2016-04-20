@@ -111,11 +111,68 @@ domaenen:
     map_scale: 0.9
     firmware: domaene16/
   "17":
-    name: Backway-Test
+    name: Emsdetten
+    community: Kreis Steinfurt
     ffv4_network: 10.43.136.0/21
     ffv6_network: 2a03:2260:115:1700::/64
-    map_scale: 0.9
+    map_scale: 1.1
     firmware: domaene17/
+  "18":
+    name: Greven
+    community: Kreis Steinfurt
+    ffv4_network: 10.43.144.0/21
+    ffv6_network: 2a03:2260:115:1800::/64
+    map_scale: 1.1
+    firmware: domaene18/
+  "19":
+    name: Neuenkirchen
+    community: Kreis Steinfurt
+    ffv4_network: 10.43.152.0/21
+    ffv6_network: 2a03:2260:115:1900::/64
+    map_scale: 1.1
+    firmware: domaene19/
+  "20":
+    name: Ochtrup
+    community: Kreis Steinfurt
+    ffv4_network: 10.43.160.0/21
+    ffv6_network: 2a03:2260:115:2000::/64
+    map_scale: 1.1
+    firmware: domaene20/
+  "21":
+    name: Rheine
+    community: Kreis Steinfurt
+    ffv4_network: 10.43.168.0/21
+    ffv6_network: 2a03:2260:115:2100::/64
+    map_scale: 1.1
+    firmware: domaene21/
+  "22":
+    name: Steinfurt
+    community: Kreis Steinfurt
+    ffv4_network: 10.43.176.0/21
+    ffv6_network: 2a03:2260:115:2200::/64
+    map_scale: 1.1
+    firmware: domaene22/
+  "23":
+    name: Kreis Steinfurt West
+    community: Kreis Steinfurt
+    ffv4_network: 10.43.184.0/21
+    ffv6_network: 2a03:2260:115:2300::/64
+    map_scale: 1.1
+    firmware: domaene23/
+  "24":
+    name: Wettringen
+    community: Kreis Steinfurt
+    ffv4_network: 10.43.192.0/21
+    ffv6_network: 2a03:2260:115:2400::/64
+    map_scale: 1.1
+    firmware: domaene24/
+  "25":
+    name: Kreis Steinfurt Ost
+    community: Kreis Steinfurt
+    ffv4_network: 10.43.200.0/21
+    ffv6_network: 2a03:2260:115:2500::/64
+    map_scale: 1.1
+    firmware: domaene25/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42
