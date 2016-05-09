@@ -14,6 +14,42 @@ domaenenliste:
       dhcp_start: 10.43.128.26
       dhcp_ende: 10.43.131.255
       server_id: 2
+   "17":
+      dhcp_start: 10.43.140.0
+      dhcp_ende: 10.43.143.254
+      server_id: 3
+   "18":
+      dhcp_start: 10.43.148.0
+      dhcp_ende: 10.43.151.254
+      server_id: 3
+   "19":
+      dhcp_start: 10.43.156.0
+      dhcp_ende: 10.43.159.254
+      server_id: 3
+   "20":
+      dhcp_start: 10.43.164.0
+      dhcp_ende: 10.43.167.254
+      server_id: 3
+   "21":
+      dhcp_start: 10.43.172.0
+      dhcp_ende: 10.43.175.254
+      server_id: 3
+   "22":
+      dhcp_start: 10.43.180.0
+      dhcp_ende: 10.43.183.254
+      server_id: 3
+   "23":
+      dhcp_start: 10.43.188.0
+      dhcp_ende: 10.43.191.254
+      server_id: 3
+   "24":
+      dhcp_start: 10.43.196.0
+      dhcp_ende: 10.43.199.254
+      server_id: 3
+   "25":
+      dhcp_start: 10.43.204.0
+      dhcp_ende: 10.43.207.254
+      server_id: 3
 
 administratorenteam:
   - "parad0x"
