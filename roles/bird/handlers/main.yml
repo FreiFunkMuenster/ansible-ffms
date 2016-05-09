@@ -1,7 +1,0 @@
----
-- name: restart bird
-  shell: birdc configure || systemctl restart bird
-
-- name: restart bird6
-  shell: birdc6 configure || systemctl restart bird6
-
