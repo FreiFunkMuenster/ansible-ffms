@@ -50,6 +50,10 @@ domaenenliste:
       dhcp_start: 10.43.204.0
       dhcp_ende: 10.43.207.254
       server_id: 3
+   "27":
+      dhcp_start: 10.43.220.0
+      dhcp_ende: 10.43.223.254
+      server_id: 3
 
 administratorenteam:
   - "parad0x"

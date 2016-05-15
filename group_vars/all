@@ -173,6 +173,13 @@ domaenen:
     ffv6_network: 2a03:2260:115:2500::/64
     map_scale: 1.1
     firmware: domaene25/
+  "27":
+    name: Selm
+    community: Selm
+    ffv4_network: 10.43.216.0/21
+    ffv6_network: 2a03:2260:115:2700::/64
+    map_scale: 1.1
+    firmware: domaene27/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42
