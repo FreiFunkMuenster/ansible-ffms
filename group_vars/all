@@ -153,7 +153,7 @@ domaenen:
     map_scale: 1.1
     firmware: domaene22/
   "23":
-    name: Kreis Steinfurt West
+    name: Metelen
     community: Kreis Steinfurt
     ffv4_network: 10.43.184.0/21
     ffv6_network: 2a03:2260:115:2300::/64
@@ -173,6 +173,13 @@ domaenen:
     ffv6_network: 2a03:2260:115:2500::/64
     map_scale: 1.1
     firmware: domaene25/
+  "26":
+    name: Borken
+    community: Borken
+    ffv4_network: 10.43.208.0/21
+    ffv6_network: 2a03:2260:115:2600::/64
+    map_scale: 1.1
+    firmware: domaene26/
   "27":
     name: Selm
     community: Selm
@@ -180,6 +187,34 @@ domaenen:
     ffv6_network: 2a03:2260:115:2700::/64
     map_scale: 1.1
     firmware: domaene27/
+  "28":
+    name: Horstmar
+    community: Kreis Steinfurt
+    ffv4_network: 10.43.224.0/21
+    ffv6_network: 2a03:2260:115:2800::/64
+    map_scale: 1.1
+    firmware: domaene28/
+  "29":
+    name: Laer
+    community: Kreis Steinfurt
+    ffv4_network: 10.43.232.0/21
+    ffv6_network: 2a03:2260:115:2900::/64
+    map_scale: 1.1
+    firmware: domaene29/
+  "30":
+    name: Nordwalde
+    community: Kreis Steinfurt
+    ffv4_network: 10.43.240.0/21
+    ffv6_network: 2a03:2260:115:3000::/64
+    map_scale: 1.1
+    firmware: domaene30/
+  "31":
+    name: Altenberge
+    community: Kreis Steinfurt
+    ffv4_network: 10.43.248.0/21
+    ffv6_network: 2a03:2260:115:3100::/64
+    map_scale: 1.1
+    firmware: domaene31/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42
