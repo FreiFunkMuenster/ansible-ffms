@@ -215,6 +215,13 @@ domaenen:
     ffv6_network: 2a03:2260:115:3100::/64
     map_scale: 1.1
     firmware: domaene31/
+  "32":
+    name: Oelde
+    community: Kreis Warendorf
+    ffv4_network: 10.48.0.0/21
+    ffv6_network: 2a03:2260:115:3200::/64
+    map_scale: 1.1
+    firmware: domaene32/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42
@@ -262,3 +269,8 @@ collectd:
   collect_l2tp: false
   collect_ipv4ipv6: false
   collect_sysctl: false
+
+bind:                  
+  ffms_zone_type: slave
+  ffms_zone_masters:   
+    - 89.163.231.228   

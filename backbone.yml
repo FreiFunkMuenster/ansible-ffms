@@ -14,6 +14,6 @@
     - { role: backbone_gre_ffrl, tags: "backbone_gre_ffrl"}
     - { role: backbone_gre_ffms, tags: "backbone_gre_ffms"}
     - { role: bird, tags: "bird"}
-    - { role: bind_backbone, tags: "bind_backbone"}
+    - { role: gateways_bind, tags: "gateways_bind"}
     - { role: collectd, tags: "collectd"}
 

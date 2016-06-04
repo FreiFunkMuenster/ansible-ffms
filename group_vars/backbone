@@ -25,11 +25,6 @@ collectd:
   collect_ipv4ipv6: true
   collect_sysctl: true
 
-bind:
-  ffms_zone_type: slave
-  ffms_zone_masters:
-    - 89.163.231.228
-
 administratorenteam:
   - "parad0x"
   - "void"

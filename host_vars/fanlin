@@ -43,3 +43,5 @@ ffms_tun_to:
 - host_name: greyworm-04
 - host_name: greyworm-05
 - host_name: greyworm-06
+
+is_external_nameserver: true
