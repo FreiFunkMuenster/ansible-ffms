@@ -48,7 +48,43 @@ dhcp:
 is_external_nameserver: true
 
 domaenenliste:
-   "32":
-      dhcp_start: 10.48.0.26
-      dhcp_ende: 10.48.3.255
+   "44":
+      dhcp_start: 10.48.100.0
+      dhcp_ende: 10.48.103.254
+      server_id: 2
+   "45":
+      dhcp_start: 10.48.108.0
+      dhcp_ende: 10.48.111.254
+      server_id: 2
+   "46":
+      dhcp_start: 10.48.116.0
+      dhcp_ende: 10.48.119.254
+      server_id: 2
+   "47":
+      dhcp_start: 10.48.124.0
+      dhcp_ende: 10.48.127.254
+      server_id: 2
+   "48":
+      dhcp_start: 10.48.132.0
+      dhcp_ende: 10.48.135.254
+      server_id: 2
+   "49":
+      dhcp_start: 10.48.140.0
+      dhcp_ende: 10.48.143.254
+      server_id: 2
+   "50":
+      dhcp_start: 10.48.148.0
+      dhcp_ende: 10.48.151.254
+      server_id: 2
+   "51":
+      dhcp_start: 10.48.156.0
+      dhcp_ende: 10.48.159.254
+      server_id: 2
+   "52":
+      dhcp_start: 10.48.164.0
+      dhcp_ende: 10.48.167.254
+      server_id: 2
+   "53":
+      dhcp_start: 10.48.172.0
+      dhcp_ende: 10.48.175.254
       server_id: 2

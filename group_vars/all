@@ -216,12 +216,159 @@ domaenen:
     map_scale: 1.1
     firmware: domaene31/
   "32":
-    name: Oelde
+    name: Ahlen
     community: Kreis Warendorf
     ffv4_network: 10.48.0.0/21
     ffv6_network: 2a03:2260:115:3200::/64
     map_scale: 1.1
     firmware: domaene32/
+  "33":
+    name: Beckum
+    community: Kreis Warendorf
+    ffv4_network: 10.48.8.0/21
+    ffv6_network: 2a03:2260:115:3300::/64
+    map_scale: 1.1
+    firmware: domaene33/
+  "34":
+    name: Beelen
+    community: Kreis Warendorf
+    ffv4_network: 10.48.16.0/21
+    ffv6_network: 2a03:2260:115:3400::/64
+    map_scale: 1.1
+    firmware: domaene34/
+  "35":
+    name: Drensteinfurt
+    community: Kreis Warendorf
+    ffv4_network: 10.48.24.0/21
+    ffv6_network: 2a03:2260:115:3500::/64
+    map_scale: 1.1
+    firmware: domaene35/
+  "36":
+    name: Ennigerloh
+    community: Kreis Warendorf
+    ffv4_network: 10.48.32.0/21
+    ffv6_network: 2a03:2260:115:3600::/64
+    map_scale: 1.1
+    firmware: domaene36/
+  "37":
+    name: Everswinkel
+    community: Kreis Warendorf
+    ffv4_network: 10.48.40.0/21
+    ffv6_network: 2a03:2260:115:3700::/64
+    map_scale: 1.1
+    firmware: domaene37/
+  "38":
+    name: Oelde
+    community: Kreis Warendorf
+    ffv4_network: 10.48.48.0/21
+    ffv6_network: 2a03:2260:115:3800::/64
+    map_scale: 1.1
+    firmware: domaene38/
+  "39":
+    name: Ostbevern
+    community: Kreis Warendorf
+    ffv4_network: 10.48.56.0/21
+    ffv6_network: 2a03:2260:115:3900::/64
+    map_scale: 1.1
+    firmware: domaene39/
+  "40":
+    name: Sassenberg
+    community: Kreis Warendorf
+    ffv4_network: 10.48.64.0/21
+    ffv6_network: 2a03:2260:115:4000::/64
+    map_scale: 1.1
+    firmware: domaene40/
+  "41":
+    name: Sendenhorst
+    community: Kreis Warendorf
+    ffv4_network: 10.48.72.0/21
+    ffv6_network: 2a03:2260:115:4100::/64
+    map_scale: 1.1
+    firmware: domaene41/
+  "42":
+    name: Wadersloh
+    community: Kreis Warendorf
+    ffv4_network: 10.48.80.0/21
+    ffv6_network: 2a03:2260:115:4200::/64
+    map_scale: 1.1
+    firmware: domaene42/
+  "43":
+    name: Warendorf
+    community: Kreis Warendorf
+    ffv4_network: 10.48.88.0/21
+    ffv6_network: 2a03:2260:115:4300::/64
+    map_scale: 1.1
+    firmware: domaene43/
+  "44":
+    name: Ascheberg
+    community: Kreis Coesfeld
+    ffv4_network: 10.48.96.0/21
+    ffv6_network: 2a03:2260:115:4400::/64
+    map_scale: 1.1
+    firmware: domaene44/
+  "45":
+    name: Billerbeck
+    community: Kreis Coesfeld
+    ffv4_network: 10.48.104.0/21
+    ffv6_network: 2a03:2260:115:4500::/64
+    map_scale: 1.1
+    firmware: domaene45/
+  "46":
+    name: Coesfeld
+    community: Kreis Coesfeld
+    ffv4_network: 10.48.112.0/21
+    ffv6_network: 2a03:2260:115:4600::/64
+    map_scale: 1.1
+    firmware: domaene46/
+  "47":
+    name: Havixbeck
+    community: Kreis Coesfeld
+    ffv4_network: 10.48.120.0/21
+    ffv6_network: 2a03:2260:115:4700::/64
+    map_scale: 1.1
+    firmware: domaene47/
+  "48":
+    name: Lüdinghausen
+    community: Kreis Coesfeld
+    ffv4_network: 10.48.128.0/21
+    ffv6_network: 2a03:2260:115:4800::/64
+    map_scale: 1.1
+    firmware: domaene48/
+  "49":
+    name: Nordkirchen
+    community: Kreis Coesfeld
+    ffv4_network: 10.48.136.0/21
+    ffv6_network: 2a03:2260:115:4900::/64
+    map_scale: 1.1
+    firmware: domaene49/
+  "50":
+    name: Nottuln
+    community: Kreis Coesfeld
+    ffv4_network: 10.48.144.0/21
+    ffv6_network: 2a03:2260:115:5000::/64
+    map_scale: 1.1
+    firmware: domaene50/
+  "51":
+    name: Olfen
+    community: Kreis Coesfeld
+    ffv4_network: 10.48.152.0/21
+    ffv6_network: 2a03:2260:115:5100::/64
+    map_scale: 1.1
+    firmware: domaene51/
+  "52":
+    name: Rosendahl
+    community: Kreis Coesfeld
+    ffv4_network: 10.48.160.0/21
+    ffv6_network: 2a03:2260:115:5200::/64
+    map_scale: 1.1
+    firmware: domaene52/
+  "53":
+    name: Senden
+    community: Kreis Coesfeld
+    ffv4_network: 10.48.168.0/21
+    ffv6_network: 2a03:2260:115:5300::/64
+    map_scale: 1.1
+    firmware: domaene53/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42

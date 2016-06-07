@@ -1,7 +1,0 @@
-server_id: 3
-server_besitzer: "Arnim Faryn / FanLin"
-
-dhcp:
-  range_start: 10.43.10.1
-  range_end: 10.43.11.255
-

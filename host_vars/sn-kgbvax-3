@@ -1,9 +1,0 @@
-
-# Variablen für Server 
-
-server_besitzer: "Ingomar Otter / Kgbvax"
-
-# ID des Servers. 
-# Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
-server_id: 61
-
