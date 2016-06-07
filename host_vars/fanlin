@@ -30,14 +30,7 @@ ffrl_tun:
   v6_remote: 2a03:2260:0:3a::1/64
     
 ffms_tun_to:
-#- host_name: fanlin-03
 - host_name: ffwaf-srv4
-#- host_name: greyworm-01
-#- host_name: greyworm-02
-#- host_name: greyworm-03
-#- host_name: greyworm-04
-#- host_name: greyworm-05
-#- host_name: greyworm-06
 
 is_external_nameserver: true
 
