@@ -1,14 +1,14 @@
-# Variablen für Gateway-Server mit Direktanbindung zum FFRL parad0x.gw.freifunk-muenster.de
+# Variablen fÃ¼r Gateway-Server mit Direktanbindung zum FFRL parad0x.gw.freifunk-muenster.de
 # Die Server-IP-Adresse wird durch von ansible bereitgestellte Variablen abgerufen (ansible_eth0.ipv4...)
 
 # ID des Servers. 
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
 vm_id: 8
 server_id: 8
-server_besitzer: "Holger R�schenschulte / DG1RUE"
+server_besitzer: "Holger Rüschenschulte / DG1RUE"
 
 # IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
-# Nur für Backbone-Server notwendig  
+# Nur fÃ¼r Backbone-Server notwendig  
 #server_ipv4_nat: 185.66.193.51/32 # derzeit noch keine Rheinlandanbindung
     
 # GRE-Einstellungen zum Freifunk Rheinland
