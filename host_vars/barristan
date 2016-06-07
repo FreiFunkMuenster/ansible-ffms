@@ -50,6 +50,9 @@ ffrl_tun:
   v4_remote: 100.64.5.142/31
   v6_local: 2a03:2260:0:2c8::2/64
   v6_remote: 2a03:2260:0:2c8::1/64
+
+ffms_tun_to:
+- host_name: ausrufer
     
 domaenenliste:
    "10":
