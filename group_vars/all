@@ -385,9 +385,9 @@ dhcp_global:
   # MTU, die an die Clients im Netzwerk propagiert wird
   mtu: 1280 
   # Default-Lease Time 
-  lease_default: 240
+  lease_default: 3600
   # Maximale Lease Time
-  lease_max: 1200 
+  lease_max: 10800 
 
 # Parameter für das eigene Freifunk-Netzwerk
 ff_network:
