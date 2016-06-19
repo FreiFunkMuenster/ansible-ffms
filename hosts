@@ -58,6 +58,7 @@ barristan	ansible_ssh_host=163.172.131.76		# Direktanbindung FFRL
 c1024		ansible_ssh_host=176.9.88.123		# Direktanbindung FFRL
 fanlin		ansible_ssh_host=89.163.221.125		# Direktanbindung FFRL
 ausrufer	ansible_ssh_host=163.172.211.238
+rhe		ansible_ssh_host=46.105.252.246
 
 [gateways-waf]
 # Domänen 14+15
