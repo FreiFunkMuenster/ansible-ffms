@@ -83,3 +83,8 @@ domaenenliste:
       dhcp_start: 10.48.92.0
       dhcp_ende: 10.48.95.254
       server_id: 3
+   "64":
+      dhcp_start: 10.206.4.0
+      dhcp_ende: 10.206.7.254
+      server_id: 3
+

@@ -87,3 +87,7 @@ domaenenliste:
       dhcp_start: 10.48.172.0
       dhcp_ende: 10.48.175.254
       server_id: 2
+   "64":
+      dhcp_start: 10.206.0.26
+      dhcp_ende: 10.206.3.255
+      server_id: 2
