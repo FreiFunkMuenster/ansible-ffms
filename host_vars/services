@@ -12,4 +12,4 @@ bind:
     - domaene-04
     - domaene-05
     - domaene-06
-legacy_domain: yes
+#legacy_domain: yes
