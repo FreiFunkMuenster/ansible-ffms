@@ -1,4 +1,5 @@
 # Variablen für die Host-Gruppe services
+prune_days: 60
   
 # Collectd Konfiguration 
 collectd:
