@@ -376,6 +376,13 @@ domaenen:
     ffv6_network: 2a03:2260:115:6400::/64
     map_scale: 1.1
     firmware: domaene64/
+  "65":
+    name: Test
+    community: Test
+    ffv4_network: 192.168.0.0/21
+    ffv6_network: 2a03:2260:115:6500::/64
+    map_scale: 1.1
+    firmware: domaene65/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42
