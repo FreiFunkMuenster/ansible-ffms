@@ -3,5 +3,5 @@ server_besitzer: "Sven Culley / Sense"
     
 dhcp:
   range_start: 10.43.8.26
-  range_end: 10.43.9.255
+  range_end: 10.43.11.255
 
