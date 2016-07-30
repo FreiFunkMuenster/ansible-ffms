@@ -48,3 +48,13 @@ ffrl_tun:
   v6_local: 2a03:2260:0:39e::2/64
   v6_remote: 2a03:2260:0:39e::1/64
 
+administratorenteam:
+  - "parad0x"
+  - "void" 
+  - "kgbvax"
+  - "fanlin"
+  - "fungur"
+  - "descilla"
+  - "mpw"
+  - "paulinsche"
+  - "manu"
