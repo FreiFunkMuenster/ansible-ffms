@@ -13,9 +13,6 @@ services    ansible_ssh_host=89.163.231.228
 [backbone]
 greyworm-07	ansible_ssh_host=89.163.129.16
 
-[backbone-legacy]
-fussel		ansible_ssh_host=37.120.168.53
-
 # Supernode Server 
 [supernodes]
 sn-kgbvax-1	ansible_ssh_host=46.38.239.30
