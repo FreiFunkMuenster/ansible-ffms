@@ -402,6 +402,7 @@ dhcp_global:
   lease_default: 3600
   # Maximale Lease Time
   lease_max: 10800 
+  domain_search: ffms
 
 # Parameter für das eigene Freifunk-Netzwerk
 ff_network:
