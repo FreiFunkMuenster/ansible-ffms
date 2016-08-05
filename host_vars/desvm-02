@@ -1,7 +1,0 @@
-server_id: 2
-server_besitzer: "Simon Wüllhorst / descilla"
-
-dhcp:
-  range_start: 10.43.88.26
-  range_end: 10.43.91.255
-

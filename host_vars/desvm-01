@@ -1,7 +1,0 @@
-server_id: 4
-server_besitzer: "Simon Wüllhorst"
-
-dhcp:
-  range_start: 10.43.68.0
-  range_end: 10.43.71.254
-
