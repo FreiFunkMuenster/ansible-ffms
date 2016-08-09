@@ -6,8 +6,8 @@ server_ipv4_nat: 185.66.195.23/32
 
 domaenenliste:
    "65":
-      dhcp_start: 192.168.0.26
-      dhcp_ende: 192.168.7.254
+      dhcp_start: 10.255.248.26
+      dhcp_ende: 10.255.251.255
       server_id: 2
 
 ffrl_tun:

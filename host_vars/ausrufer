@@ -50,6 +50,10 @@ domaenenliste:
       dhcp_start: 10.48.168.16
       dhcp_ende: 10.48.171.255
       server_id: 3
+   "65":
+      dhcp_start: 10.255.252.0
+      dhcp_ende: 10.255.255.254
+      server_id: 3
 
 ffrl_tun:
 - name: dus2

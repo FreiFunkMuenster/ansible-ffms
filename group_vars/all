@@ -379,7 +379,7 @@ domaenen:
   "65":
     name: Test
     community: Test
-    ffv4_network: 192.168.0.0/21
+    ffv4_network: 10.255.248.0/21
     ffv6_network: 2a03:2260:115:6500::/64
     map_scale: 1.1
     firmware: domaene65/
