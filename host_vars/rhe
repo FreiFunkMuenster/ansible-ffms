@@ -5,6 +5,14 @@ server_besitzer: "Manu"
 server_ipv4_nat: 185.66.195.23/32
 
 domaenenliste:
+   "01":
+      dhcp_start: 10.43.14.1
+      dhcp_ende: 10.43.14.255
+      server_id: 3
+   "05":
+      dhcp_start: 10.43.46.1
+      dhcp_ende: 10.43.46.255
+      server_id: 3
    "65":
       dhcp_start: 10.255.248.26
       dhcp_ende: 10.255.251.255

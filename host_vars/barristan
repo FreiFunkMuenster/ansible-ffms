@@ -52,6 +52,14 @@ ffrl_tun:
   v6_remote: 2a03:2260:0:2c8::1/64
 
 domaenenliste:
+   "01":
+      dhcp_start: 10.43.15.0
+      dhcp_ende: 10.43.15.254
+      server_id: 4
+   "05":
+      dhcp_start: 10.43.47.0
+      dhcp_ende: 10.43.47.254
+      server_id: 4
    "10":
       dhcp_start: 10.43.85.0
       dhcp_ende: 10.43.87.254
