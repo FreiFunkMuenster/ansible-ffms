@@ -4,23 +4,23 @@ server_besitzer: "Sven Culley / Sense"
 domaenenliste:
    "09":
       dhcp_start: 10.43.75.0
-      dhcp_ende: 10.43.76.255
+      dhcp_ende: 10.43.77.255
       server_id: 3
    "10":
       dhcp_start: 10.43.80.26
       dhcp_ende: 10.43.82.255
       server_id: 2
    "07":
-      dhcp_start: 10.43.60.0
-      dhcp_ende: 10.43.63.254
+      dhcp_start: 10.43.59.0
+      dhcp_ende: 10.43.61.255
       server_id: 3
    "08":
-      dhcp_start: 10.43.68.0
-      dhcp_ende: 10.43.71.254
+      dhcp_start: 10.43.67.0
+      dhcp_ende: 10.43.69.255
       server_id: 3
    "11":
-      dhcp_start: 10.43.92.0
-      dhcp_ende: 10.43.95.254
+      dhcp_start: 10.43.91.0
+      dhcp_ende: 10.43.93.255
       server_id: 3
 
 administratorenteam:
