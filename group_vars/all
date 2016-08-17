@@ -175,7 +175,7 @@ domaenen:
     firmware: domaene25/
   "26":
     name: Borken
-    community: Borken
+    community: Westmünsterland
     ffv4_network: 10.43.208.0/21
     ffv6_network: 2a03:2260:115:2600::/64
     map_scale: 1.1
