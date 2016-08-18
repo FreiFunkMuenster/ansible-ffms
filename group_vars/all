@@ -90,19 +90,6 @@ domaenen:
     ffv6_network: 2a03:2260:115:1300::/64
     map_scale: 0.9
     firmware: domaene13/
-  "14":
-    name: Kreis Warendorf
-    community: Kreis Warendorf
-    ffv4_network: 10.43.112.0/21
-    ffv6_network: 2a03:2260:115:1402::/64
-    map_scale: 1.6
-    firmware: https://freifunk-muensterland.net/images/
-  "15":
-    name: Kreis Warendorf 2
-    community: Kreis Warendorf
-    ffv4_network: 10.43.120.0/21
-    ffv6_network: 2a03:2260:115:1401::/64
-    map_scale: 0.9
   "16":
     name: Münster Promenade
     community: Münster
