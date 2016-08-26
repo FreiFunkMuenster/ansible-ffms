@@ -73,10 +73,6 @@ domaenenliste:
       dhcp_start: 10.48.248.26
       dhcp_ende: 10.48.251.255
       server_id: 2
-   "64":
-      dhcp_start: 10.48.256.26
-      dhcp_ende: 10.48.259.255
-      server_id: 2
    "65":
       dhcp_start: 10.255.248.26
       dhcp_ende: 10.255.251.255
