@@ -29,6 +29,54 @@ domaenenliste:
       dhcp_start: 10.43.94.0
       dhcp_ende: 10.43.95.254
       server_id: 4
+   "15":
+      dhcp_start: 10.43.120.26
+      dhcp_ende: 10.43.123.255
+      server_id: 2
+   "54":
+      dhcp_start: 10.48.176.26
+      dhcp_ende: 10.48.179.255
+      server_id: 2
+   "55":
+      dhcp_start: 10.48.184.26
+      dhcp_ende: 10.48.187.255
+      server_id: 2
+   "56":
+      dhcp_start: 10.48.192.26
+      dhcp_ende: 10.48.195.255
+      server_id: 2
+   "57":
+      dhcp_start: 10.48.200.26
+      dhcp_ende: 10.48.203.255
+      server_id: 2
+   "58":
+      dhcp_start: 10.48.208.26
+      dhcp_ende: 10.48.211.255
+      server_id: 2
+   "59":
+      dhcp_start: 10.48.216.26
+      dhcp_ende: 10.48.219.255
+      server_id: 2
+   "60":
+      dhcp_start: 10.48.224.26
+      dhcp_ende: 10.48.227.255
+      server_id: 2
+   "61":
+      dhcp_start: 10.48.232.26
+      dhcp_ende: 10.48.235.255
+      server_id: 2
+   "62":
+      dhcp_start: 10.48.240.26
+      dhcp_ende: 10.48.243.255
+      server_id: 2
+   "63":
+      dhcp_start: 10.48.248.26
+      dhcp_ende: 10.48.251.255
+      server_id: 2
+   "64":
+      dhcp_start: 10.48.256.26
+      dhcp_ende: 10.48.259.255
+      server_id: 2
    "65":
       dhcp_start: 10.255.248.26
       dhcp_ende: 10.255.251.255

@@ -90,6 +90,13 @@ domaenen:
     ffv6_network: 2a03:2260:115:1300::/64
     map_scale: 0.9
     firmware: domaene13/
+  "15":
+    name: Heek
+    community: Westmünsterland
+    ffv4_network: 10.43.120.0/21
+    ffv6_network: 2a03:2260:115:1500::/64
+    map_scale: 0.9
+    firmware: domaene15/
   "16":
     name: Münster Promenade
     community: Münster
@@ -356,6 +363,76 @@ domaenen:
     ffv6_network: 2a03:2260:115:5300::/64
     map_scale: 1.1
     firmware: domaene53/
+  "54":
+    name: Ahaus
+    community: Westmünsterland
+    ffv4_network: 10.48.176.0/21
+    ffv6_network: 2a03:2260:115:5400::/64
+    map_scale: 1.1
+    firmware: domaene54/
+  "55":
+    name: Heiden
+    community: Westmünsterland
+    ffv4_network: 10.48.184.0/21
+    ffv6_network: 2a03:2260:115:5500::/64
+    map_scale: 1.1
+    firmware: domaene55/
+  "56":
+    name: Isselburg
+    community: Westmünsterland
+    ffv4_network: 10.48.192.0/21
+    ffv6_network: 2a03:2260:115:5600::/64
+    map_scale: 1.1
+    firmware: domaene56/
+  "57":
+    name: Legden
+    community: Westmünsterland
+    ffv4_network: 10.48.200.0/21
+    ffv6_network: 2a03:2260:115:5700::/64
+    map_scale: 1.1
+    firmware: domaene57/
+  "58":
+    name: Reken
+    community: Westmünsterland
+    ffv4_network: 10.48.208.0/21
+    ffv6_network: 2a03:2260:115:5800::/64
+    map_scale: 1.1
+    firmware: domaene58/
+  "59":
+    name: Rhede
+    community: Westmünsterland
+    ffv4_network: 10.48.216.0/21
+    ffv6_network: 2a03:2260:115:5900::/64
+    map_scale: 1.1
+    firmware: domaene59/
+  "60":
+    name: Schöppingen
+    community: Westmünsterland
+    ffv4_network: 10.48.224.0/21
+    ffv6_network: 2a03:2260:115:6000::/64
+    map_scale: 1.1
+    firmware: domaene60/
+  "61":
+    name: Südlohn
+    community: Westmünsterland
+    ffv4_network: 10.48.232.0/21
+    ffv6_network: 2a03:2260:115:6100::/64
+    map_scale: 1.1
+    firmware: domaene61/
+  "62":
+    name: Velen
+    community: Westmünsterland
+    ffv4_network: 10.48.240.0/21
+    ffv6_network: 2a03:2260:115:6200::/64
+    map_scale: 1.1
+    firmware: domaene62/
+  "63":
+    name: Vreden
+    community: Westmünsterland
+    ffv4_network: 10.48.248.0/21
+    ffv6_network: 2a03:2260:115:6300::/64
+    map_scale: 1.1
+    firmware: domaene63/
   "64":
     name: Gronau
     community: Gronau
