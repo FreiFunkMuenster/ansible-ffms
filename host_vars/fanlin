@@ -29,9 +29,6 @@ ffrl_tun:
   v6_local: 2a03:2260:0:3a::2/64
   v6_remote: 2a03:2260:0:3a::1/64
     
-ffms_tun_to:
-- host_name: ffwaf-srv4
-
 is_external_nameserver: true
 
 domaenenliste:

@@ -58,10 +58,7 @@ ffms_tun_to:
 - host_name: remue-03
 - host_name: remue-04
 - host_name: remue-06
-- host_name: remue-07
 - host_name: remue-08
-- host_name: parad0x-01
-- host_name: des2
 
 is_external_nameserver: true
 
