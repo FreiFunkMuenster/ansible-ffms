@@ -55,8 +55,6 @@ ffrl_tun:
 
 ffms_tun_to:
 - host_name: greyworm-01
-- host_name: greyworm-02
-- host_name: greyworm-03
 - host_name: greyworm-04
 - host_name: greyworm-05
 - host_name: greyworm-06
