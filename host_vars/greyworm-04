@@ -1,6 +1,0 @@
-server_id: 2
-server_besitzer: "Ingomar Otter / kgbvax"
-
-dhcp:
-  range_start: 10.43.32.26
-  range_end: 10.43.33.255

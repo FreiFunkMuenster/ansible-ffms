@@ -7,27 +7,6 @@ domaenen:
     ffv6_network: 2a03:2260:115:100::/64
     map_scale: 0.9
     firmware: domaene01/
-  "02":
-    name: Kreis Coesfeld
-    community: Kreis Coesfeld
-    ffv4_network: 10.43.16.0/21
-    ffv6_network: 2a03:2260:115:200::/64
-    map_scale: 1.1
-    firmware: domaene02/
-  "03":
-    name: Kreis Steinfurt West
-    community: Kreis Steinfurt
-    ffv4_network: 10.43.24.0/21
-    ffv6_network: 2a03:2260:115:300::/64
-    map_scale: 1.1
-    firmware: domaene03/
-  "04":
-    name: Kreis Steinfurt Ost
-    community: Kreis Steinfurt
-    ffv4_network: 10.43.32.0/21
-    ffv6_network: 2a03:2260:115:400::/64
-    map_scale: 1.1
-    firmware: domaene04/
   "05":
     name: Münster Süd
     community: Münster

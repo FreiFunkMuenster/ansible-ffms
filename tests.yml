@@ -1,7 +1,0 @@
----
-# Playbook zur Konfiguration von Backbone Servern 
-
-- hosts: backbone:domaene-01:domaene-02:domaene-03:domaene-04:domaene-05:domaene-06
-  remote_user: root
-  roles:
-    - { role: tests, tags: "tests"}

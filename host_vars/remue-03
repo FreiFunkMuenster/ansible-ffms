@@ -1,6 +1,0 @@
-server_id: 3
-server_besitzer: "Sven Culley / Sense"
-
-dhcp:
-  range_start: 10.43.34.0
-  range_end: 10.43.35.254
