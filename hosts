@@ -18,14 +18,6 @@ greyworm-07	ansible_ssh_host=89.163.129.16
 remue-01	ansible_ssh_host=148.251.208.170
 greyworm-01     ansible_ssh_host=89.163.247.45
 
-[domaene-04]
-greyworm-04     ansible_ssh_host=89.163.253.84
-remue-03	ansible_ssh_host=148.251.208.169 
-
-[domaene-05]
-parad0x-01	ansible_ssh_host=5.9.166.66
-remue-06	ansible_ssh_host=148.251.208.173
-
 [domaene-06]
 remue-04	ansible_ssh_host=148.251.208.168
 greyworm-05	ansible_ssh_host=89.163.139.196
