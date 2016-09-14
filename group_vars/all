@@ -466,7 +466,6 @@ administratorenteam:
   - "fungur"
   - "descilla"
   - "mpw"
-  - "paulinsche"
 
 collectd:
   collect_dhcp: false
