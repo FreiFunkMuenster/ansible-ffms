@@ -43,6 +43,10 @@ dhcp:
 is_external_nameserver: true
 
 domaenenliste:
+   "14":
+      dhcp_start: 10.43.112.26
+      dhcp_ende: 10.43.115.255
+      server_id: 2
    "44":
       dhcp_start: 10.48.100.0
       dhcp_ende: 10.48.103.254

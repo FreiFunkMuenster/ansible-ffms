@@ -32,6 +32,10 @@ ffrl_tun:
 is_external_nameserver: true
 
 domaenenliste:
+   "14":
+      dhcp_start: 10.43.116.0
+      dhcp_ende: 10.43.119.254
+      server_id: 3
    "32":
       dhcp_start: 10.48.4.0
       dhcp_ende: 10.48.7.254

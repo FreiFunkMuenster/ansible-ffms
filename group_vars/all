@@ -69,6 +69,13 @@ domaenen:
     ffv6_network: 2a03:2260:115:1300::/64
     map_scale: 0.9
     firmware: domaene13/
+  "14":
+    name: Dingden
+    community: Dingden
+    ffv4_network: 10.43.112.0/21
+    ffv6_network: 2a03:2260:115:1400::/64
+    map_scale: 0.9
+    firmware: domaene14/
   "15":
     name: Heek
     community: Westmünsterland
