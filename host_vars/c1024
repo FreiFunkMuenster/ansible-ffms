@@ -16,18 +16,18 @@ server_ipv4_nat: 185.66.193.48/32
 # GRE-Einstellungen zum Freifunk Rheinland
 # Bei v6 ist die ...::1 remote und die ...::2 lokal
 ffrl_tun:
-- name: fra
-  gre_target: 185.66.194.1
-  v4_local: 100.64.0.109/31
-  v4_remote: 100.64.0.108/31
-  v6_local: 2a03:2260:0:3e::2/64
-  v6_remote: 2a03:2260:0:3e::1/64
 - name: dus
   gre_target: 185.66.193.1
   v4_local: 100.64.0.111/31
   v4_remote: 100.64.0.110/31
   v6_local: 2a03:2260:0:3f::2/64
   v6_remote: 2a03:2260:0:3f::1/64
+- name: fra
+  gre_target: 185.66.194.1
+  v4_local: 100.64.0.109/31
+  v4_remote: 100.64.0.108/31
+  v6_local: 2a03:2260:0:3e::2/64
+  v6_remote: 2a03:2260:0:3e::1/64
 
 ffms_tun_to:
 - host_name: remue-01
