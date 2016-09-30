@@ -61,9 +61,9 @@ domaenenliste:
       dhcp_ende: 10.43.47.254
       server_id: 4
    "10":
-      dhcp_start: 10.43.85.0
+      dhcp_start: 10.43.84.0
       dhcp_ende: 10.43.87.254
-      server_id: 4
+      server_id: 3
    "32":
       dhcp_start: 10.48.0.16
       dhcp_ende: 10.48.3.255

@@ -11,21 +11,17 @@ services    ansible_ssh_host=89.163.231.228
 
 # Backbone Server 
 [backbone]
-greyworm-07	ansible_ssh_host=89.163.129.16
 
 # Domänen
 [domaene-01]
 remue-01	ansible_ssh_host=148.251.208.170
-greyworm-01     ansible_ssh_host=89.163.247.45
 
 [domaene-06]
 remue-04	ansible_ssh_host=148.251.208.168
-greyworm-05	ansible_ssh_host=89.163.139.196
 
 [gateways]
 # Gateways mit oder ohne Direktanbindung FFRL
 # Immer mit Multidomänen-L2TP
-greyworm-06	ansible_ssh_host=89.163.129.14
 remue-08	ansible_ssh_host=148.251.208.175
 parad0x		ansible_ssh_host=5.9.67.189		# Direktanbindung FFRL
 barristan	ansible_ssh_host=163.172.131.76		# Direktanbindung FFRL
