@@ -19,4 +19,4 @@
     - { role: gateways_dhcp, tags: "gateways_dhcp"}
     - { role: gateways_bind, tags: "gateways_bind"}
     - { role: collectd, tags: "collectd"}
-    - { role: set_kernel_param_maxcpus, tags: "set_kernel_param_maxcpus"}
+#    - { role: set_kernel_param_maxcpus, tags: "set_kernel_param_maxcpus"}
