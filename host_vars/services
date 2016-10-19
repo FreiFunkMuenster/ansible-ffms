@@ -6,6 +6,5 @@ bind:
   ffms_zone_type: master
   ns_name: ns01
   ffms_for_groups:
-    - domaene-01
     - domaene-06
 #legacy_domain: yes
