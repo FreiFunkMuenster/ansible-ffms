@@ -53,9 +53,9 @@ ffrl_tun:
 
 domaenenliste:
    "01":
-      dhcp_start: 10.43.12.0
-      dhcp_ende: 10.43.15.254
-      server_id: 4
+      dhcp_start: 10.43.8.26
+      dhcp_ende: 10.43.11.255
+      server_id: 2
    "05":
       dhcp_start: 10.43.44.0
       dhcp_ende: 10.43.47.254
