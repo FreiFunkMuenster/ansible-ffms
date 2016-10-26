@@ -54,7 +54,6 @@ ffrl_tun:
   v6_remote: 2a03:2260:0:2aa::1/64
   
 ffms_tun_to:
-- host_name: remue-01
 - host_name: remue-04
 - host_name: remue-08
 
