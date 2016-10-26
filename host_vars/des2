@@ -1,6 +1,6 @@
 server_id: 9
 vm_id: 9
-server_besitzer: "Manu"
+server_besitzer: "Simon Wüllhorst / Descilla"
 
 server_ipv4_nat: 185.66.195.23/32
 
@@ -79,50 +79,39 @@ domaenenliste:
       server_id: 2
 
 ffrl_tun:
-- name: ber0
-  gre_target: 185.66.195.0
-  v4_local: 100.64.6.233/31
-  v4_remote: 100.64.6.232/31
-  v6_local: 2a03:2260:0:399::2/64
-  v6_remote: 2a03:2260:0:399::1/64
 - name: ber1
+  gre_target: 185.66.195.0
+  v4_local: 100.64.5.91/31
+  v4_remote: 100.64.5.90/31
+  v6_local: 2a03:2260:0:2a1::2/64
+  v6_remote: 2a03:2260:0:2a1::1/64
+- name: ber2
   gre_target: 185.66.195.1
-  v4_local: 100.64.6.239/31
-  v4_remote: 100.64.6.238/31
-  v6_local: 2a03:2260:0:39c::2/64
-  v6_remote: 2a03:2260:0:39c::1/64
-- name: fra0
-  gre_target: 185.66.194.0
-  v4_local: 100.64.6.235/31
-  v4_remote: 100.64.6.234/31
-  v6_local: 2a03:2260:0:39a::2/64
-  v6_remote: 2a03:2260:0:39a::1/64
+  v4_local: 100.64.5.97/31
+  v4_remote: 100.64.5.96/31
+  v6_local: 2a03:2260:0:2a4::2/64
+  v6_remote: 2a03:2260:0:2a4::1/64
 - name: fra1
+  gre_target: 185.66.194.0
+  v4_local: 100.64.5.93/31
+  v4_remote: 100.64.5.92/31
+  v6_local: 2a03:2260:0:2a2::2/64
+  v6_remote: 2a03:2260:0:2a2::1/64
+- name: fra2
   gre_target: 185.66.194.1
-  v4_local: 100.64.6.241/31
-  v4_remote: 100.64.6.240/31
-  v6_local: 2a03:2260:0:39d::2/64
-  v6_remote: 2a03:2260:0:39d::1/64
-- name: dus0
-  gre_target: 185.66.193.0
-  v4_local: 100.64.6.237/31
-  v4_remote: 100.64.6.236/31
-  v6_local: 2a03:2260:0:39b::2/64
-  v6_remote: 2a03:2260:0:39b::1/64
+  v4_local: 100.64.5.99/31
+  v4_remote: 100.64.5.98/31
+  v6_local: 2a03:2260:0:2a5::2/64
+  v6_remote: 2a03:2260:0:2a5::1/64
 - name: dus1
+  gre_target: 185.66.193.0
+  v4_local: 100.64.5.95/31
+  v4_remote: 100.64.5.94/31
+  v6_local: 2a03:2260:0:2a3::2/64
+  v6_remote: 2a03:2260:0:2a3::1/64
+- name: dus2
   gre_target: 185.66.193.1
-  v4_local: 100.64.6.243/31
-  v4_remote: 100.64.6.242/31
-  v6_local: 2a03:2260:0:39e::2/64
-  v6_remote: 2a03:2260:0:39e::1/64
-
-administratorenteam:
-  - "parad0x"
-  - "void" 
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "manu"
-  - "alucardo"
+  v4_local: 100.64.5.101/31
+  v4_remote: 100.64.5.100/31
+  v6_local: 2a03:2260:0:2a6::2/64
+  v6_remote: 2a03:2260:0:2a6::1/64
