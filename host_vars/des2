@@ -4,6 +4,9 @@ server_besitzer: "Simon Wüllhorst / Descilla"
 
 server_ipv4_nat: 185.66.195.23/32
 
+ffms_tun_to:
+- host_name: remue-08
+
 domaenenliste:
    "01":
       dhcp_start: 10.43.12.0
