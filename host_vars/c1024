@@ -32,6 +32,7 @@ ffrl_tun:
 ffms_tun_to:
 - host_name: remue-04
 - host_name: remue-08
+- host_name: remue-09
 
 # Bereich des DHCP Servers  (Start / Ende)    
 dhcp:
