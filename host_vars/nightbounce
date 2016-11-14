@@ -5,7 +5,7 @@
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
 vm_id: 8
 server_id: 8
-server_besitzer: "Holger Rüschenschulte / DG1RUE"
+server_besitzer: "Ingomar Otter / Kgbvax"
 
 server_ipv4_nat: 185.66.193.50/32
     
@@ -100,49 +100,27 @@ domaenenliste:
       server_id: 3
 
 ffrl_tun:
-- name: dus2
-  gre_target: 185.66.193.1
-  v4_local: 100.64.6.231/31
-  v4_remote: 100.64.6.230/31
-  v6_local: 2a03:2260:0:398::2/64
-  v6_remote: 2a03:2260:0:398::1/64
-- name: ber1
+- name: ber0
   gre_target: 185.66.195.0
-  v4_local: 100.64.6.221/31
-  v4_remote: 100.64.6.220/31
-  v6_local: 2a03:2260:0:393::2/64
-  v6_remote: 2a03:2260:0:393::1/64
-- name: ber2
+  v4_remote: 100.64.6.232/31
+  v6_remote: 2a03:2260:0:399::1/64
+- name: ber1
   gre_target: 185.66.195.1
-  v4_local: 100.64.6.227/31
-  v4_remote: 100.64.6.226/31
-  v6_local: 2a03:2260:0:396::2/64
-  v6_remote: 2a03:2260:0:396::1/64
-- name: dus1
-  gre_target: 185.66.193.0
-  v4_local: 100.64.6.225/31
-  v4_remote: 100.64.6.224/31
-  v6_local: 2a03:2260:0:395::2/64
-  v6_remote: 2a03:2260:0:395::1/64
-- name: fra1
+  v4_remote: 100.64.6.238/31
+  v6_remote: 2a03:2260:0:39c::1/64
+- name: fra0
   gre_target: 185.66.194.0
-  v4_local: 100.64.6.223/31
-  v4_remote: 100.64.6.222/31
-  v6_local: 2a03:2260:0:394::2/64
-  v6_remote: 2a03:2260:0:394::1/64
-- name: fra2
+  v4_remote: 100.64.6.234/31
+  v6_remote: 2a03:2260:0:39a::1/64
+- name: fra1
   gre_target: 185.66.194.1
-  v4_local: 100.64.6.229/31
-  v4_remote: 100.64.6.228/31
-  v6_local: 2a03:2260:0:397::2/64
-  v6_remote: 2a03:2260:0:397::1/64
-
-administratorenteam:
-  - "parad0x"
-  - "void" 
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "holger"
+  v4_remote: 100.64.6.240/31
+  v6_remote: 2a03:2260:0:39d::1/64
+- name: dus0
+  gre_target: 185.66.193.0
+  v4_remote: 100.64.6.236/31
+  v6_remote: 2a03:2260:0:39b::1/64
+- name: dus1
+  gre_target: 185.66.193.1
+  v4_remote: 100.64.6.242/31
+  v6_remote: 2a03:2260:0:39e::1/64
