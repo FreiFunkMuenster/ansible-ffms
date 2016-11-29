@@ -9,9 +9,6 @@ webserver   ansible_ssh_host=89.163.231.227
 [services]
 services    ansible_ssh_host=89.163.231.228
 
-# Backbone Server 
-[backbone]
-
 [domaene-06]
 remue-04	ansible_ssh_host=148.251.208.168
 
