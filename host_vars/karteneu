@@ -1,3 +1,13 @@
 server_besitzer: "Sven Culley / Sense"
 vm_id: 12
 server_id: 12
+
+administratorenteam:
+  - "parad0x"
+  - "void" 
+  - "kgbvax"
+  - "fanlin"
+  - "fungur"
+  - "descilla"
+  - "mpw"
+  - "handle"
