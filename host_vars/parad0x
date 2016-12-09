@@ -96,3 +96,13 @@ domaenenliste:
       dhcp_start: 10.43.248.26
       dhcp_ende: 10.43.251.255
       server_id: 2
+
+administratorenteam:
+  - "parad0x"
+  - "void" 
+  - "kgbvax"
+  - "fanlin"
+  - "fungur"
+  - "descilla"
+  - "mpw"
+  - "corny"
