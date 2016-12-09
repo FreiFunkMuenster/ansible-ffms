@@ -106,3 +106,5 @@ administratorenteam:
   - "descilla"
   - "mpw"
   - "corny"
+
+dhcp_type: "kea"

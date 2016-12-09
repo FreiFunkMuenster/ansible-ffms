@@ -68,3 +68,5 @@ domaenenliste:
       dhcp_start: 10.48.88.16
       dhcp_ende: 10.48.91.255
       server_id: 2
+
+dhcp_type: "kea"

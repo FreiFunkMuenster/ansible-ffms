@@ -124,3 +124,5 @@ ffrl_tun:
   gre_target: 185.66.193.1
   v4_remote: 100.64.6.242/31
   v6_remote: 2a03:2260:0:39e::1/64
+
+dhcp_type: "kea"

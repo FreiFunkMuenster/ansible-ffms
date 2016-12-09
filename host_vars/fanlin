@@ -89,3 +89,4 @@ domaenenliste:
       dhcp_ende: 10.206.7.254
       server_id: 3
 
+dhcp_type: "kea"

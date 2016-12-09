@@ -90,3 +90,5 @@ domaenenliste:
       dhcp_start: 10.206.0.26
       dhcp_ende: 10.206.3.255
       server_id: 2
+
+dhcp_type: "kea"
