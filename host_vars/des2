@@ -119,3 +119,5 @@ ffrl_tun:
   v4_remote: 100.64.5.100/31
   v6_local: 2a03:2260:0:2a6::2/64
   v6_remote: 2a03:2260:0:2a6::1/64
+
+dhcp_type: "kea"
