@@ -8,6 +8,8 @@ collectd:
   collect_l2tp: false
   collect_ipv4ipv6: false
   collect_sysctl: false
+  collect_bind: true
+  collect_ping: false
 
 administratorenteam:
   - "void" 
