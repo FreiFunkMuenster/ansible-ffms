@@ -480,6 +480,7 @@ administratorenteam:
   - "fungur"
   - "descilla"
   - "mpw"
+  - "corny"
 
 collectd:
   collect_dhcp: false
