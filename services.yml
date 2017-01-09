@@ -6,6 +6,7 @@
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
     - { role: backports-kernel, tags: "backports-kernel"}
+    - { role: tunearpcache, tags: "tunearpcache"}
     - { role: services_interfaces, tags: "services_interfaces"}
     - { role: alfred_json, tags: "alfred_json"}
     - { role: services_ffmap_backend, tags: "services_ffmap_backend"}

@@ -7,7 +7,7 @@ webserver   ansible_ssh_host=89.163.231.227
 
 # Service-VM für Zentrale Dienste (Karte, Statistik)  
 [services]
-services    ansible_ssh_host=89.163.231.228
+services	ansible_ssh_host=89.163.231.228
 karteneu	ansible_ssh_host=148.251.208.172
 
 [domaene-06]
