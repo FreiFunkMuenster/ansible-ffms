@@ -32,5 +32,6 @@ administratorenteam:
   - "descilla"
   - "mpw"
   - "sandmann"
+  - "corny"
 
 dhcp_type: "kea"
