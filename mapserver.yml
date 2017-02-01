@@ -1,0 +1,15 @@
+# Playbook zur Konfiguration aller Servern von services
+
+- hosts: mapserver
+  remote_user: root
+  roles:
+    - { role: hostname, tags: "hostname"}
+    - { role: common, tags: "common"}
+    - { role: backports-kernel, tags: "backports-kernel"}
+    - { role: tunearpcache, tags: "tunearpcache"}
+    - { role: services_interfaces, tags: "services_interfaces"}
+#    - { role: services_nginx, tags: "services_nginx"}
+    - { role: services_hopglass-server, tags: "services_hopglass-server"}
+    - { role: services_hopglass, tags: "services_hopglass"}
+    - { role: collectd, tags: "collectd"}
+
