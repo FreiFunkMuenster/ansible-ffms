@@ -12,3 +12,10 @@ administratorenteam:
   - "mpw"
   - "corny"
   - "handle"
+
+freifunk: 
+  name: "Freifunk Münsterland"
+  kurzname: "ffms"
+  email: info@freifunk-muensterland.de
+  domain: freifunk-muensterland.org
+

@@ -8,7 +8,7 @@
     - { role: backports-kernel, tags: "backports-kernel"}
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: services_interfaces, tags: "services_interfaces"}
-#    - { role: services_nginx, tags: "services_nginx"}
+    - { role: mapserver_nginx, tags: "mapserver_nginx"}
     - { role: services_hopglass-server, tags: "services_hopglass-server"}
     - { role: services_hopglass, tags: "services_hopglass"}
     - { role: collectd, tags: "collectd"}
