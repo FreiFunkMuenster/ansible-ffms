@@ -9,7 +9,8 @@
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: services_interfaces, tags: "services_interfaces"}
     - { role: mapserver_nginx, tags: "mapserver_nginx"}
-    - { role: services_hopglass-server, tags: "services_hopglass-server"}
-    - { role: services_hopglass, tags: "services_hopglass"}
+    - { role: mapserver_hopglass-server, tags: "mapserver_hopglass-server"}
+    - { role: mapserver_hopglass, tags: "mapserver_hopglass"}
+    - { role: mapserver_gen_maps, tags: "mapserver_gen_maps"}
     - { role: collectd, tags: "collectd"}
 
