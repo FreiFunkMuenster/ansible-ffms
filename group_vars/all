@@ -489,6 +489,8 @@ bind:
   ffms_zone_masters:   
     - 89.163.231.228   
 
+public_dns_ip: 85.214.20.141
+
 logrotate:
   cycle: daily
   count: 3
