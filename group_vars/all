@@ -508,3 +508,11 @@ freifunk:
 bind_zonemaster:
   server: service.freifunk-muensterland.de
   email: info.freifunk-muensterland.de
+
+static_dns_entries:
+  "firmware":
+     A: 144.76.30.226
+     AAAA: 2a01:4f8:191:21e1::23
+  "unifi":
+     A: 10.43.128.14
+     AAAA: 2a03:2260:115:1600:5054:ff:fe1b:e927
