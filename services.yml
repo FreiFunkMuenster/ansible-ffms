@@ -17,4 +17,5 @@
     - { role: services_ffapi, tags: "services_ffapi"}
     - { role: services_graphite, tags: "services_graphite"}
     - { role: collectd, tags: "collectd"}
+    - { role: py_respondd, tags: "py_respondd"}
 
