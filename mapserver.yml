@@ -13,4 +13,5 @@
     - { role: mapserver_nginx, tags: "mapserver_nginx"}
     - { role: collectd, tags: "collectd"}
     - { role: py_respondd, tags: "py_respondd"}
+    - { role: mapserver_stats, tags: "mapserver_stats"}
 
