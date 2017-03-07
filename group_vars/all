@@ -44,6 +44,7 @@ domaenen:
     firmware: domaene09/
   "10":
     name: Multidomänen-L2TP-Test
+    community: None
     ffv4_network: 10.43.80.0/21
     ffv6_network: 2a03:2260:115:1000::/64
     map_scale: 0.9
