@@ -96,7 +96,7 @@ domaenen:
         - ip: "10.43.128.14"
           id: "52:54:00:1b:e9:27"
         - ip: "10.43.128.13"
-          id: "52:54:00:a0:c2:a0"
+          id: "52:54:00:87:eb:c0"
   "17":
     name: Emsdetten
     community: Kreis Steinfurt
