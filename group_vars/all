@@ -440,6 +440,13 @@ domaenen:
     ffv6_network: 2a03:2260:115:6500::/64
     map_scale: 1.1
     firmware: domaene65/
+  "66":
+    name: Dedibox
+    community: Dedibox
+    ffv4_network: 10.200.200.0/21
+    ffv6_network: 2a03:2260:115:6600::/64
+    map_scale: 1.1
+    firmware: domaene66/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 
 routing_table: 42
@@ -517,3 +524,10 @@ static_dns_entries:
   "unifi":
      A: 10.43.128.14
      AAAA: 2a03:2260:115:1600:5054:ff:fe1b:e927
+
+nameservers:
+- "8.8.8.8"
+- "8.8.4.4"
+- "2001:4860:4860::8888"
+- "2001:4860:4860::8844"
+
