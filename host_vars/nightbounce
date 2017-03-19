@@ -128,3 +128,14 @@ ffrl_tun:
   bgp_local_pref: 201
 
 dhcp_type: "kea"
+
+ffms_tun_to:
+- host_name: handle
+
+nameservers:
+- "213.133.100.100"
+- "213.133.98.98"
+- "213.133.99.99"
+- "2a01:4f8:0:a0a1::add:1010"
+- "2a01:4f8:0:a111::add:9898"
+- "2a01:4f8:0:a102::add:9999"
