@@ -33,6 +33,11 @@ mapconfig:
         maxZoom: 23
         maxNativeZoom: 19
 
+node_stats:
+  graphite_target:
+    host: 148.251.101.196
+    port: 2003
+
 administratorenteam:
   - "parad0x"
   - "void" 

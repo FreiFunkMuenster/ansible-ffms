@@ -10,7 +10,7 @@ collectd:
   collect_sysctl: false
   collect_bind: true
   collect_ping: false
-  graphite_target: 
+  graphite_target:
     host: 89.163.231.228
     port: 2003
 
