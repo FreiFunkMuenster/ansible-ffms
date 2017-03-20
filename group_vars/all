@@ -6,6 +6,9 @@ domaenen:
     ffv4_network: 10.43.8.0/21
     ffv6_network: 2a03:2260:115:100::/64
     map_scale: 0.9
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene01/
   "05":
     name: Münster Süd
@@ -13,6 +16,9 @@ domaenen:
     ffv4_network: 10.43.40.0/21
     ffv6_network: 2a03:2260:115:500::/64
     map_scale: 1.0
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene05/
   "06":
     name: Westmünsterland
@@ -20,6 +26,9 @@ domaenen:
     ffv4_network: 10.43.48.0/21
     ffv6_network: 2a03:2260:115:600::/64
     map_scale: 1.0
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene06/
   "07":
     name: Telgte
@@ -27,6 +36,9 @@ domaenen:
     ffv4_network: 10.43.56.0/21
     ffv6_network: 2a03:2260:115:700::/64
     map_scale: 1.0
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene07/
   "08":
     name: Gescher
@@ -34,6 +46,9 @@ domaenen:
     ffv4_network: 10.43.64.0/21
     ffv6_network: 2a03:2260:115:800::/64
     map_scale: 1.0
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene08/
   "09":
     name: Stadtlohn
@@ -41,6 +56,9 @@ domaenen:
     ffv4_network: 10.43.72.0/21
     ffv6_network: 2a03:2260:115:900::/64
     map_scale: 0.9
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene09/
   "10":
     name: Multidomänen-L2TP-Test
@@ -48,6 +66,9 @@ domaenen:
     ffv4_network: 10.43.80.0/21
     ffv6_network: 2a03:2260:115:1000::/64
     map_scale: 0.9
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene10/
   "11":
     name: Bocholt
@@ -55,6 +76,9 @@ domaenen:
     ffv4_network: 10.43.88.0/21
     ffv6_network: 2a03:2260:115:1100::/64
     map_scale: 0.9
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene11/
   "12":
     name: Dülmen
@@ -62,6 +86,9 @@ domaenen:
     ffv4_network: 10.43.96.0/21
     ffv6_network: 2a03:2260:115:1200::/64
     map_scale: 0.9
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene12/
   "13":
     name: Rorup
@@ -69,6 +96,9 @@ domaenen:
     ffv4_network: 10.43.104.0/21
     ffv6_network: 2a03:2260:115:1300::/64
     map_scale: 0.9
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene13/
   "14":
     name: Dingden
@@ -76,6 +106,9 @@ domaenen:
     ffv4_network: 10.43.112.0/21
     ffv6_network: 2a03:2260:115:1400::/64
     map_scale: 0.9
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene14/
   "15":
     name: Heek
@@ -83,6 +116,9 @@ domaenen:
     ffv4_network: 10.43.120.0/21
     ffv6_network: 2a03:2260:115:1500::/64
     map_scale: 0.9
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene15/
   "16":
     name: Münster Promenade
@@ -90,6 +126,9 @@ domaenen:
     ffv4_network: 10.43.128.0/21
     ffv6_network: 2a03:2260:115:1600::/64
     map_scale: 0.9
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene16/
     dhcp:
       reservations:
@@ -103,6 +142,9 @@ domaenen:
     ffv4_network: 10.43.136.0/21
     ffv6_network: 2a03:2260:115:1700::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene17/
   "18":
     name: Greven
@@ -110,6 +152,9 @@ domaenen:
     ffv4_network: 10.43.144.0/21
     ffv6_network: 2a03:2260:115:1800::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene18/
   "19":
     name: Neuenkirchen
@@ -117,6 +162,9 @@ domaenen:
     ffv4_network: 10.43.152.0/21
     ffv6_network: 2a03:2260:115:1900::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene19/
   "20":
     name: Ochtrup
@@ -124,6 +172,9 @@ domaenen:
     ffv4_network: 10.43.160.0/21
     ffv6_network: 2a03:2260:115:2000::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene20/
   "21":
     name: Rheine
@@ -131,6 +182,9 @@ domaenen:
     ffv4_network: 10.43.168.0/21
     ffv6_network: 2a03:2260:115:2100::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene21/
   "22":
     name: Steinfurt
@@ -138,6 +192,9 @@ domaenen:
     ffv4_network: 10.43.176.0/21
     ffv6_network: 2a03:2260:115:2200::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene22/
   "23":
     name: Metelen
@@ -145,6 +202,9 @@ domaenen:
     ffv4_network: 10.43.184.0/21
     ffv6_network: 2a03:2260:115:2300::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene23/
   "24":
     name: Wettringen
@@ -152,6 +212,9 @@ domaenen:
     ffv4_network: 10.43.192.0/21
     ffv6_network: 2a03:2260:115:2400::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene24/
   "25":
     name: Kreis Steinfurt Ost
@@ -159,6 +222,9 @@ domaenen:
     ffv4_network: 10.43.200.0/21
     ffv6_network: 2a03:2260:115:2500::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene25/
   "26":
     name: Borken
@@ -166,6 +232,9 @@ domaenen:
     ffv4_network: 10.43.208.0/21
     ffv6_network: 2a03:2260:115:2600::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene26/
   "27":
     name: Selm
@@ -173,6 +242,9 @@ domaenen:
     ffv4_network: 10.43.216.0/21
     ffv6_network: 2a03:2260:115:2700::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene27/
   "28":
     name: Horstmar
@@ -180,6 +252,9 @@ domaenen:
     ffv4_network: 10.43.224.0/21
     ffv6_network: 2a03:2260:115:2800::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene28/
   "29":
     name: Laer
@@ -187,6 +262,9 @@ domaenen:
     ffv4_network: 10.43.232.0/21
     ffv6_network: 2a03:2260:115:2900::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene29/
   "30":
     name: Nordwalde
@@ -194,6 +272,9 @@ domaenen:
     ffv4_network: 10.43.240.0/21
     ffv6_network: 2a03:2260:115:3000::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene30/
   "31":
     name: Altenberge
@@ -201,6 +282,9 @@ domaenen:
     ffv4_network: 10.43.248.0/21
     ffv6_network: 2a03:2260:115:3100::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene31/
   "32":
     name: Ahlen
@@ -208,6 +292,9 @@ domaenen:
     ffv4_network: 10.48.0.0/21
     ffv6_network: 2a03:2260:115:3200::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene32/
   "33":
     name: Beckum
@@ -215,6 +302,9 @@ domaenen:
     ffv4_network: 10.48.8.0/21
     ffv6_network: 2a03:2260:115:3300::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene33/
   "34":
     name: Beelen
@@ -222,6 +312,9 @@ domaenen:
     ffv4_network: 10.48.16.0/21
     ffv6_network: 2a03:2260:115:3400::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene34/
   "35":
     name: Drensteinfurt
@@ -229,6 +322,9 @@ domaenen:
     ffv4_network: 10.48.24.0/21
     ffv6_network: 2a03:2260:115:3500::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene35/
   "36":
     name: Ennigerloh
@@ -236,6 +332,9 @@ domaenen:
     ffv4_network: 10.48.32.0/21
     ffv6_network: 2a03:2260:115:3600::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene36/
   "37":
     name: Everswinkel
@@ -243,6 +342,9 @@ domaenen:
     ffv4_network: 10.48.40.0/21
     ffv6_network: 2a03:2260:115:3700::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene37/
   "38":
     name: Oelde
@@ -250,6 +352,9 @@ domaenen:
     ffv4_network: 10.48.48.0/21
     ffv6_network: 2a03:2260:115:3800::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene38/
   "39":
     name: Ostbevern
@@ -257,6 +362,9 @@ domaenen:
     ffv4_network: 10.48.56.0/21
     ffv6_network: 2a03:2260:115:3900::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene39/
   "40":
     name: Sassenberg
@@ -264,6 +372,9 @@ domaenen:
     ffv4_network: 10.48.64.0/21
     ffv6_network: 2a03:2260:115:4000::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene40/
   "41":
     name: Sendenhorst
@@ -271,6 +382,9 @@ domaenen:
     ffv4_network: 10.48.72.0/21
     ffv6_network: 2a03:2260:115:4100::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene41/
   "42":
     name: Wadersloh
@@ -278,6 +392,9 @@ domaenen:
     ffv4_network: 10.48.80.0/21
     ffv6_network: 2a03:2260:115:4200::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene42/
   "43":
     name: Warendorf
@@ -285,6 +402,9 @@ domaenen:
     ffv4_network: 10.48.88.0/21
     ffv6_network: 2a03:2260:115:4300::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene43/
   "44":
     name: Ascheberg
@@ -292,6 +412,9 @@ domaenen:
     ffv4_network: 10.48.96.0/21
     ffv6_network: 2a03:2260:115:4400::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene44/
   "45":
     name: Billerbeck
@@ -299,6 +422,9 @@ domaenen:
     ffv4_network: 10.48.104.0/21
     ffv6_network: 2a03:2260:115:4500::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene45/
   "46":
     name: Coesfeld
@@ -306,6 +432,9 @@ domaenen:
     ffv4_network: 10.48.112.0/21
     ffv6_network: 2a03:2260:115:4600::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene46/
   "47":
     name: Havixbeck
@@ -313,6 +442,9 @@ domaenen:
     ffv4_network: 10.48.120.0/21
     ffv6_network: 2a03:2260:115:4700::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene47/
   "48":
     name: Lüdinghausen
@@ -320,6 +452,9 @@ domaenen:
     ffv4_network: 10.48.128.0/21
     ffv6_network: 2a03:2260:115:4800::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene48/
   "49":
     name: Nordkirchen
@@ -327,6 +462,9 @@ domaenen:
     ffv4_network: 10.48.136.0/21
     ffv6_network: 2a03:2260:115:4900::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene49/
   "50":
     name: Nottuln
@@ -334,6 +472,9 @@ domaenen:
     ffv4_network: 10.48.144.0/21
     ffv6_network: 2a03:2260:115:5000::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene50/
   "51":
     name: Olfen
@@ -341,6 +482,9 @@ domaenen:
     ffv4_network: 10.48.152.0/21
     ffv6_network: 2a03:2260:115:5100::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene51/
   "52":
     name: Rosendahl
@@ -348,6 +492,9 @@ domaenen:
     ffv4_network: 10.48.160.0/21
     ffv6_network: 2a03:2260:115:5200::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene52/
   "53":
     name: Senden
@@ -355,6 +502,9 @@ domaenen:
     ffv4_network: 10.48.168.0/21
     ffv6_network: 2a03:2260:115:5300::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene53/
   "54":
     name: Ahaus
@@ -362,6 +512,9 @@ domaenen:
     ffv4_network: 10.48.176.0/21
     ffv6_network: 2a03:2260:115:5400::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene54/
   "55":
     name: Heiden
@@ -369,6 +522,9 @@ domaenen:
     ffv4_network: 10.48.184.0/21
     ffv6_network: 2a03:2260:115:5500::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene55/
   "56":
     name: Isselburg
@@ -376,6 +532,9 @@ domaenen:
     ffv4_network: 10.48.192.0/21
     ffv6_network: 2a03:2260:115:5600::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene56/
   "57":
     name: Legden
@@ -383,6 +542,9 @@ domaenen:
     ffv4_network: 10.48.200.0/21
     ffv6_network: 2a03:2260:115:5700::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene57/
   "58":
     name: Reken
@@ -390,6 +552,9 @@ domaenen:
     ffv4_network: 10.48.208.0/21
     ffv6_network: 2a03:2260:115:5800::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene58/
   "59":
     name: Rhede
@@ -397,6 +562,9 @@ domaenen:
     ffv4_network: 10.48.216.0/21
     ffv6_network: 2a03:2260:115:5900::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene59/
   "60":
     name: Schöppingen
@@ -404,6 +572,9 @@ domaenen:
     ffv4_network: 10.48.224.0/21
     ffv6_network: 2a03:2260:115:6000::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene60/
   "61":
     name: Südlohn
@@ -411,6 +582,9 @@ domaenen:
     ffv4_network: 10.48.232.0/21
     ffv6_network: 2a03:2260:115:6100::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene61/
   "62":
     name: Velen
@@ -418,6 +592,9 @@ domaenen:
     ffv4_network: 10.48.240.0/21
     ffv6_network: 2a03:2260:115:6200::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene62/
   "63":
     name: Vreden
@@ -425,6 +602,9 @@ domaenen:
     ffv4_network: 10.48.248.0/21
     ffv6_network: 2a03:2260:115:6300::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene63/
   "64":
     name: Gronau
@@ -432,6 +612,9 @@ domaenen:
     ffv4_network: 10.206.0.0/21
     ffv6_network: 2a03:2260:115:6400::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene64/
   "65":
     name: Test
@@ -439,6 +622,9 @@ domaenen:
     ffv4_network: 10.255.248.0/21
     ffv6_network: 2a03:2260:115:6500::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene65/
   "66":
     name: Dedibox
@@ -446,6 +632,9 @@ domaenen:
     ffv4_network: 10.200.200.0/21
     ffv6_network: 2a03:2260:115:6600::/64
     map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    map_blinking_hours: 8
     firmware: domaene66/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird 

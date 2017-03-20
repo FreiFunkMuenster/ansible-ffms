@@ -13,6 +13,16 @@ mapconfig:
    - name: "Traffic"
      iframe: "https://freifunk-muensterland.de/grafana/dashboard-solo/db/advanced-node-stats?var-node={NODE_ID}&theme=light&panelId=2&from=now-24h&to=now"
      caption: "Knoten {NODE_ID}"
+  globalMap:
+   map_scale: 1.1
+   map_show_contact: false
+   map_max_age: 14
+   map_blinking_hours: 8
+  communityMap:
+   map_scale: 1.1
+   map_show_contact: false
+   map_max_age: 14
+   map_blinking_hours: 8
 
 administratorenteam:
   - "parad0x"
@@ -24,3 +34,11 @@ administratorenteam:
   - "mpw"
   - "corny"
   - "handle"
+
+nameservers:
+- "213.133.100.100"
+- "213.133.98.98"
+- "213.133.99.99"
+- "2a01:4f8:0:a0a1::add:1010"
+- "2a01:4f8:0:a111::add:9898"
+- "2a01:4f8:0:a102::add:9999"
