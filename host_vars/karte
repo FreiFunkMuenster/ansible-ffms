@@ -23,6 +23,15 @@ mapconfig:
    map_show_contact: false
    map_max_age: 14
    map_blinking_hours: 8
+  layers:
+    - name: "OSM Mapnik"
+      url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      config:
+        subdomains: "abc"
+        type: "osm"
+        attribution: "&copy; <a href=\\\"http://www.openstreetmap.org/copyright\\\">OpenStreetMap</a>"
+        maxZoom: 23
+        maxNativeZoom: 19
 
 administratorenteam:
   - "parad0x"

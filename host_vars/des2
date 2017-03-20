@@ -89,12 +89,14 @@ ffrl_tun:
   v4_remote: 100.64.5.90/31
   v6_local: 2a03:2260:0:2a1::2/64
   v6_remote: 2a03:2260:0:2a1::1/64
+  bgp_local_pref: 202
 - name: ber2
   gre_target: 185.66.195.1
   v4_local: 100.64.5.97/31
   v4_remote: 100.64.5.96/31
   v6_local: 2a03:2260:0:2a4::2/64
   v6_remote: 2a03:2260:0:2a4::1/64
+  bgp_local_pref: 201
 - name: fra1
   gre_target: 185.66.194.0
   v4_local: 100.64.5.93/31
@@ -113,13 +115,11 @@ ffrl_tun:
   v4_remote: 100.64.5.94/31
   v6_local: 2a03:2260:0:2a3::2/64
   v6_remote: 2a03:2260:0:2a3::1/64
-  bgp_local_pref: 202
 - name: dus2
   gre_target: 185.66.193.1
   v4_local: 100.64.5.101/31
   v4_remote: 100.64.5.100/31
   v6_local: 2a03:2260:0:2a6::2/64
   v6_remote: 2a03:2260:0:2a6::1/64
-  bgp_local_pref: 201
 
 dhcp_type: "kea"

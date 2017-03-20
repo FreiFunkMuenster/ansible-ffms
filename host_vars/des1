@@ -22,12 +22,14 @@ ffrl_tun:
   v4_remote: 100.64.5.102/31
   v6_local: 2a03:2260:0:2a7::2/64
   v6_remote: 2a03:2260:0:2a7::1/64
+  bgp_local_pref: 202
 - name: ber2
   gre_target: 185.66.195.1
   v4_local: 100.64.1.137/31
   v4_remote: 100.64.1.136/31
   v6_local: 2a03:2260:0:cc::2/64
   v6_remote: 2a03:2260:0:cc::1/64
+  bgp_local_pref: 201
 - name: fra1
   gre_target: 185.66.194.0
   v4_local: 100.64.5.105/31
@@ -46,14 +48,12 @@ ffrl_tun:
   v4_remote: 100.64.5.106/31
   v6_local: 2a03:2260:0:2a9::2/64
   v6_remote: 2a03:2260:0:2a9::1/64
-  bgp_local_pref: 202
 - name: dus2
   gre_target:  185.66.193.1
   v4_local: 100.64.5.109/31
   v4_remote: 100.64.5.108/31
   v6_local: 2a03:2260:0:2aa::2/64
   v6_remote: 2a03:2260:0:2aa::1/64
-  bgp_local_pref: 201
   
 ffms_tun_to:
 - host_name: remue-04
