@@ -16,8 +16,8 @@
     - { role: gateways_gretap, tags: "gateways_gretap"}
     - { role: gateways_l2tp, tags: "gateways_l2tp"}
     - { role: bird, tags: "bird"}
-    - { role: gateways_dhcp, tags: "gateways_dhcp"}
-    - { role: gateways_bind, tags: "gateways_bind", when: "'dhcp_type' not in hostvars[inventory_hostname] or dhcp_type == 'bind'"}
+    - { role: gateways_dhcp, tags: "gateways_dhcp", when: "'dhcp_type' not in hostvars[inventory_hostname] or dhcp_type == 'isc-dhcp'"}
+    - { role: gateways_bind, tags: "gateways_bind"}
     - { role: collectd, tags: "collectd"}
 #    - { role: kea_postgres, tags: "kea_postgres"}
     - { role: gateways_kea_build, tags: "gateways_kea_build", when: "'dhcp_type' in hostvars[inventory_hostname] and dhcp_type == 'kea'"}
