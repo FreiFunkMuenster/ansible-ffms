@@ -65,12 +65,12 @@ nginx_tiles_cache:
       location: "/tiles_cache/osm_mapnik/"
       dest_url: "http://openstreetmap_backend/"
       cache_location_name: openstreetmap
-      valid_time: 7d
+      valid_time: 14d
     - name: nrwatlas
       location: "/tiles_cache/nrwatlas/"
       dest_url: "https://www.wms.nrw.de/"
       cache_location_name: nrwatlas
-      valid_time: 14d
+      valid_time: 90d
 
 
 
