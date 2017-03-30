@@ -69,4 +69,10 @@ domaenenliste:
       dhcp_ende: 10.48.91.255
       server_id: 2
 
-dhcp_type: "kea"
+kea:
+  database:
+    type: "postgresql"
+    db_host: "127.0.0.1"
+    db_name: "kea_leases"
+    db_user: "kea"
+    db_pass: "{{kea_postgres_pw}}"
