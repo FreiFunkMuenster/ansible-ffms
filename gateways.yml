@@ -1,5 +1,7 @@
 ---
-- hosts: gateways 
+- hosts: gateways
+  vars_files:
+    - passwords.yml
   remote_user: root
   roles:
     - { role: hostname, tags: "hostname"}
@@ -19,8 +21,8 @@
     - { role: gateways_dhcp, tags: "gateways_dhcp", when: "'dhcp_type' not in hostvars[inventory_hostname] or dhcp_type == 'isc-dhcp'"}
     - { role: gateways_bind, tags: "gateways_bind"}
     - { role: collectd, tags: "collectd"}
-#    - { role: kea_postgres, tags: "kea_postgres"}
     - { role: gateways_kea_build, tags: "gateways_kea_build", when: "'dhcp_type' in hostvars[inventory_hostname] and dhcp_type == 'kea'"}
+    - { role: gateways_kea_postgres, tags: "gateways_kea_postgres", when: "'dhcp_type' in hostvars[inventory_hostname] and dhcp_type == 'kea' and kea.database.type == 'postgresql'"}
     - { role: gateways_kea_configure, tags: "gateways_kea_configure", when: "'dhcp_type' in hostvars[inventory_hostname] and dhcp_type == 'kea'"}
     - { role: py_respondd, tags: "py_respondd"}
 #    - { role: set_kernel_param_maxcpus, tags: "set_kernel_param_maxcpus"}

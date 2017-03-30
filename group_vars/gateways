@@ -9,3 +9,12 @@ collectd:
   graphite_target:
     host: 89.163.231.228
     port: 2003
+
+dhcp_type: "kea"
+
+kea:
+  database:
+    type: "memfile"
+    location: "/var/kea/dhcp4.leases"
+    lfc_interval: 1800
+    persistent: true

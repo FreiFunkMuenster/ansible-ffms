@@ -1,3 +1,5 @@
+
+
 server_id: 9
 vm_id: 9
 server_besitzer: "Simon Wüllhorst / Descilla"
@@ -122,4 +124,10 @@ ffrl_tun:
   v6_local: 2a03:2260:0:2a6::2/64
   v6_remote: 2a03:2260:0:2a6::1/64
 
-dhcp_type: "kea"
+kea:
+  database:
+    type: "postgresql"
+    db_host: "127.0.0.1"
+    db_name: "kea_leases"
+    db_user: "kea"
+    db_pass: "{{kea_postgres_pw}}"
