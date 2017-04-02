@@ -647,6 +647,7 @@ batman:
   # Bandbreite, die Batman annoncieren soll 
   upstream: 1024Mbit 
 
+# NOTE: Outdated, for isc-dhcp-server only.
 # Einstellungen für DHCP Server 
 dhcp_global:
   # MTU, die an die Clients im Netzwerk propagiert wird

@@ -131,3 +131,7 @@ kea:
     db_name: "kea_leases"
     db_user: "kea"
     db_pass: "{{kea_postgres_pw}}"
+  global:
+    mtu: 1280
+    lease_default: 1800
+    domain_search: ffms
