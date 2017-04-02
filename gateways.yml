@@ -10,7 +10,7 @@
     - { role: net_netfilter, tags: "net_netfilter"}
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: ip_forwarding, tags: "ip_forwarding"}
-    - { role: iptables, tags: "iptables", when: ffrl_tun is defined }
+    - { role: iptables, tags: "iptables"}
     - { role: backbone_gre_ffrl, tags: "backbone_gre_ffrl"}
     - { role: backbone_gre_ffms, tags: "backbone_gre_ffms"}
     - { role: gateways_gre, tags: "gateways_gre"}
