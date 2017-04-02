@@ -14,10 +14,11 @@ dhcp_type: "kea"
 
 kea:
   database:
-    type: "memfile"
-    location: "/var/kea/dhcp4.leases"
-    lfc_interval: 600
-    persistent: true
+    type: "postgresql"
+    db_host: "127.0.0.1"
+    db_name: "kea_leases"
+    db_user: "kea"
+    db_pass: "{{kea_postgres_pw}}"
   global:
     mtu: 1280
     lease_default: 1800
