@@ -23,6 +23,13 @@ kea:
     mtu: 1280
     lease_default: 1800
     domain_search: ffms
+  dns:
+    all_gateways: true
+    additional:
+      # FoeBud
+      - "85.214.20.141"
+      # dnscache.berlin.ccc.de
+      - "213.73.91.35"
   loggers:
     - name: "kea-dhcp4"
       level: "WARN"
