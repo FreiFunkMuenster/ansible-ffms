@@ -27,4 +27,16 @@ kea:
     - name: "kea-dhcp4"
       level: "WARN"
       file: "/var/log/kea-dhcp4.log"
-
+  expired_leases:
+    - name: "reclaim-timer-wait-time"
+      value: 4
+    - name: "flush-reclaimed-timer-wait-time"
+      value: 10
+    - name: "hold-reclaimed-time"
+      value: 7200
+    - name: "max-reclaim-leases"
+      value: 1500
+    - name: "max-reclaim-time"
+      value: 150
+    - name: "unwarned-reclaim-cycles"
+      value: 5
