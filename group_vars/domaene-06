@@ -37,14 +37,15 @@ batman:
   upstream: 1024Mbit 
 
 
-# Einstellungen für DHCP Server 
-dhcp:
+# Einstellungen für DHCP Server
+dhcp_global:
   # MTU, die an die Clients im Netzwerk propagiert wird
-  mtu: 1280 
-  # Default-Lease Time 
+  mtu: 1280
+  # Default-Lease Time
   lease_default: 3600
   # Maximale Lease Time
-  lease_max: 10800 
+  lease_max: 10800
+  domain_search: "{{freifunk.search_domain}}"
  
 # Einstellungen für fastd
 fastd:

@@ -1,4 +1,4 @@
-# Globale Variablen für alle Server 
+# Globale Variablen für alle Server
 domaenen:
   "01":
     name: Münster
@@ -637,26 +637,15 @@ domaenen:
     map_blinking_hours: 8
     firmware: domaene66/
 
-# Nummer der Routing Tabelle, die auf den Servern verwendet wird 
+# Nummer der Routing Tabelle, die auf den Servern verwendet wird
 routing_table: 42
 
-# Batman Einstellungen 
+# Batman Einstellungen
 batman:
   # Bandbreite, die Batman annoncieren soll
   downstream: 1024Mbit
-  # Bandbreite, die Batman annoncieren soll 
-  upstream: 1024Mbit 
-
-# NOTE: Outdated, for isc-dhcp-server only.
-# Einstellungen für DHCP Server 
-dhcp_global:
-  # MTU, die an die Clients im Netzwerk propagiert wird
-  mtu: 1280 
-  # Default-Lease Time 
-  lease_default: 3600
-  # Maximale Lease Time
-  lease_max: 10800 
-  domain_search: ffms
+  # Bandbreite, die Batman annoncieren soll
+  upstream: 1024Mbit
 
 # Parameter für das eigene Freifunk-Netzwerk
 ff_network:
@@ -665,13 +654,13 @@ ff_network:
   # IPv4 Adressraum
   v4_network: 10.43.0.0/16
   # IPv6 adressraum
-  v6_network: 2a03:2260:115::/48 
+  v6_network: 2a03:2260:115::/48
 
 hostname_suffix: ".servers.freifunk-muensterland.de"
 
 administratorenteam:
   - "parad0x"
-  - "void" 
+  - "void"
   - "kgbvax"
   - "fanlin"
   - "fungur"
@@ -691,18 +680,19 @@ collectd:
     host: 89.163.231.228
     port: 2003
 
-bind:                  
+bind:
   ffms_zone_type: slave
-  ffms_zone_masters:   
-    - 89.163.231.228   
+  ffms_zone_masters:
+    - 89.163.231.228
 
 logrotate:
   cycle: daily
   count: 3
 
-freifunk: 
+freifunk:
   name: "Freifunk Münsterland"
   kurzname: "ffms"
+  search_domain: "ffms"
   email: info@freifunk-muensterland.de
   domain: freifunk-muensterland.de
 
