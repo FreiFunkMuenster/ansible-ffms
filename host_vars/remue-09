@@ -68,3 +68,11 @@ domaenenliste:
       dhcp_start: 10.48.88.16
       dhcp_ende: 10.48.91.255
       server_id: 2
+
+tunneldigger:
+  instance_per_domain: true
+  interface: "eth0"
+  max_tunnels: 1024
+  port_base: 20100
+  pmtu_discovery: false
+  tunnel_timeout: 60
