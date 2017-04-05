@@ -49,3 +49,11 @@ kea:
       value: 150
     - name: "unwarned-reclaim-cycles"
       value: 5
+
+tunneldigger:
+  instance_per_domain: false
+  interface: "eth0"
+  max_tunnels: 1024
+  port_base: 20100
+  pmtu_discovery: false
+  tunnel_timeout: 60
