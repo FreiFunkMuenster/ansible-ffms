@@ -46,7 +46,7 @@ kea:
     - name: "max-reclaim-leases"
       value: 1500
     - name: "max-reclaim-time"
-      value: 150
+      value: 300
     - name: "unwarned-reclaim-cycles"
       value: 5
 
