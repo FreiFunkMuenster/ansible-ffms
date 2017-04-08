@@ -51,7 +51,7 @@ kea:
       value: 5
 
 tunneldigger:
-  instance_per_domain: false
+  instance_per_domain: true
   interface: "eth0"
   max_tunnels: 1024
   port_base: 20100
