@@ -8,6 +8,7 @@ remue-ansible		ansible_ssh_host=144.76.30.226 ansible_ssh_port=222
 # Service-VM für Zentrale Dienste
 [services]
 services		ansible_ssh_host=89.163.231.228
+graphite-node-01  ansible_ssh_host=148.251.45.18                         ansible_ssh_port=250
 
 # Server für Hoppglas Karten
 [mapserver]

@@ -1,0 +1,27 @@
+
+graphite:
+  nginx:
+    host_name: "{{inventory_hostname}}.{{freifunk.domain}}"
+  cluster_servers:
+    - server: "graphite.freifunk-muensterland.de"
+      port: 80
+  relay:
+    method: "consistent-hashing"
+  cache_instances:
+    - name: "a"
+    - name: "b"
+    - name: "c"
+    - name: "d"
+  storage_schemas:
+    - name: "node"
+      pattern: "^node\\..*"
+      retentions: "1m:2d,10m:90d,4h:4y"
+    - name: "nodes"
+      pattern: "^nodes\\..*"
+      retentions: "1m:2d,10m:90d,1h:4y"
+    - name: "carbon"
+      pattern: "^carbon\\..*"
+      retentions: "1m:90d"
+    - name: "default"
+      pattern: ".*"
+      retentions: "10s:1h,1m:2d,5m:7d,15m:90d,1d:4y"
