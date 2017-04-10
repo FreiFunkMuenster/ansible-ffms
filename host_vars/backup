@@ -1,0 +1,9 @@
+server_besitzer: "Marius Hellmann / corny456"
+
+borg_backup_target:
+  target_for:
+    - "ticket"
+  config:
+    backup_user: borgbkp
+    backup_group: borgbkp
+    path_to_repo_pool: '/home/borgbkp/ffms-backups'

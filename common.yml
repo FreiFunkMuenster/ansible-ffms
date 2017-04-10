@@ -1,7 +1,12 @@
 ---
- - hosts: common
+ - hosts: all
    remote_user: root
    roles:
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
-
+    - { role: dienste_lamp, tags: "dienste_lamp", when: "'install_lamp' in hostvars[inventory_hostname] and install_lamp == true"}
+    - { role: dienste_osticket, tags: "dienste_osticket", when: "'install_osticket' in hostvars[inventory_hostname] and install_osticket == true"}
+    - { role: borg_backup_sshkey, tags: "borg_backup_sshkey", when: "'borg_backups' in hostvars[inventory_hostname]"}
+    - { role: borg_backup_install, tags: "borg_backup_install", when: "'borg_backups' in hostvars[inventory_hostname] or 'borg_backup_target' in hostvars[inventory_hostname]"}
+    - { role: borg_backup_target, tags: "borg_backup_target", when: "'borg_backup_target' in hostvars[inventory_hostname]"}
+    - { role: borg_backup_config, tags: "borg_backup_config", when: "'borg_backups' in hostvars[inventory_hostname]"}
