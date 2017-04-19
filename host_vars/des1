@@ -145,12 +145,3 @@ administratorenteam:
   - "corny"
 
 dhcp_type: "kea"
-
-
-tunneldigger:
-  instance_per_domain: false
-  interface: "eth0"
-  max_tunnels: 1024
-  port_base: 20100
-  pmtu_discovery: false
-  tunnel_timeout: 60
