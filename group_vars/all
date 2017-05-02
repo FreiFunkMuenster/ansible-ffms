@@ -791,6 +791,7 @@ domains:
       - 'default._domainkey                               IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCq6uxLJ8WQj7WGgwJH5d7fIpmd1i6DfRV1QMIXy4LVIxwowMy+mAYGojnWoN6ZtMjhUYZLDIWPp2lK8qangynGdIYgE7iJ4HoeEYEoWbi4kgHhWtTlNRQg3+xT0MrKBBCZ707ifNWLpZ4pCwDVOmK5WyG5bG01+3wG4MXNN779swIDAQAB"'
       - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
       - '@                                                IN  TXT     "google-site-verification=ex-6A1f0RBIhAjoPEu_7WA7Rv1yVUmkMTdXT19SjBOw"'
+      - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
   "freifunk-muensterland.net":
     extern_dns:
       - c1024
@@ -803,3 +804,4 @@ domains:
       - 'default._domainkey                               IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKojQEPsoeauRUCMn+o80EIhaV/7XWZPc7eKFra7o3xQOTNBcNjjc2gNMD+hxLB6H9HDcU7c5HM66o/YU53VTrpOdXBvEkOJWIto/B6HuPxbIRsAMiRjbQUneMfZjgPzDcxOaRbB1OVRGSSPe92Oca3Q/bUSf2talLb8splvGnJwIDAQAB"'
       - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
       - '@                                                IN  TXT     "google-site-verification=SEIPNGVqGBu_d0AO-yCqj_MxLjO7aHOaIWzuq-fIyM4"'
+      - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
