@@ -6,6 +6,7 @@
 vm_id: 6
 server_id: 6
 server_besitzer: "Sebastian Danek / Parad0x"
+is_external_nameserver: true
 
 # IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
 # Nur für Backbone-Server notwendig  
