@@ -7,11 +7,21 @@ vm_id: 15
 server_id: 15
 server_besitzer: "Florian Beier / Handle"
 
+server_ipv4_nat: 185.197.132.5/32
+
 domaenenliste:
    "66":
       dhcp_start: 10.200.200.16
       dhcp_ende: 10.200.203.255
       server_id: 2
+
+ffrl_tun:
+- name: erf1
+  gre_target: 87.118.88.40
+  v4_remote: 100.100.4.4/31
+  v6_remote: 2a06:e881:2000:104:4::1/64
+  bgp_local_pref: 200
+
 
 dhcp_type: "kea"
 
