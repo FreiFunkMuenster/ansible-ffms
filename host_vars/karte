@@ -8,7 +8,7 @@ mapconfig:
      iframe: "https://{{freifunk.domain}}/grafana/dashboard-solo/db/test-alert-dashboard?theme=light&panelId=5"
   nodeInfos:
    - name: "Clientstatistik"
-     iframe: "https://{{freifunk.domain}}/grafana/dashboard-solo/db/advanced-node-stats?var-node={NODE_ID}&panelId=1&theme=light&from=now-24h&to=now""
+     iframe: "https://{{freifunk.domain}}/grafana/dashboard-solo/db/advanced-node-stats?var-node={NODE_ID}&panelId=1&theme=light&from=now-24h&to=now"
      caption: "Knoten {NODE_ID}"
    - name: "Traffic"
      iframe: "https://{{freifunk.domain}}/grafana/dashboard-solo/db/advanced-node-stats?var-node={NODE_ID}&theme=light&panelId=2&from=now-24h&to=now"
