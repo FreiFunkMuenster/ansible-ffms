@@ -627,8 +627,8 @@ domaenen:
     map_blinking_hours: 8
     firmware: domaene65/
   "66":
-    name: Dedibox
-    community: Dedibox
+    name: Dummy
+    community: Dummy
     ffv4_network: 10.200.200.0/21
     ffv6_network: 2a03:2260:115:6600::/64
     map_scale: 1.1
