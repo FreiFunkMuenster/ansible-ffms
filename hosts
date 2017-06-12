@@ -1,37 +1,37 @@
 # Allgemeine Infrastruktur-Server 
 [common]
-monitoring		ansible_ssh_host=178.62.2.100
-webserver		ansible_ssh_host=89.163.231.227
+monitoring		ansible_ssh_host=178.62.2.100		ansible_ssh_port=22
+webserver		ansible_ssh_host=89.163.231.227		ansible_ssh_port=22
 remue-ansible		ansible_ssh_host=144.76.30.226		ansible_ssh_port=222
 ticket			ansible_ssh_host=5.9.86.151		ansible_ssh_port=249
 backup			ansible_ssh_host=163.172.177.208	ansible_ssh_port=255
 
 # Service-VM für Zentrale Dienste
 [services]
-services		ansible_ssh_host=89.163.231.228
+services		ansible_ssh_host=89.163.231.228		ansible_ssh_port=22
 graphite-node-01	ansible_ssh_host=148.251.45.18		ansible_ssh_port=250
 
 # Server für Hoppglas Karten
 [mapserver]
-karte			ansible_ssh_host=148.251.208.172
+karte			ansible_ssh_host=148.251.208.172	ansible_ssh_port=22
 
 # Legacy fastd Domäne
 [domaene-06]
-remue-04		ansible_ssh_host=148.251.208.168
+remue-04		ansible_ssh_host=148.251.208.168	ansible_ssh_port=22
 
 # Multidomänen-L2TP Gateways mit oder ohne Direktanbindung FFRL
 [gateways]
-remue-08		ansible_ssh_host=148.251.208.175
-parad0x			ansible_ssh_host=5.9.67.189		# Direktanbindung FFRL
-c1024			ansible_ssh_host=176.9.88.123		# Direktanbindung FFRL
-fanlin			ansible_ssh_host=89.163.221.125		# Direktanbindung FFRL
-des1			ansible_ssh_host=5.9.86.154		# Direktanbindung FFRL
-des2			ansible_ssh_host=148.251.45.45		# Direktanbindung FFRL
-remue-09		ansible_ssh_host=148.251.208.170
-nightbounce		ansible_ssh_host=46.4.90.220		# Direktanbindung FFRL
-handle			ansible_ssh_host=51.15.146.100
-corny			ansible_ssh_host=144.76.81.157
+remue-08		ansible_ssh_host=148.251.208.175	ansible_ssh_port=22
+parad0x			ansible_ssh_host=5.9.67.189		ansible_ssh_port=22	# Direktanbindung FFRL
+c1024			ansible_ssh_host=176.9.88.123		ansible_ssh_port=22	# Direktanbindung FFRL
+fanlin			ansible_ssh_host=89.163.221.125		ansible_ssh_port=22	# Direktanbindung FFRL
+des1			ansible_ssh_host=5.9.86.154		ansible_ssh_port=22	# Direktanbindung FFRL
+des2			ansible_ssh_host=148.251.45.45		ansible_ssh_port=22	# Direktanbindung FFRL
+remue-09		ansible_ssh_host=148.251.208.170	ansible_ssh_port=22
+nightbounce		ansible_ssh_host=46.4.90.220		ansible_ssh_port=22	# Direktanbindung FFRL
+handle			ansible_ssh_host=51.15.146.100		ansible_ssh_port=22
+corny			ansible_ssh_host=144.76.81.157		ansible_ssh_port=22
 
 # Server zum bauen und bereitstellen der Firmware
 [firmwareserver]
-firmware		ansible_ssh_host=144.76.30.226 ansible_ssh_port=223
+firmware		ansible_ssh_host=144.76.30.226		ansible_ssh_port=223
