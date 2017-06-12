@@ -133,7 +133,7 @@ domaenen:
     dhcp:
       reservations:
         - ip: "10.43.128.14"
-          id: "52:54:00:1b:e9:27"
+          id: "52:54:00:14:bb:9f"
         - ip: "10.43.128.13"
           id: "52:54:00:87:eb:c0"
   "17":
@@ -701,7 +701,7 @@ freifunk:
        AAAA: 2a01:4f8:191:21e1::23
     "unifi":
        A: 10.43.128.14
-       AAAA: 2a03:2260:115:1600:5054:ff:fe1b:e927
+       AAAA: 2a03:2260:115:1600:5054:ff:fe14:bb9f
 
 bind_zonemaster:
   server: service.freifunk-muensterland.de
