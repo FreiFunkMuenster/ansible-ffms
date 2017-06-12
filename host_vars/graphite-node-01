@@ -1,4 +1,5 @@
-
+server_id: 20
+vm_id: 20
 graphite:
   nginx:
     host_name: "{{inventory_hostname}}.{{freifunk.domain}}"
