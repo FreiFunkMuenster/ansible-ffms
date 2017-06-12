@@ -9,7 +9,7 @@ backup			ansible_ssh_host=163.172.177.208	ansible_ssh_port=255
 # Service-VM für Zentrale Dienste
 [services]
 services		ansible_ssh_host=89.163.231.228		ansible_ssh_port=22
-graphite-node-01	ansible_ssh_host=148.251.45.18		ansible_ssh_port=250
+#graphite-node-01	ansible_ssh_host=148.251.45.18		ansible_ssh_port=250
 
 # Server für Hoppglas Karten
 [mapserver]
