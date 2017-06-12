@@ -88,6 +88,22 @@ domaenenliste:
       dhcp_ende: 10.43.255.254
       server_id: 3
 
+ffnw_nat_ip: 185.197.132.102/32
+
+ffnw_tun:
+- name: erf1 
+  gre_target: 87.118.88.40
+  v4_remote: 100.100.0.0/31
+  v6_remote: fe80::1/64
+- name: fra1
+  gre_target: 89.46.125.8
+  v4_remote: 100.100.32.0/31
+  v6_remote: fe80::1/64
+- name: ams1
+  gre_target: 185.116.236.32
+  v4_remote: 100.100.64.0/31
+  v6_remote: fe80::1/64
+
 dhcp_type: "kea"
 
 tunneldigger:
