@@ -13,10 +13,3 @@ collectd:
   graphite_target:
     host: 89.163.231.228
     port: 2003
-
-administratorenteam:
-  - "void" 
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "kgbvax"
