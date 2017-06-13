@@ -7,20 +7,47 @@ vm_id: 15
 server_id: 15
 server_besitzer: "Florian Beier / Handle"
 
-server_ipv4_nat: 185.197.132.5/32
+server_ipv4_nat: 185.66.195.20/32
 
-domaenenliste:
-   "66":
-      dhcp_start: 10.200.200.16
-      dhcp_ende: 10.200.203.255
-      server_id: 2
 
 ffrl_tun:
-- name: erf1
-  gre_target: 87.118.88.40
-  v4_remote: 100.100.4.4/31
-  v6_remote: 2a06:e881:2000:104:4::1/64
-  bgp_local_pref: 200
+- name: ber1
+  gre_target: 185.66.195.0
+  v4_local: 100.64.5.135/31
+  v4_remote: 100.64.5.134/31
+  v6_local: 2a03:2260:0:2c4::2/64
+  v6_remote: 2a03:2260:0:2c4::1/64
+- name: ber2
+  gre_target: 185.66.195.1
+  v4_local: 100.64.5.141/31
+  v4_remote: 100.64.5.140/31
+  v6_local: 2a03:2260:0:2c7::2/64
+  v6_remote: 2a03:2260:0:2c7::1/64
+- name: dus1
+  gre_target: 185.66.193.0
+  v4_local: 100.64.5.139/31
+  v4_remote: 100.64.5.138/31
+  v6_local: 2a03:2260:0:2c6::2/64
+  v6_remote: 2a03:2260:0:2c6::1/64
+- name: dus2
+  gre_target: 185.66.193.1
+  v4_local: 100.64.5.145/31
+  v4_remote: 100.64.5.144/31
+  v6_local: 2a03:2260:0:2c9::2/64
+  v6_remote: 2a03:2260:0:2c9::1/64
+- name: fra1
+  gre_target: 185.66.194.0
+  v4_local: 100.64.5.137/31
+  v4_remote: 100.64.5.136/31
+  v6_local: 2a03:2260:0:2c5::2/64
+  v6_remote: 2a03:2260:0:2c5::1/64
+- name: fra2
+  gre_target: 185.66.194.1
+  v4_local: 100.64.5.143/31
+  v4_remote: 100.64.5.142/31
+  v6_local: 2a03:2260:0:2c8::2/64
+  v6_remote: 2a03:2260:0:2c8::1/64
+
 
 
 dhcp_type: "kea"
