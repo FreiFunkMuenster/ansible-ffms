@@ -92,7 +92,7 @@ ffnw_nat_ip: 185.197.132.32/32
 
 ffnw_tun:
 - name: erf1 
-  gre_target: 87.118.88.40
+  gre_target: 87.118.74.56
   v4_remote: 100.100.0.0/31
   v6_remote: fe80::1/64
 - name: fra1
