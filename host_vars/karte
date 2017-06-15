@@ -20,7 +20,7 @@ mapconfig:
    map_blinking_hours: 8
    max_goto_zoom: 18
   communityMap:
-   map_scale: 1.1
+   map_scale: 0.9
    map_show_contact: false
    map_max_age: 14
    map_blinking_hours: 8
