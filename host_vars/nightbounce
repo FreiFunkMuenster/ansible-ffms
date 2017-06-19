@@ -10,93 +10,61 @@ server_besitzer: "Ingomar Otter / Kgbvax"
 server_ipv4_nat: 185.66.193.50/32
     
 domaenenliste:
-   "15":
-      dhcp_start: 10.43.124.0
-      dhcp_ende: 10.43.127.254
+   "07":
+      dhcp_start: 10.43.60.0
+      dhcp_ende: 10.43.63.254
       server_id: 3
-   "44":
-      dhcp_start: 10.48.96.16
-      dhcp_ende: 10.48.99.255
+   "11":
+      dhcp_start: 10.43.92.0
+      dhcp_ende: 10.43.95.254
+      server_id: 3
+   "17":
+      dhcp_start: 10.43.140.0
+      dhcp_ende: 10.43.143.254
+      server_id: 3
+   "21":
+      dhcp_start: 10.43.172.0
+      dhcp_ende: 10.43.175.254
+      server_id: 3
+   "28":
+      dhcp_start: 10.43.228.0
+      dhcp_ende: 10.43.231.254
+      server_id: 3
+   "32":
+      dhcp_start: 10.43.4.0
+      dhcp_ende: 10.43.7.254
+      server_id: 3
+   "34":
+      dhcp_start: 10.48.16.26
+      dhcp_ende: 10.48.19.255
+      server_id: 2
+   "39":
+      dhcp_start: 10.48.56.26
+      dhcp_ende: 10.48.59.255
+      server_id: 2
+   "41":
+      dhcp_start: 10.43.76.0
+      dhcp_ende: 10.43.79.254
       server_id: 3
    "45":
-      dhcp_start: 10.48.104.16
-      dhcp_ende: 10.48.107.255
-      server_id: 3
-   "46":
-      dhcp_start: 10.48.112.16
-      dhcp_ende: 10.48.115.255
-      server_id: 3
-   "47":
-      dhcp_start: 10.48.120.16
-      dhcp_ende: 10.48.123.255
+      dhcp_start: 10.43.108.0
+      dhcp_ende: 10.43.111.254
       server_id: 3
    "48":
-      dhcp_start: 10.48.128.16
-      dhcp_ende: 10.48.131.255
-      server_id: 3
-   "49":
-      dhcp_start: 10.48.136.16
-      dhcp_ende: 10.48.139.255
-      server_id: 3
-   "50":
-      dhcp_start: 10.48.144.16
-      dhcp_ende: 10.48.147.255
-      server_id: 3
-   "51":
-      dhcp_start: 10.48.152.16
-      dhcp_ende: 10.48.155.255
+      dhcp_start: 10.43.132.0
+      dhcp_ende: 10.43.135.254
       server_id: 3
    "52":
-      dhcp_start: 10.48.160.16
+      dhcp_start: 10.48.160.26
       dhcp_ende: 10.48.163.255
-      server_id: 3
-   "53":
-      dhcp_start: 10.48.168.16
-      dhcp_ende: 10.48.171.255
-      server_id: 3
-   "54":
-      dhcp_start: 10.48.180.0
-      dhcp_ende: 10.48.183.254
-      server_id: 3
+      server_id: 2
    "55":
-      dhcp_start: 10.48.188.0
-      dhcp_ende: 10.48.191.254
-      server_id: 3
-   "56":
-      dhcp_start: 10.48.196.0
-      dhcp_ende: 10.48.199.254
-      server_id: 3
-   "57":
-      dhcp_start: 10.48.204.0
-      dhcp_ende: 10.48.207.254
-      server_id: 3
-   "58":
-      dhcp_start: 10.48.212.0
-      dhcp_ende: 10.48.215.254
-      server_id: 3
-   "59":
-      dhcp_start: 10.48.220.0
-      dhcp_ende: 10.48.223.254
-      server_id: 3
-   "60":
-      dhcp_start: 10.48.228.0
-      dhcp_ende: 10.48.231.254
-      server_id: 3
-   "61":
-      dhcp_start: 10.48.236.0
-      dhcp_ende: 10.48.239.254
-      server_id: 3
-   "62":
-      dhcp_start: 10.48.244.0
-      dhcp_ende: 10.48.247.254
+      dhcp_start: 10.43.188.0
+      dhcp_ende: 10.43.191.254
       server_id: 3
    "63":
-      dhcp_start: 10.48.252.0
-      dhcp_ende: 10.48.255.254
-      server_id: 3
-   "65":
-      dhcp_start: 10.255.252.0
-      dhcp_ende: 10.255.255.254
+      dhcp_start: 10.43.252.0
+      dhcp_ende: 10.43.255.254
       server_id: 3
 
 ffrl_tun:

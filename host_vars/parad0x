@@ -26,78 +26,50 @@ ffrl_tun:
   v6_remote: 2a03:2260:0:6d::1/64
     
 domaenenliste:
-   "12":
-      dhcp_start: 10.43.96.26
-      dhcp_ende: 10.43.99.255
-      server_id: 2
-   "13":
-      dhcp_start: 10.43.104.26
-      dhcp_ende: 10.43.107.255
-      server_id: 2
-   "16":
-      dhcp_start: 10.43.128.26
-      dhcp_ende: 10.43.131.255
-      server_id: 2
-   "17":
-      dhcp_start: 10.43.136.26
-      dhcp_ende: 10.43.139.255
-      server_id: 2
    "18":
       dhcp_start: 10.43.144.26
       dhcp_ende: 10.43.147.255
-      server_id: 2
-   "19":
-      dhcp_start: 10.43.152.26
-      dhcp_ende: 10.43.155.255
-      server_id: 2
-   "20":
-      dhcp_start: 10.43.160.26
-      dhcp_ende: 10.43.163.255
-      server_id: 2
-   "21":
-      dhcp_start: 10.43.168.26
-      dhcp_ende: 10.43.171.255
-      server_id: 2
-   "22":
-      dhcp_start: 10.43.176.26
-      dhcp_ende: 10.43.179.255
-      server_id: 2
-   "23":
-      dhcp_start: 10.43.184.26
-      dhcp_ende: 10.43.187.255
-      server_id: 2
-   "24":
-      dhcp_start: 10.43.192.26
-      dhcp_ende: 10.43.195.255
-      server_id: 2
-   "25":
-      dhcp_start: 10.43.200.26
-      dhcp_ende: 10.43.203.255
       server_id: 2
    "26":
       dhcp_start: 10.43.208.26
       dhcp_ende: 10.43.211.255
       server_id: 2
-   "27":
-      dhcp_start: 10.43.216.26
-      dhcp_ende: 10.43.219.255
-      server_id: 2
-   "28":
-      dhcp_start: 10.43.224.26
-      dhcp_ende: 10.43.227.255
-      server_id: 2
-   "29":
-      dhcp_start: 10.43.232.26
-      dhcp_ende: 10.43.235.255
-      server_id: 2
    "30":
-      dhcp_start: 10.43.240.26
-      dhcp_ende: 10.43.243.255
+      dhcp_start: 10.43.244.0
+      dhcp_ende: 10.43.247.254
+      server_id: 3
+   "40":
+      dhcp_start: 10.43.68.0
+      dhcp_ende: 10.43.71.254
+      server_id: 3
+   "43":
+      dhcp_start: 10.43.92.0
+      dhcp_ende: 10.43.95.254
+      server_id: 3
+   "51":
+      dhcp_start: 10.43.156.0
+      dhcp_ende: 10.43.159.254
+      server_id: 3
+   "53":
+      dhcp_start: 10.48.168.26
+      dhcp_ende: 10.48.171.255
       server_id: 2
-   "31":
-      dhcp_start: 10.43.248.26
-      dhcp_ende: 10.43.251.255
+   "57":
+      dhcp_start: 10.48.200.26
+      dhcp_ende: 10.48.203.255
       server_id: 2
+   "58":
+      dhcp_start: 10.43.212.0
+      dhcp_ende: 10.43.215.254
+      server_id: 3
+   "62":
+      dhcp_start: 10.43.244.0
+      dhcp_ende: 10.43.247.254
+      server_id: 3
+   "65":
+      dhcp_start: 10.255.252.0
+      dhcp_ende: 10.255.255.254
+      server_id: 3
 
 administratorenteam:
   - "parad0x"

@@ -33,61 +33,61 @@ ffrl_tun:
 is_external_nameserver: true
 
 domaenenliste:
-   "14":
-      dhcp_start: 10.43.116.0
-      dhcp_ende: 10.43.119.254
+   "01":
+      dhcp_start: 10.43.8.26
+      dhcp_ende: 10.43.11.255
+      server_id: 2
+   "08":
+      dhcp_start: 10.43.68.0
+      dhcp_ende: 10.43.71.254
+      server_id: 3
+   "18":
+      dhcp_start: 10.43.148.0
+      dhcp_ende: 10.43.151.254
+      server_id: 3
+   "22":
+      dhcp_start: 10.43.176.26
+      dhcp_ende: 10.43.179.255
+      server_id: 2
+   "25":
+      dhcp_start: 10.43.200.26
+      dhcp_ende: 10.43.203.255
+      server_id: 2
+   "27":
+      dhcp_start: 10.43.220.0
+      dhcp_ende: 10.43.223.254
+      server_id: 3
+   "29":
+      dhcp_start: 10.43.236.0
+      dhcp_ende: 10.43.239.254
       server_id: 3
    "32":
-      dhcp_start: 10.48.4.0
-      dhcp_ende: 10.48.7.254
-      server_id: 3
-   "33":
-      dhcp_start: 10.48.12.0
-      dhcp_ende: 10.48.15.254
-      server_id: 3
-   "34":
-      dhcp_start: 10.48.20.0
-      dhcp_ende: 10.48.23.254
-      server_id: 3
-   "35":
-      dhcp_start: 10.48.28.0
-      dhcp_ende: 10.48.31.254
-      server_id: 3
-   "36":
-      dhcp_start: 10.48.36.0
-      dhcp_ende: 10.48.39.254
-      server_id: 3
+      dhcp_start: 10.48.0.26
+      dhcp_ende: 10.48.3.255
+      server_id: 2
    "37":
-      dhcp_start: 10.48.44.0
-      dhcp_ende: 10.48.47.254
-      server_id: 3
-   "38":
-      dhcp_start: 10.48.52.0
-      dhcp_ende: 10.48.55.254
+      dhcp_start: 10.43.44.0
+      dhcp_ende: 10.43.47.254
       server_id: 3
    "39":
-      dhcp_start: 10.48.60.0
-      dhcp_ende: 10.48.63.254
+      dhcp_start: 10.43.60.0
+      dhcp_ende: 10.43.63.254
       server_id: 3
-   "40":
-      dhcp_start: 10.48.68.0
-      dhcp_ende: 10.48.71.254
+   "56":
+      dhcp_start: 10.43.196.0
+      dhcp_ende: 10.43.199.254
       server_id: 3
-   "41":
-      dhcp_start: 10.48.76.0
-      dhcp_ende: 10.48.79.254
+   "57":
+      dhcp_start: 10.43.204.0
+      dhcp_ende: 10.43.207.254
       server_id: 3
-   "42":
-      dhcp_start: 10.48.84.0
-      dhcp_ende: 10.48.87.254
+   "59":
+      dhcp_start: 10.43.220.0
+      dhcp_ende: 10.43.223.254
       server_id: 3
-   "43":
-      dhcp_start: 10.48.92.0
-      dhcp_ende: 10.48.95.254
-      server_id: 3
-   "64":
-      dhcp_start: 10.206.4.0
-      dhcp_ende: 10.206.7.254
-      server_id: 3
+   "65":
+      dhcp_start: 10.255.248.26
+      dhcp_ende: 10.255.251.255
+      server_id: 2
 
 dhcp_type: "kea"

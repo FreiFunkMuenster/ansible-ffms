@@ -2,26 +2,50 @@ vm_id: 12
 server_besitzer: "Sven Culley / Sense"
     
 domaenenliste:
-   "09":
-      dhcp_start: 10.43.76.0
-      dhcp_ende: 10.43.79.254
-      server_id: 3
-   "10":
-      dhcp_start: 10.43.80.26
-      dhcp_ende: 10.43.83.255
+   "15":
+      dhcp_start: 10.43.120.26
+      dhcp_ende: 10.43.123.255
       server_id: 2
-   "07":
-      dhcp_start: 10.43.60.0
-      dhcp_ende: 10.43.63.254
+   "16":
+      dhcp_start: 10.43.128.26
+      dhcp_ende: 10.43.131.255
+      server_id: 2
+   "19":
+      dhcp_start: 10.43.152.26
+      dhcp_ende: 10.43.155.255
+      server_id: 2
+   "20":
+      dhcp_start: 10.43.164.0
+      dhcp_ende: 10.43.167.254
       server_id: 3
-   "08":
-      dhcp_start: 10.43.68.0
-      dhcp_ende: 10.43.71.254
+   "23":
+      dhcp_start: 10.43.184.26
+      dhcp_ende: 10.43.187.255
+      server_id: 2
+   "24":
+      dhcp_start: 10.43.192.26
+      dhcp_ende: 10.43.195.255
+      server_id: 2
+   "31":
+      dhcp_start: 10.43.252.0
+      dhcp_ende: 10.43.255.254
       server_id: 3
-   "11":
-      dhcp_start: 10.43.92.0
-      dhcp_ende: 10.43.95.254
-      server_id: 3
+   "44":
+      dhcp_start: 10.48.96.26
+      dhcp_ende: 10.48.99.255
+      server_id: 2
+   "51":
+      dhcp_start: 10.48.152.26
+      dhcp_ende: 10.48.155.255
+      server_id: 2
+   "58":
+      dhcp_start: 10.48.208.26
+      dhcp_ende: 10.48.211.255
+      server_id: 2
+   "61":
+      dhcp_start: 10.48.232.26
+      dhcp_ende: 10.48.235.255
+      server_id: 2
 
 administratorenteam:
   - "parad0x"
