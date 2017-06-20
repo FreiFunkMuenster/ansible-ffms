@@ -101,9 +101,9 @@ domaenenliste:
       dhcp_start: 10.48.144.26
       dhcp_ende: 10.48.147.255
       server_id: 2
-   "65":
-      dhcp_start: 10.255.252.0
-      dhcp_ende: 10.255.255.254
+   "64":
+      dhcp_start: 10.43.260.0
+      dhcp_ende: 10.43.263.254
       server_id: 3
    "57":
       dhcp_start: 10.43.204.0
@@ -113,9 +113,9 @@ domaenenliste:
       dhcp_start: 10.43.220.0
       dhcp_ende: 10.43.223.254
       server_id: 3
-   "65":
-      dhcp_start: 10.255.248.26
-      dhcp_ende: 10.255.251.255
+   "64":
+      dhcp_start: 10.48.256.26
+      dhcp_ende: 10.48.259.255
       server_id: 2
 
 dhcp_type: "kea"
