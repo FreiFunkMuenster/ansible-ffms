@@ -90,12 +90,12 @@ domaenenliste:
       dhcp_ende: 10.48.27.255
       server_id: 2
    "36":
-      dhcp_start: 10.43.36.0
-      dhcp_ende: 10.43.39.254
+      dhcp_start: 10.48.36.0
+      dhcp_ende: 10.48.39.254
       server_id: 3
    "47":
-      dhcp_start: 10.43.124.0
-      dhcp_ende: 10.43.127.254
+      dhcp_start: 10.48.124.0
+      dhcp_ende: 10.48.127.254
       server_id: 3
    "50":
       dhcp_start: 10.48.144.26

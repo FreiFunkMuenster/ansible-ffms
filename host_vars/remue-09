@@ -29,8 +29,8 @@ domaenenliste:
       dhcp_ende: 10.43.243.255
       server_id: 2
    "38":
-      dhcp_start: 10.43.52.0
-      dhcp_ende: 10.43.55.254
+      dhcp_start: 10.48.52.0
+      dhcp_ende: 10.48.55.254
       server_id: 3
    "40":
       dhcp_start: 10.48.64.26
