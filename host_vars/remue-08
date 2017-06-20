@@ -1,4 +1,5 @@
 vm_id: 12
+server_id: 12
 server_besitzer: "Sven Culley / Sense"
     
 domaenenliste:
@@ -49,7 +50,7 @@ domaenenliste:
 
 dhcp_type: "kea"
 
-meservers:
+nameservers:
 - "213.133.100.100"
 - "213.133.98.98"
 - "213.133.99.99"

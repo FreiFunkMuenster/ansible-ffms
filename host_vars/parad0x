@@ -71,16 +71,6 @@ domaenenliste:
       dhcp_ende: 10.255.255.254
       server_id: 3
 
-administratorenteam:
-  - "parad0x"
-  - "void" 
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "corny"
-
 dhcp_type: "kea"
 
 tunneldigger:
