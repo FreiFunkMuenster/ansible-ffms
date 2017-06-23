@@ -6,7 +6,7 @@
   roles:
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
-    - { role: backports-kernel, tags: "backports-kernel" when: "ansible_distribution == 'Debian' and ansible_distribution_major_version == '8'"}
+    - { role: backports-kernel, tags: "backports-kernel", when: "ansible_distribution == 'Debian' and ansible_distribution_major_version == '8'"}
     - { role: net_netfilter, tags: "net_netfilter"}
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: ip_forwarding, tags: "ip_forwarding"}
