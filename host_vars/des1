@@ -57,6 +57,7 @@ ffrl_tun:
   
 ffms_tun_to:
 - host_name: remue-04
+- host_name: tj01
 
 is_external_nameserver: true
 

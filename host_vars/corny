@@ -9,8 +9,8 @@ server_besitzer: "Marius Hellmann / corny456"
 
 # !!!!In bird wird die Netzadresse benötigt, in if_lo /32
     
-#ffms_tun_to:
-#- host_name: remue-04
+ffms_tun_to:
+- host_name: tj01
 
 #is_external_nameserver: true
 

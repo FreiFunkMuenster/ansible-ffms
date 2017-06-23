@@ -24,7 +24,10 @@ ffrl_tun:
   gre_target: 185.66.194.0
   v4_remote: 100.64.0.206/31
   v6_remote: 2a03:2260:0:6d::1/64
-    
+
+ffms_tun_to:
+- host_name: tj01
+
 domaenenliste:
    "18":
       dhcp_start: 10.43.144.26

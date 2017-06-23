@@ -33,7 +33,7 @@ ffrl_tun:
 ffms_tun_to:
 - host_name: remue-04
   cost: 9
-- host_name: remue-08
+- host_name: tj01
   cost: 9
 - host_name: remue-09
   cost: 9
