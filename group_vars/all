@@ -784,7 +784,7 @@ domains:
       - fanlin
       - parad0x
     master_server:
-    email:
+    email: info@freifunk-muenster.de
     dns_entries:
       - '@                                                IN  TXT     "v=spf1 mx -all"'
       - 'default._domainkey                               IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCq6uxLJ8WQj7WGgwJH5d7fIpmd1i6DfRV1QMIXy4LVIxwowMy+mAYGojnWoN6ZtMjhUYZLDIWPp2lK8qangynGdIYgE7iJ4HoeEYEoWbi4kgHhWtTlNRQg3+xT0MrKBBCZ707ifNWLpZ4pCwDVOmK5WyG5bG01+3wG4MXNN779swIDAQAB"'
@@ -810,7 +810,7 @@ domains:
       - des1
       - fanlin
       - parad0x
-    email: info@freifunk-muensterland.net
+    email: info@freifunk-muensterland.org
     dns_entries:
       - '@                                                IN  TXT     "v=spf1 mx -all"'
       - 'default._domainkey                               IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCq6uxLJ8WQj7WGgwJH5d7fIpmd1i6DfRV1QMIXy4LVIxwowMy+mAYGojnWoN6ZtMjhUYZLDIWPp2lK8qangynGdIYgE7iJ4HoeEYEoWbi4kgHhWtTlNRQg3+xT0MrKBBCZ707ifNWLpZ4pCwDVOmK5WyG5bG01+3wG4MXNN779swIDAQAB"'
@@ -823,7 +823,7 @@ domains:
       - des1
       - fanlin
       - parad0x
-    email: info@freifunk-muensterland.net
+    email: info@ffmsl.de
     dns_entries:
       - '@                                                IN  TXT     "v=spf1 mx -all"'
       - 'default._domainkey                               IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCVLreaCsqKEMXkzclNvwKeHAGZi1rI+AWkb16U0IjeuMPsF0rGou8p/ypMMtsuf3nFdaruvf/xB/8o6WH+UiRxKsNPRIZwYWB1EALuWPaiWWYUlo3j7hQT/9TBVWec96n8zW8FwS3KcBojZge8w7MNpJJ4fTbfBo2HnJMcsvj7IQIDAQAB"'
