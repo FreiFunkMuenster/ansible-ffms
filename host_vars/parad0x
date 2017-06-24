@@ -29,6 +29,10 @@ ffms_tun_to:
 - host_name: tj01
 
 domaenenliste:
+   "16":
+      dhcp_start: 10.43.132.0
+      dhcp_ende: 10.43.135.254
+      server_id: 3
    "18":
       dhcp_start: 10.43.144.26
       dhcp_ende: 10.43.147.255
