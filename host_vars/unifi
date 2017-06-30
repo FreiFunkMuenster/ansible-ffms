@@ -1,0 +1,18 @@
+server_besitzer: "Marius Hellmann / corny456"
+
+borg_backups:
+  - name: 'to-corny'
+    backup_server: 'pisces.hellmann.me'
+    backup_server_port: '22222'
+    backup_server_user: 'rsyncer'
+    directories:
+      - '/var/lib/unifi/backup/autobackup/'
+    borg_options: '-v --stats --list --filter=AME --compression lzma'
+  - name: 'to-bkpsrv'
+    backup_server: '163.172.177.208'
+    backup_server_port: '255'
+    backup_server_user: 'borgbkp'
+    directories:
+      - '/var/lib/unifi/backup/autobackup/'
+    borg_options: '-v --stats --list --filter=AME --compression lzma'
+
