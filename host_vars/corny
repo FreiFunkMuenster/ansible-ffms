@@ -11,6 +11,7 @@ server_besitzer: "Marius Hellmann / corny456"
     
 ffms_tun_to:
 - host_name: tj01
+- host_name: remue-01
 
 #is_external_nameserver: true
 
