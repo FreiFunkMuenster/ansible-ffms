@@ -3,7 +3,10 @@ vm_id: 12
 server_id: 12
 
 mapconfig:
-  globalInfos: 
+  hopglassServer:
+    purge:
+      max_age: 90
+  globalInfos:
    - name: "Status-Monitor"
      iframe: "https://{{freifunk.domain}}/grafana/dashboard-solo/db/test-alert-dashboard?theme=light&panelId=5"
   nodeInfos:
