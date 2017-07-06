@@ -229,7 +229,7 @@ domaenen:
   "26":
     name: Borken
     community: Borken
-    ffv4_network: 10.43.208.0/21
+    ffv4_network: 10.26.0.0/16
     ffv6_network: 2a03:2260:115:2600::/64
     map_scale: 1.1
     map_show_contact: false

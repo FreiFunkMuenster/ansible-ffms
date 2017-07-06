@@ -3,8 +3,8 @@ server_besitzer: "FFI"
 
 domaenenliste:
    "26":
-      dhcp_start: 10.43.212.0
-      dhcp_ende: 10.43.215.254
+      dhcp_start: 10.26.128.0
+      dhcp_ende: 10.26.191.255
       server_id: 3
 
 dhcp_type: "kea"
