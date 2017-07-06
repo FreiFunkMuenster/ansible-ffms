@@ -3,7 +3,7 @@
 monitoring		ansible_ssh_host=178.62.2.100		ansible_ssh_port=22
 webserver		ansible_ssh_host=89.163.231.227		ansible_ssh_port=22
 remue-ansible		ansible_ssh_host=144.76.30.226		ansible_ssh_port=222
-ticket			ansible_ssh_host=144.76.81.157		ansible_ssh_port=223
+ticket			ansible_ssh_host=144.76.81.199		ansible_ssh_port=223
 backup			ansible_ssh_host=163.172.177.208	ansible_ssh_port=255
 unifi			ansible_ssh_host=2a03:2260:115:1600:5054:ff:fe14:bb9f		ansible_ssh_port=22
 
