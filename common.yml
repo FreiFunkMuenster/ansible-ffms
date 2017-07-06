@@ -4,6 +4,7 @@
    roles:
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
+    - { role: motd, tags: "motd"}
     - { role: dienste_lamp, tags: "dienste_lamp", when: "'install_lamp' in hostvars[inventory_hostname] and install_lamp == true"}
     - { role: dienste_osticket, tags: "dienste_osticket", when: "'install_osticket' in hostvars[inventory_hostname] and install_osticket == true"}
     - { role: borg_backup_sshkey, tags: "borg_backup_sshkey", when: "'borg_backups' in hostvars[inventory_hostname]"}

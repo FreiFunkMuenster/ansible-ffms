@@ -5,6 +5,7 @@
   roles:
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
+    - { role: motd, tags: "motd"}
     - { role: backports-kernel, tags: "backports-kernel"}
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: services_interfaces, tags: "services_interfaces"}

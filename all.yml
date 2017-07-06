@@ -6,4 +6,4 @@
   roles:
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
-
+    - { role: motd, tags: "motd"}
