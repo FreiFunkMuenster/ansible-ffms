@@ -7,7 +7,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:100::/64
     map_scale: 0.9
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene01/
   "05":
@@ -17,7 +17,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:500::/64
     map_scale: 1.0
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene05/
   "06":
@@ -27,7 +27,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:600::/64
     map_scale: 1.0
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene06/
   "07":
@@ -37,7 +37,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:700::/64
     map_scale: 1.0
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene07/
   "08":
@@ -47,7 +47,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:800::/64
     map_scale: 1.0
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene08/
   "09":
@@ -57,7 +57,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:900::/64
     map_scale: 0.9
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene09/
   "10":
@@ -67,7 +67,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:1000::/64
     map_scale: 0.9
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene10/
   "11":
@@ -77,7 +77,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:1100::/64
     map_scale: 0.9
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene11/
   "12":
@@ -87,7 +87,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:1200::/64
     map_scale: 0.9
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene12/
   "13":
@@ -97,7 +97,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:1300::/64
     map_scale: 0.9
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene13/
   "14":
@@ -107,7 +107,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:1400::/64
     map_scale: 0.9
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene14/
   "15":
@@ -117,7 +117,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:1500::/64
     map_scale: 0.9
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene15/
   "16":
@@ -127,7 +127,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:1600::/64
     map_scale: 0.9
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene16/
     dhcp:
@@ -143,7 +143,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:1700::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene17/
   "18":
@@ -153,7 +153,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:1800::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene18/
   "19":
@@ -163,7 +163,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:1900::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene19/
   "20":
@@ -173,7 +173,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:2000::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene20/
   "21":
@@ -183,7 +183,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:2100::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene21/
   "22":
@@ -193,7 +193,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:2200::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene22/
   "23":
@@ -203,7 +203,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:2300::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene23/
   "24":
@@ -213,7 +213,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:2400::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene24/
   "25":
@@ -223,7 +223,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:2500::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene25/
   "26":
@@ -233,7 +233,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:2600::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene26/
   "27":
@@ -243,7 +243,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:2700::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene27/
   "28":
@@ -253,7 +253,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:2800::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene28/
   "29":
@@ -263,7 +263,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:2900::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene29/
   "30":
@@ -273,7 +273,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:3000::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene30/
   "31":
@@ -283,7 +283,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:3100::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene31/
   "32":
@@ -293,7 +293,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:3200::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene32/
   "33":
@@ -303,7 +303,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:3300::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene33/
   "34":
@@ -313,7 +313,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:3400::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene34/
   "35":
@@ -323,7 +323,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:3500::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene35/
   "36":
@@ -333,7 +333,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:3600::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene36/
   "37":
@@ -343,7 +343,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:3700::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene37/
   "38":
@@ -353,7 +353,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:3800::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene38/
   "39":
@@ -363,7 +363,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:3900::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene39/
   "40":
@@ -373,7 +373,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:4000::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene40/
   "41":
@@ -383,7 +383,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:4100::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene41/
   "42":
@@ -393,7 +393,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:4200::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene42/
   "43":
@@ -403,7 +403,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:4300::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene43/
   "44":
@@ -413,7 +413,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:4400::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene44/
   "45":
@@ -423,7 +423,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:4500::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene45/
   "46":
@@ -433,7 +433,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:4600::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene46/
   "47":
@@ -443,7 +443,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:4700::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene47/
   "48":
@@ -453,7 +453,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:4800::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene48/
   "49":
@@ -463,7 +463,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:4900::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene49/
   "50":
@@ -473,7 +473,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:5000::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene50/
   "51":
@@ -483,7 +483,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:5100::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene51/
   "52":
@@ -493,7 +493,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:5200::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene52/
   "53":
@@ -503,7 +503,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:5300::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene53/
   "54":
@@ -513,7 +513,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:5400::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene54/
   "55":
@@ -523,7 +523,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:5500::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene55/
   "56":
@@ -533,7 +533,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:5600::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene56/
   "57":
@@ -543,7 +543,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:5700::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene57/
   "58":
@@ -553,7 +553,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:5800::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene58/
   "59":
@@ -563,7 +563,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:5900::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene59/
   "60":
@@ -573,7 +573,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:6000::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene60/
   "61":
@@ -583,7 +583,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:6100::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene61/
   "62":
@@ -593,7 +593,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:6200::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene62/
   "63":
@@ -603,7 +603,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:6300::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene63/
   "64":
@@ -613,7 +613,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:6400::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene64/
   "65":
@@ -623,7 +623,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:6500::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene65/
   "66":
@@ -633,7 +633,7 @@ domaenen:
     ffv6_network: 2a03:2260:115:6600::/64
     map_scale: 1.1
     map_show_contact: false
-    map_max_age: 14
+    map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene66/
 
