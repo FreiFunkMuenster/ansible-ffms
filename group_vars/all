@@ -744,9 +744,8 @@ dns_entries_for_all_tlds:
  - 'smtp                                             IN  CNAME   mail.freifunk-muensterland.de.'
  - 'imap                                             IN  CNAME   mail.freifunk-muensterland.de.'
  - 'pop                                              IN  CNAME   mail.freifunk-muensterland.de.'
- - 'ticket                                           IN  A       144.76.81.199'
- - 'ticket                                           IN  AAAA    2a01:4f8:192:3c6::3'
-
+ - 'ticket                                           IN  A       5.9.86.151'
+ - 'ticket                                           IN  AAAA    2a01:4f8:162:10d2::3'
 
 domains:
   "freifunk-muensterland.de":
