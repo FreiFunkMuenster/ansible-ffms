@@ -37,8 +37,6 @@ ffms_tun_to:
   cost: 9
 - host_name: remue-09
   cost: 9
-- host_name: remue-01
-  cost: 9
 
 # Bereich des DHCP Servers  (Start / Ende)    
 dhcp:

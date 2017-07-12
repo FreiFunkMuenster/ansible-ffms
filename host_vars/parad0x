@@ -27,7 +27,6 @@ ffrl_tun:
 
 ffms_tun_to:
 - host_name: tj01
-- host_name: des3
 
 domaenenliste:
    "16":
