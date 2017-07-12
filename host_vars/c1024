@@ -60,6 +60,10 @@ domaenenliste:
       dhcp_start: 10.43.168.26
       dhcp_ende: 10.43.171.255
       server_id: 2
+   "26":
+      dhcp_start: 10.26.128.0
+      dhcp_ende: 10.26.191.255
+      server_id: 3
    "31":
       dhcp_start: 10.43.248.26
       dhcp_ende: 10.43.251.255
