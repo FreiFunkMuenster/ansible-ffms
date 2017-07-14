@@ -9,7 +9,7 @@ borg_backups:
       - '/var/lib/unifi/backup/autobackup/'
     borg_options: '-v --stats --list --filter=AME --compression lzma'
   - name: 'to-bkpsrv'
-    backup_server: '163.172.177.208'
+    backup_server: '144.76.81.199'
     backup_server_port: '255'
     backup_server_user: 'borgbkp'
     directories:
