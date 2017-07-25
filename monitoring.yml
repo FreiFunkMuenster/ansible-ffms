@@ -1,0 +1,12 @@
+---
+ - hosts: monitoring
+   remote_user: root
+   roles:
+    - { role: hostname, tags: "hostname"}
+    - { role: common, tags: "common"}
+    - { role: motd, tags: "motd"}
+    - { role: icinga, tags: "installation"}
+    - { role: icinga, tags: "configuration"}
+    - { role: nrpe, tags: "installation"}
+    - { role: nrpe, tags: "configuration"}
+

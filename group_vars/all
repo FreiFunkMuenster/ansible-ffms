@@ -667,6 +667,7 @@ administratorenteam:
   - "descilla"
   - "mpw"
   - "corny"
+  - "marcus"
 
 collectd:
   collect_dhcp: false
