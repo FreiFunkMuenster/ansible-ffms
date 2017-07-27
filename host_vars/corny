@@ -56,7 +56,7 @@ domaenenliste:
       dhcp_ende: 10.48.219.255
       server_id: 2
 
-ffnw_nat_ip: 185.197.132.32/32
+ffnw_nat_ip: 185.197.132.33/32
 
 ffnw_tun:
 - name: erf1 
