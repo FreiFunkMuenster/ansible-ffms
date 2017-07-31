@@ -8,21 +8,16 @@
     - { role: common, tags: "common"}
     - { role: motd, tags: "motd"}
 #    - { role: unattended_upgrades, tags: "unattended_upgrades"}
-    - { role: icinga, tags: "installation"}
-    - { role: icinga, tags: "configuration"}
-    - { role: nrpe, tags: "installation"}
-    - { role: nrpe, tags: "configuration"}
+    - { role: icinga, tags: "icinga"}
+    - { role: nrpe, tags: "nrpe"}
 
  - hosts: gateways
    remote_user: root
    roles:
-    - { role: nrpe, tags: "installation"}
-    - { role: nrpe, tags: "configuration"}
-
+    - { role: nrpe, tags: "nrpe"}
 
  - hosts: monitoring-satellites
    remote_user: root
    roles:
-    - { role: nrpe, tags: "installation"}
-    - { role: nrpe, tags: "configuration"}
+    - { role: nrpe, tags: "nrpe"}
 

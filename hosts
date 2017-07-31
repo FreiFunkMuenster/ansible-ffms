@@ -41,7 +41,7 @@ firmware		ansible_ssh_host=144.76.30.226		ansible_ssh_port=223
 icinga                  ansible_ssh_host=148.251.208.173        ansible_ssh_port=22
 
 [monitoring-satellites]
-icinga-sat01            ansible_ssh_host=148.251.208.173        ansible_ssh_port=22
+icinga-sat01		ansible_ssh_host=148.251.208.173        ansible_ssh_port=22
 
 [vip-nodes]
 unifi                   ansible_ssh_host=2a03:2260:115:1600:5054:ff:fe14:bb9f           ansible_ssh_port=22
