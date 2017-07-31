@@ -719,7 +719,7 @@ dns_entries_for_all_tlds:
  - 'service                                          IN  A       89.163.231.228'
  - '; service                                        IN  AAAA    2001:4ba0:ffff:7c::4'
  - 'karte                                            IN  A       148.251.208.172'
- - 'karte                                            IN  AAAA    2a01:4f8:191:21e1::172'
+ - 'karte                                            IN  AAAA    2a01:4f8:191:21e1::b5'
  - 'graphite                                         IN  A       89.163.231.228'
  - '; graphite                                       IN  AAAA    2001:4ba0:ffff:7c::4'
  - 'graphite-node-01                                 IN  A       148.251.45.18'
@@ -746,6 +746,9 @@ dns_entries_for_all_tlds:
  - 'pop                                              IN  CNAME   mail.freifunk-muensterland.de.'
  - 'ticket                                           IN  A       5.9.86.151'
  - 'ticket                                           IN  AAAA    2a01:4f8:162:10d2::3'
+ - 'icinga                                           IN  A       148.251.208.173'
+ - 'icinga                                           IN  AAAA    2a01:4f8:191:21e1::b3'
+
 
 domains:
   "freifunk-muensterland.de":
@@ -776,8 +779,6 @@ domains:
        - 'forum                                            IN  TXT     "v=spf1 mx a a:mail.freifunk-muensterland.de ~all"'
        - 'default._domainkey.forum                         IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCuVStLDivCoMgBKPcb/w37iiza7EvG+cShx4uDKeIjBZYCN0DWb7uGo1DoapN+zWn4/p5+SLkuDSu0Q24D2TStHXE6CcQKPryHxHSJvRRJYwK3SDJL3PH1yEpBj5nOLoABHobwSm042/8VYT+bsCXWJm4dVDOmYix/3NymS7QClQIDAQAB"'
        - '_dmarc.forum                                     IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@forum.freifunk-muensterland.de"'
-       - 'icinga		IN A 148.251.208.173'
-       - 'icinga		IN AAAA 2a01:4f8:191:21e1::b3'
   "freifunk-muenster.de":
     extern_dns:
       - c1024
@@ -792,8 +793,6 @@ domains:
       - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
       - '@                                                IN  TXT     "google-site-verification=ex-6A1f0RBIhAjoPEu_7WA7Rv1yVUmkMTdXT19SjBOw"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
-      - 'icinga		IN A 148.251.208.173'
-      - 'icinga		IN AAAA 2a01:4f8:191:21e1::b3'
   "freifunk-muensterland.net":
     extern_dns:
       - c1024
@@ -807,8 +806,6 @@ domains:
       - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
       - '@                                                IN  TXT     "google-site-verification=SEIPNGVqGBu_d0AO-yCqj_MxLjO7aHOaIWzuq-fIyM4"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
-      - 'icinga		IN A 148.251.208.173'
-      - 'icinga		IN AAAA 2a01:4f8:191:21e1::b3'
   "freifunk-muensterland.org":
     extern_dns:
       - c1024
@@ -822,8 +819,6 @@ domains:
       - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
       - '@                                                IN  TXT     "google-site-verification=bbu3aMuoNu4n3J8GzZkcn4bT44SbVUoZOEQB7JEZKao"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
-      - 'icinga		IN A 148.251.208.173'
-      - 'icinga		IN AAAA 2a01:4f8:191:21e1::b3'
   "ffmsl.de":
     extern_dns:
       - c1024
@@ -837,5 +832,3 @@ domains:
       - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
       - '@                                                IN  TXT     "google-site-verification=BPJo0QNmezQuWNKUVTQY7z_GuGrGkW1Nl1CMmjQFM4I"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
-      - 'icinga		IN A 148.251.208.173'
-      - 'icinga		IN AAAA 2a01:4f8:191:21e1::b3'
