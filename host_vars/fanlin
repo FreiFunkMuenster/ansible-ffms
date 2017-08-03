@@ -35,13 +35,7 @@ is_external_nameserver: true
 
 domaenenliste:
    "01":
-      dhcp_start: 10.43.8.26
-      dhcp_ende: 10.43.11.255
-      server_id: 2
    "08":
-      dhcp_start: 10.43.68.0
-      dhcp_ende: 10.43.71.254
-      server_id: 3
    "18":
       dhcp_start: 10.43.148.0
       dhcp_ende: 10.43.151.254

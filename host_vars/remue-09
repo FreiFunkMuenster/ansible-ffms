@@ -10,17 +10,8 @@ hoster: "Hetzner"
 
 domaenenliste:
    "05":
-      dhcp_start: 10.43.44.0
-      dhcp_ende: 10.43.47.254
-      server_id: 3
    "12":
-      dhcp_start: 10.43.96.26
-      dhcp_ende: 10.43.99.255
-      server_id: 2
    "14":
-      dhcp_start: 10.43.112.26
-      dhcp_ende: 10.43.115.255
-      server_id: 2
    "28":
       dhcp_start: 10.43.224.26
       dhcp_ende: 10.43.227.255
