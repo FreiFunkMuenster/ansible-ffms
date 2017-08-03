@@ -6,6 +6,7 @@
 vm_id: 15
 server_id: 15
 server_besitzer: "Florian Beier / Handle"
+hoster: "online.net"
 
 server_ipv4_nat: 185.66.195.20/32
 

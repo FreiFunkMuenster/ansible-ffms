@@ -1,6 +1,7 @@
 server_id: 13 
 vm_id: 13
 server_besitzer: "Till Jannis Dören / Jannis"
+hoster: "Hetzner"
 
 domaenenliste:
    "15":

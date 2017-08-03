@@ -6,6 +6,7 @@
 server_id: 3
 vm_id: 3
 server_besitzer: "FFI"
+hoster: "Hetzner"
 # IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
 # Nur für Backbone-Server notwendig  
 # server_ipv4_nat: 185.66.193.52/32

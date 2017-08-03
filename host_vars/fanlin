@@ -3,6 +3,7 @@
 # Die Server-IP-Adresse wird durch von ansible bereitgestellte Variablen abgerufen (ansible_eth0.ipv4...)
 
 server_besitzer: "Arnim Faryn / FanLin"
+hoster: "myloc"
 
 # ID des Servers. 
 # Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.

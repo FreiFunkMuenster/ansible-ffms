@@ -6,6 +6,7 @@
 vm_id: 8
 server_id: 8
 server_besitzer: "Ingomar Otter / Kgbvax"
+hoster: "Hetzner"
 
 server_ipv4_nat: 185.66.193.50/32
     

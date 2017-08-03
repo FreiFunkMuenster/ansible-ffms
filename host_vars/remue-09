@@ -6,6 +6,7 @@
 vm_id: 5
 server_id: 5
 server_besitzer: "Sven Culley / Sense"
+hoster: "Hetzner"
 
 domaenenliste:
    "05":

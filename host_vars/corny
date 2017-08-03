@@ -3,11 +3,7 @@
 server_id: 7
 vm_id: 7
 server_besitzer: "Marius Hellmann / corny456"
-# IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
-# Nur für Backbone-Server notwendig  
-# server_ipv4_nat: 185.66.193.52/32
-
-# !!!!In bird wird die Netzadresse benötigt, in if_lo /32
+hoster: "Hetzner"
     
 ffms_tun_to:
 - host_name: tj01
