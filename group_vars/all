@@ -3,7 +3,7 @@ domaenen:
   "01":
     name: Münster
     community: Münster
-    ffv4_network: 10.43.8.0/21
+    ffv4_network: 10.1.0.0/16
     ffv6_network: 2a03:2260:115:100::/64
     map_scale: 0.9
     map_show_contact: false
@@ -13,7 +13,7 @@ domaenen:
   "05":
     name: Münster Süd
     community: Münster
-    ffv4_network: 10.43.40.0/21
+    ffv4_network: 10.2.0.0/16
     ffv6_network: 2a03:2260:115:500::/64
     map_scale: 1.0
     map_show_contact: false
@@ -33,7 +33,7 @@ domaenen:
   "07":
     name: Telgte
     community: Kreis Warendorf
-    ffv4_network: 10.43.56.0/21
+    ffv4_network: 10.7.0.0/16
     ffv6_network: 2a03:2260:115:700::/64
     map_scale: 1.0
     map_show_contact: false
@@ -43,7 +43,7 @@ domaenen:
   "08":
     name: Gescher
     community: Westmünsterland
-    ffv4_network: 10.43.64.0/21
+    ffv4_network: 10.8.0.0/16
     ffv6_network: 2a03:2260:115:800::/64
     map_scale: 1.0
     map_show_contact: false
@@ -53,27 +53,17 @@ domaenen:
   "09":
     name: Stadtlohn
     community: Westmünsterland
-    ffv4_network: 10.43.72.0/21
+    ffv4_network: 10.9.0.0/16
     ffv6_network: 2a03:2260:115:900::/64
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene09/
-  "10":
-    name: Testdomäne
-    community: Test
-    ffv4_network: 10.43.80.0/21
-    ffv6_network: 2a03:2260:115:1000::/64
-    map_scale: 0.9
-    map_show_contact: false
-    map_max_age: 60
-    map_blinking_hours: 8
-    firmware: domaene10/
   "11":
     name: Bocholt
     community: Westmünsterland
-    ffv4_network: 10.43.88.0/21
+    ffv4_network: 10.11.0.0/16
     ffv6_network: 2a03:2260:115:1100::/64
     map_scale: 0.9
     map_show_contact: false
@@ -83,7 +73,7 @@ domaenen:
   "12":
     name: Dülmen
     community: Kreis Coesfeld
-    ffv4_network: 10.43.96.0/21
+    ffv4_network: 10.12.0.0/16
     ffv6_network: 2a03:2260:115:1200::/64
     map_scale: 0.9
     map_show_contact: false
@@ -93,7 +83,7 @@ domaenen:
   "13":
     name: Rorup
     community: Kreis Coesfeld
-    ffv4_network: 10.43.104.0/21
+    ffv4_network: 10.13.0.0/16
     ffv6_network: 2a03:2260:115:1300::/64
     map_scale: 0.9
     map_show_contact: false
@@ -103,7 +93,7 @@ domaenen:
   "14":
     name: Dingden
     community: Dingden
-    ffv4_network: 10.43.112.0/21
+    ffv4_network: 10.14.0.0/16
     ffv6_network: 2a03:2260:115:1400::/64
     map_scale: 0.9
     map_show_contact: false
@@ -113,7 +103,7 @@ domaenen:
   "15":
     name: Heek
     community: Westmünsterland
-    ffv4_network: 10.43.120.0/21
+    ffv4_network: 10.15.0.0/16
     ffv6_network: 2a03:2260:115:1500::/64
     map_scale: 0.9
     map_show_contact: false
