@@ -14,7 +14,13 @@ domaenenliste:
       dhcp_ende: 10.5.191.255
       server_id: 3
    "12":
+      dhcp_start: 10.12.64.0
+      dhcp_ende: 10.12.127.255
+      server_id: 2
    "14":
+      dhcp_start: 10.14.64.0
+      dhcp_ende: 10.14.127.255
+      server_id: 2
    "28":
       dhcp_start: 10.43.224.26
       dhcp_ende: 10.43.227.255

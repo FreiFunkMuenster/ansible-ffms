@@ -12,7 +12,13 @@ server_ipv4_nat: 185.66.193.50/32
     
 domaenenliste:
    "07":
+      dhcp_start: 10.7.128.0
+      dhcp_ende: 10.7.191.255
+      server_id: 3
    "11":
+      dhcp_start: 10.11.64.0
+      dhcp_ende: 10.11.127.255
+      server_id: 2
    "17":
       dhcp_start: 10.43.140.0
       dhcp_ende: 10.43.143.254
