@@ -1,21 +1,11 @@
-# Variablen für Backbone-Server des1
-# Die Server-IP-Adresse wird durch von ansible bereitgestellte Variablen abgerufen (ansible_eth0.ipv4...)
-
-# ID des Servers. 
-# Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
 server_id: 3
 vm_id: 3
+
 server_besitzer: "FFI"
 hoster: "Hetzner"
-# IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
-# Nur für Backbone-Server notwendig  
-# server_ipv4_nat: 185.66.193.52/32
+
 server_ipv4_nat: 185.66.195.21/32
 
-# !!!!In bird wird die Netzadresse benötigt, in if_lo /32
-    
-#GRE-Einstellungen zum Freifunk Rheinland
-#Bei v6 ist die ...::1 remote und die ...::2 lokal
 ffrl_tun:
 - name: ber1
   gre_target: 185.66.195.0

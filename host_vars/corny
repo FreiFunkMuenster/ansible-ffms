@@ -1,12 +1,9 @@
-# ID des Servers. 
-# Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
 server_id: 7
 vm_id: 7
+
 server_besitzer: "Marius Hellmann / corny456"
 hoster: "Hetzner"
     
-#is_external_nameserver: true
-
 domaenenliste:
    "08":
       dhcp_start: 10.8.128.0
