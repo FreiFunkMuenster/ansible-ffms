@@ -7,10 +7,6 @@ hoster: "Hetzner"
 
 server_ipv4_nat: 185.66.195.23/32
 
-ffms_tun_to:
-- host_name: tj01
-- host_name: remue-09
-
 domaenenliste:
    "09":
       dhcp_start: 10.9.128.0

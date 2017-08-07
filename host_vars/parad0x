@@ -26,9 +26,6 @@ ffrl_tun:
   v4_remote: 100.64.0.206/31
   v6_remote: 2a03:2260:0:6d::1/64
 
-ffms_tun_to:
-- host_name: tj01
-
 domaenenliste:
    "16":
       dhcp_start: 10.43.132.0

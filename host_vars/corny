@@ -5,9 +5,6 @@ vm_id: 7
 server_besitzer: "Marius Hellmann / corny456"
 hoster: "Hetzner"
     
-ffms_tun_to:
-- host_name: tj01
-
 #is_external_nameserver: true
 
 domaenenliste:

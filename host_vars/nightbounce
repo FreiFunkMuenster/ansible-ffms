@@ -94,9 +94,6 @@ ffrl_tun:
 
 dhcp_type: "kea"
 
-ffms_tun_to:
-- host_name: tj01
-
 nameservers:
 - "213.133.100.100"
 - "213.133.98.98"
