@@ -13,7 +13,7 @@ domaenen:
   "05":
     name: Münster Süd
     community: Münster
-    ffv4_network: 10.2.0.0/16
+    ffv4_network: 10.5.0.0/16
     ffv6_network: 2a03:2260:115:500::/64
     map_scale: 1.0
     map_show_contact: false
