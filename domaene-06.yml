@@ -9,10 +9,11 @@
     - { role: common, tags: "common"}
     - { role: fastd, tags: "fastd"}
     - { role: interfaces_batman, tags: "interfaces_batman"}
-    - { role: interfaces_gretap, tags: "interfaces_gretap"}
+      #    - { role: interfaces_gretap, tags: "interfaces_gretap"}
+    - { role: backbone_gre_ffms, tags: "backbone_gre_ffms"}
     - { role: dhcp, tags: "dhcp"}
 #    - { role: bind_gateway, tags: "bind_gateway"}
-    - { role: bird_supernodes, tags: "bird_supernodes"}
+    - { role: bird, tags: "bird"}
     - { role: backports-kernel, tags: "backports-kernel"}
     - { role: net_netfilter, tags: "net_netfilter"}
     - { role: tunearpcache, tags: "tunearpcache"}

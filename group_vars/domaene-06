@@ -14,6 +14,7 @@ gre_ffms:
 ff_network:
   # IPv4 Adressraum
   v4_network: 10.43.48.0/21
+  as_number: 65251
 
   # IPv6 adressraum
   v6_network: 2a03:2260:115:600::/64 
