@@ -47,17 +47,6 @@ ffrl_tun:
 
 dhcp_type: "kea"
 
-administratorenteam:
-  - "parad0x"
-  - "void"
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "corny"
-  - "handle"
-
 domaenenliste:
    "13":
       dhcp_start: 10.13.128.0
@@ -125,3 +114,4 @@ administratorenteam:
   - "corny"
   - "peterb"
   - "wurmi"
+  - "handle"
