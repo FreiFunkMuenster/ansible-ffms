@@ -18,33 +18,34 @@ domaenenliste:
       dhcp_ende: 10.12.191.255
       server_id: 3
    "35":
-      dhcp_start: 10.48.28.0
-      dhcp_ende: 10.48.31.254
+      dhcp_start: 10.35.128.0
+      dhcp_ende: 10.35.191.255
       server_id: 3
    "42":
-      dhcp_start: 10.48.84.0
-      dhcp_ende: 10.48.87.254
+      dhcp_start: 10.42.128.0
+      dhcp_ende: 10.42.191.255
       server_id: 3
    "44":
-      dhcp_start: 10.48.100.0
-      dhcp_ende: 10.48.103.254
-      server_id: 3
+      dhcp_start: 10.44.64.0
+      dhcp_ende: 10.44.127.255
+      server_id: 2
    "46":
-      dhcp_start: 10.48.116.0
-      dhcp_ende: 10.48.119.254
-      server_id: 3
+      dhcp_start: 10.46.64.0
+      dhcp_ende: 10.46.127.255
+      server_id: 2
    "48":
-      dhcp_start: 10.48.128.26
-      dhcp_ende: 10.48.131.255
+      dhcp_start: 10.48.64.0
+      dhcp_ende: 10.48.127.255
       server_id: 2
    "54":
-      dhcp_start: 10.48.176.26
-      dhcp_ende: 10.48.179.255
+      dhcp_start: 10.54.64.0
+      dhcp_ende: 10.54.127.255
       server_id: 2
    "59":
-      dhcp_start: 10.48.216.26
-      dhcp_ende: 10.48.219.255
-      server_id: 2
+      dhcp_start: 10.59.128.0
+      dhcp_ende: 10.59.191.255
+      server_id: 3
+
 
 ffnw_nat_ip: 185.197.132.33/32
 

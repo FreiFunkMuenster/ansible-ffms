@@ -16,48 +16,48 @@ domaenenliste:
       dhcp_ende: 10.11.127.255
       server_id: 2
    "17":
-      dhcp_start: 10.43.140.0
-      dhcp_ende: 10.43.143.254
+      dhcp_start: 10.17.128.0
+      dhcp_ende: 10.17.191.255
       server_id: 3
    "21":
-      dhcp_start: 10.43.172.0
-      dhcp_ende: 10.43.175.254
+      dhcp_start: 10.21.128.0
+      dhcp_ende: 10.21.191.255
       server_id: 3
    "28":
-      dhcp_start: 10.43.228.0
-      dhcp_ende: 10.43.231.254
+      dhcp_start: 10.28.128.0
+      dhcp_ende: 10.28.191.255
       server_id: 3
    "32":
-      dhcp_start: 10.48.4.0
-      dhcp_ende: 10.48.7.254
+      dhcp_start: 10.32.128.0
+      dhcp_ende: 10.32.191.255
       server_id: 3
    "34":
-      dhcp_start: 10.48.16.26
-      dhcp_ende: 10.48.19.255
+      dhcp_start: 10.34.64.0
+      dhcp_ende: 10.34.127.255
       server_id: 2
    "39":
-      dhcp_start: 10.48.56.26
-      dhcp_ende: 10.48.59.255
-      server_id: 2
+      dhcp_start: 10.39.128.0
+      dhcp_ende: 10.39.191.255
+      server_id: 3
    "41":
-      dhcp_start: 10.48.76.0
-      dhcp_ende: 10.48.79.254
+      dhcp_start: 10.41.128.0
+      dhcp_ende: 10.41.191.255
       server_id: 3
    "45":
-      dhcp_start: 10.48.108.0
-      dhcp_ende: 10.48.111.254
+      dhcp_start: 10.45.128.0
+      dhcp_ende: 10.45.191.255
       server_id: 3
    "48":
-      dhcp_start: 10.48.132.0
-      dhcp_ende: 10.48.135.254
+      dhcp_start: 10.48.128.0
+      dhcp_ende: 10.48.191.255
       server_id: 3
    "52":
-      dhcp_start: 10.48.160.26
-      dhcp_ende: 10.48.163.255
+      dhcp_start: 10.52.64.0
+      dhcp_ende: 10.52.127.255
       server_id: 2
    "55":
-      dhcp_start: 10.48.188.0
-      dhcp_ende: 10.48.191.254
+      dhcp_start: 10.55.128.0
+      dhcp_ende: 10.55.191.255
       server_id: 3
 
 ffrl_tun:

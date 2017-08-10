@@ -9,40 +9,40 @@ domaenenliste:
       dhcp_ende: 10.15.127.255
       server_id: 2
    "19":
-      dhcp_start: 10.43.152.26
-      dhcp_ende: 10.43.155.255
-      server_id: 2
-   "20":
-      dhcp_start: 10.43.164.0
-      dhcp_ende: 10.43.167.254
+      dhcp_start: 10.19.128.0
+      dhcp_ende: 10.19.191.255
       server_id: 3
+   "20":
+      dhcp_start: 10.20.64.0
+      dhcp_ende: 10.20.127.255
+      server_id: 2
    "23":
-      dhcp_start: 10.43.184.26
-      dhcp_ende: 10.43.187.255
-      server_id: 2
+      dhcp_start: 10.23.128.0
+      dhcp_ende: 10.23.191.255
+      server_id: 3
    "24":
-      dhcp_start: 10.43.192.26
-      dhcp_ende: 10.43.195.255
-      server_id: 2
+      dhcp_start: 10.24.128.0
+      dhcp_ende: 10.24.191.255
+      server_id: 3
    "31":
-      dhcp_start: 10.43.252.0
-      dhcp_ende: 10.43.255.254
+      dhcp_start: 10.31.128.0
+      dhcp_ende: 10.31.191.255
       server_id: 3
    "44":
-      dhcp_start: 10.48.96.26
-      dhcp_ende: 10.48.99.255
-      server_id: 2
+      dhcp_start: 10.44.128.0
+      dhcp_ende: 10.44.191.255
+      server_id: 3
    "51":
-      dhcp_start: 10.48.152.26
-      dhcp_ende: 10.48.155.255
-      server_id: 2
+      dhcp_start: 10.51.128.0
+      dhcp_ende: 10.51.191.255
+      server_id: 3
    "58":
-      dhcp_start: 10.48.208.26
-      dhcp_ende: 10.48.211.255
-      server_id: 2
+      dhcp_start: 10.58.128.0
+      dhcp_ende: 10.58.191.255
+      server_id: 3
    "61":
-      dhcp_start: 10.48.232.26
-      dhcp_ende: 10.48.235.255
+      dhcp_start: 10.61.64.0
+      dhcp_ende: 10.61.127.255
       server_id: 2
 
 dhcp_type: "kea"
