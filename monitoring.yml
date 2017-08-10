@@ -1,10 +1,23 @@
 ---
-- hosts: monitoring
-  vars_files:
-    - passwords.yml
-  remote_user: root
-  roles:
+ - hosts: monitoring
+   vars_files:
+     - passwords.yml
+   remote_user: root
+   roles:
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
     - { role: motd, tags: "motd"}
-    - { role: unattended_upgrades, tags: "unattended_upgrades"}
+#    - { role: unattended_upgrades, tags: "unattended_upgrades"}
+    - { role: icinga, tags: "icinga"}
+    - { role: nrpe, tags: "nrpe"}
+
+ - hosts: gateways
+   remote_user: root
+   roles:
+    - { role: nrpe, tags: "nrpe"}
+
+ - hosts: monitoring-satellites
+   remote_user: root
+   roles:
+    - { role: nrpe, tags: "nrpe"}
+
