@@ -38,5 +38,12 @@ corny			ansible_ssh_host=144.76.81.157		ansible_ssh_port=22	# Direktanbindung FF
 [firmwareserver]
 firmware		ansible_ssh_host=144.76.30.226		ansible_ssh_port=223
 
+# Server der ein Monitoring mittels icinga zur verfügung stellt.
 [monitoring]
 icinga			ansible_ssh_host=148.251.208.173	ansible_ssh_port=22
+
+[monitoring-satellites]
+#satellite-01		ansible_ssh_host=234.234.234.234	ansible_ssh_port=22
+
+[vip-nodes]
+#vip-node-dummy-01	ansible_ssh_host=123.123.123.123	ansible_ssh_port=22
