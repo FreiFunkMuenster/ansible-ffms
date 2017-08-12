@@ -54,7 +54,7 @@ for (i in sn$name) {
 	for (j in begin.list:end.list) {
 		if (host.vars.raw[[i]][j,] %!~% "[a-z]") {
 			dhcp.set <- host.vars.raw[[i]][j:(j+3),]
-			dom <- rev(strsplit(as.character(strsplit(host.vars.raw[[i]][j,], ":")[[1]]), " ")[[1]])[1]
+			dom <- strsplit(rev(strsplit(as.character(strsplit(host.vars.raw[[i]][j,], ":")[[1]]), " ")[[1]])[1], "\"")[[1]][2]
 			srv <- as.character(rev(strsplit(dhcp.set[as.numeric(which(dhcp.set %~% "server_id"))], split=" ")[[1]])[1])
 			dhcp[[dom]][[srv]] <- dhcp.set
 		}
@@ -137,8 +137,7 @@ for (i in sn$name) {
 	domlist <- domlist[order(domlist)]
 	for (j in 1:length(domlist)) { 
 		serverlist <-  c(sn[sn$name == total[total$dom == domlist[j],]$gw1,]$vm.id, sn[sn$name == total[total$dom == domlist[j],]$gw2,]$vm.id)	
-		if (sn$vm.id[sn$name == i] == min(serverlist)) { dhcp.set <- dhcp[[j]]["2"][[1]] } else dhcp.set <- dhcp[[j]]["3"][[1]]
-
+		if (sn$vm.id[sn$name == i] == min(serverlist)) { dhcp.set <- dhcp[[domlist[j]]]["2"][[1]] } else dhcp.set <- dhcp[[domlist[j]]]["3"][[1]]
 		domlist.new <- c(domlist.new, dhcp.set)
 	}
 	
