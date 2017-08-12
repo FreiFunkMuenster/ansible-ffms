@@ -2,6 +2,7 @@
 
 library("jsonlite")
 library("operators")
+library("combinat")
 
 # Daten zu L2TP-Verbindungen und Tx/Rx der letzten sieben Tage
 download.file("https://graphite.freifunk-muensterland.de/render/?target=aliasByNode(aliasSub(sumSeriesWithWildcards(gateways.*.l2tp.if_count-br*,%201),%20%27if_count-br%27,%20%27domaene-%27),%202)&format=json&from=NOW-7d&to=NOW", "ffms-l2tp.json")
@@ -79,8 +80,8 @@ for (i in 1:length(jct)) {
 }
 
 total <- total[!is.na(total$l2tp),]
-total$l2tp <- jitter(total$l2tp/sum(total$l2tp)*sum(sn$perf)/2)
-total$tx.rx <- jitter(total$tx.rx/sum(total$tx.rx)*sum(sn$perf)/2)
+total$l2tp <- total$l2tp/sum(total$l2tp)*sum(sn$perf)/2
+total$tx.rx <- total$tx.rx/sum(total$tx.rx)*sum(sn$perf)/2
 
 total <- cbind(total, rank=(total$l2tp+total$tx.rx)/2)
 
@@ -91,37 +92,44 @@ levels(total$gw1) <- levels(sn$name)
 levels(total$gw2) <- levels(sn$name)
 
 # Verteilung der Domänen
+
+com <- data.frame(t(combn(sn$name, m=2)))
+com <- rbind(com, data.frame(X1=com[,2],X2=com[,1]))
+names(com) <- c("gw1","gw2")
+com <- cbind(com, data.frame(srv1=sn$srv, srv2=sn$srv, l2tp=0, tx.rx=0, count=0))
+
+for (i in row(com)[,1]) { 
+	com$srv1[i] <- sn$srv[which(sn$name == com$gw1[i])]
+	com$srv2[i] <- sn$srv[which(sn$name == com$gw2[i])]
+}
+com <- com[com$srv1 != com$srv2,]
+
+calc.perf <- function(srv,l2tp,tx.rx) { 
+	com[which(com$gw1 == srv),]$l2tp <<- com[which(com$gw1 == srv),]$l2tp + l2tp
+	com[which(com$gw2 == srv),]$l2tp <<- com[which(com$gw2 == srv),]$l2tp + l2tp
+	com[which(com$gw1 == srv),]$tx.rx <<- com[which(com$gw1 == srv),]$tx.rx + tx.rx
+	com[which(com$gw2 == srv),]$tx.rx <<- com[which(com$gw2 == srv),]$tx.rx + tx.rx
+}
+	
+for (i in sn$name) {
+	calc.perf(i, sn$l2tp[which(sn$name == i)], sn$tx.rx[which(sn$name == i)])
+}
+
+
 for (i in row(total)[,1]) {
-	if (max(sn$l2tp) > max(sn$tx.rx)) {
-		sn <- sn[order(sn$l2tp, decreasing=TRUE),]
-		total$gw1[i] <- sn$name[1]
-		sn$l2tp[1] <- sn$l2tp[1] - total$l2tp[i]
-		sn$tx.rx[1] <- sn$tx.rx[1] - total$tx.rx[i]
-		if (sn$srv[1] != sn$srv[3]) {
-		total$gw2[i] <- sn$name[3] 
-		sn$l2tp[3] <- sn$l2tp[3] - total$l2tp[i]
-		sn$tx.rx[3] <- sn$tx.rx[3] - total$tx.rx[i]
-		}
-		else { total$gw2[i] <- sn$name[2]
-		sn$l2tp[2] <- sn$l2tp[2] - total$l2tp[i]
-		sn$tx.rx[2] <- sn$tx.rx[2] - total$tx.rx[i]
-		}
-	}
-	else {
-		sn <- sn[order(sn$tx.rx, decreasing=TRUE),]
-		total$gw1[i] <- sn$name[1]
-		sn$l2tp[1] <- sn$l2tp[1] - total$l2tp[i]
-		sn$tx.rx[1] <- sn$tx.rx[1] - total$tx.rx[i]
-		if (sn$srv[1] != sn$srv[2]) {
-		total$gw2[i] <- sn$name[2] 
-		sn$l2tp[2] <- sn$l2tp[2] - total$l2tp[i]
-		sn$tx.rx[2] <- sn$tx.rx[2] - total$tx.rx[i]
-		}
-		else { total$gw2[i] <- sn$name[3]
-		sn$l2tp[3] <- sn$l2tp[3] - total$l2tp[i]
-		sn$tx.rx[3] <- sn$tx.rx[3] - total$tx.rx[i]
-		}
-	}
+	com <- com[order(com$l2tp, decreasing=TRUE),]
+	com <- com[order(com$count),]
+	total$gw1[i] <- com$gw1[1]
+	total$gw2[i] <- com$gw2[1]
+	com$count[1] <- com$count[1] + 1
+	l2tp <- total$l2tp[i]
+	tx.rx <- total$tx.rx[i]
+	calc.perf(com$gw1[1], -l2tp, -tx.rx)
+	calc.perf(com$gw2[1], -l2tp, -tx.rx)
+	sn[sn$name == com$gw1[1],]$l2tp <- sn[sn$name == com$gw1[1],]$l2tp - l2tp
+	sn[sn$name == com$gw2[1],]$l2tp <- sn[sn$name == com$gw2[1],]$l2tp - l2tp
+	sn[sn$name == com$gw1[1],]$tx.rx <- sn[sn$name == com$gw1[1],]$tx.rx - tx.rx
+	sn[sn$name == com$gw2[1],]$tx.rx <- sn[sn$name == com$gw2[1],]$tx.rx - tx.rx
 }
 
 #Ergebnis in separate Dateien schreiben
@@ -131,6 +139,7 @@ for (i in row(total)[,1]) {
 host.vars.new <- list()
 
 # Domänenlisten in die host_vars-Dateien schreiben
+#TODO Partner-Gw mit eintragen, z.B. 'partner:"des2"'
 for (i in sn$name) {
 	domlist.new <- as.character()
 	domlist <- as.character(total$dom[c(which(total$gw1 == i), which(total$gw2 == i))])
@@ -138,7 +147,7 @@ for (i in sn$name) {
 	for (j in 1:length(domlist)) { 
 		serverlist <-  c(sn[sn$name == total[total$dom == domlist[j],]$gw1,]$vm.id, sn[sn$name == total[total$dom == domlist[j],]$gw2,]$vm.id)	
 		if (sn$vm.id[sn$name == i] == min(serverlist)) { dhcp.set <- dhcp[[domlist[j]]]["2"][[1]] } else dhcp.set <- dhcp[[domlist[j]]]["3"][[1]]
-		domlist.new <- c(domlist.new, dhcp.set)
+		domlist.new <- c(domlist.new, dhcp.set, paste("      partner:\"",as.character(sn$name[which(sn$vm.id == serverlist[serverlist != sn$vm.id[sn$name == i]])]),"\"",sep=""))
 	}
 	
 	host.vars.new[[i]] <- c(host.vars.raw[[i]][1:which(host.vars.raw[[i]] == "domaenenliste:"),],
