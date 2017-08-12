@@ -13,8 +13,7 @@ jct <- match(l2tp$target, tx.rx$target)
 
 # Supernodes aus der hosts-Datei auslesen
 sn.raw <- read.table("./hosts", sep="\n", colClasses="character", comment.char="")
-sn <- data.frame(name="", srv="", perf=0)
-sn <- sn[-1,]
+sn <- data.frame(name="", srv="", perf=0, vm.id=0)[-1,]
 sn$name <- as.character(sn$name)
 sn$srv <- as.character(sn$srv)
 
@@ -38,6 +37,31 @@ for (i in row(sn.raw)) {
 	}
 }
 
+# vm_id aus den host_vars-Dateien auslesen
+host.vars.raw <- list()
+
+for (i in sn$name) {
+	host.vars.raw[[i]] <- read.table(paste("./host_vars/",i,sep=""), sep="\n", colClasses="character", comment.char="", blank.lines.skip=FALSE)
+	sn$vm.id[which(sn$name == i)] <- as.numeric(strsplit(host.vars.raw[[i]][which(host.vars.raw[[i]][[1]] %~% "vm_id"),], " ")[[1]][2])
+}
+
+# DHCP-Bereiche aus den host-vars-Dateien auslesen
+dhcp <- list()
+
+for (i in sn$name) {
+	begin.list <- which(host.vars.raw[[i]] == "domaenenliste:")+1
+	end.list <- which(host.vars.raw[[i]][-(1:begin.list),] == "")[1]+begin.list-1
+	for (j in begin.list:end.list) {
+		if (host.vars.raw[[i]][j,] %!~% "[a-z]") {
+			dhcp.set <- host.vars.raw[[i]][j:(j+3),]
+			dom <- rev(strsplit(as.character(strsplit(host.vars.raw[[i]][j,], ":")[[1]]), " ")[[1]])[1]
+			srv <- as.character(rev(strsplit(dhcp.set[as.numeric(which(dhcp.set %~% "server_id"))], split=" ")[[1]])[1])
+			dhcp[[dom]][[srv]] <- dhcp.set
+		}
+	}
+}
+
+# data frames für die Verarbeitung anpassen
 sn$name <- as.factor(sn$name)
 sn$srv <- as.factor(sn$srv)
 sn$perf = sn$perf/sum(sn$perf)
@@ -67,7 +91,7 @@ levels(total$gw1) <- levels(sn$name)
 levels(total$gw2) <- levels(sn$name)
 
 # Verteilung der Domänen
-for (i in 1:length(total$dom)) {
+for (i in row(total)[,1]) {
 	if (max(sn$l2tp) > max(sn$tx.rx)) {
 		sn <- sn[order(sn$l2tp, decreasing=TRUE),]
 		total$gw1[i] <- sn$name[1]
@@ -104,16 +128,24 @@ for (i in 1:length(total$dom)) {
 #write.csv2(sn, file="sn-perf.csv")
 #write.csv2(total, file="sn-alloc.csv")
 
+host.vars.new <- list()
+
 # Domänenlisten in die host_vars-Dateien schreiben
 for (i in sn$name) {
-	host.var.raw <- read.table(paste("./host_vars/",i,sep=""), sep="\n", colClasses="character", comment.char="", blank.lines.skip=FALSE)
+	domlist.new <- as.character()
 	domlist <- as.character(total$dom[c(which(total$gw1 == i), which(total$gw2 == i))])
 	domlist <- domlist[order(domlist)]
-	for (j in 1:length(domlist)) { domlist[j] <- paste("   \"",domlist[j],"\":", sep="") }
-	host.var.new <- c(host.var.raw[1:which(host.var.raw == "domaenenliste:"),],
-	domlist,	
-	host.var.raw[(min(which(host.var.raw[-(1:which(host.var.raw == "domaenenliste:")),] == "")) + which(host.var.raw == "domaenenliste:")):dim(host.var.raw)[1],])
+	for (j in 1:length(domlist)) { 
+		serverlist <-  c(sn[sn$name == total[total$dom == domlist[j],]$gw1,]$vm.id, sn[sn$name == total[total$dom == domlist[j],]$gw2,]$vm.id)	
+		if (sn$vm.id[sn$name == i] == min(serverlist)) { dhcp.set <- dhcp[[j]]["2"][[1]] } else dhcp.set <- dhcp[[j]]["3"][[1]]
+
+		domlist.new <- c(domlist.new, dhcp.set)
+	}
+	
+	host.vars.new[[i]] <- c(host.vars.raw[[i]][1:which(host.vars.raw[[i]] == "domaenenliste:"),],
+	domlist.new,	
+	host.vars.raw[[i]][(min(which(host.vars.raw[[i]][-(1:which(host.vars.raw[[i]] == "domaenenliste:")),] == "")) + which(host.vars.raw[[i]] == "domaenenliste:")):dim(host.vars.raw[[i]])[1],])
 	fileConn <- file(paste("./host_vars/",i,sep=""))
-	writeLines(host.var.new, fileConn)
+	writeLines(host.vars.new[[i]], fileConn)
 	close(fileConn)
 }
