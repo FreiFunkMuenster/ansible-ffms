@@ -1,3 +1,4 @@
 *.retry
 passwords.yml
 **/*.repokey
+*.json
