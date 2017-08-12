@@ -41,7 +41,7 @@ for (i in row(sn.raw)) {
 host.vars.raw <- list()
 
 for (i in sn$name) {
-	host.vars.raw[[i]] <- read.table(paste("./host_vars/",i,sep=""), sep="\n", colClasses="character", comment.char="", blank.lines.skip=FALSE)
+	host.vars.raw[[i]] <- read.table(paste("./host_vars/",i,sep=""), sep="\n", colClasses="character", comment.char="", quote="", blank.lines.skip=FALSE)
 	sn$vm.id[which(sn$name == i)] <- as.numeric(strsplit(host.vars.raw[[i]][which(host.vars.raw[[i]][[1]] %~% "vm_id"),], " ")[[1]][2])
 }
 
