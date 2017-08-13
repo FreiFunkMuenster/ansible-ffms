@@ -143,7 +143,7 @@ for (i in sn$name) {
 	domlist.new <- as.character()
 	domlist <- as.character(total$dom[c(which(total$gw1 == i), which(total$gw2 == i))])
 	domlist <- domlist[order(domlist)]
-	domlist.new <- ""
+	domlist.new <- ""[-1]
 	if (length(domlist) != 0) { 
 		for (j in 1:length(domlist)) { 
 			serverlist <-  c(sn[sn$name == total[total$dom == domlist[j],]$gw1,]$vm.id, sn[sn$name == total[total$dom == domlist[j],]$gw2,]$vm.id)	
