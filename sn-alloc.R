@@ -139,17 +139,19 @@ for (i in row(total)[,1]) {
 host.vars.new <- list()
 
 # Domänenlisten in die host_vars-Dateien schreiben
-#TODO Partner-Gw mit eintragen, z.B. 'partner:"des2"'
 for (i in sn$name) {
 	domlist.new <- as.character()
 	domlist <- as.character(total$dom[c(which(total$gw1 == i), which(total$gw2 == i))])
 	domlist <- domlist[order(domlist)]
-	for (j in 1:length(domlist)) { 
-		serverlist <-  c(sn[sn$name == total[total$dom == domlist[j],]$gw1,]$vm.id, sn[sn$name == total[total$dom == domlist[j],]$gw2,]$vm.id)	
-		if (sn$vm.id[sn$name == i] == min(serverlist)) { dhcp.set <- dhcp[[domlist[j]]]["2"][[1]] } else dhcp.set <- dhcp[[domlist[j]]]["3"][[1]]
-		domlist.new <- c(domlist.new, dhcp.set, paste("      partner:\"",as.character(sn$name[which(sn$vm.id == serverlist[serverlist != sn$vm.id[sn$name == i]])]),"\"",sep=""))
+	domlist.new <- ""
+	if (length(domlist) != 0) { 
+		for (j in 1:length(domlist)) { 
+			serverlist <-  c(sn[sn$name == total[total$dom == domlist[j],]$gw1,]$vm.id, sn[sn$name == total[total$dom == domlist[j],]$gw2,]$vm.id)	
+			if (sn$vm.id[sn$name == i] == min(serverlist)) { dhcp.set <- dhcp[[domlist[j]]]["2"][[1]] } else dhcp.set <- dhcp[[domlist[j]]]["3"][[1]]
+			domlist.new <- c(domlist.new, dhcp.set, 
+				paste("      partner:\"",as.character(sn$name[which(sn$vm.id == serverlist[serverlist != sn$vm.id[sn$name == i]])]),"\"",sep=""))
+		}
 	}
-	
 	host.vars.new[[i]] <- c(host.vars.raw[[i]][1:which(host.vars.raw[[i]] == "domaenenliste:"),],
 	domlist.new,	
 	host.vars.raw[[i]][(min(which(host.vars.raw[[i]][-(1:which(host.vars.raw[[i]] == "domaenenliste:")),] == "")) + which(host.vars.raw[[i]] == "domaenenliste:")):dim(host.vars.raw[[i]])[1],])
