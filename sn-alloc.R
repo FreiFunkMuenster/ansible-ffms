@@ -48,7 +48,7 @@ for (i in sn$name) {
 
 # Funktion zur Berechnung der DHCP-Bereiche
 calc.dhcp <- function(dom, length=63, offset=0, id) { 
-	range <- c(paste("      dhcp_start: ",paste("10",dom,offset,0,sep="."),sep=""), paste("      dhcp_end: ",paste("10",dom,offset+length,255,sep="."),sep=""))
+	range <- c(paste("      dhcp_start: ",paste("10",dom,offset,0,sep="."),sep=""), paste("      dhcp_ende: ",paste("10",dom,offset+length,255,sep="."),sep=""))
 	return(c(paste("   ",dom,":",sep="\""),range, paste("      server_id: ",id,sep="")))
 }
 
