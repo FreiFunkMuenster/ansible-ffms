@@ -10,7 +10,19 @@ download.file("https://graphite.freifunk-muensterland.de/render/?&target=aliasBy
 
 l2tp <- fromJSON("ffms-l2tp.tmp.json", flatten=TRUE)
 tx.rx <- fromJSON("ffms-tx-rx.tmp.json", flatten=TRUE)
-jct <- match(l2tp$target, tx.rx$target)
+
+for (i in 1:length(l2tp$target)) { l2tp$target[i] <- strsplit(l2tp$target[i], "-")[[1]][2] }
+for (i in 1:length(tx.rx$target)) { tx.rx$target[i] <- strsplit(tx.rx$target[i], "-")[[1]][2] }
+
+# Bestehende Allokationstabelle (zzgl. ggf. neuer Domains) auslesen, falls Datei vorhanden
+if (file.exists("domains.csv")) { 
+	domains.tab <- read.csv2("domains.csv", colClasses=c("character", "factor", "factor", "numeric", "numeric")) 
+} else {
+	domains.tab <- data.frame(dom=l2tp$target, l2tp=0, tx.rx=0)
+}
+
+jct.l2tp <- match(domains.tab$dom, l2tp$target)
+jct.tx.rx <- match(domains.tab$dom, tx.rx$target)
 
 # Supernodes aus der hosts-Datei auslesen
 sn.raw <- read.table("./hosts", sep="\n", colClasses="character", comment.char="")
@@ -63,14 +75,13 @@ sn$perf = sn$perf/sum(sn$perf)
 
 sn <- cbind(sn, l2tp=sn$perf, tx.rx=sn$perf)
 
-domains <- data.frame(dom=as.character(), l2tp=as.numeric(), tx.rx=as.numeric())
+domains <- data.frame(dom=domains.tab$dom, l2tp=domains.tab$l2tp, tx.rx=domains.tab$tx.rx)
 
-for (i in 1:length(jct)) {
-	domains <- rbind(domains, data.frame(
-		dom=strsplit(l2tp$target[i], "-")[[1]][2], 
-		l2tp=quantile(l2tp$datapoints[[i]][,1], 0.8, na.rm=TRUE)[[1]], 
-		tx.rx=mean(tx.rx$datapoints[jct[i]][[1]][,1], na.rm=TRUE))
-	)
+for (i in 1:length(domains$dom)) {
+	if (!is.na(jct.l2tp[i])) {
+		domains$l2tp[i] <- quantile(l2tp$datapoints[[jct.l2tp[i]]][,1], 0.8, na.rm=TRUE)[[1]]
+		domains$tx.rx[i] <- mean(tx.rx$datapoints[jct.tx.rx[i]][[1]][,1], na.rm=TRUE)
+	}
 }
 
 domains <- domains[!is.na(domains$l2tp),]
@@ -129,9 +140,12 @@ for (i in row(domains)[,1]) {
 	sn[sn$name == com$gw2[1],]$tx.rx <- sn[sn$name == com$gw2[1],]$tx.rx - num.tx.rx
 }
 
+domains$l2tp <- round(domains$l2tp*2*total.l2tp)
+domains$tx.rx <- round(domains$tx.rx*2*total.tx.rx)
+
 #Ergebnis in separate Dateien schreiben
 #write.csv2(sn, file="sn-perf.csv")
-#write.csv2(domains, file="sn-alloc.csv")
+write.csv2(domains[c("dom","gw1","gw2","l2tp","tx.rx")], file="domains.csv", row.names=FALSE)
 
 # Domänenlisten in die host_vars-Dateien schreiben
 
@@ -161,3 +175,7 @@ for (i in sn$name) {
 	writeLines(host.vars.new[[i]], fileConn)
 	close(fileConn)
 }
+
+print(domains)
+
+message("\nAllocation table written to the file 'domains.csv'.\nTo add or remove domains, modifiy the file 'domains.csv' and run the script again.\nWhen adding domains, the value in the column 'L2TP' can be either 0 or a best guess but must not be empty.\nIf the L2TP-value is empty (=NA), the domain will be ignored.\nTo re-initialize the file, remove it and run the script again.\n")
