@@ -7,58 +7,76 @@ hoster: "Hetzner"
 server_ipv4_nat: 185.66.193.50/32
     
 domaenenliste:
-   "07":
-      dhcp_start: 10.7.128.0
-      dhcp_ende: 10.7.191.255
-      server_id: 3
+   "04":
+      dhcp_start: 10.4.64.0
+      dhcp_end: 10.4.127.255
+      server_id: 2
+      partner: "handle"
    "11":
-      dhcp_start: 10.11.64.0
-      dhcp_ende: 10.11.127.255
+      dhcp_start: 10.11.128.0
+      dhcp_end: 10.11.191.255
+      server_id: 3
+      partner: "remue-09"
+   "20":
+      dhcp_start: 10.20.128.0
+      dhcp_end: 10.20.191.255
+      server_id: 3
+      partner: "corny"
+   "24":
+      dhcp_start: 10.24.128.0
+      dhcp_end: 10.24.191.255
+      server_id: 3
+      partner: "remue-09"
+   "30":
+      dhcp_start: 10.30.64.0
+      dhcp_end: 10.30.127.255
       server_id: 2
-   "17":
-      dhcp_start: 10.17.128.0
-      dhcp_ende: 10.17.191.255
+      partner: "tj01"
+   "33":
+      dhcp_start: 10.33.128.0
+      dhcp_end: 10.33.191.255
       server_id: 3
-   "21":
-      dhcp_start: 10.21.128.0
-      dhcp_ende: 10.21.191.255
-      server_id: 3
-   "28":
-      dhcp_start: 10.28.128.0
-      dhcp_ende: 10.28.191.255
-      server_id: 3
-   "32":
-      dhcp_start: 10.32.128.0
-      dhcp_ende: 10.32.191.255
-      server_id: 3
-   "34":
-      dhcp_start: 10.34.64.0
-      dhcp_ende: 10.34.127.255
+      partner: "fanlin"
+   "36":
+      dhcp_start: 10.36.64.0
+      dhcp_end: 10.36.127.255
       server_id: 2
+      partner: "des2"
+   "38":
+      dhcp_start: 10.38.64.0
+      dhcp_end: 10.38.127.255
+      server_id: 2
+      partner: "des2"
    "39":
-      dhcp_start: 10.39.128.0
-      dhcp_ende: 10.39.191.255
-      server_id: 3
-   "41":
-      dhcp_start: 10.41.128.0
-      dhcp_ende: 10.41.191.255
-      server_id: 3
+      dhcp_start: 10.39.64.0
+      dhcp_end: 10.39.127.255
+      server_id: 2
+      partner: "tj01"
    "45":
       dhcp_start: 10.45.128.0
-      dhcp_ende: 10.45.191.255
+      dhcp_end: 10.45.191.255
       server_id: 3
-   "48":
-      dhcp_start: 10.48.128.0
-      dhcp_ende: 10.48.191.255
+      partner: "des1"
+   "49":
+      dhcp_start: 10.49.128.0
+      dhcp_end: 10.49.191.255
       server_id: 3
-   "52":
-      dhcp_start: 10.52.64.0
-      dhcp_ende: 10.52.127.255
-      server_id: 2
-   "55":
-      dhcp_start: 10.55.128.0
-      dhcp_ende: 10.55.191.255
+      partner: "parad0x"
+   "51":
+      dhcp_start: 10.51.128.0
+      dhcp_end: 10.51.191.255
       server_id: 3
+      partner: "des1"
+   "58":
+      dhcp_start: 10.58.128.0
+      dhcp_end: 10.58.191.255
+      server_id: 3
+      partner: "corny"
+   "60":
+      dhcp_start: 10.60.128.0
+      dhcp_end: 10.60.191.255
+      server_id: 3
+      partner: "fanlin"
 
 ffrl_tun:
 - name: ber0

@@ -7,62 +7,76 @@ hoster: "Hetzner"
 server_ipv4_nat: 185.66.195.23/32
 
 domaenenliste:
-   "09":
-      dhcp_start: 10.9.128.0
-      dhcp_ende: 10.9.191.255
+   "02":
+      dhcp_start: 10.2.128.0
+      dhcp_end: 10.2.191.255
       server_id: 3
-   "11":
-      dhcp_start: 10.11.128.0
-      dhcp_ende: 10.11.191.255
+      partner: "corny"
+   "03":
+      dhcp_start: 10.3.128.0
+      dhcp_end: 10.3.191.255
       server_id: 3
-   "14":
-      dhcp_start: 10.14.128.0
-      dhcp_ende: 10.14.191.255
+      partner: "corny"
+   "13":
+      dhcp_start: 10.13.128.0
+      dhcp_end: 10.13.191.255
       server_id: 3
-   "19":
-      dhcp_start: 10.19.64.0
-      dhcp_ende: 10.19.127.255
-      server_id: 2
-   "23":
-      dhcp_start: 10.23.64.0
-      dhcp_ende: 10.23.127.255
-      server_id: 2
-   "24":
-      dhcp_start: 10.24.64.0
-      dhcp_ende: 10.24.127.255
-      server_id: 2
-   "27":
-      dhcp_start: 10.27.128.0
-      dhcp_ende: 10.27.191.255
+      partner: "corny"
+   "15":
+      dhcp_start: 10.15.128.0
+      dhcp_end: 10.15.191.255
       server_id: 3
+      partner: "parad0x"
+   "26":
+      dhcp_start: 10.26.128.0
+      dhcp_end: 10.26.191.255
+      server_id: 3
+      partner: "des1"
    "29":
       dhcp_start: 10.29.128.0
-      dhcp_ende: 10.29.191.255
+      dhcp_end: 10.29.191.255
       server_id: 3
-   "34":
-      dhcp_start: 10.34.128.0
-      dhcp_ende: 10.34.191.255
+      partner: "remue-09"
+   "36":
+      dhcp_start: 10.36.128.0
+      dhcp_end: 10.36.191.255
       server_id: 3
+      partner: "nightbounce"
    "38":
       dhcp_start: 10.38.128.0
-      dhcp_ende: 10.38.191.255
+      dhcp_end: 10.38.191.255
       server_id: 3
-   "49":
-      dhcp_start: 10.49.64.0
-      dhcp_ende: 10.49.127.255
+      partner: "nightbounce"
+   "43":
+      dhcp_start: 10.43.64.0
+      dhcp_end: 10.43.127.255
       server_id: 2
-   "52":
-      dhcp_start: 10.52.128.0
-      dhcp_ende: 10.52.191.255
+      partner: "handle"
+   "48":
+      dhcp_start: 10.48.128.0
+      dhcp_end: 10.48.191.255
       server_id: 3
-   "60":
-      dhcp_start: 10.60.128.0
-      dhcp_ende: 10.60.191.255
+      partner: "corny"
+   "50":
+      dhcp_start: 10.50.64.0
+      dhcp_end: 10.50.127.255
+      server_id: 2
+      partner: "tj01"
+   "54":
+      dhcp_start: 10.54.128.0
+      dhcp_end: 10.54.191.255
       server_id: 3
-   "63":
-      dhcp_start: 10.63.128.0
-      dhcp_ende: 10.63.191.255
+      partner: "des1"
+   "61":
+      dhcp_start: 10.61.128.0
+      dhcp_end: 10.61.191.255
       server_id: 3
+      partner: "remue-09"
+   "65":
+      dhcp_start: 10.65.128.0
+      dhcp_end: 10.65.191.255
+      server_id: 3
+      partner: "parad0x"
 
 
 ffrl_tun:

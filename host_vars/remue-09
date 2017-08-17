@@ -10,53 +10,55 @@ hoster: "Hetzner"
 
 domaenenliste:
    "05":
-      dhcp_start: 10.5.128.0
-      dhcp_ende: 10.5.191.255
-      server_id: 3
-   "12":
-      dhcp_start: 10.12.64.0
-      dhcp_ende: 10.12.127.255
+      dhcp_start: 10.05.64.0
+      dhcp_end: 10.05.127.255
       server_id: 2
-   "14":
-      dhcp_start: 10.14.64.0
-      dhcp_ende: 10.14.127.255
+      partner: "parad0x"
+   "11":
+      dhcp_start: 10.11.64.0
+      dhcp_end: 10.11.127.255
       server_id: 2
+      partner: "nightbounce"
+   "17":
+      dhcp_start: 10.17.64.0
+      dhcp_end: 10.17.127.255
+      server_id: 2
+      partner: "tj01"
+   "21":
+      dhcp_start: 10.21.64.0
+      dhcp_end: 10.21.127.255
+      server_id: 2
+      partner: "parad0x"
+   "24":
+      dhcp_start: 10.24.64.0
+      dhcp_end: 10.24.127.255
+      server_id: 2
+      partner: "nightbounce"
    "28":
-      dhcp_start: 10.28.64.0
-      dhcp_ende: 10.28.127.255
+      dhcp_start: 10.28.128.0
+      dhcp_end: 10.28.191.255
+      server_id: 3
+      partner: "des1"
+   "29":
+      dhcp_start: 10.29.64.0
+      dhcp_end: 10.29.127.255
       server_id: 2
-   "30":
-      dhcp_start: 10.30.64.0
-      dhcp_ende: 10.30.127.255
+      partner: "des2"
+   "59":
+      dhcp_start: 10.59.64.0
+      dhcp_end: 10.59.127.255
       server_id: 2
-   "38":
-      dhcp_start: 10.38.64.0
-      dhcp_ende: 10.38.127.255
+      partner: "tj01"
+   "61":
+      dhcp_start: 10.61.64.0
+      dhcp_end: 10.61.127.255
       server_id: 2
-   "40":
-      dhcp_start: 10.40.64.0
-      dhcp_ende: 10.40.127.255
-      server_id: 2
-   "42":
-      dhcp_start: 10.42.64.0
-      dhcp_ende: 10.42.127.255
-      server_id: 2
-   "43":
-      dhcp_start: 10.43.64.0
-      dhcp_ende: 10.43.127.255
-      server_id: 2
+      partner: "des2"
    "62":
-      dhcp_start: 10.62.64.0
-      dhcp_ende: 10.62.127.255
-      server_id: 2
-   "63":
-      dhcp_start: 10.63.64.0
-      dhcp_ende: 10.63.127.255
-      server_id: 2
-   "65":
-      dhcp_start: 10.65.64.0
-      dhcp_ende: 10.65.127.255
-      server_id: 2
+      dhcp_start: 10.62.128.0
+      dhcp_end: 10.62.191.255
+      server_id: 3
+      partner: "c1024"
 
 nameservers:
 - "213.133.100.100"
