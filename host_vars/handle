@@ -54,8 +54,8 @@ domaenenliste:
       server_id: 3
       partner: "nightbounce"
    "08":
-      dhcp_start: 10.08.128.0
-      dhcp_ende: 10.08.191.255
+      dhcp_start: 10.8.128.0
+      dhcp_ende: 10.8.191.255
       server_id: 3
       partner: "fanlin"
    "14":

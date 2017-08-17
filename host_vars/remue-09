@@ -10,8 +10,8 @@ hoster: "Hetzner"
 
 domaenenliste:
    "05":
-      dhcp_start: 10.05.64.0
-      dhcp_ende: 10.05.127.255
+      dhcp_start: 10.5.64.0
+      dhcp_ende: 10.5.127.255
       server_id: 2
       partner: "parad0x"
    "11":
