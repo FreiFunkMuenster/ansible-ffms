@@ -21,13 +21,13 @@ ffrl_tun:
 
 domaenenliste:
    "01":
-      dhcp_start: 10.01.128.0
-      dhcp_ende: 10.01.191.255
+      dhcp_start: 10.1.128.0
+      dhcp_ende: 10.1.191.255
       server_id: 3
       partner: "c1024"
    "05":
-      dhcp_start: 10.05.128.0
-      dhcp_ende: 10.05.191.255
+      dhcp_start: 10.5.128.0
+      dhcp_ende: 10.5.191.255
       server_id: 3
       partner: "remue-09"
    "15":

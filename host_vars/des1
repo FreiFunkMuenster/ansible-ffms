@@ -50,8 +50,8 @@ is_external_nameserver: true
 
 domaenenliste:
    "09":
-      dhcp_start: 10.09.64.0
-      dhcp_ende: 10.09.127.255
+      dhcp_start: 10.9.64.0
+      dhcp_ende: 10.9.127.255
       server_id: 2
       partner: "corny"
    "12":

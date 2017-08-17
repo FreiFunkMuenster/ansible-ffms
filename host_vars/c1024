@@ -25,8 +25,8 @@ is_external_nameserver: true
 
 domaenenliste:
    "01":
-      dhcp_start: 10.01.64.0
-      dhcp_ende: 10.01.127.255
+      dhcp_start: 10.1.64.0
+      dhcp_ende: 10.1.127.255
       server_id: 2
       partner: "parad0x"
    "12":

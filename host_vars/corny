@@ -16,13 +16,13 @@ domaenenliste:
       server_id: 2
       partner: "des2"
    "07":
-      dhcp_start: 10.07.128.0
-      dhcp_ende: 10.07.191.255
+      dhcp_start: 10.7.128.0
+      dhcp_ende: 10.7.191.255
       server_id: 3
       partner: "fanlin"
    "09":
-      dhcp_start: 10.09.128.0
-      dhcp_ende: 10.09.191.255
+      dhcp_start: 10.9.128.0
+      dhcp_ende: 10.9.191.255
       server_id: 3
       partner: "des1"
    "13":
