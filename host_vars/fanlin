@@ -36,52 +36,52 @@ is_external_nameserver: true
 domaenenliste:
    "07":
       dhcp_start: 10.07.64.0
-      dhcp_end: 10.07.127.255
+      dhcp_ende: 10.07.127.255
       server_id: 2
       partner: "corny"
    "08":
       dhcp_start: 10.08.64.0
-      dhcp_end: 10.08.127.255
+      dhcp_ende: 10.08.127.255
       server_id: 2
       partner: "handle"
    "23":
       dhcp_start: 10.23.64.0
-      dhcp_end: 10.23.127.255
+      dhcp_ende: 10.23.127.255
       server_id: 2
       partner: "handle"
    "33":
       dhcp_start: 10.33.64.0
-      dhcp_end: 10.33.127.255
+      dhcp_ende: 10.33.127.255
       server_id: 2
       partner: "nightbounce"
    "35":
       dhcp_start: 10.35.64.0
-      dhcp_end: 10.35.127.255
+      dhcp_ende: 10.35.127.255
       server_id: 2
       partner: "des1"
    "37":
       dhcp_start: 10.37.64.0
-      dhcp_end: 10.37.127.255
+      dhcp_ende: 10.37.127.255
       server_id: 2
       partner: "corny"
    "46":
       dhcp_start: 10.46.64.0
-      dhcp_end: 10.46.127.255
+      dhcp_ende: 10.46.127.255
       server_id: 2
       partner: "des1"
    "52":
       dhcp_start: 10.52.64.0
-      dhcp_end: 10.52.127.255
+      dhcp_ende: 10.52.127.255
       server_id: 2
       partner: "c1024"
    "53":
       dhcp_start: 10.53.64.0
-      dhcp_end: 10.53.127.255
+      dhcp_ende: 10.53.127.255
       server_id: 2
       partner: "c1024"
    "60":
       dhcp_start: 10.60.64.0
-      dhcp_end: 10.60.127.255
+      dhcp_ende: 10.60.127.255
       server_id: 2
       partner: "nightbounce"
 

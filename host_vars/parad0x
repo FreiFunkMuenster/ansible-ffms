@@ -22,62 +22,62 @@ ffrl_tun:
 domaenenliste:
    "01":
       dhcp_start: 10.01.128.0
-      dhcp_end: 10.01.191.255
+      dhcp_ende: 10.01.191.255
       server_id: 3
       partner: "c1024"
    "05":
       dhcp_start: 10.05.128.0
-      dhcp_end: 10.05.191.255
+      dhcp_ende: 10.05.191.255
       server_id: 3
       partner: "remue-09"
    "15":
       dhcp_start: 10.15.64.0
-      dhcp_end: 10.15.127.255
+      dhcp_ende: 10.15.127.255
       server_id: 2
       partner: "des2"
    "21":
       dhcp_start: 10.21.128.0
-      dhcp_end: 10.21.191.255
+      dhcp_ende: 10.21.191.255
       server_id: 3
       partner: "remue-09"
    "41":
       dhcp_start: 10.41.128.0
-      dhcp_end: 10.41.191.255
+      dhcp_ende: 10.41.191.255
       server_id: 3
       partner: "des1"
    "44":
       dhcp_start: 10.44.128.0
-      dhcp_end: 10.44.191.255
+      dhcp_ende: 10.44.191.255
       server_id: 3
       partner: "c1024"
    "47":
       dhcp_start: 10.47.64.0
-      dhcp_end: 10.47.127.255
+      dhcp_ende: 10.47.127.255
       server_id: 2
       partner: "corny"
    "49":
       dhcp_start: 10.49.64.0
-      dhcp_end: 10.49.127.255
+      dhcp_ende: 10.49.127.255
       server_id: 2
       partner: "nightbounce"
    "55":
       dhcp_start: 10.55.128.0
-      dhcp_end: 10.55.191.255
+      dhcp_ende: 10.55.191.255
       server_id: 3
       partner: "des1"
    "56":
       dhcp_start: 10.56.64.0
-      dhcp_end: 10.56.127.255
+      dhcp_ende: 10.56.127.255
       server_id: 2
       partner: "handle"
    "57":
       dhcp_start: 10.57.64.0
-      dhcp_end: 10.57.127.255
+      dhcp_ende: 10.57.127.255
       server_id: 2
       partner: "handle"
    "65":
       dhcp_start: 10.65.64.0
-      dhcp_end: 10.65.127.255
+      dhcp_ende: 10.65.127.255
       server_id: 2
       partner: "des2"
 

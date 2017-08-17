@@ -7,77 +7,77 @@ hoster: "Hetzner"
 domaenenliste:
    "02":
       dhcp_start: 10.2.64.0
-      dhcp_end: 10.2.127.255
+      dhcp_ende: 10.2.127.255
       server_id: 2
       partner: "des2"
    "03":
       dhcp_start: 10.3.64.0
-      dhcp_end: 10.3.127.255
+      dhcp_ende: 10.3.127.255
       server_id: 2
       partner: "des2"
    "07":
       dhcp_start: 10.07.128.0
-      dhcp_end: 10.07.191.255
+      dhcp_ende: 10.07.191.255
       server_id: 3
       partner: "fanlin"
    "09":
       dhcp_start: 10.09.128.0
-      dhcp_end: 10.09.191.255
+      dhcp_ende: 10.09.191.255
       server_id: 3
       partner: "des1"
    "13":
       dhcp_start: 10.13.64.0
-      dhcp_end: 10.13.127.255
+      dhcp_ende: 10.13.127.255
       server_id: 2
       partner: "des2"
    "14":
       dhcp_start: 10.14.64.0
-      dhcp_end: 10.14.127.255
+      dhcp_ende: 10.14.127.255
       server_id: 2
       partner: "handle"
    "18":
       dhcp_start: 10.18.128.0
-      dhcp_end: 10.18.191.255
+      dhcp_ende: 10.18.191.255
       server_id: 3
       partner: "c1024"
    "20":
       dhcp_start: 10.20.64.0
-      dhcp_end: 10.20.127.255
+      dhcp_ende: 10.20.127.255
       server_id: 2
       partner: "nightbounce"
    "25":
       dhcp_start: 10.25.64.0
-      dhcp_end: 10.25.127.255
+      dhcp_ende: 10.25.127.255
       server_id: 2
       partner: "tj01"
    "31":
       dhcp_start: 10.31.64.0
-      dhcp_end: 10.31.127.255
+      dhcp_ende: 10.31.127.255
       server_id: 2
       partner: "tj01"
    "37":
       dhcp_start: 10.37.128.0
-      dhcp_end: 10.37.191.255
+      dhcp_ende: 10.37.191.255
       server_id: 3
       partner: "fanlin"
    "42":
       dhcp_start: 10.42.128.0
-      dhcp_end: 10.42.191.255
+      dhcp_ende: 10.42.191.255
       server_id: 3
       partner: "c1024"
    "47":
       dhcp_start: 10.47.128.0
-      dhcp_end: 10.47.191.255
+      dhcp_ende: 10.47.191.255
       server_id: 3
       partner: "parad0x"
    "48":
       dhcp_start: 10.48.64.0
-      dhcp_end: 10.48.127.255
+      dhcp_ende: 10.48.127.255
       server_id: 2
       partner: "des2"
    "58":
       dhcp_start: 10.58.64.0
-      dhcp_end: 10.58.127.255
+      dhcp_ende: 10.58.127.255
       server_id: 2
       partner: "nightbounce"
 

@@ -50,57 +50,57 @@ dhcp_type: "kea"
 domaenenliste:
    "04":
       dhcp_start: 10.4.128.0
-      dhcp_end: 10.4.191.255
+      dhcp_ende: 10.4.191.255
       server_id: 3
       partner: "nightbounce"
    "08":
       dhcp_start: 10.08.128.0
-      dhcp_end: 10.08.191.255
+      dhcp_ende: 10.08.191.255
       server_id: 3
       partner: "fanlin"
    "14":
       dhcp_start: 10.14.128.0
-      dhcp_end: 10.14.191.255
+      dhcp_ende: 10.14.191.255
       server_id: 3
       partner: "corny"
    "19":
       dhcp_start: 10.19.128.0
-      dhcp_end: 10.19.191.255
+      dhcp_ende: 10.19.191.255
       server_id: 3
       partner: "des1"
    "23":
       dhcp_start: 10.23.128.0
-      dhcp_end: 10.23.191.255
+      dhcp_ende: 10.23.191.255
       server_id: 3
       partner: "fanlin"
    "27":
       dhcp_start: 10.27.128.0
-      dhcp_end: 10.27.191.255
+      dhcp_ende: 10.27.191.255
       server_id: 3
       partner: "tj01"
    "34":
       dhcp_start: 10.34.128.0
-      dhcp_end: 10.34.191.255
+      dhcp_ende: 10.34.191.255
       server_id: 3
       partner: "c1024"
    "43":
       dhcp_start: 10.43.128.0
-      dhcp_end: 10.43.191.255
+      dhcp_ende: 10.43.191.255
       server_id: 3
       partner: "des2"
    "56":
       dhcp_start: 10.56.128.0
-      dhcp_end: 10.56.191.255
+      dhcp_ende: 10.56.191.255
       server_id: 3
       partner: "parad0x"
    "57":
       dhcp_start: 10.57.128.0
-      dhcp_end: 10.57.191.255
+      dhcp_ende: 10.57.191.255
       server_id: 3
       partner: "parad0x"
    "63":
       dhcp_start: 10.63.128.0
-      dhcp_end: 10.63.191.255
+      dhcp_ende: 10.63.191.255
       server_id: 3
       partner: "c1024"
 

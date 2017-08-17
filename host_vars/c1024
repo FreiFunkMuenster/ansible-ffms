@@ -26,67 +26,67 @@ is_external_nameserver: true
 domaenenliste:
    "01":
       dhcp_start: 10.01.64.0
-      dhcp_end: 10.01.127.255
+      dhcp_ende: 10.01.127.255
       server_id: 2
       partner: "parad0x"
    "12":
       dhcp_start: 10.12.128.0
-      dhcp_end: 10.12.191.255
+      dhcp_ende: 10.12.191.255
       server_id: 3
       partner: "des1"
    "16":
       dhcp_start: 10.16.128.0
-      dhcp_end: 10.16.191.255
+      dhcp_ende: 10.16.191.255
       server_id: 3
       partner: "des1"
    "18":
       dhcp_start: 10.18.64.0
-      dhcp_end: 10.18.127.255
+      dhcp_ende: 10.18.127.255
       server_id: 2
       partner: "corny"
    "22":
       dhcp_start: 10.22.64.0
-      dhcp_end: 10.22.127.255
+      dhcp_ende: 10.22.127.255
       server_id: 2
       partner: "tj01"
    "34":
       dhcp_start: 10.34.64.0
-      dhcp_end: 10.34.127.255
+      dhcp_ende: 10.34.127.255
       server_id: 2
       partner: "handle"
    "40":
       dhcp_start: 10.40.64.0
-      dhcp_end: 10.40.127.255
+      dhcp_ende: 10.40.127.255
       server_id: 2
       partner: "tj01"
    "42":
       dhcp_start: 10.42.64.0
-      dhcp_end: 10.42.127.255
+      dhcp_ende: 10.42.127.255
       server_id: 2
       partner: "corny"
    "44":
       dhcp_start: 10.44.64.0
-      dhcp_end: 10.44.127.255
+      dhcp_ende: 10.44.127.255
       server_id: 2
       partner: "parad0x"
    "52":
       dhcp_start: 10.52.128.0
-      dhcp_end: 10.52.191.255
+      dhcp_ende: 10.52.191.255
       server_id: 3
       partner: "fanlin"
    "53":
       dhcp_start: 10.53.128.0
-      dhcp_end: 10.53.191.255
+      dhcp_ende: 10.53.191.255
       server_id: 3
       partner: "fanlin"
    "62":
       dhcp_start: 10.62.64.0
-      dhcp_end: 10.62.127.255
+      dhcp_ende: 10.62.127.255
       server_id: 2
       partner: "remue-09"
    "63":
       dhcp_start: 10.63.64.0
-      dhcp_end: 10.63.127.255
+      dhcp_ende: 10.63.127.255
       server_id: 2
       partner: "handle"
 
