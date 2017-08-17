@@ -1,7 +1,7 @@
 # Globale Variablen für alle Server
 domaenen:
   "01":
-    name: Münster
+    name: Münster-Mitte-Süd
     community: Münster
     ffv4_network: 10.1.0.0/16
     ffv6_network: 2a03:2260:115:100::/64
@@ -10,6 +10,36 @@ domaenen:
     map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene01/
+  "02":
+    name: Münster-Ost
+    community: Münster
+    ffv4_network: 10.2.0.0/16
+    ffv6_network: 2a03:2260:115:200::/64
+    map_scale: 0.9
+    map_show_contact: false
+    map_max_age: 60
+    map_blinking_hours: 8
+    firmware: domaene02/
+  "03":
+    name: Münster-Nord
+    community: Münster
+    ffv4_network: 10.3.0.0/16
+    ffv6_network: 2a03:2260:115:300::/64
+    map_scale: 0.9
+    map_show_contact: false
+    map_max_age: 60
+    map_blinking_hours: 8
+    firmware: domaene03/
+  "04":
+    name: Münster-West
+    community: Münster
+    ffv4_network: 10.4.0.0/16
+    ffv6_network: 2a03:2260:115:400::/64
+    map_scale: 0.9
+    map_show_contact: false
+    map_max_age: 60
+    map_blinking_hours: 8
+    firmware: domaene04/
   "05":
     name: Münster Süd
     community: Münster
