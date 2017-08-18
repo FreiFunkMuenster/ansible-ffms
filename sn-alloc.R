@@ -1,3 +1,5 @@
+#! /usr/bin/Rscript
+
 # R-skript zu Verteilung der einzelnen Domänen auf die Supernodes. Ziel ist eine möglichst gleichmäßige Auslastung.
 
 library("jsonlite")
