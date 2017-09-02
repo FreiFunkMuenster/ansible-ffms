@@ -746,6 +746,7 @@ dns_entries_for_all_tlds:
  - 'pop                                              IN  CNAME   mail.freifunk-muensterland.de.'
  - 'ticket                                           IN  A       5.9.86.151'
  - 'ticket                                           IN  AAAA    2a01:4f8:162:10d2::3'
+ - 'unifi					IN AAAA 2a03:2260:115:4300:5054:ff:fe14:bb9f'
 
 domains:
   "freifunk-muensterland.de":
