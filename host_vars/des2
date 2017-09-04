@@ -4,7 +4,7 @@ vm_id: 9
 server_besitzer: "Simon Wüllhorst / Descilla"
 hoster: "Hetzner"
 
-server_ipv4_nat: 185.66.195.23/32
+ffrl_nat_ip: 185.66.195.23/32
 
 domaenenliste:
    "02":
