@@ -98,6 +98,33 @@ ffnw_tun:
   v4_remote: 100.100.64.0/31
   v6_remote: fe80::1/64
 
+ffrl_tun:
+- name: ber1
+  gre_target: 185.66.195.0
+  v4_remote: 100.64.9.54/31
+  v6_remote: 2a03:2260:0:4b0::1/64
+- name: ber2
+  gre_target: 185.66.195.1
+  v4_remote: 100.64.9.60/31
+  v6_remote: 2a03:2260:0:4b3::1/64
+  bgp_local_pref: 201
+- name: fra1
+  gre_target: 185.66.194.0
+  v4_remote: 100.64.9.58/31
+  v6_remote: 2a03:2260:0:4b1::1/64
+- name: fra2
+  gre_target: 185.66.194.1
+  v4_remote: 100.64.9.62/31
+  v6_remote: 2a03:2260:0:4b4::1/64
+- name: dus1
+  gre_target: 185.66.193.0
+  v4_remote: 100.64.9.58/31
+  v6_remote: 2a03:2260:0:4b2::1/64
+- name: dus2
+  gre_target:  185.66.193.1
+  v4_remote: 100.64.9.64/31
+  v6_remote: 2a03:2260:0:4b5::1/64
+
 dhcp_type: "kea"
 
 tunneldigger:
