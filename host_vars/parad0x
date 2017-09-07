@@ -21,6 +21,11 @@ ffnw_tun:
   gre_target: 185.116.236.32
   v4_remote: 100.100.64.6/31
   v6_remote: fe80::1/64
+- name: ber1
+  gre_target: 217.197.83.186
+  v4_remote: 100.100.96.6/31
+  v6_remote: fe80::1/64
+
 
 domaenenliste:
    "01":
