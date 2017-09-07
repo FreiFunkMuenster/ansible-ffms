@@ -6,18 +6,21 @@ hoster: "Hetzner"
 
 is_external_nameserver: true
 
-ffrl_nat_ip: 185.66.193.51/32
-    
-ffrl_tun:
-- name: dus
-  gre_target: 185.66.193.0
-  v4_remote: 100.64.0.208/31
-  v6_remote: 2a03:2260:0:6e::1/64
-  bgp_local_pref: 201
-- name: fra
-  gre_target: 185.66.194.0
-  v4_remote: 100.64.0.206/31
-  v6_remote: 2a03:2260:0:6d::1/64
+ffnw_nat_ip: 185.197.132.34/32
+
+ffnw_tun:
+- name: erf1 
+  gre_target: 87.118.74.56
+  v4_remote: 100.100.0.6/31
+  v6_remote: fe80::1/64
+- name: fra1
+  gre_target: 89.46.125.8
+  v4_remote: 100.100.32.6/31
+  v6_remote: fe80::1/64
+- name: ams1
+  gre_target: 185.116.236.32
+  v4_remote: 100.100.64.6/31
+  v6_remote: fe80::1/64
 
 domaenenliste:
    "01":
