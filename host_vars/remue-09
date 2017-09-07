@@ -1,12 +1,27 @@
-# Variablen für Gateway-Server mit Direktanbindung zum FFRL parad0x.gw.freifunk-muenster.de
-# Die Server-IP-Adresse wird durch von ansible bereitgestellte Variablen abgerufen (ansible_eth0.ipv4...)
-
-# ID des Servers. 
-# Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
 vm_id: 5
 server_id: 5
 server_besitzer: "Sven Culley / Sense"
 hoster: "Hetzner"
+
+ffnw_nat_ip: 185.197.132.35/32
+
+ffnw_tun:
+- name: erf1
+  gre_target: 87.118.74.56
+  v4_remote: 100.100.0.20/31
+  v6_remote: fe80::1/64
+- name: fra1
+  gre_target: 89.46.125.8
+  v4_remote: 100.100.32.20/31
+  v6_remote: fe80::1/64
+- name: ams1
+  gre_target: 185.116.236.32
+  v4_remote: 100.100.64.20/31
+  v6_remote: fe80::1/64
+- name: ber1
+  gre_target: 217.197.83.186
+  v4_remote: 100.100.96.20/31
+  v6_remote: fe80::1/64
 
 domaenenliste:
    "05":
