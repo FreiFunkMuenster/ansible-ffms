@@ -150,12 +150,6 @@ domaenen:
     map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene16/
-    dhcp:
-      reservations:
-        - ip: "10.43.128.14"
-          id: "52:54:00:14:bb:9f"
-        - ip: "10.43.128.13"
-          id: "52:54:00:87:eb:c0"
   "17":
     name: Emsdetten
     community: Kreis Steinfurt
@@ -426,6 +420,12 @@ domaenen:
     map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene43/
+    dhcp:
+      reservations:
+        - ip: "10.43.128.14"
+          id: "52:54:00:14:bb:9f"
+        - ip: "10.43.128.13"
+          id: "52:54:00:87:eb:c0"
   "44":
     name: Ascheberg
     community: Kreis Coesfeld
