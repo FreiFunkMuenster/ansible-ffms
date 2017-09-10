@@ -90,6 +90,16 @@ domaenen:
     map_max_age: 60
     map_blinking_hours: 8
     firmware: domaene09/
+  "10":
+    name: Borken-Nord
+    community: Borken
+    ffv4_network: 10.10.0.0/16
+    ffv6_network: 2a03:2260:115:1000::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 60
+    map_blinking_hours: 8
+    firmware: domaene10/
   "11":
     name: Bocholt
     community: Westmünsterland
@@ -241,7 +251,7 @@ domaenen:
     map_blinking_hours: 8
     firmware: domaene25/
   "26":
-    name: Borken
+    name: Borken-Zentrum
     community: Borken
     ffv4_network: 10.26.0.0/16
     ffv6_network: 2a03:2260:115:2600::/64
@@ -627,8 +637,8 @@ domaenen:
     map_blinking_hours: 8
     firmware: domaene63/
   "64":
-    name: Gronau
-    community: Gronau
+    name: Borken-Süd
+    community: Borken
     ffv4_network: 10.64.0.0/16
     ffv6_network: 2a03:2260:115:6400::/64
     map_scale: 1.1
