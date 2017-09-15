@@ -8,7 +8,7 @@
     - { role: motd, tags: "motd"}
     - { role: backports-kernel, tags: "backports-kernel"}
     - { role: tunearpcache, tags: "tunearpcache"}
-    - { role: services_interfaces, tags: "services_interfaces"}
+    - { role: mapserver_interfaces, tags: "mapserver_interfaces"}
     - { role: mapserver_hopglass-server, tags: "mapserver_hopglass-server"}
     - { role: mapserver_hopglass, tags: "mapserver_hopglass"}
     - { role: mapserver_nginx, tags: "mapserver_nginx"}
