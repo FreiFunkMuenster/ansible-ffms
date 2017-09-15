@@ -727,12 +727,6 @@ bind_zonemaster:
   server: service.freifunk-muensterland.de
   email: info.freifunk-muensterland.de
 
-nameservers:
-- "8.8.8.8"
-- "8.8.4.4"
-- "2001:4860:4860::8888"
-- "2001:4860:4860::8844"
-
 dns_entries_for_all_tlds:
  - '@                                                IN  A       89.163.231.227'
  - 'www                                              IN  A       89.163.231.227'

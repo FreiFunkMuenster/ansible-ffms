@@ -104,12 +104,6 @@ domaenenliste:
       server_id: 3
       partner: "c1024"
 
-nameservers:
-- "62.210.16.6"
-- "62.210.16.7"
-- "2001:bc8:401::3"
-- "2001:bc8:1::16"
-
 administratorenteam:
   - "parad0x"
   - "void"
