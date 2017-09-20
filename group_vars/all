@@ -687,6 +687,7 @@ administratorenteam:
   - "descilla"
   - "mpw"
   - "corny"
+  - "peterb"
 
 collectd:
   collect_dhcp: false
