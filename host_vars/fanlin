@@ -44,6 +44,11 @@ domaenenliste:
       dhcp_ende: 10.8.127.255
       server_id: 2
       partner: "handle"
+   "10":
+      dhcp_start: 10.10.128.0
+      dhcp_ende: 10.10.191.255
+      server_id: 3
+      partner: "corny2"
    "23":
       dhcp_start: 10.23.64.0
       dhcp_ende: 10.23.127.255
@@ -84,5 +89,10 @@ domaenenliste:
       dhcp_ende: 10.60.127.255
       server_id: 2
       partner: "nightbounce"
+   "64":
+      dhcp_start: 10.64.128.0
+      dhcp_ende: 10.64.191.255
+      server_id: 3
+      partner: "corny2"
 
 dhcp_type: "kea"

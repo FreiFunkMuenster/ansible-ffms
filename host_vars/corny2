@@ -9,10 +9,12 @@ domaenenliste:
       dhcp_start: 10.10.64.0
       dhcp_ende: 10.10.127.255
       server_id: 2
+      partner: "fanlin"
    "64":
       dhcp_start: 10.64.64.0
       dhcp_ende: 10.64.127.255
       server_id: 2
+      partner: "fanlin"
 
 ffnw_nat_ip: 185.197.132.37/32
 
