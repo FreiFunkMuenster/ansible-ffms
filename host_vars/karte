@@ -2,6 +2,18 @@ server_besitzer: "Sven Culley / Sense"
 vm_id: 12
 server_id: 12
 
+indexconfig:
+  links:
+   - name: "{{freifunk.name}}"
+     link: "https://{{freifunk.domain}}"
+   - name: "{{freifunk.name}} - Wiki"
+     link: "https://wiki.{{freifunk.domain}}"
+   - name: "{{freifunk.name}} - Forum"
+     link: "https://forum.{{freifunk.domain}}"
+   - name: "{{freifunk.name}} - Firmware Assistent"
+     link: "https://firmware.{{freifunk.domain}}/md-fw-dl"
+  linktofwdownloader: "https://{{freifunk.domain}}/md-fw-dl/?region=domaene"  #Nummer der Domäne wird automatisch am Ende angefügt.
+
 mapconfig:
   hopglassServer:
     purge:
