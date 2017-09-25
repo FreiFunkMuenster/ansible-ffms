@@ -17,7 +17,7 @@ indexconfig:
 mapconfig:
   hopglassServer:
     purge:
-      max_age: 120
+      max_age: 120 #Wie lang in Tagen soll ein Knoten noch auf der Karte angezeigt werden wenn dieser Offline ist.
   globalInfos:
    - name: "Status-Monitor"
      iframe: "https://{{freifunk.domain}}/grafana/dashboard-solo/db/test-alert-dashboard?theme=light&panelId=5"
@@ -31,14 +31,12 @@ mapconfig:
   globalMap:
    map_scale: 1.1
    map_show_contact: false
-   map_max_age: 60 
-   map_blinking_hours: 8
+   map_max_age: 14 #Wie lang in Tagen soll ein Knoten als Neu bzw. Verschwunden auf der Karte angezeigt werden?
    max_goto_zoom: 18
   communityMap:
    map_scale: 0.9
    map_show_contact: false
-   map_max_age: 60
-   map_blinking_hours: 8
+   map_max_age: 14 #Wie lang in Tagen soll ein Knoten als Neu bzw. Verschwunden auf der Karte angezeigt werden?
    max_goto_zoom: 18
   layers:
     - name: "OSM Mapnik"
