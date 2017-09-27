@@ -1,0 +1,4 @@
+
+# is_ff_tester: Icinga fragt hier die Ergebnisse der Freifunk-Test-Knoten ab
+is_ff_tester: true
+
