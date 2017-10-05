@@ -1,0 +1,15 @@
+# Playbook zur Konfiguration aller Servern von services
+
+- hosts: statistics
+  vars_files:
+    - passwords.yml
+  remote_user: root
+  roles:
+    - { role: hostname, tags: "hostname"}
+    - { role: common, tags: "common"}
+    - { role: motd, tags: "motd"}
+    - { role: statistics_graphite, tags: "statistics_graphite"}
+    - { role: statistics_grafana, tags: "statistics_grafana"}
+    - { role: statistics_nginx, tags: "statistics_nginx"}
+    - { role: statistics_grafana_configure, tags: "statistics_grafana_configure"}
+    - { role: collectd, tags: "collectd"}
