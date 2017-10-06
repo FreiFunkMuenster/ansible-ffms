@@ -1,0 +1,58 @@
+{
+  "receiver": {
+    "receivers": [
+      { "module": "announced",
+        "config": {
+          "interval": {
+            "statistics": 60,
+            "nodeinfo": 500
+          }
+        }
+      },
+      { "module": "aliases",
+        "config": {
+          "file": "./aliases.json"
+        },
+        "overlay": true
+      }
+    ],
+    "ifaces": [
+{% for domaene in domaenen|dictsort %}
+      "bat{{domaene[0]}}"{% if not loop.last %},{% endif %}
+
+{% endfor %}
+    ],
+    "storage": {
+      "file": "./raw.json"
+    },
+    "purge": {
+      "maxAge": {{ mapconfig.hopglassServer.purge.max_age }}
+    }
+  },
+  "provider": {
+    "offlineTime": 900,
+    "named": {
+      "mapTemplate": "https://{{inventory_hostname_short}}.{{freifunk.domain}}/map/#!v:m;n:{node_id}",
+      "origin": "knoten.{{freifunk.domain}}.",
+      "defaultTtl": 86400,
+      "ns": "{{bind_zonemaster.server}}.",
+      "postmaster": "{{bind_zonemaster.server}}.",
+      "refresh": 86400,
+      "retry": 7200,
+      "expire": 2419200,
+      "minTtl": 86400,
+      "nameservers":  [
+        "ns1.{{freifunk.domain}}.",
+        "ns2.{{freifunk.domain}}.",
+        "ns3.{{freifunk.domain}}."
+      ],
+      "subdomainNet": [
+          "{{ff_network.v6_network}}"
+      ],
+      "namePadding" : 40
+    }
+  },
+  "webserver": {
+    "port": 4000
+  }
+}

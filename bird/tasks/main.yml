@@ -1,0 +1,85 @@
+---
+# Role for configure bird and bird6 for our gateway servers.
+- name: add key for bird repo
+  apt_key:
+    keyserver: keyserver.ubuntu.com 
+    id: AC0E47584A7A714D
+  when: ansible_distribution == "Debian"
+
+- name: add bird repo
+  apt_repository:
+    repo: "deb http://bird.network.cz/debian/ {{ ansible_distribution_release }} main"
+    state: present
+  when: ansible_distribution == "Debian" and ansible_distribution_major_version == "8"
+
+- name: install bird and other required packets
+  apt:
+    pkg: "{{item}}"
+    update_cache: yes
+    cache_valid_time: 1800
+    state: installed
+  with_items:
+    - bird
+    - bird6
+    - ipcalc
+  when: ansible_distribution == "Debian" and ansible_distribution_major_version == "8"
+
+- name: install bird and other required packets
+  apt:
+    pkg: "{{item}}"
+    update_cache: yes
+    cache_valid_time: 1800
+    state: installed
+  with_items:
+    - bird
+    - ipcalc
+  when: (ansible_distribution == "Ubuntu") or
+        (ansible_distribution == "Debian" and ansible_distribution_major_version == "9")
+
+- name: calculate more specific routes for DHCP pools
+  shell: ipcalc {{ domaenenliste[item].dhcp_start }} - {{ domaenenliste[item].dhcp_ende}} | grep -v "deaggregate" | sed -e 's/\(^.*$\)/route \1 via "bat{{item}}";/g'
+  check_mode: no
+  changed_when: false
+  register: more_specific_routes
+  with_items: "{{domaenenliste | default([])}}"
+  when: domaenenliste is defined
+
+- name: configure bird.conf
+  template: 
+    src: bird.conf.j2
+    dest: /etc/bird/bird.conf
+  notify:
+    - configure bird
+
+- name: configure bird6.conf
+  template:
+    src: bird6.conf.j2
+    dest: /etc/bird/bird6.conf
+  notify:
+    - configure bird6
+
+- name: bird.service kopieren
+  copy: 
+    src: bird.service
+    dest: /lib/systemd/system/bird.service
+  notify:
+    - configure bird
+
+- name: bird6.service kopieren
+  copy: 
+    src: bird6.service
+    dest: /lib/systemd/system/bird6.service
+  notify:
+    - configure bird6
+
+- name: activate and start bird
+  service:
+    name: bird
+    state: started 
+    enabled: yes
+
+- name: activate and start bird6
+  service: 
+    name: bird6
+    state: started
+    enabled: yes

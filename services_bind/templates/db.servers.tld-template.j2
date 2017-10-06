@@ -1,0 +1,41 @@
+; zonefile for servers.{{item.key}}.
+$TTL    3600
+@       IN      SOA     {{bind_zonemaster.server}}. {{bind_zonemaster.email}}. (
+                     {{ansible_date_time.epoch}}         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                          86400 )       ; Negative Cache TTL
+{% set i = [1] %}
+{% for host in groups['gateways'] %}
+{% if 'is_external_nameserver' in hostvars[host] and hostvars[host].is_external_nameserver %}
+@	IN      NS      ns{{i[0]}}.{{item.key}}.
+{% if i.append(i.pop() + 1) %}{% endif %}
+{% endif %}
+{% endfor %}
+{% if bind.ffms_for_groups is defined and bind.ffms_for_groups.0 is defined %}
+{% for group in bind.ffms_for_groups %}
+{% for host in groups[group] %}
+{{host}}	IN      A       {{hostvars[host].ansible_ssh_host}};
+{% endfor %}
+{% endfor %}
+{% endif %}
+{% for host in groups['gateways']+groups['hypervisors'] %}
+{{host}}	IN      A       {{hostvars[host].ansible_ssh_host}};
+{% endfor %}
+{% for host in groups['gateways'] %}
+{% if hostvars[host].domaenenliste is defined %}
+{% for domaene in hostvars[host].domaenenliste|dictsort %}
+domaene{{domaene[0]}}	IN	A	{{hostvars[host].ansible_ssh_host}};
+{% if domaene[1].server_id is defined and domaene[1].server_id == 2 %}
+domaene{{domaene[0]}}-A IN	A	{{hostvars[host].ansible_ssh_host}};
+{% elif domaene[1].server_id is defined and domaene[1].server_id == 3 %}
+domaene{{domaene[0]}}-B IN	A	{{hostvars[host].ansible_ssh_host}};
+{% elif domaene[1].server_id is defined and domaene[1].server_id == 4 %}
+domaene{{domaene[0]}}-C IN	A	{{hostvars[host].ansible_ssh_host}};
+{% elif domaene[1].server_id is defined and domaene[1].server_id == 5 %}
+domaene{{domaene[0]}}-D IN	A	{{hostvars[host].ansible_ssh_host}}; 
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}

@@ -1,0 +1,28 @@
+index be402cb..7e9ccd9 100644
+--- a/broker/l2tp_broker.py
++++ b/broker/l2tp_broker.py
+@@ -629,13 +629,13 @@ class Tunnel(gevent.Greenlet):
+     for session in self.sessions.values():
+       # Invoke any pre-down hooks
+       self.manager.hook('session.pre-down', self.id, session.id, session.name, self.pmtu, self.endpoint[0],
+-        self.endpoint[1], self.port, self.uuid)
++        self.endpoint[1], self.port, self.uuid, self.external_port)
+ 
+       self.manager.netlink.session_delete(self.id, session.id)
+ 
+       # Invoke any down hooks
+       self.manager.hook('session.down', self.id, session.id, session.name, self.pmtu, self.endpoint[0],
+-        self.endpoint[1], self.port, self.uuid)
++        self.endpoint[1], self.port, self.uuid, self.external_port)
+ 
+     # Transmit error message so the other end can tear down the tunnel
+     # immediately instead of waiting for keepalive timeout
+@@ -685,7 +685,7 @@ class Tunnel(gevent.Greenlet):
+     """
+     for session in self.sessions.values():
+       self.manager.hook('session.up', self.id, session.id, session.name, self.pmtu,
+-        self.endpoint[0], self.endpoint[1], self.port, self.uuid)
++        self.endpoint[0], self.endpoint[1], self.port, self.uuid, self.external_port)
+ 
+   def create_session(self):
+     """

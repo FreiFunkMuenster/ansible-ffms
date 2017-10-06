@@ -1,0 +1,117 @@
+---
+- name: Increase Kernel default rx buffersize
+  sysctl:
+    name: net.core.rmem_default
+    value: 26214400
+    state: present
+    reload: yes
+  notify:
+    - "restart hopglass"
+
+- name: Increase Kernel max rx buffersize
+  sysctl:
+    name: net.core.rmem_max
+    value: 26214400
+    state: present
+    reload: yes
+  notify:
+    - "restart hopglass"
+
+- name: Increase Kernel max optmem buffersize
+  sysctl:
+    name: net.core.optmem_max
+    value: 81920
+    state: present
+    reload: yes
+  notify:
+    - "restart hopglass"
+
+- name: Increase max queue len of unhandled rx packets in Kernel
+  sysctl:
+    name: net.core.netdev_max_backlog
+    value: 5000
+    state: present
+    reload: yes
+  notify:
+    - "restart hopglass"
+
+- name: Add nodejs repo keys
+  apt_key:
+    id: 1655A0AB68576280
+    url: "https://deb.nodesource.com/gpgkey/nodesource.gpg.key"
+    state: present
+
+- name: Add repo for nodejs
+  apt_repository:
+    repo: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items:
+    - "deb https://deb.nodesource.com/node_6.x {{ ansible_distribution_release }} main"
+    - "deb-src https://deb.nodesource.com/node_6.x {{ ansible_distribution_release }} main"
+
+- name: Install nodejs
+  apt:
+    pkg: nodejs
+    state: installed
+
+- name: Create HopGlass-server directory if not existent
+  file:
+    path: /opt/hopglass
+    state: directory
+
+- name: Create HopGlass User
+  user:
+    name: hopglass
+    system: yes
+    createhome: yes
+    home: /opt/hopglass
+
+- name: Clone HopGlass Server Repo
+  git: repo=https://github.com/hopglass/hopglass-server.git dest=/opt/hopglass/server force=yes
+  notify:
+    - "restart hopglass"
+  register: hopglass_server_git_clone
+
+- name: Adjust permissions
+  file:
+    path: /opt/hopglass
+    owner: hopglass
+    group: hopglass
+    recurse: yes
+  when: hopglass_server_git_clone.changed
+
+- name: install dependencies
+  shell: npm install
+  args:
+    chdir: /opt/hopglass/server
+  when: hopglass_server_git_clone.changed
+
+- name: Create HopGlass-server Config directory if not existent
+  file: path=/etc/hopglass-server/default state=directory
+
+- name: Setup systemd service
+  copy:
+    src: /opt/hopglass/server/hopglass-server@.service
+    dest: /lib/systemd/system/
+    remote_src: True
+
+- name: Adjust permissions of /etc/hopglass-server
+  file:
+    path: /etc/hopglass-server
+    owner: hopglass
+    group: hopglass
+    recurse: yes
+
+- name: Copy config.json
+  template: 
+    src: config.json.j2 
+    dest: /etc/hopglass-server/default/config.json
+    owner: hopglass
+    group: hopglass
+    mode: 0644
+  notify:
+    - "restart hopglass"
+
+- name: install hopglass server service hopglass-server
+  service: name=hopglass-server@default enabled=yes

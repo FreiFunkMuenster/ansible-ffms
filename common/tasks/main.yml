@@ -1,0 +1,135 @@
+---
+# Allgemeine Konfigurationen für alle Server
+
+- name: Enable syntax highlighting in vim by default
+  lineinfile:
+    dest: ~/.vimrc
+    regexp: '^syntax '
+    line: 'syntax on'
+    owner: root
+    group: root
+    mode: 0644
+    create: yes
+
+- name: Update .bash_profile file
+  template:
+    src: bash_profile.j2
+    dest: ~/.bash_profile
+
+- name: Flush all handlers
+  meta: flush_handlers
+
+- name: add default repo
+  #Freifunk- und Rollen-Repos erst in den jeweiligen Rollen
+  apt_repository:
+    repo: "{{ item }}"
+    state: present
+  with_items:
+    - "deb http://ftp.de.debian.org/debian/ {{ ansible_distribution_release }} main"
+    - "deb http://ftp.de.debian.org/debian/ {{ ansible_distribution_release }}-updates main"
+    - "deb http://security.debian.org/ {{ ansible_distribution_release }}/updates main"
+  when: ansible_distribution == "Debian"
+
+- name: Eventuelles CDROM-Repo von der Installation entfernen
+  lineinfile:
+    dest: /etc/apt/sources.list
+    state: absent
+    regexp: 'cdrom'
+
+- name: install common packages
+  apt:
+    pkg: "{{ item }}"
+    update_cache: yes
+    state: installed
+  with_items:
+    - vim
+    - wget
+    - vnstat
+    - tmux
+    - pastebinit
+    - htop
+    - jnettop
+    - iotop
+    - tcpdump
+    - screen
+    - strace
+    - socat
+    - dnsutils
+    - host
+    - apt-transport-https
+    - tshark
+    - dwdiff
+    - molly-guard
+    - git
+    - iperf3
+    - logwatch
+    - mtr-tiny
+    - dhcpdump
+    - dhcping
+    - irqbalance
+    - build-essential
+    - ethtool
+
+- name: uninstall unneeded packages
+  apt:
+    pkg: "{{ item }}"
+    update_cache: yes
+    state: absent
+  with_items:
+    - rpcbind
+
+- name: SSH-Schlüsseldatei generieren
+  template:
+    src: authorized_keys.j2
+    dest: /root/.ssh/authorized_keys
+  when: administratorenteam is defined
+
+- name: SSH-Dämon Passwortanmeldung abschalten
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: "^[#]?PasswordAuthentication"
+    line: "PasswordAuthentication no"
+  notify: reload sshd
+
+- locale_gen: name=de_DE.UTF-8 state=present
+
+- name: "Get all files in /etc/logrotate.d/"
+  raw: find /etc/logrotate.d/ -type f
+  register: logrotate_files
+  check_mode: no
+  changed_when: False
+
+- name: "Update logrotate cycle in /etc/logrotate.d/"
+  replace:
+    dest: "{{item}}"
+    regexp: 'daily|weekly|monthly'
+    replace: '{{logrotate.cycle}}'
+  with_items: "{{logrotate_files.stdout_lines}}"
+
+- name: "Update logrotate count in /etc/logrotate.d/"
+  replace:
+    dest: "{{item}}"
+    regexp: 'rotate[ \t]+[0-9]+'
+    replace: 'rotate {{logrotate.count}}'
+  with_items: "{{logrotate_files.stdout_lines}}"
+
+- name: Logrotate Rotationszyklus und Anzahl anpassen
+  template:
+    src: logrotate.conf.j2
+    dest: /etc/logrotate.conf
+  when: logrotate is defined
+
+- name: Setze Timeout für das stopen von Interfaces
+  lineinfile:
+    dest: /lib/systemd/system/networking.service.d/network-pre.conf
+    line: "[Service]"
+    state: present
+  when: ansible_distribution == "Debian" and ansible_distribution_major_version == "8"
+
+- name: Setze Timeout für das stopen von Interfaces
+  lineinfile:
+    dest: /lib/systemd/system/networking.service.d/network-pre.conf
+    regexp: "^TimeoutStopSec="
+    line: "TimeoutStopSec=60"
+    state: present
+  when: ansible_distribution == "Debian" and ansible_distribution_major_version == "8"

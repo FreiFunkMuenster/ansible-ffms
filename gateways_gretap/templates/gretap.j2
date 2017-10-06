@@ -1,0 +1,39 @@
+# This file is managed by ansible, don't make changes here - they will be overwritten.
+{% set indexer = [0] %}
+{% set hosts = [] %}
+{% for domaene in domaenenliste|dictsort %}
+{% for dummy in hosts %}
+{% if hosts.pop() %}
+{% endif %}
+{% endfor %}
+{% if hosts|length and hosts.pop() %}
+{% endif %}
+{% for host in groups['mapserver'] %}
+{% if hosts.append(host) %}
+{% endif %}
+{% endfor %}
+{% for host in groups['gateways'] %}
+{% if ansible_ssh_host != hostvars[host].ansible_ssh_host and domaene[0] in hostvars[host].domaenenliste and hosts.append(host) %}
+{% endif %}
+{% endfor %}
+{% for host in hosts %}
+{% if hostvars[host] is defined %}
+{% if indexer.append(indexer.pop() + 1) %}{% endif %}{# increment indexer by 1 #}
+
+# GRETAP Tunnel for domaene-{{domaene[0]}} to {{host}} ({{hostvars[host].ansible_ssh_host}})
+auto t{{domaene[0]}}-{{host}}
+iface t{{domaene[0]}}-{{host}} inet manual
+{% if build_tunnels_over_ipv6_if_available is defined and build_tunnels_over_ipv6_if_available == "yes" and ansible_default_ipv6.address is defined %}
+        pre-up ip link add $IFACE type ip6gretap local {{ansible_default_ipv6.address}} remote {{hostvars[host]['ansible_default_ipv6']['address']}} dev {{ansible_default_ipv6.interface}} key {{domaene[0]|int}}
+{% else %}
+        pre-up ip link add $IFACE type gretap local {{ansible_default_ipv4.address}} remote {{hostvars[host].ansible_ssh_host}} dev eth0 key {{domaene[0]|int}}
+{% endif %}
+        pre-up ip link set dev $IFACE address de:ad:be:ef:{{indexer[0]}}:{{vm_id}}
+        pre-up ip link set $IFACE up
+        post-up batctl -m bat{{domaene[0]}} if add $IFACE ||:
+        pre-down batctl -m bat{{domaene[0]}} if del $IFACE ||:
+        post-down ip link del $IFACE
+
+{% endif %}
+{% endfor %}
+{% endfor %}

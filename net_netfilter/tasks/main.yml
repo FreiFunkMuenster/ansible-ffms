@@ -1,0 +1,33 @@
+---
+
+- name: Install conntrack cli (for debugging purposes)
+  apt:
+    pkg: "conntrack"
+    update_cache: yes
+    cache_valid_time: 1800
+    state: installed
+
+- name: Enable nf_conntrack_ipv4 module
+  modprobe: name=nf_conntrack_ipv4 state=present
+
+- name: Enable nf_conntrack_ipv4 on system startup
+  lineinfile: dest=/etc/modules line="nf_conntrack_ipv4"
+
+- name: Set nf_conntrack_max to a higher value
+  sysctl: name="net.netfilter.nf_conntrack_max" value=524288 sysctl_set=yes state=present reload=yes
+
+- name: Set nf_conntrack_tcp_timeout_established to 86400 (one day)
+  sysctl: name="net.netfilter.nf_conntrack_tcp_timeout_established" value=86400 sysctl_set=yes state=present reload=yes
+
+- name: Set nf_conntrack_tcp_timeout_time_wait to 60
+  sysctl: name="net.netfilter.nf_conntrack_tcp_timeout_time_wait" value=60 sysctl_set=yes state=present reload=yes
+
+- name: Get current nf_conntrack hashsize
+  shell: "cat /sys/module/nf_conntrack/parameters/hashsize"
+  register: nf_conntrack_hashsize
+  changed_when: false
+  check_mode: no
+
+- name: Set nf_conntrack hashsize to a higher value
+  shell: "echo 32768 > /sys/module/nf_conntrack/parameters/hashsize"
+  when: "nf_conntrack_hashsize.stdout != '32768'"

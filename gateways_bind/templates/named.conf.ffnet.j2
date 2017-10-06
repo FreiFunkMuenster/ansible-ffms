@@ -1,0 +1,53 @@
+{% if domaenenliste is defined %}
+{% for domaene in domaenenliste|dictsort -%}
+#view for (broadcast-)domain domaene-{{domaene[0]}}   
+view "domaene-{{domaene[0]}}" {
+        match-clients {
+                {{domaenen[domaene[0]].ffv4_network}};
+                {{domaenen[domaene[0]].ffv6_network}};
+        };
+	include "/etc/bind/named.conf.local";
+	include "/etc/bind/named.conf.default-zones";
+{% if is_external_nameserver is defined and is_external_nameserver %}
+	include "/etc/bind/named.conf.tld";
+{% endif %}
+{% if hostvars['services'] is defined and hostvars['services'].vm_id is defined %}
+	zone "{{freifunk.kurzname}}." {
+		type master;
+		file "/etc/bind/db.domaene-{{domaene[0]}}.ffnet";
+	};
+	zone "servers.{{freifunk.kurzname}}." {
+		type slave;
+		masters {
+			{{domaenen[domaene[0]].ffv4_network | ipaddr(hostvars['services'].vm_id) | ipaddr('address')}};
+		};
+	};
+	zone "services.{{freifunk.kurzname}}." {
+		type slave;
+		masters {
+			{{domaenen[domaene[0]].ffv4_network | ipaddr(hostvars['services'].vm_id) | ipaddr('address')}};
+		};
+	};
+{% endif %}
+};
+{% endfor %}
+{% if is_external_nameserver is defined and is_external_nameserver %}
+view "external" {
+        match-clients {
+		any;
+{% for domaene in domaenenliste|dictsort %}
+                !{{domaenen[domaene[0]].ffv4_network}};
+                !{{domaenen[domaene[0]].ffv6_network}};
+{% endfor %}
+	};
+	include "/etc/bind/named.conf.local";
+	include "/etc/bind/named.conf.default-zones";
+	include "/etc/bind/named.conf.tld";
+};
+{% endif %}
+{% else %}
+# Slaveserver configuration
+include "/etc/bind/named.conf.local";
+include "/etc/bind/named.conf.default-zones";
+include "/etc/bind/named.conf.tld";
+{% endif %}

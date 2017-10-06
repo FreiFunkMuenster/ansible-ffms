@@ -1,0 +1,109 @@
+{
+
+"Dhcp4": {
+    "interfaces-config": {
+        "interfaces": [ {% for domaene in domaenenliste|dictsort %}"bat{{domaene[0]}}"{% if not loop.last %}, {% endif %}{% endfor %} ]
+    },
+
+    "control-socket": {
+        "socket-type": "unix",
+        "socket-name": "/var/kea/control.sock"
+    },
+
+    "lease-database": {
+{% if kea.database.type == "memfile" %}
+        "type": "memfile",
+        "persist": {{kea.database.persistent | lower}},
+        "name": "{{kea.database.location}}",
+        "lfc-interval": {{kea.database.lfc_interval}}
+{% elif kea.database.type == "postgresql" %}
+        "type": "postgresql",
+        "name": "{{kea.database.db_name}}",
+        "user": "{{kea.database.db_user}}",
+        "password": "{{kea.database.db_pass}}",
+        "host": "{{kea.database.db_host}}"
+{% endif %}
+    },
+
+    "expired-leases-processing": {
+{% for attribute in kea.expired_leases %}
+        "{{attribute.name}}": {{attribute.value}}{% if not loop.last %},{% endif %}
+
+{% endfor %}
+    },
+
+        "valid-lifetime": {{kea.global.lease_default}},
+
+        "option-data": [
+            {
+                "name": "interface-mtu",
+                "code": 26,
+                "space": "dhcp4",
+                "csv-format": true,
+                "data": "{{kea.global.mtu}}"
+            }
+        ],
+
+        "subnet4": [
+{% for domaene in domaenenliste|dictsort %}
+            {
+                "subnet": "{{domaenen[domaene[0]].ffv4_network}}",
+                "interface": "bat{{domaene[0]}}",
+                "id" : {{domaene[0]}},
+                "pools": [ 
+                    { "pool": "{{domaene[1].dhcp_start}} - {{domaene[1].dhcp_ende}}" } 
+                ],
+{% if domaenen[domaene[0]].dhcp is defined and domaenen[domaene[0]].dhcp.reservations is defined %}
+                "reservations" : [
+{% for host in domaenen[domaene[0]].dhcp.reservations %}
+                    {
+                        "hw-address" : "{{host.id}}",
+                        "ip-address" : "{{host.ip}}"
+                    }{% if not loop.last %},{% endif %}
+{% endfor %}
+
+                ],
+{% endif %}
+                "option-data": [ 
+                    {
+                        "name": "routers",
+                        "code": 3,
+                        "space": "dhcp4",
+                        "csv-format": true,
+                        "data": "{{domaenen[domaene[0]].ffv4_network | ipaddr(domaene[1].server_id) | ipaddr('address') }}{% if kea.routers.all_gateways is defined and kea.routers.all_gateways == True %}{% for gateway in groups['gateways'] %}{% if gateway != inventory_hostname and domaene[0] in hostvars[gateway].domaenenliste %}, {{domaenen[domaene[0]].ffv4_network | ipaddr(hostvars[gateway].domaenenliste[domaene[0]].server_id) | ipaddr('address') }}{% endif %}{% endfor %}{% endif %}"
+                    },
+                    {
+                        "name": "domain-name-servers",
+                        "code": 6,
+                        "space": "dhcp4",
+                        "csv-format": true,
+                        "data": "{{domaenen[domaene[0]].ffv4_network | ipaddr(domaene[1].server_id) | ipaddr('address') }}{% if kea.dns.all_gateways is defined and kea.dns.all_gateways == True %}{% for gateway in groups['gateways'] %}{% if gateway != inventory_hostname and domaene[0] in hostvars[gateway].domaenenliste %}, {{domaenen[domaene[0]].ffv4_network | ipaddr(hostvars[gateway].domaenenliste[domaene[0]].server_id) | ipaddr('address') }}{% endif %}{% endfor %}{% endif %}{% if kea.dns.additional %}{% for entry in kea.dns.additional %}, {{entry}}{% endfor %}{% endif %}"
+                    },
+                    {
+                        "name": "domain-name",
+                        "code": 15,
+                        "space": "dhcp4",
+                        "csv-format": true,
+                        "data": "{{kea.global.search_domain}}"
+                    }
+                ]
+            }{% if not loop.last %},{% endif %}
+{% endfor %}
+        ]
+    },
+
+    "Logging": {
+        "loggers": [
+{% for logger in kea.loggers %}
+            {
+                "name": "{{logger.name}}",
+                "output_options": [ {
+                    "output": "{{logger.file}}"
+                } ],
+                "severity": "{{logger.level}}"
+            }{% if not loop.last %},{% endif %}
+
+{% endfor %}
+        ]
+    }
+}

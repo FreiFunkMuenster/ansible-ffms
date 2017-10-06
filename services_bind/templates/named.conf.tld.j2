@@ -1,0 +1,42 @@
+{% for domain in domains %}
+zone "{{domain}}." IN {
+	type master;
+	file "/etc/bind/db.{{domain}}";
+	allow-transfer {
+	   localhost;
+{% for host in groups['gateways'] %}
+	   {{hostvars[host].ansible_ssh_host }};
+{% endfor %}
+	};
+};
+zone "servers.{{domain}}." IN {
+	type master;
+	file "/etc/bind/db.servers.{{domain}}";
+	allow-transfer {
+	   localhost;
+{% for host in groups['gateways'] %}
+           {{hostvars[host].ansible_ssh_host }};
+{% endfor %}
+	};
+};
+zone "services.{{domain}}." IN {
+	type master;
+	file "/etc/bind/db.services.{{domain}}";
+	allow-transfer {
+	   localhost;
+{% for host in groups['gateways'] %}
+           {{hostvars[host].ansible_ssh_host }};
+{% endfor %}
+	};
+};
+zone "knoten.{{domain}}." IN {
+	type master;
+	file "/etc/bind/db.knoten.{{domain}}";
+	allow-transfer {
+	   localhost;
+{% for host in groups['gateways'] %}
+           {{hostvars[host].ansible_ssh_host }};
+{% endfor %}
+	};
+};
+{% endfor %}
