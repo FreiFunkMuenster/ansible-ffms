@@ -1,5 +1,9 @@
 # ansible-ffms
 Ansible based server configuration
 
-Für die hier gespeicherten Ansible-Rollen wird das Zusatzpaket „python-netaddr”
-und mindestens Ansible Version 1.9 benötigt.
+# how to clone
+```bash
+git clone git@github.com:FreiFunkMuenster/ansible-ffms.git
+cd ansible-ffms
+git submodule update --init roles
+```
