@@ -4,7 +4,7 @@ graphite:
   nginx:
     host_name: "{{inventory_hostname}}.{{freifunk.domain}}"
   cluster_servers:
-    - server: "graphite.freifunk-muensterland.de"
+    - server: "graphite.{{freifunk.domain}}"
       port: 80
   relay:
     method: "consistent-hashing"

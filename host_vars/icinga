@@ -17,3 +17,6 @@ administratorenteam:
   - "christoph"
   - "peterb"
   - "wurmi"
+
+graphite_destination: graphite-node-01.freifunk-muensterland.de
+graphite_destination_port: 2003
