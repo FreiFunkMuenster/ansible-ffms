@@ -11,7 +11,7 @@ ffnw_tun:
   v4_remote: 100.100.0.20/31
   v6_remote: fe80::1/64
 - name: fra1
-  gre_target: 185.215.214.131
+  gre_target: 89.46.125.8
   v4_remote: 100.100.32.20/31
   v6_remote: fe80::1/64
 - name: ams1
