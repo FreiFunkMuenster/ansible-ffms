@@ -5,6 +5,7 @@ borg_backup_target:
     - "ticket"
     - "unifi"
     - "mail"
+    - "wiki"
   config:
     backup_user: borgbkp
     backup_group: borgbkp
