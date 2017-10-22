@@ -6,6 +6,8 @@ borg_backup_target:
     - "unifi"
     - "mail"
     - "wiki"
+    - "webserver"
+    - "forum"
   config:
     backup_user: borgbkp
     backup_group: borgbkp
