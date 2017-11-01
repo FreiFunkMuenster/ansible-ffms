@@ -52,7 +52,8 @@ nightbounce		ansible_ssh_host=46.4.90.220		ansible_ssh_port=22	# IPv4 -> FFRL	IP
 handle			ansible_ssh_host=62.210.220.140		ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=0.60	
 corny			ansible_ssh_host=144.76.81.157		ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> FFRL	capacity=1.20	server=hypercorn
 corny2			ansible_ssh_host=144.76.81.139		ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.20	server=hypercorn
-automatix		ansible_ssh_host=46.4.80.179		ansible_ssh_port=222	# IPv4 -> ????	IPv6 -> ????	capacity=1.20	server=voyager
+automatix		ansible_ssh_host=46.4.80.179		ansible_ssh_port=222	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.20	server=voyager
+
 
 # Server zum bauen und bereitstellen der Firmware
 [firmwareserver]
