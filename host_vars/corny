@@ -101,6 +101,7 @@ ffnw_tun:
   gre_target: 217.197.83.186
   v4_remote: 100.100.96.0/31
   v6_remote: fe80::1/64
+  bgp_local_pref: 200
 
 ffrl_tun:
 - name: ber1
