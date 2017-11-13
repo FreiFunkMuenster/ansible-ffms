@@ -8,14 +8,16 @@ borg_backups:
     backup_server_port: '22222'
     backup_server_user: 'rsyncer'
     directories:
-      - '/var/data'
-      - '/etc'
+      - '/var/www/html'
+    mysqldatabases:
+      - 'wordpress'
     borg_options: '-v --stats --list --filter=AME --compression lzma'
   - name: 'to-bkpsrv'
     backup_server: '144.76.81.199'
     backup_server_port: '255'
     backup_server_user: 'borgbkp'
     directories:
-      - '/var/data'
-      - '/etc'
+      - '/var/www/html'
+    mysqldatabases:
+      - 'wordpress'
     borg_options: '-v --stats --list --filter=AME --compression lzma'
