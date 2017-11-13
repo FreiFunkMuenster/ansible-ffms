@@ -703,6 +703,9 @@ dns_entries_for_all_tlds:
  - 'unifi                                            IN  AAAA    2a03:2260:115:4300:5054:ff:fe14:bb9f'
  - 'unifi                                            IN  A       5.9.86.151'
  - 'stats                                            IN  A       5.9.86.142'
+ - 'stats                                            IN  AAAA    2a01:4f8:162:10d2::a1'
+ - 'grafana                                          IN  A       5.9.86.142'
+ - 'grafana                                          IN  AAAA    2a01:4f8:162:10d2::a1'
  - 'webserver                                        IN  A       46.4.80.179'
 
 domains:
