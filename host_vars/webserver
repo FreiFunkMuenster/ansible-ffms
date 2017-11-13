@@ -1,3 +1,7 @@
+server_besitzer: "FFI"
+install_lamp: false
+install_osticket: false
+
 borg_backups:
   - name: 'to-corny'
     backup_server: 'pisces.hellmann.me'

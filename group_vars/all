@@ -703,7 +703,7 @@ dns_entries_for_all_tlds:
  - 'unifi                                            IN  AAAA    2a03:2260:115:4300:5054:ff:fe14:bb9f'
  - 'unifi                                            IN  A       5.9.86.151'
  - 'stats                                            IN  A       5.9.86.142'
-
+ - 'webserver                                        IN  A       46.4.80.179'
 
 domains:
   "freifunk-muensterland.de":
