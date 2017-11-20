@@ -639,7 +639,7 @@ collectd:
 bind:
   ffms_zone_type: slave
   ffms_zone_masters:
-    - 89.163.231.228
+    - 176.9.38.163
 
 logrotate:
   cycle: daily
@@ -660,7 +660,7 @@ freifunk:
        AAAA: 2a03:2260:115:1600:5054:ff:fe14:bb9f
 
 bind_zonemaster:
-  server: service.freifunk-muensterland.de
+  server: dnsmaster.freifunk-muensterland.de
   email: info.freifunk-muensterland.de
 
 dns_entries_for_all_tlds:
@@ -710,6 +710,8 @@ dns_entries_for_all_tlds:
  - 'grafana                                          IN  AAAA    2a01:4f8:162:10d2::a1'
  - 'webserver                                        IN  A       46.4.80.179'
  - 'webserver-alt                                    IN  A       89.163.231.227'
+ - 'dnsmaster                                        IN  A       176.9.38.163'
+ - 'dnsmaster                                        IN  AAAA    2a01:4f8:150:4486::a5'
 
 domains:
   "freifunk-muensterland.de":

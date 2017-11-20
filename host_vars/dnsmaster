@@ -1,0 +1,13 @@
+server_besitzer: "FFI"
+server_id: 10
+vm_id: 10
+
+install_lamp: false
+install_osticket: false
+install_dnsmaster: true
+
+bind:
+  ffms_zone_type: master
+  ns_name: ns01
+  ffms_for_groups:
+    - domaene-06
