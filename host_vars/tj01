@@ -24,63 +24,6 @@ ffnw_tun:
   v6_remote: fe80::1/64
   bgp_local_pref: 200
 
-domaenenliste:
-   "17":
-      dhcp_start: 10.17.128.0
-      dhcp_ende: 10.17.191.255
-      server_id: 3
-      partner: "remue-09"
-   "22":
-      dhcp_start: 10.22.128.0
-      dhcp_ende: 10.22.191.255
-      server_id: 3
-      partner: "c1024"
-   "25":
-      dhcp_start: 10.25.128.0
-      dhcp_ende: 10.25.191.255
-      server_id: 3
-      partner: "corny"
-   "27":
-      dhcp_start: 10.27.64.0
-      dhcp_ende: 10.27.127.255
-      server_id: 2
-      partner: "handle"
-   "30":
-      dhcp_start: 10.30.128.0
-      dhcp_ende: 10.30.191.255
-      server_id: 3
-      partner: "nightbounce"
-   "31":
-      dhcp_start: 10.31.128.0
-      dhcp_ende: 10.31.191.255
-      server_id: 3
-      partner: "corny"
-   "32":
-      dhcp_start: 10.32.128.0
-      dhcp_ende: 10.32.191.255
-      server_id: 3
-      partner: "des1"
-   "39":
-      dhcp_start: 10.39.128.0
-      dhcp_ende: 10.39.191.255
-      server_id: 3
-      partner: "nightbounce"
-   "40":
-      dhcp_start: 10.40.128.0
-      dhcp_ende: 10.40.191.255
-      server_id: 3
-      partner: "c1024"
-   "50":
-      dhcp_start: 10.50.128.0
-      dhcp_ende: 10.50.191.255
-      server_id: 3
-      partner: "des2"
-   "59":
-      dhcp_start: 10.59.128.0
-      dhcp_ende: 10.59.191.255
-      server_id: 3
-      partner: "remue-09"
-
 dhcp_type: "kea"
 
 tunneldigger:
