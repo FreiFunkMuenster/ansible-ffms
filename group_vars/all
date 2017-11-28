@@ -761,7 +761,7 @@ domains:
       - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
       - '@                                                IN  TXT     "google-site-verification=ex-6A1f0RBIhAjoPEu_7WA7Rv1yVUmkMTdXT19SjBOw"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
-      - 'dyndns                                           IN  CNAME   dyndns.freifunk-muensterland.de.'
+      - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
   "freifunk-muensterland.net":
     extern_dns:
       - c1024
@@ -775,7 +775,7 @@ domains:
       - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
       - '@                                                IN  TXT     "google-site-verification=SEIPNGVqGBu_d0AO-yCqj_MxLjO7aHOaIWzuq-fIyM4"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
-      - 'dyndns                                           IN  CNAME   dyndns.freifunk-muensterland.de.'
+      - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
   "freifunk-muensterland.org":
     extern_dns:
       - c1024
@@ -789,7 +789,7 @@ domains:
       - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
       - '@                                                IN  TXT     "google-site-verification=bbu3aMuoNu4n3J8GzZkcn4bT44SbVUoZOEQB7JEZKao"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
-      - 'dyndns                                           IN  CNAME   dyndns.freifunk-muensterland.de.'
+      - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
   "ffmsl.de":
     extern_dns:
       - c1024
@@ -803,4 +803,4 @@ domains:
       - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
       - '@                                                IN  TXT     "google-site-verification=BPJo0QNmezQuWNKUVTQY7z_GuGrGkW1Nl1CMmjQFM4I"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
-      - 'dyndns                                           IN  CNAME   dyndns.freifunk-muensterland.de.'
+      - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
