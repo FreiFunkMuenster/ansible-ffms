@@ -58,13 +58,15 @@ fastd:
 
 # Collectd Konfiguration 
 collectd:
+  collect_ping: false
+  collect_bind: false
   collect_dhcp: true
   collect_fastd: true
   collect_l2tp: false
   collect_ipv4ipv6: true
   collect_sysctl: true
   graphite_target: 
-    host: 89.163.231.228
+    host: "stats.{{freifunk.domain}}"
     port: 2003
 
 # Bind Konfiguration

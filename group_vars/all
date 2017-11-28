@@ -624,18 +624,6 @@ administratorenteam:
   - "corny"
   - "peterb"
 
-collectd:
-  collect_dhcp: false
-  collect_fastd: false
-  collect_l2tp: false
-  collect_ipv4ipv6: false
-  collect_sysctl: false
-  collect_bind: false
-  collect_ping: false
-  graphite_target:
-    host: 89.163.231.228
-    port: 2003
-
 bind:
   ffms_zone_type: slave
   ffms_zone_masters:

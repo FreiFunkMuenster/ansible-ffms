@@ -96,7 +96,7 @@ collectd:
   collect_ping: false
   collect_nginx: true
   graphite_target:
-    host: 89.163.231.228
+    host: "stats.{{freifunk.domain}}"
     port: 2003
 
 administratorenteam:

@@ -15,24 +15,3 @@ ffms_routing:
     v6_net: 2a03:2260:115:500::/56
   - group_name: domaene-06
     v6_net: 2a03:2260:115:600::/56
-
-  
-# Collectd Konfiguration 
-collectd:
-  collect_dhcp: false
-  collect_fastd: false
-  collect_l2tp: false
-  collect_ipv4ipv6: true
-  collect_sysctl: true
-  graphite_target:
-    host: 89.163.231.228
-    port: 2003
-
-administratorenteam:
-  - "parad0x"
-  - "void"
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
