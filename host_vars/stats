@@ -1,9 +1,13 @@
 server_besitzer: "FFI"
 hoster: "Hetzner"
 
+grafana:
+  nginx:
+    host_name: "grafana.{{freifunk.domain}}"
+
 graphite:
   nginx:
-    host_name: "{{inventory_hostname_short}}.{{freifunk.domain}}"
+    host_name: "stats.{{freifunk.domain}}"
   cluster_servers:
     - server: "graphite-node-01.freifunk-muensterland.de"
       port: 80
