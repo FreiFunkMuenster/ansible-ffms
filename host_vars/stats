@@ -7,7 +7,7 @@ grafana:
 
 graphite:
   nginx:
-    host_name: "stats.{{freifunk.domain}}"
+    host_name: "graphite.{{freifunk.domain}}"
   cluster_servers:
     - server: "graphite-node-01.freifunk-muensterland.de"
       port: 80
