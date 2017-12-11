@@ -1,0 +1,11 @@
+collectd:
+  collect_dhcp: false
+  collect_fastd: false
+  collect_l2tp: false
+  collect_ipv4ipv6: false
+  collect_sysctl: true
+  collect_bind: false
+  collect_ping: false
+  graphite_target:
+    host: "graphite.{{freifunk.domain}}"
+    port: 2003

@@ -1,0 +1,5 @@
+---
+ - hosts: hypervisors
+   remote_user: root
+   roles:
+    - { role: collectd, tags: "collectd"}
