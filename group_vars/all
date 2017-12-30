@@ -90,6 +90,10 @@ domaenen:
     map_show_contact: false
     map_max_age: 14
     firmware: domaene10/
+    dhcp:
+      reservations:
+        - ip: "10.10.64.10"
+          id: "00:15:17:fd:4d:a4"
   "11":
     name: Bocholt
     community: Westmünsterland
@@ -646,6 +650,9 @@ freifunk:
     "unifi":
        A: 10.43.128.14
        AAAA: 2a03:2260:115:1600:5054:ff:fe14:bb9f
+    "build":
+       A: 10.10.64.10
+       AAAA: 2a03:2260:115:1000:215:17ff:fefd:4da4
 
 bind_zonemaster:
   server: dnsmaster.freifunk-muensterland.de
@@ -694,6 +701,7 @@ dns_entries_for_all_tlds:
  - 'graphite                                         IN  AAAA    2a01:4f8:162:10d2::a1'
  - 'dnsmaster                                        IN  A       176.9.38.163'
  - 'dnsmaster                                        IN  AAAA    2a01:4f8:150:4486::a5'
+ - 'build                                            IN  AAAA    2a03:2260:115:1000:215:17ff:fefd:4da4'
 
 domains:
   "freifunk-muensterland.de":
