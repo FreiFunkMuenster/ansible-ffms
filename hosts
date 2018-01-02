@@ -55,10 +55,10 @@ corny			ansible_ssh_host=144.76.81.157		ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 
 corny2			ansible_ssh_host=144.76.81.139		ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.20	server=hypercorn
 automatix		ansible_ssh_host=46.4.80.179		ansible_ssh_port=222	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.20	server=voyager
 
-
 # Server zum bauen und bereitstellen der Firmware
 [firmwareserver]
 firmware		ansible_ssh_host=144.76.30.226		ansible_ssh_port=223
+build			ansible_ssh_host=2a03:2260:115:1000:215:17ff:fefd:4da4		ansible_ssh_port=22
 
 # Server der ein Monitoring mittels icinga zur verfügung stellt.
 [monitoring]
