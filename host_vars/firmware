@@ -12,4 +12,4 @@ administratorenteam:
   - "corny"
   - "dezi"
   - "tobitx-FFEL"
-  - "build-corny" #Für SSHFS von build-corny zum Firmwareserver.
+  - "build" #Für rsync vom Build- zum Firmwareserver.
