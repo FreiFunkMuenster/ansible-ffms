@@ -32,6 +32,11 @@ sn <- data.frame(name="", srv="", perf=0, vm.id=0)[-1,]
 sn$name <- as.character(sn$name)
 sn$srv <- as.character(sn$srv)
 
+# Kommentarzeilen entfernen
+sn.rows <- numeric()
+for (i in 1:dim(sn.raw)[1]) { if(strsplit(sn.raw[i,], "")[[1]][1] != "#") sn.rows <<- c(sn.rows, i) }
+sn.raw <- data.frame(sn.raw[sn.rows,1])
+
 for (i in row(sn.raw)) {
 	if(sn.raw[i,1] %~% "\\[gateways\\]") {
 		j <- 0
@@ -171,8 +176,11 @@ for (i in sn$name) {
 		}
 	}
 	host.vars.new[[i]] <- c(host.vars.raw[[i]][1:which(host.vars.raw[[i]] == "domaenenliste:"),],
-	domlist.new,	
-	host.vars.raw[[i]][(min(which(host.vars.raw[[i]][-(1:which(host.vars.raw[[i]] == "domaenenliste:")),] == "")) + which(host.vars.raw[[i]] == "domaenenliste:")):dim(host.vars.raw[[i]])[1],])
+	domlist.new)
+	# Schlussteil der Datei nur anfügen, wenn er auch existiert
+	if(length(which(host.vars.raw[[i]][-(1:which(host.vars.raw[[i]] == "domaenenliste:")),] == "")) != 0) {	
+		host.vars.new[[i]] <- c(host.vars.new[[i]], host.vars.raw[[i]][(min(which(host.vars.raw[[i]][-(1:which(host.vars.raw[[i]] == "domaenenliste:")),] == "")) + which(host.vars.raw[[i]] == "domaenenliste:")):dim(host.vars.raw[[i]])[1],])
+	}
 	fileConn <- file(paste("./host_vars/",i,sep=""))
 	writeLines(host.vars.new[[i]], fileConn)
 	close(fileConn)
