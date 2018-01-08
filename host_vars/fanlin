@@ -12,24 +12,24 @@ vm_id: 2
 
 # IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
 # Nur für Backbone-Server notwendig  
-ffrl_nat_ip: 185.66.193.49/32
+#ffrl_nat_ip: 185.66.193.49/32
     
 # GRE-Einstellungen zum Freifunk Rheinland
 # Bei v6 ist die ...::1 remote und die ...::2 lokal
-ffrl_tun:
-- name: dus
-  gre_target: 185.66.193.0
-  v4_local: 100.64.0.101/31
-  v4_remote: 100.64.0.100/31
-  v6_local: 2a03:2260:0:3b::2/64
-  v6_remote: 2a03:2260:0:3b::1/64
-  bgp_local_pref: 201
-- name: ber
-  gre_target: 185.66.195.0
-  v4_local: 100.64.0.103/31
-  v4_remote: 100.64.0.102/31
-  v6_local: 2a03:2260:0:3a::2/64
-  v6_remote: 2a03:2260:0:3a::1/64
+#ffrl_tun:
+#- name: dus
+#  gre_target: 185.66.193.0
+#  v4_local: 100.64.0.101/31
+#  v4_remote: 100.64.0.100/31
+#  v6_local: 2a03:2260:0:3b::2/64
+#  v6_remote: 2a03:2260:0:3b::1/64
+#  bgp_local_pref: 201
+#- name: ber
+#  gre_target: 185.66.195.0
+#  v4_local: 100.64.0.103/31
+#  v4_remote: 100.64.0.102/31
+#  v6_local: 2a03:2260:0:3a::2/64
+#  v6_remote: 2a03:2260:0:3a::1/64
     
 is_external_nameserver: true
 
