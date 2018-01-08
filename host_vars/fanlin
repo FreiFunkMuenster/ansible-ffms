@@ -1,36 +1,30 @@
-
-# Variablen für Backbone-Server fanlin.gw.freifunk-muenster.de
-# Die Server-IP-Adresse wird durch von ansible bereitgestellte Variablen abgerufen (ansible_eth0.ipv4...)
+server_id: 2
+vm_id: 2
 
 server_besitzer: "Arnim Faryn / FanLin"
 hoster: "myloc"
 
-# ID des Servers. 
-# Hieraus wird die IP-Adresse innerhalb des Freifunk Netzwerkes gebildet.
-server_id: 2
-vm_id: 2
+ffnw_nat_ip: 185.197.132.39/32
+    
+ffnw_tun:
+- name: erf1
+  gre_target: 87.118.74.56
+  v4_remote: 100.100.0.30/31
+  v6_remote: fe80::1/64
+#- name: fra1
+#  gre_target: 89.46.125.8
+#  v4_remote: 100.100.32.30/31
+#  v6_remote: fe80::1/64
+#- name: ams1
+#  gre_target: 185.116.236.32
+#  v4_remote: 100.100.64.30/31
+#  v6_remote: fe80::1/64
+- name: ber1
+  gre_target: 217.197.83.186
+  v4_remote: 100.100.96.30/31
+  v6_remote: fe80::1/64
+  bgp_local_pref: 201
 
-# IPv4 Adresse auf die der Datenverkehr per NAT umgestezt wird
-# Nur für Backbone-Server notwendig  
-#ffrl_nat_ip: 185.66.193.49/32
-    
-# GRE-Einstellungen zum Freifunk Rheinland
-# Bei v6 ist die ...::1 remote und die ...::2 lokal
-#ffrl_tun:
-#- name: dus
-#  gre_target: 185.66.193.0
-#  v4_local: 100.64.0.101/31
-#  v4_remote: 100.64.0.100/31
-#  v6_local: 2a03:2260:0:3b::2/64
-#  v6_remote: 2a03:2260:0:3b::1/64
-#  bgp_local_pref: 201
-#- name: ber
-#  gre_target: 185.66.195.0
-#  v4_local: 100.64.0.103/31
-#  v4_remote: 100.64.0.102/31
-#  v6_local: 2a03:2260:0:3a::2/64
-#  v6_remote: 2a03:2260:0:3a::1/64
-    
 is_external_nameserver: true
 
 domaenenliste:
