@@ -11,14 +11,14 @@ ffnw_tun:
   gre_target: 87.118.74.56
   v4_remote: 100.100.0.24/31
   v6_remote: fe80::1/64
-- name: fra1
-  gre_target: 89.46.125.8
-  v4_remote: 100.100.32.24/31
-  v6_remote: fe80::1/64
-- name: ams1
-  gre_target: 185.116.236.32
-  v4_remote: 100.100.64.24/31
-  v6_remote: fe80::1/64
+#- name: fra1
+#  gre_target: 89.46.125.8
+#  v4_remote: 100.100.32.24/31
+#  v6_remote: fe80::1/64
+#- name: ams1
+#  gre_target: 185.116.236.32
+#  v4_remote: 100.100.64.24/31
+#  v6_remote: fe80::1/64
 - name: ber1
   gre_target: 217.197.83.186
   v4_remote: 100.100.96.24/31
