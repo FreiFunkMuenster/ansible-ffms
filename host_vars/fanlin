@@ -25,6 +25,26 @@ ffnw_tun:
   v6_remote: fe80::1/64
   bgp_local_pref: 201
 
+ffrl_tun:
+- name: ber2
+  gre_target: 185.66.195.1
+  v4_remote: 100.64.9.148/31
+  v6_remote: 2a03:2260:0:4df::1/64
+  bgp_local_pref: 201
+- name: fra1
+  gre_target: 185.66.194.0
+  v4_remote: 100.64.9.148/31
+  v6_remote: 2a03:2260:0:4de::1/64
+- name: fra2
+  gre_target: 185.66.194.1
+  v4_remote: 100.64.9.150/31
+  v6_remote: 2a03:2260:0:4e0::1/64
+- name: dus2
+  gre_target:  185.66.193.1
+  v4_remote: 100.64.9.152/31
+  v6_remote: 2a03:2260:0:4e1::1/64
+  bgp_local_pref: 201
+
 is_external_nameserver: true
 
 domaenenliste:
