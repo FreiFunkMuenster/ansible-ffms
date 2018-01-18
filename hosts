@@ -22,6 +22,7 @@ battleaxegaming		ansible_ssh_host=46.4.122.244		ansible_ssh_port=22	# Kein Zugri
 # Server für Hoppglas Karten
 [mapserver]
 karte			ansible_ssh_host=46.4.80.190		ansible_ssh_port=22
+testkarte		ansible_ssh_host=144.76.81.199		ansible_ssh_port=223
 
 # Server für Statistiken mittels Graphite und Grafana
 [statistics]
@@ -53,7 +54,7 @@ nightbounce		ansible_ssh_host=46.4.90.220		ansible_ssh_port=22	# IPv4 -> FFRL	IP
 handle			ansible_ssh_host=62.210.220.140		ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=0.75
 corny			ansible_ssh_host=144.76.81.157		ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> FFRL	capacity=1.00	server=hypercorn
 corny2			ansible_ssh_host=144.76.81.139		ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=hypercorn
-automatix		ansible_ssh_host=46.4.80.179		ansible_ssh_port=222	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=voyager
+automatix		ansible_ssh_host=46.4.80.184		ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=voyager
 
 # Server zum bauen und bereitstellen der Firmware
 [firmwareserver]
