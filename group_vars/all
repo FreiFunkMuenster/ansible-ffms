@@ -92,8 +92,14 @@ domaenen:
     firmware: domaene10/
     dhcp:
       reservations:
-        - ip: "10.10.64.10"
+        - ip: "10.10.64.10" #Buildserver
           id: "00:15:17:fd:4d:a4"
+        - ip: "10.10.10.50" #FF-BOR-KPB-Switch-KG
+          id: "f0:9f:c2:0c:18:69"
+        - ip: "10.10.10.51" #FF-BOR-KPB-AP-Vorplatz
+          id: "78:8a:20:23:0e:96"
+        - ip: "10.10.10.52" #FF-BOR-KPB-AP-Innenhof
+          id: "f0:9f:c2:d0:ca:82"
   "11":
     name: Bocholt
     community: Westmünsterland
