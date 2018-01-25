@@ -708,6 +708,8 @@ dns_entries_for_all_tlds:
  - 'dnsmaster                                        IN  A       176.9.38.163'
  - 'dnsmaster                                        IN  AAAA    2a01:4f8:150:4486::a5'
  - 'build                                            IN  AAAA    2a03:2260:115:1000:215:17ff:fefd:4da4'
+ - 'mastodon                                         IN  A       94.130.64.233'
+ - 'mastodon                                         IN  AAAA    2a01:4f8:10b:2e6f::200'
 
 domains:
   "freifunk-muensterland.de":
