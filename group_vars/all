@@ -1,4 +1,6 @@
 # Globale Variablen für alle Server
+build_tunnels_over_ipv6_if_available: false
+
 domaenen:
   "01":
     name: Münster-Mitte-Süd
@@ -710,6 +712,7 @@ dns_entries_for_all_tlds:
  - 'build                                            IN  AAAA    2a03:2260:115:1000:215:17ff:fefd:4da4'
  - 'mastodon                                         IN  A       94.130.64.233'
  - 'mastodon                                         IN  AAAA    2a01:4f8:10b:2e6f::200'
+ - 'mumble                                           IN  CNAME   mumble.tarumba.de.'
 
 domains:
   "freifunk-muensterland.de":
