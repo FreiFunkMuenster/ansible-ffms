@@ -8,6 +8,7 @@ borg_backup_target:
     - "wiki"
     - "webserver"
     - "forum"
+    - "mastodon"
   config:
     backup_user: borgbkp
     backup_group: borgbkp
