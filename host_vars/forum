@@ -6,6 +6,7 @@ borg_backups:
     directories:
       - '/var/discourse/shared/standalone/backups/default'
     borg_options: '-v --stats --list --filter=AME --compression lzma'
+    borg_prune: '--keep-daily=7 --keep-weekly=4 --keep-monthly=6'
   - name: 'to-bkpsrv'
     backup_server: '144.76.81.199'
     backup_server_port: '255'
@@ -13,3 +14,4 @@ borg_backups:
     directories:
       - '/var/discourse/shared/standalone/backups/default'
     borg_options: '-v --stats --list --filter=AME --compression lzma'
+    borg_prune: '--keep-daily=7 --keep-weekly=4 --keep-monthly=6'
