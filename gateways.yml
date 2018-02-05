@@ -15,6 +15,7 @@
     - { role: iptables, tags: "iptables"}
     - { role: gateways_gre_upstream, tags: "gateways_gre_upstream"}
     - { role: backbone_gre_ffms, tags: "backbone_gre_ffms"}
+    - { role: batman_build, tags: "batman_build", when:  "'batman_version' in hostvars[inventory_hostname] and domaenenliste is defined"}
     - { role: gateways_batman, tags: "gateways_batman"}
     - { role: gateways_gretap, tags: "gateways_gretap"}
     - { role: gateways_l2tp, tags: "gateways_l2tp"}
