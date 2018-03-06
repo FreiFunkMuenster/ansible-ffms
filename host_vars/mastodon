@@ -22,14 +22,5 @@ borg_backups:
       - 'mastodon_production'
     borg_options: '-v --stats --list --filter=AME --compression lzma'
 
-administratorenteam:
-  - "parad0x"
-  - "void"
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "corny"
-  - "peterb"
+additionaladmins:
   - "scroom"

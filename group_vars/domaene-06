@@ -74,14 +74,3 @@ bind:
   ffms_zone_type: slave
   ffms_zone_masters:
     - 10.43.48.11
- 
-administratorenteam:
-  - "parad0x"
-  - "void" 
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "corny"
-

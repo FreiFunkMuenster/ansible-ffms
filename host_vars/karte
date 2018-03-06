@@ -99,16 +99,4 @@ collectd:
     host: "stats.{{freifunk.domain}}"
     port: 2003
 
-administratorenteam:
-  - "parad0x"
-  - "void" 
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "corny"
-  - "handle"
-  - "tsued"
-
 batman_version: "2017.4"

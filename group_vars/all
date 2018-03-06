@@ -708,14 +708,16 @@ hostname_suffix: ".servers.freifunk-muensterland.de"
 
 administratorenteam:
   - "parad0x"
-  - "void"
   - "kgbvax"
-  - "fanlin"
-  - "fungur"
   - "descilla"
   - "mpw"
   - "corny"
   - "peterb"
+  - "alucardo"
+  - "fll"
+  - "p4w"
+  - "hoepers"
+  - "wurmi"
 
 bind:
   ffms_zone_type: slave

@@ -110,3 +110,6 @@ domaenenliste:
       partner: "corny2"
 
 dhcp_type: "kea"
+
+additionaladmins:
+  - "fanlin"

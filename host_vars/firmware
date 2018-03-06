@@ -1,15 +1,4 @@
 server_besitzer: "Sven Culley / Sense"
 
-administratorenteam:
-  - "parad0x"
-  - "void" 
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "alucardo"
-  - "corny"
-  - "dezi"
-  - "tobitx-FFEL"
+additionaladmins:
   - "build" #Für rsync vom Build- zum Firmwareserver.

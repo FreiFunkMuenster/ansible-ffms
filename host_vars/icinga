@@ -4,19 +4,5 @@
 id: 13
 server_besitzer: "Sven Culley / Sense"
 
-administratorenteam:
-  - "parad0x"
-  - "void"
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "corny"
-  - "marcus"
-  - "christoph"
-  - "peterb"
-  - "wurmi"
-
 graphite_destination: graphite-node-01.freifunk-muensterland.de
 graphite_destination_port: 2003

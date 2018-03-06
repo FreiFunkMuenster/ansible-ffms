@@ -1,16 +1,5 @@
 server_besitzer: "Marius Hellmann / corny456"
 
-administratorenteam:
-  - "parad0x"
-  - "void"
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "alucardo"
-  - "corny"
-
 collectd:
   collect_dhcp: false
   collect_fastd: false

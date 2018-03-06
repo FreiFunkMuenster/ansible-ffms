@@ -104,15 +104,5 @@ domaenenliste:
       server_id: 3
       partner: "c1024"
 
-administratorenteam:
-  - "parad0x"
-  - "void"
-  - "kgbvax"
-  - "fanlin"
-  - "fungur"
-  - "descilla"
-  - "mpw"
-  - "corny"
-  - "peterb"
-  - "wurmi"
+additionaladmins:
   - "handle"
