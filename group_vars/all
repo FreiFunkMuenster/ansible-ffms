@@ -603,6 +603,87 @@ domaenen:
     map_show_contact: false
     map_max_age: 14
     firmware: domaene65/
+  "66":
+    name: Bottrop
+    community: Emscherland
+    ffv4_network: 10.66.0.0/16
+    ffv6_network: 2a03:2260:115:6600::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene66/
+  "67":
+    name: Dorsten
+    community: Emscherland
+    ffv4_network: 10.67.0.0/16
+    ffv6_network: 2a03:2260:115:6700::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene67/
+  "68":
+    name: Gelsenkirchen
+    community: Emscherland
+    ffv4_network: 10.68.0.0/16
+    ffv6_network: 2a03:2260:115:6800::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene68/
+  "69":
+    name: Gladbeck
+    community: Emscherland
+    ffv4_network: 10.69.0.0/16
+    ffv6_network: 2a03:2260:115:6900::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene69/
+  "70":
+    name: Haltern am See
+    community: Emscherland
+    ffv4_network: 10.70.0.0/16
+    ffv6_network: 2a03:2260:115:7000::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene70/
+  "71":
+    name: Herten
+    community: Emscherland
+    ffv4_network: 10.71.0.0/16
+    ffv6_network: 2a03:2260:115:7100::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene71/
+  "72":
+    name: Marl
+    community: Emscherland
+    ffv4_network: 10.72.0.0/16
+    ffv6_network: 2a03:2260:115:7200::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene72/
+  "73":
+    name: Raesfeld
+    community: Emscherland
+    ffv4_network: 10.73.0.0/16
+    ffv6_network: 2a03:2260:115:7300::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene73/
+  "74":
+    name: Recklinghausen
+    community: Emscherland
+    ffv4_network: 10.74.0.0/16
+    ffv6_network: 2a03:2260:115:7400::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene74/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird
 routing_table: 42
