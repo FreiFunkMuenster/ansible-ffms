@@ -1,7 +1,55 @@
 server_id: 13 
 vm_id: 13
+
 server_besitzer: "Till Jannis Dören / Jannis"
 hoster: "Hetzner"
+
+domaenenliste:
+   "66":
+      dhcp_start: 10.66.128.0
+      dhcp_ende: 10.66.191.255
+      server_id: 3
+      partner: "corny2"
+   "67":
+      dhcp_start: 10.67.128.0
+      dhcp_ende: 10.67.191.255
+      server_id: 3
+      partner: "corny2"
+   "68":
+      dhcp_start: 10.68.128.0
+      dhcp_ende: 10.68.191.255
+      server_id: 3
+      partner: "corny2"
+   "69":
+      dhcp_start: 10.69.128.0
+      dhcp_ende: 10.69.191.255
+      server_id: 3
+      partner: "corny2"
+   "70":
+      dhcp_start: 10.70.128.0
+      dhcp_ende: 10.70.191.255
+      server_id: 3
+      partner: "corny2"
+   "71":
+      dhcp_start: 10.71.128.0
+      dhcp_ende: 10.71.191.255
+      server_id: 3
+      partner: "corny2"
+   "72":
+      dhcp_start: 10.72.128.0
+      dhcp_ende: 10.72.191.255
+      server_id: 3
+      partner: "corny2"
+   "73":
+      dhcp_start: 10.73.128.0
+      dhcp_ende: 10.73.191.255
+      server_id: 3
+      partner: "corny2"
+   "74":
+      dhcp_start: 10.74.128.0
+      dhcp_ende: 10.74.191.255
+      server_id: 3
+      partner: "corny2"
 
 ffnw_nat_ip: 185.197.132.36/32
 

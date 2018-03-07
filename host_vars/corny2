@@ -15,6 +15,51 @@ domaenenliste:
       dhcp_ende: 10.64.127.255
       server_id: 2
       partner: "fanlin"
+   "66":
+      dhcp_start: 10.66.64.0
+      dhcp_ende: 10.66.127.255
+      server_id: 2
+      partner: "tj01"
+   "67":
+      dhcp_start: 10.67.64.0
+      dhcp_ende: 10.67.127.255
+      server_id: 2
+      partner: "tj01"
+   "68":
+      dhcp_start: 10.68.64.0
+      dhcp_ende: 10.68.127.255
+      server_id: 2
+      partner: "tj01"
+   "69":
+      dhcp_start: 10.69.64.0
+      dhcp_ende: 10.69.127.255
+      server_id: 2
+      partner: "tj01"
+   "70":
+      dhcp_start: 10.70.64.0
+      dhcp_ende: 10.70.127.255
+      server_id: 2
+      partner: "tj01"
+   "71":
+      dhcp_start: 10.71.64.0
+      dhcp_ende: 10.71.127.255
+      server_id: 2
+      partner: "tj01"
+   "72":
+      dhcp_start: 10.72.64.0
+      dhcp_ende: 10.72.127.255
+      server_id: 2
+      partner: "tj01"
+   "73":
+      dhcp_start: 10.73.64.0
+      dhcp_ende: 10.73.127.255
+      server_id: 2
+      partner: "tj01"
+   "74":
+      dhcp_start: 10.74.64.0
+      dhcp_ende: 10.74.127.255
+      server_id: 2
+      partner: "tj01"
 
 ffnw_nat_ip: 185.197.132.37/32
 
