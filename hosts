@@ -23,7 +23,7 @@ battleaxegaming		ansible_ssh_host=46.4.122.244		ansible_ssh_port=22	# Kein Zugri
 # Server für Hoppglas Karten
 [mapserver]
 karte			ipv4=46.4.80.190	ipv6=2a01:4f8:140:616e::83	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22
-testkarte		ipv4=144.76.81.199	ipv6=2a01:4f8:192:3c6::7	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22 #Nur für Tests!
+testkarte		ipv4=78.46.117.231	ipv6=2a01:4f8:1c0c:6b7e::1	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22 #Nur für Tests!
 
 # Server für Statistiken mittels Graphite und Grafana
 [statistics]
