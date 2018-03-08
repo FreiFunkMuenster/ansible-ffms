@@ -744,6 +744,9 @@ freifunk:
     "build":
        A: 10.10.64.10
        AAAA: 2a03:2260:115:1000:215:17ff:fefd:4da4
+    "streamer":
+       A: 46.4.80.179
+       AAAA: 2a01:4f8:140:616e::85
 
 bind_zonemaster:
   server: dnsmaster.freifunk-muensterland.de
@@ -796,6 +799,8 @@ dns_entries_for_all_tlds:
  - 'mastodon                                         IN  A       94.130.64.233'
  - 'mastodon                                         IN  AAAA    2a01:4f8:10b:2e6f::200'
  - 'mumble                                           IN  CNAME   mumble.tarumba.de.'
+ - 'streamer                                         IN  A       46.4.80.179'
+ - 'streamer                                         IN  AAAA    2a01:4f8:140:616e::85'
 
 domains:
   "freifunk-muensterland.de":
