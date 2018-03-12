@@ -13,7 +13,7 @@
     - { role: mapserver_hopglass-server, tags: "mapserver_hopglass-server"}
     - { role: mapserver_hopglass, tags: "mapserver_hopglass"}
     - { role: mapserver_nginx, tags: "mapserver_nginx"}
-    - { role: collectd, tags: "collectd"}
+    - { role: collectd, tags: "collectd", when: "'collectd' in hostvars[inventory_hostname]" }
     - { role: py_respondd, tags: "py_respondd"}
-    - { role: mapserver_stats, tags: "mapserver_stats"}
+#    - { role: mapserver_stats, tags: "mapserver_stats"}
 
