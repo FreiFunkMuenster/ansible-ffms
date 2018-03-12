@@ -49,76 +49,71 @@ ffrl_tun:
 is_external_nameserver: true
 
 domaenenliste:
+   "03":
+      dhcp_start: 10.3.64.0
+      dhcp_ende: 10.3.127.255
+      server_id: 2
+      partner: "remue-09"
    "09":
       dhcp_start: 10.9.64.0
       dhcp_ende: 10.9.127.255
       server_id: 2
-      partner: "corny"
+      partner: "c1024"
    "12":
       dhcp_start: 10.12.64.0
       dhcp_ende: 10.12.127.255
       server_id: 2
       partner: "c1024"
+   "13":
+      dhcp_start: 10.13.64.0
+      dhcp_ende: 10.13.127.255
+      server_id: 2
+      partner: "automatix"
    "16":
-      dhcp_start: 10.16.64.0
-      dhcp_ende: 10.16.127.255
+      dhcp_start: 10.16.128.0
+      dhcp_ende: 10.16.191.255
+      server_id: 3
+      partner: "parad0x"
+   "17":
+      dhcp_start: 10.17.64.0
+      dhcp_ende: 10.17.127.255
       server_id: 2
-      partner: "c1024"
-   "19":
-      dhcp_start: 10.19.64.0
-      dhcp_ende: 10.19.127.255
+      partner: "parad0x"
+   "21":
+      dhcp_start: 10.21.64.0
+      dhcp_ende: 10.21.127.255
       server_id: 2
-      partner: "handle"
-   "26":
-      dhcp_start: 10.26.64.0
-      dhcp_ende: 10.26.127.255
-      server_id: 2
-      partner: "des2"
+      partner: "nightbounce"
    "28":
       dhcp_start: 10.28.64.0
       dhcp_ende: 10.28.127.255
       server_id: 2
-      partner: "remue-09"
-   "32":
-      dhcp_start: 10.32.64.0
-      dhcp_ende: 10.32.127.255
-      server_id: 2
-      partner: "tj01"
-   "35":
-      dhcp_start: 10.35.128.0
-      dhcp_ende: 10.35.191.255
-      server_id: 3
-      partner: "fanlin"
-   "41":
-      dhcp_start: 10.41.64.0
-      dhcp_ende: 10.41.127.255
-      server_id: 2
       partner: "parad0x"
-   "45":
-      dhcp_start: 10.45.64.0
-      dhcp_ende: 10.45.127.255
-      server_id: 2
-      partner: "nightbounce"
-   "46":
-      dhcp_start: 10.46.128.0
-      dhcp_ende: 10.46.191.255
-      server_id: 3
-      partner: "fanlin"
-   "51":
-      dhcp_start: 10.51.64.0
-      dhcp_ende: 10.51.127.255
-      server_id: 2
-      partner: "nightbounce"
-   "54":
-      dhcp_start: 10.54.64.0
-      dhcp_ende: 10.54.127.255
+   "33":
+      dhcp_start: 10.33.64.0
+      dhcp_ende: 10.33.127.255
       server_id: 2
       partner: "des2"
-   "55":
-      dhcp_start: 10.55.64.0
-      dhcp_ende: 10.55.127.255
+   "40":
+      dhcp_start: 10.40.64.0
+      dhcp_ende: 10.40.127.255
       server_id: 2
-      partner: "parad0x"
+      partner: "remue-09"
+   "53":
+      dhcp_start: 10.53.64.0
+      dhcp_ende: 10.53.127.255
+      server_id: 2
+      partner: "tj01"
+   "58":
+      dhcp_start: 10.58.64.0
+      dhcp_ende: 10.58.127.255
+      server_id: 2
+      partner: "corny"
+   "66":
+      dhcp_start: 10.66.64.0
+      dhcp_ende: 10.66.127.255
+      server_id: 2
+      partner: "corny"
 
 dhcp_type: "kea"
 

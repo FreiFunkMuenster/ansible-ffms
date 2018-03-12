@@ -5,60 +5,60 @@ server_besitzer: "Marius Hellmann / corny456"
 hoster: "Hetzner"
 
 domaenenliste:
+   "01":
+      dhcp_start: 10.1.128.0
+      dhcp_ende: 10.1.191.255
+      server_id: 3
+      partner: "des2"
+   "05":
+      dhcp_start: 10.5.128.0
+      dhcp_ende: 10.5.191.255
+      server_id: 3
+      partner: "nightbounce"
+   "07":
+      dhcp_start: 10.7.128.0
+      dhcp_ende: 10.7.191.255
+      server_id: 3
+      partner: "nightbounce"
    "10":
-      dhcp_start: 10.10.64.0
-      dhcp_ende: 10.10.127.255
-      server_id: 2
-      partner: "fanlin"
-   "64":
-      dhcp_start: 10.64.64.0
-      dhcp_ende: 10.64.127.255
-      server_id: 2
-      partner: "fanlin"
-   "66":
-      dhcp_start: 10.66.64.0
-      dhcp_ende: 10.66.127.255
-      server_id: 2
+      dhcp_start: 10.10.128.0
+      dhcp_ende: 10.10.191.255
+      server_id: 3
+      partner: "des2"
+   "20":
+      dhcp_start: 10.20.128.0
+      dhcp_ende: 10.20.191.255
+      server_id: 3
       partner: "tj01"
-   "67":
-      dhcp_start: 10.67.64.0
-      dhcp_ende: 10.67.127.255
+   "32":
+      dhcp_start: 10.32.128.0
+      dhcp_ende: 10.32.191.255
+      server_id: 3
+      partner: "parad0x"
+   "41":
+      dhcp_start: 10.41.64.0
+      dhcp_ende: 10.41.127.255
       server_id: 2
-      partner: "tj01"
-   "68":
-      dhcp_start: 10.68.64.0
-      dhcp_ende: 10.68.127.255
+      partner: "handle"
+   "43":
+      dhcp_start: 10.43.64.0
+      dhcp_ende: 10.43.127.255
       server_id: 2
-      partner: "tj01"
-   "69":
-      dhcp_start: 10.69.64.0
-      dhcp_ende: 10.69.127.255
+      partner: "automatix"
+   "49":
+      dhcp_start: 10.49.64.0
+      dhcp_ende: 10.49.127.255
       server_id: 2
-      partner: "tj01"
-   "70":
-      dhcp_start: 10.70.64.0
-      dhcp_ende: 10.70.127.255
+      partner: "automatix"
+   "57":
+      dhcp_start: 10.57.64.0
+      dhcp_ende: 10.57.127.255
       server_id: 2
-      partner: "tj01"
-   "71":
-      dhcp_start: 10.71.64.0
-      dhcp_ende: 10.71.127.255
-      server_id: 2
-      partner: "tj01"
-   "72":
-      dhcp_start: 10.72.64.0
-      dhcp_ende: 10.72.127.255
-      server_id: 2
-      partner: "tj01"
-   "73":
-      dhcp_start: 10.73.64.0
-      dhcp_ende: 10.73.127.255
-      server_id: 2
-      partner: "tj01"
-   "74":
-      dhcp_start: 10.74.64.0
-      dhcp_ende: 10.74.127.255
-      server_id: 2
+      partner: "handle"
+   "60":
+      dhcp_start: 10.60.128.0
+      dhcp_ende: 10.60.191.255
+      server_id: 3
       partner: "tj01"
 
 ffnw_nat_ip: 185.197.132.37/32

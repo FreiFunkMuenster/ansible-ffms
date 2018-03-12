@@ -7,8 +7,8 @@ library("operators")
 library("combinat")
 
 # Daten zu L2TP-Verbindungen und Tx/Rx der letzten sieben Tage
-download.file("https://graphite.freifunk-muensterland.de/render/?target=aliasByNode(aliasSub(sumSeriesWithWildcards(gateways.*.l2tp.if_count-br*,%201),%20%27if_count-br%27,%20%27domaene-%27),%202)&format=json&from=NOW-8d&until=NOW-1h", "ffms-l2tp.tmp.json")
-download.file("https://graphite.freifunk-muensterland.de/render/?&target=aliasByNode(aliasSub(sumSeriesWithWildcards(perSecond(scale(gateways.*.interface-bat*.if_octets.*,%208)),%201,%204),%20%27interface-bat%27,%20%27domaene-%27),%201)&format=json&from=NOW-7d&until=NOW-1h", "ffms-tx-rx.tmp.json")
+download.file("https://graphite.freifunk-muensterland.de/render/?target=aliasByNode(aliasSub(sumSeriesWithWildcards(gateways.*.l2tp.if_count-br*,%201),%20%27if_count-br%27,%20%27domaene-%27),%202)&format=json&from=NOW-15d&until=NOW-1h", "ffms-l2tp.tmp.json")
+download.file("https://graphite.freifunk-muensterland.de/render/?&target=aliasByNode(aliasSub(sumSeriesWithWildcards(perSecond(scale(gateways.*.interface-bat*.if_octets.*,%208)),%201,%204),%20%27interface-bat%27,%20%27domaene-%27),%201)&format=json&from=NOW-15d&until=NOW-1h", "ffms-tx-rx.tmp.json")
 
 l2tp <- fromJSON("ffms-l2tp.tmp.json", flatten=TRUE)
 tx.rx <- fromJSON("ffms-tx-rx.tmp.json", flatten=TRUE)

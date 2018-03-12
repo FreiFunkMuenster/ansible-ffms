@@ -5,81 +5,101 @@ server_besitzer: "Marius Hellmann / corny456"
 hoster: "Hetzner"
     
 domaenenliste:
-   "02":
-      dhcp_start: 10.2.64.0
-      dhcp_ende: 10.2.127.255
-      server_id: 2
-      partner: "des2"
-   "03":
-      dhcp_start: 10.3.64.0
-      dhcp_ende: 10.3.127.255
-      server_id: 2
-      partner: "des2"
-   "07":
-      dhcp_start: 10.7.128.0
-      dhcp_ende: 10.7.191.255
+   "04":
+      dhcp_start: 10.4.128.0
+      dhcp_ende: 10.4.191.255
       server_id: 3
-      partner: "fanlin"
-   "09":
-      dhcp_start: 10.9.128.0
-      dhcp_ende: 10.9.191.255
-      server_id: 3
-      partner: "des1"
-   "13":
-      dhcp_start: 10.13.64.0
-      dhcp_ende: 10.13.127.255
-      server_id: 2
-      partner: "des2"
-   "14":
-      dhcp_start: 10.14.64.0
-      dhcp_ende: 10.14.127.255
-      server_id: 2
-      partner: "handle"
-   "18":
-      dhcp_start: 10.18.128.0
-      dhcp_ende: 10.18.191.255
-      server_id: 3
-      partner: "c1024"
-   "20":
-      dhcp_start: 10.20.64.0
-      dhcp_ende: 10.20.127.255
-      server_id: 2
-      partner: "nightbounce"
+      partner: "parad0x"
    "25":
       dhcp_start: 10.25.64.0
       dhcp_ende: 10.25.127.255
       server_id: 2
-      partner: "tj01"
-   "31":
-      dhcp_start: 10.31.64.0
-      dhcp_ende: 10.31.127.255
-      server_id: 2
-      partner: "tj01"
-   "37":
-      dhcp_start: 10.37.128.0
-      dhcp_ende: 10.37.191.255
+      partner: "automatix"
+   "26":
+      dhcp_start: 10.26.128.0
+      dhcp_ende: 10.26.191.255
       server_id: 3
-      partner: "fanlin"
+      partner: "c1024"
    "42":
       dhcp_start: 10.42.128.0
       dhcp_ende: 10.42.191.255
       server_id: 3
-      partner: "c1024"
-   "47":
-      dhcp_start: 10.47.128.0
-      dhcp_ende: 10.47.191.255
-      server_id: 3
       partner: "parad0x"
+   "46":
+      dhcp_start: 10.46.128.0
+      dhcp_ende: 10.46.191.255
+      server_id: 3
+      partner: "c1024"
    "48":
       dhcp_start: 10.48.64.0
       dhcp_ende: 10.48.127.255
       server_id: 2
-      partner: "des2"
+      partner: "automatix"
+   "51":
+      dhcp_start: 10.51.128.0
+      dhcp_ende: 10.51.191.255
+      server_id: 3
+      partner: "fanlin"
+   "52":
+      dhcp_start: 10.52.128.0
+      dhcp_ende: 10.52.191.255
+      server_id: 3
+      partner: "remue-09"
    "58":
-      dhcp_start: 10.58.64.0
-      dhcp_ende: 10.58.127.255
+      dhcp_start: 10.58.128.0
+      dhcp_ende: 10.58.191.255
+      server_id: 3
+      partner: "des1"
+   "59":
+      dhcp_start: 10.59.128.0
+      dhcp_ende: 10.59.191.255
+      server_id: 3
+      partner: "remue-09"
+   "65":
+      dhcp_start: 10.65.64.0
+      dhcp_ende: 10.65.127.255
       server_id: 2
       partner: "nightbounce"
+   "66":
+      dhcp_start: 10.66.128.0
+      dhcp_ende: 10.66.191.255
+      server_id: 3
+      partner: "des1"
+   "67":
+      dhcp_start: 10.67.64.0
+      dhcp_ende: 10.67.127.255
+      server_id: 2
+      partner: "nightbounce"
+   "68":
+      dhcp_start: 10.68.64.0
+      dhcp_ende: 10.68.127.255
+      server_id: 2
+      partner: "handle"
+   "69":
+      dhcp_start: 10.69.64.0
+      dhcp_ende: 10.69.127.255
+      server_id: 2
+      partner: "tj01"
+   "70":
+      dhcp_start: 10.70.64.0
+      dhcp_ende: 10.70.127.255
+      server_id: 2
+      partner: "des2"
+   "71":
+      dhcp_start: 10.71.64.0
+      dhcp_ende: 10.71.127.255
+      server_id: 2
+      partner: "des2"
+   "72":
+      dhcp_start: 10.72.64.0
+      dhcp_ende: 10.72.127.255
+      server_id: 2
+      partner: "tj01"
+   "73":
+      dhcp_start: 10.73.64.0
+      dhcp_ende: 10.73.127.255
+      server_id: 2
+      partner: "handle"
 
 
 ffnw_nat_ip: 185.197.132.33/32

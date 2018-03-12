@@ -1,3 +1,4 @@
 *.retry
 **/*.repokey
 *.tmp.json
+domains.csv

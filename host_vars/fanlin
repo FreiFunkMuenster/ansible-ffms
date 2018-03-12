@@ -48,66 +48,51 @@ ffrl_tun:
 is_external_nameserver: true
 
 domaenenliste:
-   "07":
-      dhcp_start: 10.7.64.0
-      dhcp_ende: 10.7.127.255
+   "18":
+      dhcp_start: 10.18.64.0
+      dhcp_ende: 10.18.127.255
       server_id: 2
-      partner: "corny"
-   "08":
-      dhcp_start: 10.8.64.0
-      dhcp_ende: 10.8.127.255
-      server_id: 2
-      partner: "handle"
-   "10":
-      dhcp_start: 10.10.128.0
-      dhcp_ende: 10.10.191.255
-      server_id: 3
-      partner: "corny2"
-   "23":
-      dhcp_start: 10.23.64.0
-      dhcp_ende: 10.23.127.255
-      server_id: 2
-      partner: "handle"
-   "33":
-      dhcp_start: 10.33.64.0
-      dhcp_ende: 10.33.127.255
-      server_id: 2
-      partner: "nightbounce"
-   "35":
-      dhcp_start: 10.35.64.0
-      dhcp_ende: 10.35.127.255
-      server_id: 2
-      partner: "des1"
-   "37":
-      dhcp_start: 10.37.64.0
-      dhcp_ende: 10.37.127.255
-      server_id: 2
-      partner: "corny"
-   "46":
-      dhcp_start: 10.46.64.0
-      dhcp_ende: 10.46.127.255
-      server_id: 2
-      partner: "des1"
-   "52":
-      dhcp_start: 10.52.64.0
-      dhcp_ende: 10.52.127.255
+      partner: "parad0x"
+   "19":
+      dhcp_start: 10.19.64.0
+      dhcp_ende: 10.19.127.255
       server_id: 2
       partner: "c1024"
-   "53":
-      dhcp_start: 10.53.64.0
-      dhcp_ende: 10.53.127.255
+   "27":
+      dhcp_start: 10.27.64.0
+      dhcp_ende: 10.27.127.255
       server_id: 2
-      partner: "c1024"
-   "60":
-      dhcp_start: 10.60.64.0
-      dhcp_ende: 10.60.127.255
+      partner: "parad0x"
+   "29":
+      dhcp_start: 10.29.64.0
+      dhcp_ende: 10.29.127.255
       server_id: 2
       partner: "nightbounce"
-   "64":
-      dhcp_start: 10.64.128.0
-      dhcp_ende: 10.64.191.255
-      server_id: 3
-      partner: "corny2"
+   "30":
+      dhcp_start: 10.30.64.0
+      dhcp_ende: 10.30.127.255
+      server_id: 2
+      partner: "c1024"
+   "36":
+      dhcp_start: 10.36.64.0
+      dhcp_ende: 10.36.127.255
+      server_id: 2
+      partner: "remue-09"
+   "45":
+      dhcp_start: 10.45.64.0
+      dhcp_ende: 10.45.127.255
+      server_id: 2
+      partner: "handle"
+   "50":
+      dhcp_start: 10.50.64.0
+      dhcp_ende: 10.50.127.255
+      server_id: 2
+      partner: "automatix"
+   "51":
+      dhcp_start: 10.51.64.0
+      dhcp_ende: 10.51.127.255
+      server_id: 2
+      partner: "corny"
 
 dhcp_type: "kea"
 
