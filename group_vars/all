@@ -801,6 +801,8 @@ dns_entries_for_all_tlds:
  - 'mumble                                           IN  CNAME   mumble.tarumba.de.'
  - 'streamer                                         IN  A       46.4.80.179'
  - 'streamer                                         IN  AAAA    2a01:4f8:140:616e::85'
+ - 'ansible                                          IN  A       46.4.80.179'
+ - 'ansible                                          IN  AAAA    2a01:4f8:140:616e::86'
 
 domains:
   "freifunk-muensterland.de":
