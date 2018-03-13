@@ -16,6 +16,13 @@ tx.rx <- fromJSON("ffms-tx-rx.tmp.json", flatten=TRUE)
 for (i in 1:length(l2tp$target)) { l2tp$target[i] <- strsplit(l2tp$target[i], "-")[[1]][2] }
 for (i in 1:length(tx.rx$target)) { tx.rx$target[i] <- strsplit(tx.rx$target[i], "-")[[1]][2] }
 
+# Manuelle Zuordnung einlesen
+if (file.exists("sn-alloc-manual.csv")) { 
+	domains.manual <- read.table("sn-alloc-manual.csv", colClasses=c("character", "character", "character"), sep="\t", header=TRUE)
+	message("Manual domain allocation file found:\n")
+	print(domains.manual)
+}
+
 # Bestehende Allokationstabelle (zzgl. ggf. neuer Domains) auslesen, falls Datei vorhanden
 if (file.exists("domains.csv")) { 
 	domains.tab <- read.csv2("domains.csv", colClasses=c("character", "factor", "factor", "numeric", "numeric")) 
@@ -130,21 +137,40 @@ for (i in sn$name) {
 	calc.perf(i, sn$l2tp[which(sn$name == i)], sn$tx.rx[which(sn$name == i)])
 }
 
+# Manuelle Domänenzuordnung zuweisen
+for (i in row(domains.manual)[,1]) {
+	dom.m <- domains$dom == domains.manual$dom
+	com.m <- (as.character(com$gw1) == domains.manual$gw1[i]) & (as.character(com$gw2) == domains.manual$gw2[i])
+	domains$gw1[dom.m] <- domains.manual$gw1[i]
+	domains$gw2[dom.m] <- domains.manual$gw2[i]
+	com$count[com.m] <- com$count[com.m] + 1
+	num.l2tp <- domains$l2tp[dom.m]
+	num.tx.rx <- domains$tx.rx[dom.m]
+	calc.perf(com$gw1[com.m], -num.l2tp, -num.tx.rx)
+	calc.perf(com$gw2[com.m], -num.l2tp, -num.tx.rx)
+	sn[sn$name == com$gw1[com.m],]$l2tp <- sn[sn$name == com$gw1[com.m],]$l2tp - num.l2tp
+	sn[sn$name == com$gw2[com.m],]$l2tp <- sn[sn$name == com$gw2[com.m],]$l2tp - num.l2tp
+	sn[sn$name == com$gw1[com.m],]$tx.rx <- sn[sn$name == com$gw1[com.m],]$tx.rx - num.tx.rx
+	sn[sn$name == com$gw2[com.m],]$tx.rx <- sn[sn$name == com$gw2[com.m],]$tx.rx - num.tx.rx
+}
 
+# Restliche Domänen automatisch verteilen
 for (i in row(domains)[,1]) {
-	com <- com[order(com$l2tp, decreasing=TRUE),]
-	com <- com[order(com$count),]
-	domains$gw1[i] <- com$gw1[1]
-	domains$gw2[i] <- com$gw2[1]
-	com$count[1] <- com$count[1] + 1
-	num.l2tp <- domains$l2tp[i]
-	num.tx.rx <- domains$tx.rx[i]
-	calc.perf(com$gw1[1], -num.l2tp, -num.tx.rx)
-	calc.perf(com$gw2[1], -num.l2tp, -num.tx.rx)
-	sn[sn$name == com$gw1[1],]$l2tp <- sn[sn$name == com$gw1[1],]$l2tp - num.l2tp
-	sn[sn$name == com$gw2[1],]$l2tp <- sn[sn$name == com$gw2[1],]$l2tp - num.l2tp
-	sn[sn$name == com$gw1[1],]$tx.rx <- sn[sn$name == com$gw1[1],]$tx.rx - num.tx.rx
-	sn[sn$name == com$gw2[1],]$tx.rx <- sn[sn$name == com$gw2[1],]$tx.rx - num.tx.rx
+	if (!(domains$dom[i] %in% domains.manual$dom)) {
+		com <- com[order(com$l2tp, decreasing=TRUE),]
+	 	com <- com[order(com$count),]
+		domains$gw1[i] <- com$gw1[1]
+		domains$gw2[i] <- com$gw2[1]
+		com$count[1] <- com$count[1] + 1
+		num.l2tp <- domains$l2tp[i]
+		num.tx.rx <- domains$tx.rx[i]
+		calc.perf(com$gw1[1], -num.l2tp, -num.tx.rx)
+		calc.perf(com$gw2[1], -num.l2tp, -num.tx.rx)
+		sn[sn$name == com$gw1[1],]$l2tp <- sn[sn$name == com$gw1[1],]$l2tp - num.l2tp
+		sn[sn$name == com$gw2[1],]$l2tp <- sn[sn$name == com$gw2[1],]$l2tp - num.l2tp
+		sn[sn$name == com$gw1[1],]$tx.rx <- sn[sn$name == com$gw1[1],]$tx.rx - num.tx.rx
+		sn[sn$name == com$gw2[1],]$tx.rx <- sn[sn$name == com$gw2[1],]$tx.rx - num.tx.rx
+	}
 }
 
 domains$l2tp <- round(domains$l2tp*2*total.l2tp)
