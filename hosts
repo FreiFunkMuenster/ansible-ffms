@@ -53,7 +53,7 @@ fanlin			ipv4=5.199.135.168	ipv6=2001:4ba0:ffa4:3d2:5:199:135:168	ansible_ssh_ho
 des1			ipv4=5.9.86.154		ipv6=2a01:4f8:162:10d2::a0		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=deshyper-01
 des2			ipv4=148.251.45.45	ipv6=2a01:4f8:202:11::45		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=deshyper-02
 remue-09		ipv4=148.251.208.170	ipv6=2a01:4f8:191:21e1::b0		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW  IPv6 -> BCKB	capacity=0.75	server=remue
-nightbounce		ipv4=46.4.90.220	ipv6=2a01:4f8:192:3c6::8		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=jetplow
+nightbounce		ipv4=46.4.90.220	ipv6=					ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=jetplow
 handle			ipv4=62.210.220.140	ipv6=2001:bc8:2987:200::1		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=0.50
 corny			ipv4=144.76.81.157	ipv6=2a01:4f8:192:3c6::bb		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> FFRL	capacity=1.00	server=hypercorn
 corny2			ipv4=144.76.81.139	ipv6=2a01:4f8:192:3c6::bd		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=hypercorn
