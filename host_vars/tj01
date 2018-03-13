@@ -5,51 +5,66 @@ server_besitzer: "Till Jannis Dören / Jannis"
 hoster: "Hetzner"
 
 domaenenliste:
-   "66":
-      dhcp_start: 10.66.128.0
-      dhcp_ende: 10.66.191.255
+   "11":
+      dhcp_start: 10.11.128.0
+      dhcp_ende: 10.11.191.255
       server_id: 3
+      partner: "parad0x"
+   "15":
+      dhcp_start: 10.15.64.0
+      dhcp_ende: 10.15.127.255
+      server_id: 2
+      partner: "automatix"
+   "20":
+      dhcp_start: 10.20.64.0
+      dhcp_ende: 10.20.127.255
+      server_id: 2
       partner: "corny2"
-   "67":
-      dhcp_start: 10.67.128.0
-      dhcp_ende: 10.67.191.255
+   "22":
+      dhcp_start: 10.22.128.0
+      dhcp_ende: 10.22.191.255
       server_id: 3
-      partner: "corny2"
-   "68":
-      dhcp_start: 10.68.128.0
-      dhcp_ende: 10.68.191.255
+      partner: "parad0x"
+   "23":
+      dhcp_start: 10.23.64.0
+      dhcp_ende: 10.23.127.255
+      server_id: 2
+      partner: "handle"
+   "38":
+      dhcp_start: 10.38.128.0
+      dhcp_ende: 10.38.191.255
       server_id: 3
+      partner: "des2"
+   "47":
+      dhcp_start: 10.47.128.0
+      dhcp_ende: 10.47.191.255
+      server_id: 3
+      partner: "des2"
+   "53":
+      dhcp_start: 10.53.128.0
+      dhcp_ende: 10.53.191.255
+      server_id: 3
+      partner: "des1"
+   "60":
+      dhcp_start: 10.60.64.0
+      dhcp_ende: 10.60.127.255
+      server_id: 2
       partner: "corny2"
+   "62":
+      dhcp_start: 10.62.64.0
+      dhcp_ende: 10.62.127.255
+      server_id: 2
+      partner: "handle"
    "69":
       dhcp_start: 10.69.128.0
       dhcp_ende: 10.69.191.255
       server_id: 3
-      partner: "corny2"
-   "70":
-      dhcp_start: 10.70.128.0
-      dhcp_ende: 10.70.191.255
-      server_id: 3
-      partner: "corny2"
-   "71":
-      dhcp_start: 10.71.128.0
-      dhcp_ende: 10.71.191.255
-      server_id: 3
-      partner: "corny2"
+      partner: "corny"
    "72":
       dhcp_start: 10.72.128.0
       dhcp_ende: 10.72.191.255
       server_id: 3
-      partner: "corny2"
-   "73":
-      dhcp_start: 10.73.128.0
-      dhcp_ende: 10.73.191.255
-      server_id: 3
-      partner: "corny2"
-   "74":
-      dhcp_start: 10.74.128.0
-      dhcp_ende: 10.74.191.255
-      server_id: 3
-      partner: "corny2"
+      partner: "corny"
 
 ffnw_nat_ip: 185.197.132.36/32
 

@@ -48,61 +48,56 @@ ffrl_tun:
 dhcp_type: "kea"
 
 domaenenliste:
-   "04":
-      dhcp_start: 10.4.128.0
-      dhcp_ende: 10.4.191.255
-      server_id: 3
-      partner: "nightbounce"
-   "08":
-      dhcp_start: 10.8.128.0
-      dhcp_ende: 10.8.191.255
-      server_id: 3
-      partner: "fanlin"
    "14":
       dhcp_start: 10.14.128.0
       dhcp_ende: 10.14.191.255
       server_id: 3
-      partner: "corny"
-   "19":
-      dhcp_start: 10.19.128.0
-      dhcp_ende: 10.19.191.255
-      server_id: 3
-      partner: "des1"
+      partner: "c1024"
    "23":
       dhcp_start: 10.23.128.0
       dhcp_ende: 10.23.191.255
-      server_id: 3
-      partner: "fanlin"
-   "27":
-      dhcp_start: 10.27.128.0
-      dhcp_ende: 10.27.191.255
       server_id: 3
       partner: "tj01"
    "34":
       dhcp_start: 10.34.128.0
       dhcp_ende: 10.34.191.255
       server_id: 3
-      partner: "c1024"
-   "43":
-      dhcp_start: 10.43.128.0
-      dhcp_ende: 10.43.191.255
-      server_id: 3
       partner: "des2"
-   "56":
-      dhcp_start: 10.56.128.0
-      dhcp_ende: 10.56.191.255
+   "41":
+      dhcp_start: 10.41.128.0
+      dhcp_ende: 10.41.191.255
       server_id: 3
-      partner: "parad0x"
+      partner: "corny2"
+   "45":
+      dhcp_start: 10.45.128.0
+      dhcp_ende: 10.45.191.255
+      server_id: 3
+      partner: "fanlin"
    "57":
       dhcp_start: 10.57.128.0
       dhcp_ende: 10.57.191.255
       server_id: 3
-      partner: "parad0x"
-   "63":
-      dhcp_start: 10.63.128.0
-      dhcp_ende: 10.63.191.255
+      partner: "corny2"
+   "61":
+      dhcp_start: 10.61.128.0
+      dhcp_ende: 10.61.191.255
       server_id: 3
-      partner: "c1024"
+      partner: "des2"
+   "62":
+      dhcp_start: 10.62.128.0
+      dhcp_ende: 10.62.191.255
+      server_id: 3
+      partner: "tj01"
+   "68":
+      dhcp_start: 10.68.128.0
+      dhcp_ende: 10.68.191.255
+      server_id: 3
+      partner: "corny"
+   "73":
+      dhcp_start: 10.73.128.0
+      dhcp_ende: 10.73.191.255
+      server_id: 3
+      partner: "corny"
 
 additionaladmins:
   - "handle"

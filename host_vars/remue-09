@@ -25,53 +25,53 @@ ffnw_tun:
   bgp_local_pref: 201
 
 domaenenliste:
-   "05":
-      dhcp_start: 10.5.64.0
-      dhcp_ende: 10.5.127.255
-      server_id: 2
-      partner: "parad0x"
-   "11":
-      dhcp_start: 10.11.64.0
-      dhcp_ende: 10.11.127.255
-      server_id: 2
-      partner: "nightbounce"
-   "17":
-      dhcp_start: 10.17.64.0
-      dhcp_ende: 10.17.127.255
-      server_id: 2
-      partner: "tj01"
-   "21":
-      dhcp_start: 10.21.64.0
-      dhcp_ende: 10.21.127.255
-      server_id: 2
-      partner: "parad0x"
+   "03":
+      dhcp_start: 10.3.128.0
+      dhcp_ende: 10.3.191.255
+      server_id: 3
+      partner: "des1"
+   "08":
+      dhcp_start: 10.8.128.0
+      dhcp_ende: 10.8.191.255
+      server_id: 3
+      partner: "c1024"
    "24":
       dhcp_start: 10.24.64.0
       dhcp_ende: 10.24.127.255
       server_id: 2
       partner: "nightbounce"
-   "28":
-      dhcp_start: 10.28.128.0
-      dhcp_ende: 10.28.191.255
-      server_id: 3
-      partner: "des1"
-   "29":
-      dhcp_start: 10.29.64.0
-      dhcp_ende: 10.29.127.255
+   "31":
+      dhcp_start: 10.31.64.0
+      dhcp_ende: 10.31.127.255
       server_id: 2
       partner: "des2"
+   "36":
+      dhcp_start: 10.36.128.0
+      dhcp_ende: 10.36.191.255
+      server_id: 3
+      partner: "fanlin"
+   "37":
+      dhcp_start: 10.37.64.0
+      dhcp_ende: 10.37.127.255
+      server_id: 2
+      partner: "nightbounce"
+   "40":
+      dhcp_start: 10.40.128.0
+      dhcp_ende: 10.40.191.255
+      server_id: 3
+      partner: "des1"
+   "52":
+      dhcp_start: 10.52.64.0
+      dhcp_ende: 10.52.127.255
+      server_id: 2
+      partner: "corny"
+   "54":
+      dhcp_start: 10.54.128.0
+      dhcp_ende: 10.54.191.255
+      server_id: 3
+      partner: "c1024"
    "59":
       dhcp_start: 10.59.64.0
       dhcp_ende: 10.59.127.255
       server_id: 2
-      partner: "tj01"
-   "61":
-      dhcp_start: 10.61.64.0
-      dhcp_ende: 10.61.127.255
-      server_id: 2
-      partner: "des2"
-   "62":
-      dhcp_start: 10.62.128.0
-      dhcp_ende: 10.62.191.255
-      server_id: 3
-      partner: "c1024"
+      partner: "corny"

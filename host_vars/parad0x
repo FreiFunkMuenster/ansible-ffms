@@ -49,66 +49,71 @@ ffrl_tun:
   bgp_local_pref: 201
 
 domaenenliste:
-   "01":
-      dhcp_start: 10.1.128.0
-      dhcp_ende: 10.1.191.255
-      server_id: 3
-      partner: "c1024"
-   "05":
-      dhcp_start: 10.5.128.0
-      dhcp_ende: 10.5.191.255
-      server_id: 3
-      partner: "remue-09"
-   "15":
-      dhcp_start: 10.15.64.0
-      dhcp_ende: 10.15.127.255
-      server_id: 2
-      partner: "des2"
-   "21":
-      dhcp_start: 10.21.128.0
-      dhcp_ende: 10.21.191.255
-      server_id: 3
-      partner: "remue-09"
-   "41":
-      dhcp_start: 10.41.128.0
-      dhcp_ende: 10.41.191.255
-      server_id: 3
-      partner: "des1"
-   "44":
-      dhcp_start: 10.44.128.0
-      dhcp_ende: 10.44.191.255
-      server_id: 3
-      partner: "c1024"
-   "47":
-      dhcp_start: 10.47.64.0
-      dhcp_ende: 10.47.127.255
+   "04":
+      dhcp_start: 10.4.64.0
+      dhcp_ende: 10.4.127.255
       server_id: 2
       partner: "corny"
-   "49":
-      dhcp_start: 10.49.64.0
-      dhcp_ende: 10.49.127.255
+   "11":
+      dhcp_start: 10.11.64.0
+      dhcp_ende: 10.11.127.255
       server_id: 2
-      partner: "nightbounce"
-   "55":
-      dhcp_start: 10.55.128.0
-      dhcp_ende: 10.55.191.255
+      partner: "tj01"
+   "16":
+      dhcp_start: 10.16.64.0
+      dhcp_ende: 10.16.127.255
+      server_id: 2
+      partner: "des1"
+   "17":
+      dhcp_start: 10.17.128.0
+      dhcp_ende: 10.17.191.255
       server_id: 3
       partner: "des1"
+   "18":
+      dhcp_start: 10.18.128.0
+      dhcp_ende: 10.18.191.255
+      server_id: 3
+      partner: "fanlin"
+   "22":
+      dhcp_start: 10.22.64.0
+      dhcp_ende: 10.22.127.255
+      server_id: 2
+      partner: "tj01"
+   "27":
+      dhcp_start: 10.27.128.0
+      dhcp_ende: 10.27.191.255
+      server_id: 3
+      partner: "fanlin"
+   "28":
+      dhcp_start: 10.28.128.0
+      dhcp_ende: 10.28.191.255
+      server_id: 3
+      partner: "des1"
+   "32":
+      dhcp_start: 10.32.64.0
+      dhcp_ende: 10.32.127.255
+      server_id: 2
+      partner: "corny2"
+   "35":
+      dhcp_start: 10.35.64.0
+      dhcp_ende: 10.35.127.255
+      server_id: 2
+      partner: "nightbounce"
+   "42":
+      dhcp_start: 10.42.64.0
+      dhcp_ende: 10.42.127.255
+      server_id: 2
+      partner: "corny"
    "56":
       dhcp_start: 10.56.64.0
       dhcp_ende: 10.56.127.255
       server_id: 2
-      partner: "handle"
-   "57":
-      dhcp_start: 10.57.64.0
-      dhcp_ende: 10.57.127.255
-      server_id: 2
-      partner: "handle"
-   "65":
-      dhcp_start: 10.65.64.0
-      dhcp_ende: 10.65.127.255
-      server_id: 2
       partner: "des2"
+   "74":
+      dhcp_start: 10.74.128.0
+      dhcp_ende: 10.74.191.255
+      server_id: 3
+      partner: "c1024"
 
 dhcp_type: "kea"
 
