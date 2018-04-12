@@ -10,14 +10,14 @@ ffnw_nat_ip: 185.197.132.34/32
 #ffrl_nat_ip: 185.66.193.51/32
 
 ffnw_tun:
-- name: erf1 
-  gre_target: 87.118.74.56
-  v4_remote: 100.100.0.6/31
-  v6_remote: fe80::1/64
-#- name: fra1
-#  gre_target: 89.46.125.8
-#  v4_remote: 100.100.32.6/31
+#- name: erf1 
+#  gre_target: 87.118.74.56
+#  v4_remote: 100.100.0.6/31
 #  v6_remote: fe80::1/64
+- name: fra1
+  gre_target: 185.197.132.3
+  v4_remote: 100.100.32.6/31
+  v6_remote: fe80::1/64
 #- name: ams1
 #  gre_target: 185.116.236.32
 #  v4_remote: 100.100.64.6/31
