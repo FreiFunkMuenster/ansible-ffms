@@ -1,7 +1,7 @@
 
 ## Verteilung der Domänen auf die einzelnen Hosts
 
-Skript ausführen: `Rscript sn-alloc.R`, benötigte R-Pakete: `jsonlite`, `operators` und `combinat`:
+Skript ausführen: `./sn-alloc.R`, benötigte R-Pakete: `jsonlite`, `operators` und `combinat`:
 
 Mit dem Skript `sn-alloc.R` werden die Domänen möglichst gleichmäßig auf die einzelnen Hosts verteilt. Dies erfolgt vorranging anhand der Anzahl an L2TP-Verbindungen und nachrangig anhand des Datendurchsatzes. In der `hosts`-Datei ist für jeden Host eine Kennzahl für dessen Leistungsfähigkeit hinterlegt (`capacity=xx`). Falls mehrere Gateways auf dem selben physischen Gerät liegen, ist zusätzlich die Angabe `server=xx` nötig, damit einer Domäne nicht zwei VM auf demselben Gerät zugeordnet werden. Als Datenbasis werden die Zeitreihen der L2TP-Verbindungen und Datendurchsatzraten genutzt. Diese werden automatisch von https://graphite.freifunk-muensterland.de geholt.
 
@@ -21,3 +21,10 @@ Nach der Verteilung werden die Listen in die `host_vars/`-Dateien geschrieben. D
           dhcp_end: 10.34.191.255
           server_id: 3
           partner:"des2"
+          
+### Manuelle Zuordnung von Gateways
+
+Einer Domäne können die Gateways auch manuell zugeordnet werden. Die manuelle Zuordnung ist in der Datei `sn-alloc-manual.csv` hinterlegt, diese verarbeitet das Skript zuerst und verteilt dann die weiteren Domänen entsprechend der verfügbaren Kapazität.
+    
+    dom	gw1     gw2
+    16	parad0x c1024
