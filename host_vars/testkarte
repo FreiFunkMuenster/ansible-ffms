@@ -106,4 +106,4 @@ nginx_tiles_cache:
 #    host: "stats.{{freifunk.domain}}"
 #    port: 2003
 
-batman_version: "2017.4"
+batman_version: "2018.1"
