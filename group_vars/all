@@ -11,6 +11,10 @@ domaenen:
     map_show_contact: false
     map_max_age: 14
     firmware: domaene01/
+    dhcp:
+      reservations:
+        - ip: "10.1.0.15" #Streamrechner in der Zone
+          id: "00:19:99:a5:27:46"
   "02":
     name: Münster-Ost
     community: Münster
@@ -801,6 +805,7 @@ dns_entries_for_all_tlds:
  - 'mumble                                           IN  CNAME   mumble.tarumba.de.'
  - 'streamer                                         IN  A       46.4.80.179'
  - 'streamer                                         IN  AAAA    2a01:4f8:140:616e::85'
+ - 'streambox                                        IN  AAAA    2a03:2260:115:100:219:99ff:fea5:2746'
  - 'ansible                                          IN  A       46.4.80.179'
  - 'ansible                                          IN  AAAA    2a01:4f8:140:616e::86'
 
