@@ -38,6 +38,7 @@ webserver		ansible_ssh_host=46.4.80.179		ansible_ssh_port=223
 ticket			ansible_ssh_host=5.9.86.151		ansible_ssh_port=223
 dnsmaster		ansible_ssh_host=176.9.38.163		ansible_ssh_port=22
 gitserver		ansible_ssh_host=159.69.13.68		ansible_ssh_port=22
+mumble                  ansible_ssh_host=46.4.80.179            ansible_ssh_port=225
 
 # Legacy fastd Domäne
 [domaene-06]

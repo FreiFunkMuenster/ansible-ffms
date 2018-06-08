@@ -1,5 +1,7 @@
 ---
  - hosts: dienste
+   vars_files:
+    - passwords.yml
    remote_user: root
    roles:
     - { role: hostname, tags: "hostname"}
@@ -9,4 +11,5 @@
     - { role: dienste_osticket, tags: "dienste_osticket", when: "'install_osticket' in hostvars[inventory_hostname] and install_osticket == true"}
     - { role: services_bind, tags: "services_bind", when: "'install_dnsmaster' in hostvars[inventory_hostname] and install_dnsmaster == true"}
     - { role: dienste_gitolite, tags: "dienste_gitolite", when: "'install_gitolite' in hostvars[inventory_hostname] and install_gitolite == true"}
+    - { role: dienste_mumble, tags: "dienste_mumble", when: "'install_mumble' in hostvars[inventory_hostname] and install_mumble == true"}
     - { role: unattended_upgrades, tags: "unattended_upgrades"}

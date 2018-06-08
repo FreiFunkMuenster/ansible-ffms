@@ -1,0 +1,23 @@
+server_besitzer: "FFI"
+install_mumble: true
+
+mumble:
+  welcometext: '<br />Willkommen auf dem Mumble-Server von <b>{{freifunk.name}}</b>.<br />Enjoy your stay!<br />Contact: <a href="mailto://{{freifunk.email}}">{{freifunk.email}}</a>'
+  port: 64738
+  bandwidth: 72000
+  users: 100
+  registerToGlobalList: true
+  registerName: '{{freifunk.name}}'
+  registerPassword: '{{mumble_register_password}}'
+  registerUrl: 'https://{{freifunk.domain}}'
+  registerHostname: '{{inventory_hostname_short}}.{{freifunk.domain}}'
+  generateCertViaIpv6: true
+  domains: '{{domains}}' # Lese Domains aus group_vars/all.
+#  domains: # Definiere hier alle Domains
+#    'example.com':
+#    'example.de':
+#    'example.eu':
+#    'example.me':
+#    'example.cc':
+#    'example.net':
+#    'example.org':
