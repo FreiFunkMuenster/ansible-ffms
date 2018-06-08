@@ -8,4 +8,5 @@
     - { role: dienste_lamp, tags: "dienste_lamp", when: "'install_lamp' in hostvars[inventory_hostname] and install_lamp == true"}
     - { role: dienste_osticket, tags: "dienste_osticket", when: "'install_osticket' in hostvars[inventory_hostname] and install_osticket == true"}
     - { role: services_bind, tags: "services_bind", when: "'install_dnsmaster' in hostvars[inventory_hostname] and install_dnsmaster == true"}
+    - { role: dienste_gitolite, tags: "dienste_gitolite", when: "'install_gitolite' in hostvars[inventory_hostname] and install_gitolite == true"}
     - { role: unattended_upgrades, tags: "unattended_upgrades"}

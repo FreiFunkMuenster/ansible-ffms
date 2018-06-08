@@ -1,0 +1,31 @@
+server_besitzer: "Marius Hellmann / corny456"
+install_gitolite: true
+
+gitolite:
+  users:		#User die nicht im Administratoren Team sind aber dennoch Zugriff erhalten sollen. 
+    - 'dezi'
+    - 'jannis'
+  repos:
+    - name: 'password-store'
+      admin_users:
+        - '@adminteam'	# @adminteam ist ein Platzhalter der alle User des Administratoren Teams enthält.
+#      readwrite_users:
+#        - 'dezi'
+#      readonly_users:
+#        - 'jannis'
+
+#borg_backups:
+#  - name: 'to-corny'
+#    backup_server: 'pisces.hellmann.me'
+#    backup_server_port: '22222'
+#    backup_server_user: 'rsyncer'
+#    directories:
+#      - '/home/git'
+#    borg_options: '-v --stats --list --filter=AME --compression lzma'
+#  - name: 'to-bkpsrv'
+#    backup_server: '144.76.81.199'
+#    backup_server_port: '255'
+#    backup_server_user: 'borgbkp'
+#    directories:
+#      - '/home/git'
+#    borg_options: '-v --stats --list --filter=AME --compression lzma'
