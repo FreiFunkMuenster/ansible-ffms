@@ -50,11 +50,11 @@ mapconfig:
         maxZoom: 22
         maxNativeZoom: 19
     - name: "Luftbilder NRW"
-      url: "https://{{inventory_hostname_short}}.{{freifunk.domain}}/tiles_cache/nrwatlas/geobasis/wms_nw_dop20?"
+      url: "https://{{inventory_hostname_short}}.{{freifunk.domain}}/tiles_cache/nrwatlas/geobasis/wms_nw_dop?"
       config:
-        attribution: "<a href=\\\"http://www.bezreg-koeln.nrw.de/brk_internet/geobasis/luftbilderzeugnisse/digitale_orthophotos/index.html\\\">DOP20</a>, Land NRW (2017), Datenlizenz Deutschland - Namensnennung - Version 2.0 (<a href=\\\"https://www.govdata.de/dl-de/by-2-0\\\">www.govdata.de/dl-de/by-2-0</a>)"
+        attribution: "<a href=\\\"http://www.bezreg-koeln.nrw.de/brk_internet/geobasis/luftbilderzeugnisse/digitale_orthophotos/index.html\\\">DOP10</a>, Land NRW (2017), Datenlizenz Deutschland - Namensnennung - Version 2.0 (<a href=\\\"https://www.govdata.de/dl-de/by-2-0\\\">www.govdata.de/dl-de/by-2-0</a>)"
         maxZoom: 23
-        layers: "nw_dop20"
+        layers: "nw_dop_rgb"
         format: "image/jpeg"
 
 node_stats:
