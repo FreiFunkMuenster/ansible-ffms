@@ -9,6 +9,7 @@ borg_backup_target:
     - "webserver"
     - "forum"
     - "mastodon"
+    - "passbolt"
   config:
     backup_user: borgbkp
     backup_group: borgbkp

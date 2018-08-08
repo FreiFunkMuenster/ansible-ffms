@@ -16,4 +16,4 @@ borg_backups:
     directories:
       - '/var/lib/unifi/backup/autobackup/'
     borg_options: '-v --stats --list --filter=AME --compression lzma'
-    borg_prune: '--keep-daily=7'
+    borg_prune: '--keep-daily=7 --keep-weekly=4 --keep-monthly=6'
