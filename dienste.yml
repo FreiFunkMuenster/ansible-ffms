@@ -12,4 +12,5 @@
     - { role: services_bind, tags: "services_bind", when: "'install_dnsmaster' in hostvars[inventory_hostname] and install_dnsmaster == true"}
     - { role: dienste_gitolite, tags: "dienste_gitolite", when: "'install_gitolite' in hostvars[inventory_hostname] and install_gitolite == true"}
     - { role: dienste_mumble, tags: "dienste_mumble", when: "'install_mumble' in hostvars[inventory_hostname] and install_mumble == true"}
+    - { role: dienste_passbolt, tags: "dienste_passbolt", when: "'install_passbolt' in hostvars[inventory_hostname] and install_passbolt == true"}
     - { role: unattended_upgrades, tags: "unattended_upgrades"}
