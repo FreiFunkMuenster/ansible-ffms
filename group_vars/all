@@ -160,6 +160,10 @@ domaenen:
     map_show_contact: false
     map_max_age: 14
     firmware: domaene16/
+    dhcp:
+      reservations:
+        - ip: "10.16.0.15" #Aircontrol
+          id: "52:54:00:CF:B2:FB"
   "17":
     name: Emsdetten
     community: Kreis Steinfurt
@@ -745,6 +749,9 @@ freifunk:
     "unifi":
        A: 10.43.128.14
        AAAA: 2a03:2260:115:1600:5054:ff:fe14:bb9f
+    "aircontrol":
+       A: 10.16.0.15
+       AAAA: 2a03:2260:115:1600:5054:ff:fecf:b2fb
     "build":
        A: 10.10.64.10
        AAAA: 2a03:2260:115:1000:215:17ff:fefd:4da4
@@ -811,6 +818,11 @@ dns_entries_for_all_tlds:
  - 'streambox                                        IN  AAAA    2a03:2260:115:100:219:99ff:fea5:2746'
  - 'ansible                                          IN  A       46.4.80.179'
  - 'ansible                                          IN  AAAA    2a01:4f8:140:616e::86'
+ - 'passbolt                                         IN  A       46.4.80.186'
+ - 'passbolt                                         IN  AAAA    2a01:4f8:140:616e::88'
+ - 'faa-vm-backup                                    IN  AAAA    2a03:2260:115:100:5054:ff:fe73:a614'
+ - 'lafp-vm-backup                                   IN  AAAA    2a03:2260:115:400:5054:ff:fe96:b854'
+ - 'aircontrol                                       IN  AAAA    2a03:2260:115:1600:5054:ff:fecf:b2fb'
 
 domains:
   "freifunk-muensterland.de":
