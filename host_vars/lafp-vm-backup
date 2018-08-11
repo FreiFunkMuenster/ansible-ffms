@@ -1,4 +1,4 @@
-server_besitzer: "Marius Hellmann / corny456"
+server_besitzer: "FFI"
 
 borg_backup_target:
   target_for:
