@@ -12,3 +12,5 @@ collectd:
     host: "graphite.{{freifunk.domain}}"
     port: 2003
 
+additionaladmins:
+  - "robwei"
