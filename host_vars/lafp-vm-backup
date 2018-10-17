@@ -11,6 +11,8 @@ borg_backup_target:
     - "mastodon"
     - "passbolt"
     - "aircontrol"
+    - "zulip"
+    - "unifi-legacy"
   config:
     backup_user: borgbkp
     backup_group: borgbkp

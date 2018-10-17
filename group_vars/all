@@ -411,6 +411,8 @@ domaenen:
       reservations:
         - ip: "10.43.128.14"
           id: "52:54:00:14:bb:9f"
+        - ip: "10.43.128.15"
+          id: "52:54:00:fe:68:0f"
         - ip: "10.43.128.13"
           id: "52:54:00:87:eb:c0"
   "44":
@@ -748,7 +750,10 @@ freifunk:
        AAAA: 2a01:4f8:191:21e1::23
     "unifi":
        A: 10.43.128.14
-       AAAA: 2a03:2260:115:1600:5054:ff:fe14:bb9f
+       AAAA: 2a03:2260:115:4300:5054:ff:fe14:bb9f
+    "unifi-legacy":
+       A: 10.43.128.15
+       AAAA: 2a03:2260:115:4300:5054:ff:fefe:680f
     "aircontrol":
        A: 10.16.0.15
        AAAA: 2a03:2260:115:1600:5054:ff:fecf:b2fb
@@ -801,6 +806,8 @@ dns_entries_for_all_tlds:
  - 'icinga                                           IN  AAAA    2a01:4f8:191:21e1::b3'
  - 'unifi                                            IN  A       5.9.86.151'
  - 'unifi                                            IN  AAAA    2a03:2260:115:4300:5054:ff:fe14:bb9f'
+ - 'unifi-legacy                                     IN  A       46.4.80.179'
+ - 'unifi-legacy                                     IN  AAAA    2a03:2260:115:4300:5054:ff:fefe:680f'
  - 'stats                                            IN  A       5.9.86.142'
  - 'stats                                            IN  AAAA    2a01:4f8:162:10d2::a1'
  - 'grafana                                          IN  A       5.9.86.142'
@@ -823,6 +830,10 @@ dns_entries_for_all_tlds:
  - 'faa-vm-backup                                    IN  AAAA    2a03:2260:115:100:5054:ff:fe73:a614'
  - 'lafp-vm-backup                                   IN  AAAA    2a03:2260:115:400:5054:ff:fe96:b854'
  - 'aircontrol                                       IN  AAAA    2a03:2260:115:1600:5054:ff:fecf:b2fb'
+ - 'zulip                                            IN  A       144.76.81.156'
+ - 'zulip                                            IN  AAAA    2a01:4f8:192:3c6::4'
+ - 'ldap                                             IN  A       159.69.115.226'
+ - 'ldap                                             IN  AAAA    2a01:4f8:c010:3e4::1'
 
 domains:
   "freifunk-muensterland.de":
@@ -921,3 +932,7 @@ domains:
       - '@                                                IN  TXT     "google-site-verification=BPJo0QNmezQuWNKUVTQY7z_GuGrGkW1Nl1CMmjQFM4I"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
+      - 'zulip                                            IN  MX 10   mail.freifunk-muensterland.de.'
+      - 'zulip                                            IN  TXT     "v=spf1 mx a a:mail.freifunk-muensterland.de ~all"'
+      - 'default._domainkey.zulip                         IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQZIftyMw8bVqzP5ecw3818wJze3c9V3HITktC/RvD4Kv54VBsDtDHKoAISiNeLJfHch7cd8/O/9PaLYku5iCyxN5i8zqO84Jm1kvrZ8fSXzVNa3nJbU9cSRC6amx+X3Q372HcCCv7pNolBjnTXK2Pe9DEQclbT/8knYgY78xeiQIDAQAB"'
+      - '_dmarc.zulip                                     IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
