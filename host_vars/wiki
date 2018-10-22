@@ -10,15 +10,6 @@ borg_backups:
       - '/var/lib/postgresql/dump/'
     borg_options: '-v --stats --list --filter=AME --compression lzma'
     borg_prune: '--keep-daily=7 --keep-weekly=4 --keep-monthly=6'
-  - name: 'to-bkpsrv'
-    backup_server: '144.76.81.199'
-    backup_server_port: '255'
-    backup_server_user: 'borgbkp'
-    directories:
-      - '/var/atlassian/application-data/confluence/attachments'
-      - '/var/lib/postgresql/dump/'
-    borg_options: '-v --stats --list --filter=AME --compression lzma'
-    borg_prune: '--keep-daily=7 --keep-weekly=4 --keep-monthly=6'
 
 ####   !!! Geht nicht weil Wiki kein IPv6 hat :-( !!!
 #  - name: 'to-faa-bkpsrv'

@@ -1,7 +1,6 @@
 # Allgemeine Infrastruktur-Server
 [common]
 ansible			ansible_ssh_host=46.4.80.179		ansible_ssh_port=224
-backup			ansible_ssh_host=2a01:4f8:192:3c6::dead:c0de			ansible_ssh_port=255
 unifi			ansible_ssh_host=2a03:2260:115:4300:5054:ff:fe14:bb9f		ansible_ssh_port=22
 unifi-legacy		ansible_ssh_host=2a03:2260:115:4300:5054:ff:fefe:680f		ansible_ssh_port=22
 aircontrol		ansible_ssh_host=2a03:2260:115:1600:5054:ff:fecf:b2fb		ansible_ssh_port=22
@@ -35,16 +34,13 @@ testkarte		ipv4=78.46.117.231	ipv6=2a01:4f8:1c0c:6b7e::1	ansible_ssh_host="{{ipv
 [statistics]
 stats                   ansible_ssh_host=5.9.86.142             ansible_ssh_port=22
 graphite-node-01	ansible_ssh_host=148.251.45.18		ansible_ssh_port=250
-stats2			ansible_ssh_host=195.201.98.3		ansible_ssh_port=22 #Nur für Tests!
 
 # Server die diverse Dienste anbieten.
 [dienste]
 webserver		ansible_ssh_host=46.4.80.179		ansible_ssh_port=223
 ticket			ansible_ssh_host=5.9.86.151		ansible_ssh_port=223
 dnsmaster		ansible_ssh_host=176.9.38.163		ansible_ssh_port=22
-gitserver		ansible_ssh_host=159.69.13.68		ansible_ssh_port=22
 mumble                  ansible_ssh_host=46.4.80.179            ansible_ssh_port=225
-passbolt		ansible_ssh_host=46.4.80.186		ansible_ssh_port=22
 
 # Legacy fastd Domäne
 [domaene-06]
