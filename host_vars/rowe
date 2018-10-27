@@ -1,8 +1,8 @@
 vm_id: 15
 server_id: 15
 
-server_besitzer: "Florian Beier / Handle"
-hoster: "online.net"
+server_besitzer: "Robin Weiligmann / RobWei"
+hoster: "Hetzner"
 
 ffrl_nat_ip: 185.66.195.20/32
 
@@ -100,4 +100,4 @@ domaenenliste:
       partner: "corny"
 
 additionaladmins:
-  - "handle"
+  - "robwei"
