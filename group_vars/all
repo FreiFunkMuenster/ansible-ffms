@@ -832,6 +832,7 @@ dns_entries_for_all_tlds:
  - 'aircontrol                                       IN  AAAA    2a03:2260:115:1600:5054:ff:fecf:b2fb'
  - 'zulip                                            IN  A       144.76.81.156'
  - 'zulip                                            IN  AAAA    2a01:4f8:192:3c6::4'
+ - 'ldap                                             IN  AAAA    2a01:4f8:162:10d2::a2'
 
 domains:
   "freifunk-muensterland.de":
