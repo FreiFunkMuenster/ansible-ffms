@@ -30,3 +30,4 @@
     - { role: nrpe, tags: "nrpe"}
 #    - { role: set_kernel_param_maxcpus, tags: "set_kernel_param_maxcpus"}
     - { role: unattended_upgrades, tags: "unattended_upgrades"}
+    - { role: ifupdown2, tags: "ifupdown2"}

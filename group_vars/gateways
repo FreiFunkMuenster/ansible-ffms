@@ -59,3 +59,5 @@ tunneldigger:
   tunnel_timeout: 60
 
 batman_version: "2017.4"
+
+use_ifupdown2: False
