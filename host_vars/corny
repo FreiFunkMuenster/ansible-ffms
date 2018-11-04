@@ -74,7 +74,7 @@ domaenenliste:
       dhcp_start: 10.68.64.0
       dhcp_ende: 10.68.127.255
       server_id: 2
-      partner: "handle"
+      partner: "rowe"
    "69":
       dhcp_start: 10.69.64.0
       dhcp_ende: 10.69.127.255
@@ -99,7 +99,7 @@ domaenenliste:
       dhcp_start: 10.73.64.0
       dhcp_ende: 10.73.127.255
       server_id: 2
-      partner: "handle"
+      partner: "rowe"
 
 
 ffnw_nat_ip: 185.197.132.33/32
