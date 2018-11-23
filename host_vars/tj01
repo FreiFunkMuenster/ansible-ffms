@@ -29,7 +29,7 @@ domaenenliste:
       dhcp_start: 10.23.64.0
       dhcp_ende: 10.23.127.255
       server_id: 2
-      partner: "handle"
+      partner: "rowe"
    "38":
       dhcp_start: 10.38.128.0
       dhcp_ende: 10.38.191.255
@@ -54,7 +54,7 @@ domaenenliste:
       dhcp_start: 10.62.64.0
       dhcp_ende: 10.62.127.255
       server_id: 2
-      partner: "handle"
+      partner: "rowe"
    "69":
       dhcp_start: 10.69.128.0
       dhcp_ende: 10.69.191.255

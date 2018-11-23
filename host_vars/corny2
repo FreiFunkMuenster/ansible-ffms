@@ -39,7 +39,7 @@ domaenenliste:
       dhcp_start: 10.41.64.0
       dhcp_ende: 10.41.127.255
       server_id: 2
-      partner: "handle"
+      partner: "rowe"
    "43":
       dhcp_start: 10.43.64.0
       dhcp_ende: 10.43.127.255
@@ -54,7 +54,7 @@ domaenenliste:
       dhcp_start: 10.57.64.0
       dhcp_ende: 10.57.127.255
       server_id: 2
-      partner: "handle"
+      partner: "rowe"
    "60":
       dhcp_start: 10.60.128.0
       dhcp_ende: 10.60.191.255

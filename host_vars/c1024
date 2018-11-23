@@ -43,7 +43,7 @@ domaenenliste:
       dhcp_start: 10.14.64.0
       dhcp_ende: 10.14.127.255
       server_id: 2
-      partner: "handle"
+      partner: "rowe"
    "19":
       dhcp_start: 10.19.128.0
       dhcp_ende: 10.19.191.255
