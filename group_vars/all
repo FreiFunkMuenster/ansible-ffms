@@ -831,6 +831,7 @@ dns_entries_for_all_tlds:
  - 'ldap                                             IN  AAAA    2a01:4f8:162:10d2::a2'
  - 'fredbackend                                      IN  A       159.69.223.64'
  - 'fredbackend                                      IN  AAAA    2a01:4f8:1c1c:8987::1'
+ - 'telefonie                                        IN  AAAA    2a03:2260:115:4300:e2d1:93dc:80ba:3d7f'
 
 domains:
   "freifunk-muensterland.de":
