@@ -6,8 +6,8 @@ borg_backups:
     backup_server_port: '22222'
     backup_server_user: 'rsyncer'
     directories:
-      - '/var/atlassian/application-data/confluence/attachments'
-      - '/var/lib/postgresql/dump/'
+      - '/var/atlassian/application-data/confluence'
+    pgsqldumpall: true
     borg_options: '-v --stats --list --filter=AME --compression lzma'
     borg_prune: '--keep-daily=7 --keep-weekly=4 --keep-monthly=6'
 
