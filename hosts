@@ -26,6 +26,7 @@ hypercorn		ansible_ssh_host=144.76.69.37		ansible_ssh_port=22	# Kein Zugriff!
 unimatrixzero		ansible_ssh_host=176.9.38.150		ansible_ssh_port=22
 voyager			ansible_ssh_host=46.4.80.179		ansible_ssh_port=22
 battleaxegaming		ansible_ssh_host=46.4.122.244		ansible_ssh_port=22	# Kein Zugriff!
+goldelse		ansible_ssh_host=217.197.83.217		ansible_ssh_port=22	ansible_user=ffmsl	ansible_become=yes
 
 # Server für Hoppglas Karten
 [mapserver]
