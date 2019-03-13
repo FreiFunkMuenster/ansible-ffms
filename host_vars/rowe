@@ -98,6 +98,3 @@ domaenenliste:
       dhcp_ende: 10.73.191.255
       server_id: 3
       partner: "corny"
-
-additionaladmins:
-  - "robwei"

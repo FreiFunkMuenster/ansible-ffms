@@ -44,6 +44,3 @@ collectd:
   graphite_target:
     host: "stats.{{freifunk.domain}}"
     port: 2003
-
-additionaladmins:
-  - "robwei"
