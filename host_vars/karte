@@ -59,7 +59,7 @@ mapconfig:
 
 node_stats:
   graphite_target:
-    host: 148.251.101.196
+    host: "node-stats.{{freifunk.domain}}" 
     port: 2003
 
 nginx_tiles_cache:

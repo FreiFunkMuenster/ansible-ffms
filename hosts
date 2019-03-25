@@ -26,7 +26,8 @@ hypercorn		ansible_ssh_host=144.76.69.37		ansible_ssh_port=22	# Kein Zugriff!
 unimatrixzero		ansible_ssh_host=176.9.38.150		ansible_ssh_port=22
 voyager			ansible_ssh_host=46.4.80.179		ansible_ssh_port=22
 battleaxegaming		ansible_ssh_host=46.4.122.244		ansible_ssh_port=22	# Kein Zugriff!
-goldelse		ansible_ssh_host=217.197.83.217		ansible_ssh_port=22	ansible_user=ffmsl	ansible_become=yes
+robwei			ansible_ssh_host=85.10.205.231		ansible_ssh_port=22	# Kein Zugriff!
+goldelse		ansible_ssh_host=217.197.83.217		ansible_ssh_port=22
 
 # Server für Hoppglas Karten
 [mapserver]
@@ -36,7 +37,7 @@ testkarte		ipv4=78.46.117.231	ipv6=2a01:4f8:1c0c:6b7e::1	ansible_ssh_host="{{ipv
 # Server für Statistiken mittels Graphite und Grafana
 [statistics]
 stats                   ansible_ssh_host=5.9.86.142             ansible_ssh_port=22
-graphite-node-01	ansible_ssh_host=148.251.45.18		ansible_ssh_port=250
+node-stats		ansible_ssh_host=185.197.132.146	ansible_ssh_port=22
 
 # Server die diverse Dienste anbieten.
 [dienste]
@@ -61,7 +62,7 @@ des1			ipv4=5.9.86.154		ipv6=2a01:4f8:162:10d2::a0		ansible_ssh_host="{{ipv4}}"	
 des2			ipv4=148.251.45.45	ipv6=2a01:4f8:202:11::45		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=deshyper-02
 remue-09		ipv4=148.251.208.170	ipv6=2a01:4f8:191:21e1::b0		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW  IPv6 -> BCKB	capacity=0.75	server=remue
 nightbounce		ipv4=46.4.90.220	ipv6=					ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=jetplow
-rowe			ipv4=85.10.205.244	ipv6=2a01:4f8:a0:41f2::cd		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00
+rowe			ipv4=85.10.205.244	ipv6=2a01:4f8:a0:41f2::cd		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=robwei
 corny			ipv4=144.76.69.56	ipv6=2a01:4f8:191:8224::56		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> FFRL	capacity=1.00	server=hypercorn
 corny2			ipv4=144.76.69.57	ipv6=2a01:4f8:191:8224::57		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=hypercorn
 automatix		ipv4=46.4.80.184	ipv6=2a01:4f8:140:616e::82		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=voyager

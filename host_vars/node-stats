@@ -1,5 +1,11 @@
-server_id: 20
-vm_id: 20
+server_besitzer: "FFI"
+hoster: "IN-Berlin"
+
+## Grafana erst zum schluss umstellen. 
+#grafana: 
+#  nginx:
+#    host_name: "grafana.{{freifunk.domain}}"
+
 graphite:
   nginx:
     host_name: "{{inventory_hostname}}.{{freifunk.domain}}"
@@ -26,3 +32,16 @@ graphite:
     - name: "default"
       pattern: ".*"
       retentions: "10s:1h,1m:2d,5m:7d,15m:90d,1d:4y"
+
+collectd:
+  collect_dhcp: false
+  collect_fastd: false
+  collect_l2tp: false
+  collect_ipv4ipv6: false
+  collect_sysctl: false
+  collect_bind: false
+  collect_ping: false
+  collect_nginx: false
+  graphite_target:
+    host: "stats.{{freifunk.domain}}"
+    port: 2003
