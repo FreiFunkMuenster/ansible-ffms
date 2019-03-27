@@ -17,8 +17,8 @@ graphite:
   cache_instances:
     - name: "a"
     - name: "b"
-    - name: "c"
-    - name: "d"
+#    - name: "c"
+#    - name: "d"
   storage_schemas:
     - name: "node"
       pattern: "^node\\..*"
