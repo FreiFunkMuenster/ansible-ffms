@@ -48,6 +48,16 @@ ffrl_tun:
 dhcp_type: "kea"
 
 domaenenliste:
+   "01":
+      dhcp_start: 10.1.64.0
+      dhcp_ende: 10.1.127.255
+      server_id: 2
+      partner: "hulk"
+   "10":
+      dhcp_start: 10.10.64.0
+      dhcp_ende: 10.10.127.255
+      server_id: 2
+      partner: "hulk"
    "14":
       dhcp_start: 10.14.128.0
       dhcp_ende: 10.14.191.255
