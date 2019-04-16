@@ -1,16 +1,16 @@
 server_besitzer: "FFI"
-hoster: "Hetzner"
+hoster: "IN-Berlin"
 
-grafana:
+grafana: 
   nginx:
     host_name: "grafana.{{freifunk.domain}}"
 
 graphite:
   nginx:
     host_name: "graphite.{{freifunk.domain}}"
-  cluster_servers:
-    - server: "graphite-node-01.freifunk-muensterland.de"
-      port: 80
+#  cluster_servers:
+#    - server: "graphite.{{freifunk.domain}}"
+#      port: 80
   relay:
     method: "consistent-hashing"
   cache_instances:
@@ -21,16 +21,16 @@ graphite:
   storage_schemas:
     - name: "node"
       pattern: "^node\\..*"
-      retentions: "1m:2d,5m:7d,15m:90d,1d:4y"
+      retentions: "1m:2d,10m:90d,4h:4y"
     - name: "nodes"
       pattern: "^nodes\\..*"
-      retentions: "1m:2d,5m:7d,15m:90d,1d:4y"
+      retentions: "1m:2d,10m:90d,1h:4y"
     - name: "carbon"
       pattern: "^carbon\\..*"
-      retentions: "10s:1h,1m:2d,5m:7d,15m:90d,1d:4y"
+      retentions: "1m:90d"
     - name: "default"
       pattern: ".*"
-      retentions: "60s:30d"
+      retentions: "10s:1h,1m:2d,5m:7d,15m:90d,1d:4y"
 
 collectd:
   collect_dhcp: false

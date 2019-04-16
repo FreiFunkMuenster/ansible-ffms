@@ -36,8 +36,7 @@ testkarte		ipv4=78.46.117.231	ipv6=2a01:4f8:1c0c:6b7e::1	ansible_ssh_host="{{ipv
 
 # Server für Statistiken mittels Graphite und Grafana
 [statistics]
-stats                   ansible_ssh_host=5.9.86.142             ansible_ssh_port=22
-node-stats		ansible_ssh_host=185.197.132.146	ansible_ssh_port=22
+stats		ansible_ssh_host=185.197.132.146	ansible_ssh_port=22
 
 # Server die diverse Dienste anbieten.
 [dienste]
