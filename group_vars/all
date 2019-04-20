@@ -835,6 +835,8 @@ dns_entries_for_all_tlds:
  - 'telefonie                                        IN  AAAA    2a03:2260:115:4300:e2d1:93dc:80ba:3d7f'
  - 'jitsi                                            IN  A       148.251.45.39'
  - 'jitsi                                            IN  AAAA    2a01:4f8:202:11::74'
+ - 'beamer                                           IN  A       10.1.0.20'
+ - 'beamer                                           IN  AAAA    2a03:2260:115:100:3a9d:92ff:fe36:ca04'
 
 domains:
   "freifunk-muensterland.de":
