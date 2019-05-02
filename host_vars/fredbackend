@@ -1,5 +1,9 @@
 server_besitzer: "FFI"
 
+additionaladmins:
+ - "fa@fred"
+ - "jl@fred"
+
 #borg_backups:
 #  - name: 'to-faa-bkpsrv'
 #    backup_server: 'faa-vm-backup.ffmsl.de'
