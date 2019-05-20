@@ -5,7 +5,7 @@ unifi			ansible_ssh_host=2a03:2260:115:4300:5054:ff:fe14:bb9f		ansible_ssh_port=
 unifi-legacy		ansible_ssh_host=2a03:2260:115:4300:5054:ff:fefe:680f		ansible_ssh_port=22
 aircontrol		ansible_ssh_host=2a03:2260:115:1600:5054:ff:fecf:b2fb		ansible_ssh_port=22
 mail			ansible_ssh_host=148.251.208.169	ansible_ssh_port=22
-wiki			ansible_ssh_host=46.4.90.250		ansible_ssh_port=22
+wiki			ansible_ssh_host=5.9.86.142		ansible_ssh_port=22
 forum			ansible_ssh_host=148.251.208.171	ansible_ssh_port=22
 streamer		ansible_ssh_host=46.4.80.179		ansible_ssh_port=222
 faa-vm-backup		ansible_ssh_host=2a03:2260:115:100:5054:ff:fe73:a614		ansible_ssh_port=22
