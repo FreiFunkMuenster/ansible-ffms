@@ -6,7 +6,6 @@ hoster: "Hetzner"
 
 ffrl_nat_ip: 185.66.195.20/32
 
-
 ffrl_tun:
 - name: ber1
   gre_target: 185.66.195.0
@@ -44,6 +43,26 @@ ffrl_tun:
   v4_remote: 100.64.5.142/31
   v6_local: 2a03:2260:0:2c8::2/64
   v6_remote: 2a03:2260:0:2c8::1/64
+
+ffnw_tun:
+- name: fra1
+  gre_target: 185.197.132.3
+  v4_remote: 100.100.32.80/31
+  v6_remote: fe80::1/64
+- name: fra2
+  gre_target: 185.197.132.4
+  v4_remote: 100.100.48.80/31
+  v6_remote: fe80::1/64
+- name: ber2
+  gre_target: 185.197.132.8
+  v4_remote: 100.100.112.80/31
+  v6_remote: fe80::1/64
+  bgp_local_pref: 210
+- name: ber1
+  gre_target: 185.197.132.7
+  v4_remote: 100.100.96.80/31
+  v6_remote: fe80::1/64
+  bgp_local_pref: 201
 
 dhcp_type: "kea"
 
