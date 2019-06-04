@@ -3,6 +3,7 @@ server_id: 15
 
 server_besitzer: "Robin Weiligmann / RobWei"
 hoster: "Hetzner"
+use_wlan_slovenija_tunneldigger: true
 
 ffrl_nat_ip: 185.66.195.20/32
 
