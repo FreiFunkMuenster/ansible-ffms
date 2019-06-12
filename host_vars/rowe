@@ -128,3 +128,13 @@ domaenenliste:
       dhcp_ende: 10.73.191.255
       server_id: 3
       partner: "corny"
+   "75":
+      dhcp_start: 10.75.64.0
+      dhcp_ende: 10.75.127.255
+      server_id: 2
+      partner: "hulk"
+   "76":
+      dhcp_start: 10.76.64.0
+      dhcp_ende: 10.76.127.255
+      server_id: 2
+      partner: "hulk"
