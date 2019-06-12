@@ -5,7 +5,7 @@ server_besitzer: "FFI"
 hoster: "IN-Berlin"
 
 use_wlan_slovenija_tunneldigger: true
-ipv4_direkt_ausleiten: true	#HANDLE WITH CARE!!!
+ipv4_direkt_ausleiten: true           #HANDLE WITH CARE!!!
 
 domaenenliste:
    "01":
