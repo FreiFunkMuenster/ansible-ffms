@@ -155,7 +155,7 @@ domaenenliste:
       partner: "corny"
    "67":
       dhcp_start: 10.67.128.0
-      dhcp_nde: 10.67.191.255
+      dhcp_ende: 10.67.191.255
       server_id: 3
       partner: "corny"
    "70":
