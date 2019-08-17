@@ -149,7 +149,7 @@ for (i in sn$name) {
 # Manuelle Domänenzuordnung zuweisen
 if (man.alloc == TRUE) {
 	for (i in row(domains.manual)[,1]) {
-		dom.m <- domains$dom == domains.manual$dom
+		dom.m <- domains$dom == domains.manual$dom[i]
 		com.m <- (as.character(com$gw1) == domains.manual$gw1[i]) & (as.character(com$gw2) == domains.manual$gw2[i])  & (as.character(com$gw3) == domains.manual$gw3[i])
 		domains$gw1[dom.m] <- domains.manual$gw1[i]
 		domains$gw2[dom.m] <- domains.manual$gw2[i]
