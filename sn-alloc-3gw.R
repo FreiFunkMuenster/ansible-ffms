@@ -219,8 +219,7 @@ for (i in sn$name) {
 				else if (sn$vm.id[sn$name == i] == max(serverlist)) { dhcp.set <- calc.dhcp(j,offset=192,id=4) }
 				else dhcp.set <- calc.dhcp(j,offset=128,id=3)
 			domlist.new <- c(domlist.new, dhcp.set, 
-			paste("      partner1: \"",as.character(sn$name[which(sn$vm.id == serverlist[serverlist != sn$vm.id[sn$name == i]][1])]),"\"",sep=""),
-			paste("      partner2: \"",as.character(sn$name[which(sn$vm.id == serverlist[serverlist != sn$vm.id[sn$name == i]][2])]),"\"",sep=""))
+			paste("      partner: [",as.character(sn$name[which(sn$vm.id == serverlist[serverlist != sn$vm.id[sn$name == i]][1])]),", ",as.character(sn$name[which(sn$vm.id == serverlist[serverlist != sn$vm.id[sn$name == i]][2])]),"]",sep=""))
 		}
 	}
 	host.vars.new[[i]] <- c(host.vars.raw[[i]][1:which(host.vars.raw[[i]] == "domaenenliste:"),],
