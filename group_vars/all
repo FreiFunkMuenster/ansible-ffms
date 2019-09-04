@@ -852,6 +852,7 @@ dns_entries_for_all_tlds:
  - 'fredbackend                                      IN  AAAA    2a01:4f8:1c1c:8987::1'
  - 'telefonie                                        IN  AAAA    2a03:2260:115:4300:e2d1:93dc:80ba:3d7f'
  - 'beamer                                           IN  A       10.1.0.20'
+ - 'projekt                                          IN  A       185.133.208.53'
 
 domains:
   "freifunk-muensterland.de":
