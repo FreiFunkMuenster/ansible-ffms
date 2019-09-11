@@ -3,6 +3,7 @@ vm_id: 13
 
 server_besitzer: "Till Jannis Dören / Jannis"
 hoster: "Hetzner"
+use_wlan_slovenija_tunneldigger: true
 
 domaenenliste:
    "11":
@@ -116,13 +117,6 @@ ffrl_tun:
 
 dhcp_type: "kea"
 
-tunneldigger:
-  instance_per_domain: true
-  interface: "eth0"
-  max_tunnels: 1024
-  port_base: 20100
-  pmtu_discovery: false
-  tunnel_timeout: 60
 
 additionaladmins:
   - "jannis"
