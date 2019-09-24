@@ -1,3 +1,7 @@
+*.retry
+**/*.repokey
+*.tmp.json
+domains.csv
 # ignore files of Jetbrains InteliJ IDEA
 /.idea
-/*.iml
+/*.iml 
