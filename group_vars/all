@@ -735,8 +735,6 @@ ff_network:
   # IPv6 adressraum
   v6_network: 2a03:2260:115::/48
 
-hostname_suffix: ".servers.freifunk-muensterland.de"
-
 administratorenteam:
   - "parad0x"
   - "kgbvax"
