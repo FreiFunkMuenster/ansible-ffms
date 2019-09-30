@@ -12,7 +12,7 @@ indexconfig:
      link: "https://forum.{{freifunk.domain}}"
    - name: "{{freifunk.name}} - Firmware Assistent"
      link: "https://firmware.{{freifunk.domain}}/md-fw-dl"
-  linktofwdownloader: "https://{{freifunk.domain}}/md-fw-dl/?region=domaene"  #Nummer der Domäne wird automatisch am Ende angefügt.
+  linktofwdownloader: "https://firmware.{{freifunk.domain}}/md-fw-dl/?region=domaene"  #Nummer der Domäne wird automatisch am Ende angefügt.
 
 mapconfig:
   hopglassServer:
