@@ -707,7 +707,7 @@ domaenen:
     firmware: domaene75/
   "76":
     name: Herne
-    community: Herne
+    community: Emscherland
     ffv4_network: 10.76.0.0/16
     ffv6_network: 2a03:2260:115:7600::/64
     map_scale: 1.1
