@@ -680,7 +680,7 @@ domaenen:
     firmware: domaene72/
   "73":
     name: Raesfeld
-    community: Emscherland
+    community: Borken
     ffv4_network: 10.73.0.0/16
     ffv6_network: 2a03:2260:115:7300::/64
     map_scale: 1.1
