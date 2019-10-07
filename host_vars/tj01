@@ -66,6 +66,11 @@ domaenenliste:
       dhcp_ende: 10.72.191.255
       server_id: 3
       partner: "corny"
+   "77":
+      dhcp_start: 10.77.128.0
+      dhcp_ende: 10.77.191.255
+      server_id: 3
+      partner: "fanlin"
 
 ffnw_nat_ip: 185.197.132.36/32
 

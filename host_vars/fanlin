@@ -102,6 +102,11 @@ domaenenliste:
       dhcp_ende: 10.51.127.255
       server_id: 2
       partner: "corny"
+   "77":
+      dhcp_start: 10.77.64.0
+      dhcp_ende: 10.77.127.255
+      server_id: 2
+      partner: "tj01"
 
 dhcp_type: "kea"
 
