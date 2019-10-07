@@ -714,7 +714,7 @@ domaenen:
     map_show_contact: false
     map_max_age: 14
     firmware: domaene76/
-  "76":
+  "77":
     name: Hamm
     community: Hamm
     ffv4_network: 10.77.0.0/16
