@@ -1,2 +1,4 @@
 server_besitzer: "FFI"
 
+additionaladmins:
+  - "christian.weiss"

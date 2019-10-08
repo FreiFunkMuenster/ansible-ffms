@@ -107,3 +107,4 @@ dhcp_type: "kea"
 
 additionaladmins:
   - "fanlin"
+  - "christian.weiss"

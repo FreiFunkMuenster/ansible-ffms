@@ -120,3 +120,4 @@ dhcp_type: "kea"
 
 additionaladmins:
   - "jannis"
+  - "christian.weiss"
