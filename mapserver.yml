@@ -6,9 +6,8 @@
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
     - { role: motd, tags: "motd"}
-#    - { role: backports-kernel, tags: "backports-kernel"}
     - { role: tunearpcache, tags: "tunearpcache"}
-#    - { role: batman_build, tags: "batman_build", when:  "'batman_version' in hostvars[inventory_hostname]"}
+    - { role: batman_install, tags: "batman_install"}
     - { role: mapserver_interfaces, tags: "mapserver_interfaces"}
     - { role: mapserver_hopglass-server, tags: "mapserver_hopglass-server"}
     - { role: mapserver_hopglass, tags: "mapserver_hopglass"}
@@ -16,4 +15,3 @@
     - { role: collectd, tags: "collectd", when: "'collectd' in hostvars[inventory_hostname]" }
     - { role: py_respondd, tags: "py_respondd"}
 #    - { role: mapserver_stats, tags: "mapserver_stats"}
-

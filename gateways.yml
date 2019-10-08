@@ -4,22 +4,21 @@
     - passwords.yml
   remote_user: root
   roles:
-#    - { role: calculate_missing_inventory_variables, tags: "bird,gateways_dhcp,gateways_kea_configure,gateways_kea_postgres"}
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
     - { role: motd, tags: "motd"}
-#    - { role: backports-kernel, tags: "backports-kernel", when: "ansible_distribution == 'Debian' and ansible_distribution_major_version == '8'"}
     - { role: net_netfilter, tags: "net_netfilter"}
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: ip_forwarding, tags: "ip_forwarding"}
     - { role: iptables, tags: "iptables"}
     - { role: gateways_gre_upstream, tags: "gateways_gre_upstream"}
-    - { role: backbone_gre_ffms, tags: "backbone_gre_ffms"}
-    - { role: batman_build, tags: "batman_build", when:  "'batman_version' in hostvars[inventory_hostname] and domaenenliste is defined"}
+    - { role: backbone_gre_intern, tags: "backbone_gre_intern"}
+    - { role: batman_install, tags: "batman_install", when: "'domaenenliste' in hostvars[inventory_hostname]"}
     - { role: gateways_batman, tags: "gateways_batman"}
     - { role: gateways_gretap, tags: "gateways_gretap"}
-    - { role: gateways_l2tp, tags: "gateways_l2tp", when:  "'use_wlan_slovenija_tunneldigger' not in hostvars[inventory_hostname] or use_wlan_slovenija_tunneldigger == false"}
-    - { role: gateways_l2tp_slovenija, tags: "gateways_l2tp_slovenija", when:  "'use_wlan_slovenija_tunneldigger' in hostvars[inventory_hostname] and use_wlan_slovenija_tunneldigger == true"}
+    - { role: gateways_l2tp, tags: "gateways_l2tp", when: "'use_wlan_slovenija_tunneldigger' not in hostvars[inventory_hostname] or use_wlan_slovenija_tunneldigger == false"}
+    - { role: gateways_l2tp_slovenija, tags: "gateways_l2tp_slovenija", when: "'use_wlan_slovenija_tunneldigger' in hostvars[inventory_hostname] and use_wlan_slovenija_tunneldigger == true"}
+    - { role: gateways_fastd, tags: "gateways_fastd", when: "'domaenenliste' in hostvars[inventory_hostname]"}
     - { role: bird, tags: "bird"}
     - { role: gateways_dhcp, tags: "gateways_dhcp", when: "'dhcp_type' not in hostvars[inventory_hostname] or dhcp_type == 'isc-dhcp'"}
     - { role: gateways_bind, tags: "gateways_bind"}
@@ -29,6 +28,5 @@
     - { role: gateways_kea_configure, tags: "gateways_kea_configure", when: "'dhcp_type' in hostvars[inventory_hostname] and dhcp_type == 'kea'"}
     - { role: py_respondd, tags: "py_respondd"}
     - { role: nrpe, tags: "nrpe"}
-#    - { role: set_kernel_param_maxcpus, tags: "set_kernel_param_maxcpus"}
     - { role: unattended_upgrades, tags: "unattended_upgrades"}
     - { role: pause, tags: "pause" }
