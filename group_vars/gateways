@@ -58,4 +58,4 @@ tunneldigger:
   pmtu_discovery: false
   tunnel_timeout: 60
 
-batman_version: "2017.4"
+
