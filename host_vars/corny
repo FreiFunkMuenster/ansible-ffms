@@ -102,7 +102,8 @@ domaenenliste:
       partner: "rowe"
 
 
-ffnw_nat_ip: 185.197.132.33/32
+#ffnw_nat_ip: 185.197.132.33/32
+ffnw_nat_ip: 45.154.111.50/32
 
 ffnw_tun:
 - name: fra1
