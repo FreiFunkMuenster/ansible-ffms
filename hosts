@@ -13,6 +13,7 @@ lafp-vm-backup		ansible_ssh_host=2a03:2260:115:400:5054:ff:fe96:b854		ansible_ss
 zulip			ansible_ssh_host=46.4.80.186		ansible_ssh_port=22
 ldap			ansible_ssh_host=2a01:4f8:162:10d2::a2	ansible_ssh_port=22
 fredbackend		ansible_ssh_host=159.69.223.64		ansible_ssh_port=22
+projekt			ansible_ssh_host=176.9.38.158		ansible_ssh_port=22
 
 [hypervisors]
 #fanLinvirthost		ansible_ssh_host=	TODO		ansible_ssh_port=22	# Kein Zugriff!
