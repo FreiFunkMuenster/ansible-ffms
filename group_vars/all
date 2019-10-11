@@ -751,8 +751,8 @@ administratorenteam:
   - "robwei"
 
 bind:
-  ffms_zone_type: slave
-  ffms_zone_masters:
+  ffnet_zone_type: slave
+  ffnet_zone_masters:
     - 176.9.38.163
 
 logrotate:
