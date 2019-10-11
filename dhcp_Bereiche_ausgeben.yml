@@ -1,6 +1,0 @@
----
-- hosts: gateways
-  remote_user: root
-  gather_facts: no
-  roles:
-    - { role: calculate_missing_inventory_variables, tags: "bird,gateways_dhcp,gateways_kea_configure,gateways_kea_postgres"}

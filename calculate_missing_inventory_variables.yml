@@ -1,5 +1,0 @@
----
-- hosts: gateways
-  remote_user: root
-  roles:
-    - { role: calculate_missing_inventory_variables, tags: "calculate_missing_inventory_variables"}
