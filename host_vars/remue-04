@@ -1,8 +1,0 @@
-server_id: 2 
-vm_id: 1
-server_besitzer: "Sven Culley / Sense"
-hoster: "Hetzner"
-
-dhcp:
-  range_start: 10.43.48.26
-  range_end: 10.43.49.255

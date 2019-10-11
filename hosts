@@ -43,10 +43,6 @@ ticket			ansible_ssh_host=5.9.86.151		ansible_ssh_port=223
 dnsmaster		ansible_ssh_host=176.9.38.163		ansible_ssh_port=22
 mumble                  ansible_ssh_host=46.4.80.179            ansible_ssh_port=225
 
-# Legacy fastd Domäne
-[domaene-06]
-remue-04		ansible_ssh_host=148.251.208.168	ansible_ssh_port=22
-
 # Multidomänen-L2TP Gateways mit oder ohne Direktanbindung FFRL
 # 'capacity' im Kommentar gibt die erwünschte relative Auslastung mit Traffic und L2TP-Verbindungen an
 # 'server' im Kommentar muss angegeben werden, wenn mehrere L2TP-VM auf einem Blech laufen. Der Wert kann frei gewählt werden.
