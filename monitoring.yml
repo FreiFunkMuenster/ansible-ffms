@@ -16,7 +16,7 @@
    roles:
     - { role: nrpe, tags: "nrpe"}
 
- - hosts: monitoring-satellites
+ - hosts: monitoringsatellites
    remote_user: root
    roles:
     - { role: nrpe, tags: "nrpe"}

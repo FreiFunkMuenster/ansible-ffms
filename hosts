@@ -67,9 +67,9 @@ build			ansible_ssh_host=2a03:2260:115:1000:215:17ff:fefd:4da4		ansible_ssh_port
 [monitoring]
 icinga			ansible_ssh_host=148.251.208.173	ansible_ssh_port=22
 
-[monitoring-satellites]
+[monitoringsatellites]
 remue
 #satellite-01		ansible_ssh_host=234.234.234.234	ansible_ssh_port=22
 
-[vip-nodes]
+[vipnodes]
 #vip-node-dummy-01	ansible_ssh_host=123.123.123.123	ansible_ssh_port=22
