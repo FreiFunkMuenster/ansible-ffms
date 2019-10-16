@@ -714,6 +714,15 @@ domaenen:
     map_show_contact: false
     map_max_age: 14
     firmware: domaene76/
+  "77":
+    name: Hamm
+    community: Hamm
+    ffv4_network: 10.77.0.0/16
+    ffv6_network: 2a03:2260:115:7700::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene77/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird
 routing_table: 42
