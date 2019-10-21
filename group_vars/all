@@ -855,7 +855,7 @@ dns_entries_for_all_tlds:
  - 'aircontrol                                       IN  AAAA    2a03:2260:115:1600:5054:ff:fecf:b2fb'
  - 'zulip                                            IN  A       46.4.80.186'
  - 'zulip                                            IN  AAAA    2a01:4f8:140:616e::88'
- - 'ldap                                             IN  AAAA    2a03:2260:115:100:482b:c8ff:feae:1042'
+ - 'ldap                                             IN  AAAA    2a01:4f8:162:10d2::a2'
  - 'fredbackend                                      IN  A       159.69.223.64'
  - 'fredbackend                                      IN  AAAA    2a01:4f8:1c1c:8987::1'
  - 'meshviewer                                       IN  A       78.46.117.231'
@@ -961,3 +961,17 @@ domains:
       - 'zulip                                            IN  TXT     "v=spf1 mx a a:mail.freifunk-muensterland.de ~all"'
       - 'default._domainkey.zulip                         IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQZIftyMw8bVqzP5ecw3818wJze3c9V3HITktC/RvD4Kv54VBsDtDHKoAISiNeLJfHch7cd8/O/9PaLYku5iCyxN5i8zqO84Jm1kvrZ8fSXzVNa3nJbU9cSRC6amx+X3Q372HcCCv7pNolBjnTXK2Pe9DEQclbT/8knYgY78xeiQIDAQAB"'
       - '_dmarc.zulip                                     IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
+  "infrastruktur.ms":
+    extern_dns:
+      - c1024
+      - des1
+      - fanlin
+      - parad0x
+    email: info@infrastruktur.ms
+    dns_entries:
+      - '@                                                IN  TXT     "v=spf1 mx -all"'
+      - 'default._domainkey                               IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLluAzK6Ko/xWHCYM2AYKB1JBcSOpZTObLPXnELmJFvMyxkIrdDUr76IddKTl8FmjBFJ+tYiy8TXbGa4QXqlp8TAgr/Anz8u0gDlrhdLtvVpsyin3lGv4nriGcwaxEbTX7UHqF68sh6RPATJpTnk2aoZC/mw4cdksxkb0g8FueJQIDAQAB"'
+      - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
+      - '@                                                IN  TXT     "google-site-verification=u5yvcYZGB1MK4b8Fh7pQo-7A4bITqyLoIEjhTPBWqmo"'
+      - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
+      - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
