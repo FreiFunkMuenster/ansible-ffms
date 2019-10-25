@@ -160,3 +160,5 @@ tunneldigger:
   port_base: 20100
   pmtu_discovery: false
   tunnel_timeout: 60
+
+use_wlan_slovenija_tunneldigger: true
