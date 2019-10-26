@@ -733,7 +733,6 @@ batman:
   downstream: 1024Mbit
   # Bandbreite, die Batman annoncieren soll
   upstream: 1024Mbit
-  version: "2017.4"
 
 # Parameter für das eigene Freifunk-Netzwerk
 ff_network:
