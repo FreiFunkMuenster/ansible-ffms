@@ -53,15 +53,16 @@ domaenen:
     map_show_contact: false
     map_max_age: 14
     firmware: domaene05/
-#  "06":
-#    name: Dom06
-#    community: Test
-#    ffv4_network: 10.6.0.0/16
-#    ffv6_network: 2a03:2260:115:600::/64
-#    map_scale: 1.0
-#    map_show_contact: false
-#    map_max_age: 14
-#    firmware: domaene06/
+  "06":
+    name: Babel-Test
+    community: Babel-Test
+    ffv4_network: 10.6.0.0/16
+    ffv6_network: 2a03:2260:115:600::/64
+    mesh_babel: true
+    map_scale: 1.0
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene06/
   "07":
     name: Telgte
     community: Kreis Warendorf
