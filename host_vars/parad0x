@@ -57,11 +57,11 @@ ffrl_tun:
 
 
 domaenenliste:
-   "04":
-      dhcp_start: 10.4.64.0
-      dhcp_ende: 10.4.127.255
+   "05":
+      dhcp_start: 10.5.64.0
+      dhcp_ende: 10.5.127.255
       server_id: 2
-      partner: "corny"
+      partner: "hulk"
    "11":
       dhcp_start: 10.11.64.0
       dhcp_ende: 10.11.127.255

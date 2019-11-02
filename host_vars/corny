@@ -9,7 +9,8 @@ domaenenliste:
       dhcp_start: 10.4.128.0
       dhcp_ende: 10.4.191.255
       server_id: 3
-      partner: "parad0x"
+      partner: "rowe"
+      fastd: true
    "25":
       dhcp_start: 10.25.64.0
       dhcp_ende: 10.25.127.255
