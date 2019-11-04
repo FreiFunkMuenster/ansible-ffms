@@ -3,6 +3,7 @@
   vars_files:
     - passwords.yml
   remote_user: root
+  serial: 2
   roles:
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
