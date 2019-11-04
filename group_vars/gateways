@@ -57,3 +57,6 @@ tunneldigger:
   port_base: 20100
   pmtu_discovery: false
   tunnel_timeout: 60
+
+fastd:
+  port_base: 21100
