@@ -27,7 +27,7 @@ voyager			ansible_ssh_host=46.4.80.179		ansible_ssh_port=22
 tj7-hyper		ansible_ssh_host=176.9.77.90		ansible_ssh_port=22	# Kein Zugriff!
 robweisor-01		ansible_ssh_host=78.46.85.242		ansible_ssh_port=22	# Kein Zugriff!
 goldelse		ansible_ssh_host=217.197.83.217		ansible_ssh_port=22
-obelix			ansible_ssh_host=194.50.19.114		ansible_ssh_port=22
+obelix			ansible_ssh_host=45.152.127.50		ansible_ssh_port=22
 
 # Server für Hoppglas Karten
 [mapserver]
