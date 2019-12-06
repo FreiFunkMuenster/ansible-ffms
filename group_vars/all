@@ -109,6 +109,10 @@ domaenen:
           id: "78:8a:20:23:0e:96"
         - ip: "10.10.10.52" #FF-BOR-KPB-AP-Innenhof
           id: "f0:9f:c2:d0:ca:82"
+        - ip: "10.10.0.145" #Corny-1
+          id: "b8:27:eb:62:c5:ab"
+        - ip: "10.10.0.146" #Corny-2
+          id: "fc:ec:da:30:85:51"
   "11":
     name: Bocholt
     community: Westmünsterland
