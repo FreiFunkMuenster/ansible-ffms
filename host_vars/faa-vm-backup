@@ -12,6 +12,7 @@ borg_backup_target:
     - "zulip"
     - "unifi-legacy"
     - "projekt"
+    - "nextcloud"
   config:
     backup_user: borgbkp
     backup_group: borgbkp
