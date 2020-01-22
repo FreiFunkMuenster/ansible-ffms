@@ -751,17 +751,16 @@ ff_network:
 
 administratorenteam:
   - "parad0x"
-  - "kgbvax"
   - "descilla"
   - "mpw"
   - "corny"
   - "peterb"
   - "alucardo"
-  - "fll"
   - "p4w"
   - "hoepers"
   - "wurmi"
   - "robwei"
+  - "jbergner"
 
 bind:
   ffnet_zone_type: slave
