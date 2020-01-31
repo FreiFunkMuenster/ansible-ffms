@@ -893,12 +893,12 @@ domains:
        - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
        - '@                                                IN  TXT     "v=spf1 mx -all"'
        - 'default._domainkey                               IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDiywfDbx8rb5CpKqmD6i4Qx1yRvci/sengh1j4csKSyAcDCyWmWaJXum39PwfX4UJSOy+bvDqUBciUYxIsMHsJJyggL0DOVoohfSGQqnqHeOabURMEiFnvTfOYa80yv74IhxUUECyFKwdZDJw+TAzzrq/SdpJxzGmFtBGxcwnErQIDAQAB"'
-       - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
+       - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject;"'
        - '@                                                IN  TXT     "google-site-verification=j6wmm3C0mLuAQTCJSJNk_hnBCmeFPuPChUvPdTjZzkE"'
        - 'forum                                            IN  MX 10   mail.freifunk-muensterland.de.'
        - 'forum                                            IN  TXT     "v=spf1 mx a a:mail.freifunk-muensterland.de ~all"'
        - 'default._domainkey.forum                         IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCuVStLDivCoMgBKPcb/w37iiza7EvG+cShx4uDKeIjBZYCN0DWb7uGo1DoapN+zWn4/p5+SLkuDSu0Q24D2TStHXE6CcQKPryHxHSJvRRJYwK3SDJL3PH1yEpBj5nOLoABHobwSm042/8VYT+bsCXWJm4dVDOmYix/3NymS7QClQIDAQAB"'
-       - '_dmarc.forum                                     IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@forum.freifunk-muensterland.de"'
+       - '_dmarc.forum                                     IN  TXT     "v=DMARC1; p=reject;"'
        - 'forum                                            IN  TXT     "google-site-verification=mTC-CAfSRN5kOtcTjUgFb1AIOFl6h5B-TrS14jIfk10"'
        - 'dyndns                                           IN  NS      ns1.he.net.'
        - 'dyndns                                           IN  NS      ns2.he.net.'
@@ -916,7 +916,7 @@ domains:
     dns_entries:
       - '@                                                IN  TXT     "v=spf1 mx -all"'
       - 'default._domainkey                               IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCq6uxLJ8WQj7WGgwJH5d7fIpmd1i6DfRV1QMIXy4LVIxwowMy+mAYGojnWoN6ZtMjhUYZLDIWPp2lK8qangynGdIYgE7iJ4HoeEYEoWbi4kgHhWtTlNRQg3+xT0MrKBBCZ707ifNWLpZ4pCwDVOmK5WyG5bG01+3wG4MXNN779swIDAQAB"'
-      - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
+      - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject;"'
       - '@                                                IN  TXT     "google-site-verification=ex-6A1f0RBIhAjoPEu_7WA7Rv1yVUmkMTdXT19SjBOw"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
@@ -930,7 +930,7 @@ domains:
     dns_entries:
       - '@                                                IN  TXT     "v=spf1 mx -all"'
       - 'default._domainkey                               IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKojQEPsoeauRUCMn+o80EIhaV/7XWZPc7eKFra7o3xQOTNBcNjjc2gNMD+hxLB6H9HDcU7c5HM66o/YU53VTrpOdXBvEkOJWIto/B6HuPxbIRsAMiRjbQUneMfZjgPzDcxOaRbB1OVRGSSPe92Oca3Q/bUSf2talLb8splvGnJwIDAQAB"'
-      - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
+      - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject;"'
       - '@                                                IN  TXT     "google-site-verification=SEIPNGVqGBu_d0AO-yCqj_MxLjO7aHOaIWzuq-fIyM4"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
@@ -944,7 +944,7 @@ domains:
     dns_entries:
       - '@                                                IN  TXT     "v=spf1 mx -all"'
       - 'default._domainkey                               IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCq6uxLJ8WQj7WGgwJH5d7fIpmd1i6DfRV1QMIXy4LVIxwowMy+mAYGojnWoN6ZtMjhUYZLDIWPp2lK8qangynGdIYgE7iJ4HoeEYEoWbi4kgHhWtTlNRQg3+xT0MrKBBCZ707ifNWLpZ4pCwDVOmK5WyG5bG01+3wG4MXNN779swIDAQAB"'
-      - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
+      - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject;"'
       - '@                                                IN  TXT     "google-site-verification=bbu3aMuoNu4n3J8GzZkcn4bT44SbVUoZOEQB7JEZKao"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
@@ -958,14 +958,14 @@ domains:
     dns_entries:
       - '@                                                IN  TXT     "v=spf1 mx -all"'
       - 'default._domainkey                               IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCVLreaCsqKEMXkzclNvwKeHAGZi1rI+AWkb16U0IjeuMPsF0rGou8p/ypMMtsuf3nFdaruvf/xB/8o6WH+UiRxKsNPRIZwYWB1EALuWPaiWWYUlo3j7hQT/9TBVWec96n8zW8FwS3KcBojZge8w7MNpJJ4fTbfBo2HnJMcsvj7IQIDAQAB"'
-      - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
+      - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject;"'
       - '@                                                IN  TXT     "google-site-verification=BPJo0QNmezQuWNKUVTQY7z_GuGrGkW1Nl1CMmjQFM4I"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
       - 'zulip                                            IN  MX 10   mail.freifunk-muensterland.de.'
       - 'zulip                                            IN  TXT     "v=spf1 mx a a:mail.freifunk-muensterland.de ~all"'
       - 'default._domainkey.zulip                         IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQZIftyMw8bVqzP5ecw3818wJze3c9V3HITktC/RvD4Kv54VBsDtDHKoAISiNeLJfHch7cd8/O/9PaLYku5iCyxN5i8zqO84Jm1kvrZ8fSXzVNa3nJbU9cSRC6amx+X3Q372HcCCv7pNolBjnTXK2Pe9DEQclbT/8knYgY78xeiQIDAQAB"'
-      - '_dmarc.zulip                                     IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
+      - '_dmarc.zulip                                     IN  TXT     "v=DMARC1; p=reject;"'
   "infrastruktur.ms":
     extern_dns:
       - c1024
@@ -976,7 +976,7 @@ domains:
     dns_entries:
       - '@                                                IN  TXT     "v=spf1 mx -all"'
       - 'default._domainkey                               IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLluAzK6Ko/xWHCYM2AYKB1JBcSOpZTObLPXnELmJFvMyxkIrdDUr76IddKTl8FmjBFJ+tYiy8TXbGa4QXqlp8TAgr/Anz8u0gDlrhdLtvVpsyin3lGv4nriGcwaxEbTX7UHqF68sh6RPATJpTnk2aoZC/mw4cdksxkb0g8FueJQIDAQAB"'
-      - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject; rua=mailto:mailauth-reports@freifunk-muensterland.de"'
+      - '_dmarc                                           IN  TXT     "v=DMARC1; p=reject;"'
       - '@                                                IN  TXT     "google-site-verification=u5yvcYZGB1MK4b8Fh7pQo-7A4bITqyLoIEjhTPBWqmo"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
