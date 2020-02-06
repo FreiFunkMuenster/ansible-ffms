@@ -18,17 +18,17 @@ projekt			ansible_ssh_host=176.9.38.158		ansible_ssh_port=22
 nextcloud		ansible_ssh_host=185.197.132.147	ansible_ssh_port=22
 
 [hypervisors]
-#fanLinvirthost		ansible_ssh_host=	TODO		ansible_ssh_port=22	# Kein Zugriff!
-#hyperhost		ansible_ssh_host=	TODO		ansible_ssh_port=22	# Kein Zugriff!
-deshyper-01		ansible_ssh_host=5.9.86.151		ansible_ssh_port=22
-remue			ansible_ssh_host=144.76.30.226		ansible_ssh_port=22
-hypercorn		ansible_ssh_host=144.76.69.37		ansible_ssh_port=22	# Kein Zugriff!
-unimatrixzero		ansible_ssh_host=176.9.38.150		ansible_ssh_port=22
-voyager			ansible_ssh_host=46.4.80.179		ansible_ssh_port=22
-tj7-hyper		ansible_ssh_host=176.9.77.90		ansible_ssh_port=22	# Kein Zugriff!
-robweisor-01		ansible_ssh_host=78.46.85.242		ansible_ssh_port=22	# Kein Zugriff!
-goldelse		ansible_ssh_host=217.197.83.217		ansible_ssh_port=22
-obelix			ansible_ssh_host=45.152.127.50		ansible_ssh_port=22
+#fanLinvirthost		ipv4=			ipv6=				ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22	# Kein Zugriff!
+#hyperhost		ipv4=			ipv6=				ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22	# Kein Zugriff!
+deshyper-01		ipv4=5.9.86.151		ipv6=2a01:4f8:162:10d2::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
+remue			ipv4=144.76.30.226	ipv6=2a01:4f8:191:21e1::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
+hypercorn		ipv4=144.76.69.37	ipv6=2a01:4f8:191:8224::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22	# Kein Zugriff!
+unimatrixzero		ipv4=176.9.38.150	ipv6=2a01:4f8:150:4486::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
+voyager			ipv4=46.4.80.179	ipv6=2a01:4f8:140:616e::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
+tj7-hyper		ipv4=176.9.77.90	ipv6=2a01:4f8:151:112b::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22	# Kein Zugriff!
+robweisor-01		ipv4=78.46.85.242	ipv6=2a01:4f8:120:1395::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22	# Kein Zugriff!
+goldelse		ipv4=217.197.83.217	ipv6=2001:bf0:c000:40::217	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
+obelix			ipv4=45.152.127.50	ipv6=2a07:59c6:ee00:19::114	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
 
 # Server für Hoppglas Karten
 [mapserver]
