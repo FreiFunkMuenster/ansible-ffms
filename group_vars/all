@@ -1,6 +1,8 @@
 # Globale Variablen für alle Server
 build_tunnels_over_ipv6_if_available: false
 
+ipv6internalTunnelPrefix: '2a03:2260:115:ffa1::'
+
 domaenen:
   "01":
     name: Münster-Mitte-Süd

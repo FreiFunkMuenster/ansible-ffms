@@ -1,9 +1,9 @@
 ---
-- hosts: gateways
+- hosts: gateways,as-router
   vars_files:
     - passwords.yml
   remote_user: root
-  serial: 2
+  serial: 1
   roles:
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
@@ -20,6 +20,21 @@
     - { role: gateways_l2tp, tags: "gateways_l2tp", when: "'use_wlan_slovenija_tunneldigger' not in hostvars[inventory_hostname] or use_wlan_slovenija_tunneldigger == false"}
     - { role: gateways_l2tp_slovenija, tags: "gateways_l2tp_slovenija", when: "'use_wlan_slovenija_tunneldigger' in hostvars[inventory_hostname] and use_wlan_slovenija_tunneldigger == true"}
     - { role: gateways_fastd, tags: "gateways_fastd", when: "'domaenenliste' in hostvars[inventory_hostname]"}
+
+- hosts: as-router
+  vars_files:
+    - passwords.yml
+  remote_user: root
+  serial: 2
+  roles:
+    - { role: bird_as_router, tags: "bird_as_router"}
+
+- hosts: gateways,as-router
+  vars_files:
+    - passwords.yml
+  remote_user: root
+  serial: 3
+  roles:
     - { role: bird, tags: "bird"}
     - { role: gateways_dhcp, tags: "gateways_dhcp", when: "'dhcp_type' not in hostvars[inventory_hostname] or dhcp_type == 'isc-dhcp'"}
     - { role: gateways_bind, tags: "gateways_bind"}

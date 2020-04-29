@@ -1,2 +1,23 @@
-server_besitzer: 'FFI'
-hoster: 'vserver.site'
+server_id: 18
+vm_id: 18
+
+server_besitzer: "FFI"
+hoster: "Interwerk"
+
+use_wlan_slovenija_tunneldigger: true
+ipv4_direkt_ausleiten: true
+ifupdown2: true
+
+tunnel_interface: "lo"
+
+domaenenliste:
+   "06":
+      dhcp_start: 10.6.128.0
+      dhcp_ende: 10.6.191.255
+      server_id: 3
+      partner: "nightbounce"
+
+tunneldigger:
+  interface: "lo"
+  max_tunnels: 768
+  port_base: 20100
