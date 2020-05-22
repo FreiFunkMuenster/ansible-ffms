@@ -842,6 +842,8 @@ dns_entries_for_all_tlds:
  - 'unifi                                            IN  AAAA    2a03:2260:115:4300:5054:ff:fe14:bb9f'
  - 'unifi-legacy                                     IN  A       46.4.80.179'
  - 'unifi-legacy                                     IN  AAAA    2a03:2260:115:4300:5054:ff:fefe:680f'
+ - 'influx                                           IN  A       116.203.108.175'
+ - 'influx                                           IN  AAAA    2a01:4f8:c0c:bef8::1'
  - 'stats                                            IN  A       185.197.132.146'
  - 'grafana                                          IN  A       185.197.132.146'
  - 'graphite                                         IN  A       185.197.132.146'

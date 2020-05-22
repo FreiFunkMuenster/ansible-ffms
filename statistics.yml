@@ -8,7 +8,11 @@
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
     - { role: motd, tags: "motd"}
-    - { role: statistics_graphite, tags: "statistics_graphite", when: "graphite is defined"}
-    - { role: statistics_grafana, tags: "statistics_grafana", when: "grafana is defined"}
-    - { role: statistics_nginx, tags: "statistics_nginx"}
-    - { role: collectd, tags: "collectd", when: "collectd is defined"}
+    - { role: statistics_influxdb, tags: "statistics_influxdb", when: "influxdb is defined"}
+    - { role: statistics_grafana_neu, tags: "statistics_grafana_neu", when: "influxdb is defined"}
+    - { role: statistics_nginx_neu, tags: "statistics_nginx_neu", when: "influxdb is defined"}
+    #- { role: statistics_graphite, tags: "statistics_graphite", when: "graphite is defined"}
+    #- { role: statistics_grafana, tags: "statistics_grafana", when: "grafana is defined"}
+    #- { role: statistics_nginx, tags: "statistics_nginx", when: "grafana is defined"}
+    #- { role: collectd, tags: "collectd", when: "collectd is defined"}
+    - { role: telegraf, tags: "telegraf", when: "telegraf is defined"}
