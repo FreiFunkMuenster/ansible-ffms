@@ -4,16 +4,16 @@
     - passwords.yml
   remote_user: root
   roles:
-#    - { role: hostname, tags: "hostname"}
-#    - { role: common, tags: "common"}
-#    - { role: motd, tags: "motd"}
-#    - { role: net_netfilter, tags: "net_netfilter"}
-#    - { role: tunearpcache, tags: "tunearpcache"}
-#    - { role: ip_forwarding, tags: "ip_forwarding"}
-#    - { role: iptables, tags: "iptables"}
-#    - { role: gateways_gre_upstream, tags: "gateways_gre_upstream"}
-#    - { role: backbone_gre_intern, tags: "backbone_gre_intern"}
-#    - { role: batman_install, tags: "batman_install", when:  "domaenenliste is defined"}
+    - { role: hostname, tags: "hostname"}
+    - { role: common, tags: "common"}
+    - { role: motd, tags: "motd"}
+    - { role: net_netfilter, tags: "net_netfilter"}
+    - { role: tunearpcache, tags: "tunearpcache"}
+    - { role: ip_forwarding, tags: "ip_forwarding"}
+    - { role: iptables, tags: "iptables"}
+    - { role: gateways_gre_upstream, tags: "gateways_gre_upstream"}
+    - { role: backbone_gre_intern, tags: "backbone_gre_intern"}
+    - { role: batman_install, tags: "batman_install", when:  "domaenenliste is defined"}
     - { role: gateways_batman, tags: "gateways_batman"}
     - { role: gateways_gretap, tags: "gateways_gretap"}
     - { role: gateways_l2tp, tags: "gateways_l2tp", when: "'use_wlan_slovenija_tunneldigger' not in hostvars[inventory_hostname] or use_wlan_slovenija_tunneldigger == false"}
