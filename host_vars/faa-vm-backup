@@ -3,7 +3,7 @@ server_besitzer: "FFI"
 borg_backup_target:
   target_for:
     - "ticket"
-    - "unifi"
+#    - "unifi"
     - "mail"
     - "wiki"
     - "webserver"
