@@ -16,11 +16,6 @@ domaenenliste:
       dhcp_ende: 10.25.127.255
       server_id: 2
       partner: "automatix"
-   "26":
-      dhcp_start: 10.26.128.0
-      dhcp_ende: 10.26.191.255
-      server_id: 3
-      partner: "c1024"
    "42":
       dhcp_start: 10.42.128.0
       dhcp_ende: 10.42.191.255
@@ -31,11 +26,6 @@ domaenenliste:
       dhcp_ende: 10.46.191.255
       server_id: 3
       partner: "c1024"
-   "48":
-      dhcp_start: 10.48.64.0
-      dhcp_ende: 10.48.127.255
-      server_id: 2
-      partner: "automatix"
    "51":
       dhcp_start: 10.51.128.0
       dhcp_ende: 10.51.191.255
@@ -56,11 +46,6 @@ domaenenliste:
       dhcp_ende: 10.59.191.255
       server_id: 3
       partner: "remue-09"
-   "65":
-      dhcp_start: 10.65.64.0
-      dhcp_ende: 10.65.127.255
-      server_id: 2
-      partner: "nightbounce"
    "66":
       dhcp_start: 10.66.128.0
       dhcp_ende: 10.66.191.255
