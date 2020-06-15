@@ -824,9 +824,9 @@ dns_entries_for_all_tlds:
  - 'autodiscover                                     IN  AAAA    2a01:4f8:191:21e1::af'
  - 'autoconfig                                       IN  A       148.251.208.169'
  - 'autoconfig                                       IN  AAAA    2a01:4f8:191:21e1::af'
- - 'firmware                                         IN  A       144.76.30.226'
+ - 'firmware                                         IN  A       148.251.208.175'
  - 'firmware                                         IN  AAAA    2a01:4f8:191:21e1::23'
- - 'assistent                                        IN  A       144.76.30.226'
+ - 'assistent                                        IN  A       148.251.208.175'
  - 'assistent                                        IN  AAAA    2a01:4f8:191:21e1::23'
  - 'forum                                            IN  A       148.251.208.171'
  - 'forum                                            IN  AAAA    2a01:4f8:191:21e1::b1'
@@ -875,6 +875,8 @@ dns_entries_for_all_tlds:
  - 'netbox                                           IN  AAAA    2a01:4f8:191:21e1::3'
  - 'influx                                           IN  A       116.203.108.175'
  - 'influx                                           IN  AAAA    2a01:4f8:c0c:bef8::1'
+ - 'status                                           IN  A       78.47.11.30'
+ - 'status                                           IN  AAAA    2a01:4f8:c17:aeee::1'
 
 
 
