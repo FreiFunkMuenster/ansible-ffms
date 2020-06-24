@@ -29,7 +29,6 @@ voyager			ipv4=46.4.80.179	ipv6=2a01:4f8:140:616e::2	ansible_ssh_host="{{ipv4}}"
 tj7-hyper		ipv4=176.9.77.90	ipv6=2a01:4f8:151:112b::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22	# Kein Zugriff!
 robweisor-01		ipv4=78.46.85.242	ipv6=2a01:4f8:120:1395::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22	# Kein Zugriff!
 goldelse		ipv4=217.197.83.217	ipv6=2001:bf0:c000:40::217	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
-obelix			ipv4=45.152.127.50	ipv6=2a07:59c6:ee00:19::114	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
 
 # Server für Hoppglas Karten
 [mapserver]
