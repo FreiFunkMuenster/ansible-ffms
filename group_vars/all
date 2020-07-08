@@ -875,8 +875,8 @@ dns_entries_for_all_tlds:
  - 'netbox                                           IN  AAAA    2a01:4f8:191:21e1::3'
  - 'influx                                           IN  A       116.203.108.175'
  - 'influx                                           IN  AAAA    2a01:4f8:c0c:bef8::1'
-
-
+ - 'status                                           IN  A       78.47.11.30'
+ - 'status                                           IN  AAAA    2a01:4f8:c17:aeee::1'
 
 domains:
   "freifunk-muensterland.de":
@@ -988,3 +988,16 @@ domains:
       - '@                                                IN  TXT     "google-site-verification=u5yvcYZGB1MK4b8Fh7pQo-7A4bITqyLoIEjhTPBWqmo"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
+
+
+checkmk_version: '1.6.0p13'
+
+#checkmk_sites:
+#  "Linux-VMs":
+#    - password: 'freifunkistsotoll'
+#  "Knoten":
+#    - password: 'freifunkistsotoll'
+
+checkmk_sites:
+  - { name: "Linux_VMs", password: "freifunkistsotoll" }
+  - { name: "Knoten", password: "freifunkistsotoll" }

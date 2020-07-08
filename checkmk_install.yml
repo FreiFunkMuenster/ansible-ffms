@@ -1,0 +1,10 @@
+---
+ - hosts: monitoring_server
+   vars_files:
+     - passwords.yml
+   remote_user: root
+   roles:
+    - { role: hostname, tags: "hostname"}
+    - { role: common, tags: "common"}
+    - { role: motd, tags: "motd"}
+    - { role: monitoring_checkmk_install, tags: "monitoring_checkmk_install"}

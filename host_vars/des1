@@ -66,7 +66,7 @@ ffnw_tun:
   v6_remote: fe80::1/64
   bgp_local_pref: 201
   
-#is_external_nameserver: true
+is_external_nameserver: true
 
 domaenenliste:
    "03":

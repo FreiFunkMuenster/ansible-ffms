@@ -79,3 +79,6 @@ remue
 
 [vipnodes]
 #vip-node-dummy-01	ansible_ssh_host=123.123.123.123	ansible_ssh_port=22
+
+[monitoring_server]
+status			ansible_ssh_host=78.47.11.30		ansible_ssh_port=22
