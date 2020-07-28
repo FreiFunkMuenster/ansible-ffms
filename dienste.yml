@@ -7,6 +7,7 @@
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
     - { role: motd, tags: "motd"}
+    - { role: fail2ban, tags: "fail2ban"}
     - { role: dienste_lamp, tags: "dienste_lamp", when: "'install_lamp' in hostvars[inventory_hostname] and install_lamp == true"}
     - { role: dienste_osticket, tags: "dienste_osticket", when: "'install_osticket' in hostvars[inventory_hostname] and install_osticket == true"}
     - { role: dienste_bind, tags: "dienste_bind", when: "'install_dnsmaster' in hostvars[inventory_hostname] and install_dnsmaster == true"}

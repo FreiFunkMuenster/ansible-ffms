@@ -5,3 +5,4 @@
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
     - { role: motd, tags: "motd"}
+    - { role: fail2ban, tags: "fail2ban"}

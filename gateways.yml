@@ -7,6 +7,7 @@
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
     - { role: motd, tags: "motd"}
+    - { role: fail2ban, tags: "fail2ban"}
     - { role: net_netfilter, tags: "net_netfilter"}
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: ip_forwarding, tags: "ip_forwarding"}

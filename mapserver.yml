@@ -6,6 +6,7 @@
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
     - { role: motd, tags: "motd"}
+    - { role: fail2ban, tags: "fail2ban"}
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: batman_install, tags: "batman_install"}
     - { role: mapserver_interfaces, tags: "mapserver_interfaces"}
