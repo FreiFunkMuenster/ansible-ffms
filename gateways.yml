@@ -31,4 +31,5 @@
     - { role: gateways_respondd, tags: "gateways_respondd"}
 #    - { role: nrpe, tags: "nrpe"}
     - { role: unattended_upgrades, tags: "unattended_upgrades"}
+    - { role: gateways_ministats, tags: "gateways_ministats"}
     - { role: pause, tags: "pause" }
