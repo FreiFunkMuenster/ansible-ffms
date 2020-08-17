@@ -18,8 +18,9 @@ borg_backups:
     backup_server_port: '22'
     backup_server_user: 'borgbkp'
     directories:
-      - '/var/www/html'
+      - '/var/www'
     mysqldatabases:
       - 'wordpress'
+      - 'wp_ffbor'
     borg_options: '-v --stats --list --filter=AME --compression lzma'
     borg_prune: '--keep-daily=7 --keep-weekly=4 --keep-monthly=6'
