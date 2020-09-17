@@ -9,9 +9,15 @@
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: batman_install, tags: "batman_install"}
     - { role: mapserver_interfaces, tags: "mapserver_interfaces"}
-    - { role: mapserver_hopglass-server, tags: "mapserver_hopglass-server"}
-    - { role: mapserver_hopglass, tags: "mapserver_hopglass"}
-    - { role: mapserver_nginx, tags: "mapserver_nginx"}
+
+    - { role: mapserver_hopglass-server, tags: "mapserver_hopglass-server", when: "'mapconfig' in hostvars[inventory_hostname]"} 
+    - { role: mapserver_hopglass, tags: "mapserver_hopglass", when: "'mapconfig' in hostvars[inventory_hostname]"}
+    - { role: mapserver_nginx, tags: "mapserver_nginx", when: "'mapconfig' in hostvars[inventory_hostname]"}
+
+    - { role: mapserver_yanic, tags: "mapserver_yanic, meshviewer", when: "'meshviewer' in hostvars[inventory_hostname]"}
+    - { role: mapserver_meshviewer, tags: "mapserver_meshviewer, meshviewer", when: "'meshviewer' in hostvars[inventory_hostname]"}
+    - { role: mapserver_meshviewer_nginx, tags: "mapserver_meshviewer_nginx, meshviewer", when: "'meshviewer' in hostvars[inventory_hostname]"}
+
     - { role: collectd, tags: "collectd", when: "'collectd' in hostvars[inventory_hostname]" }
     - { role: py_respondd, tags: "py_respondd"}
 #    - { role: mapserver_stats, tags: "mapserver_stats"}
