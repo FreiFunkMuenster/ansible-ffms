@@ -8,11 +8,11 @@ borg_backup_target:
     - "wiki"
     - "webserver"
     - "forum"
-    - "mastodon"
-    - "passbolt"
     - "aircontrol"
     - "zulip"
     - "unifi-legacy"
+    - "projekt"
+    - "nextcloud"
   config:
     backup_user: borgbkp
     backup_group: borgbkp

@@ -5,6 +5,7 @@
     - { role: hostname, tags: "hostname"}
     - { role: common, tags: "common"}
     - { role: motd, tags: "motd"}
+    - { role: fail2ban, tags: "fail2ban"}
     - { role: firmware_web, tags: "firmware_web"}
 #    - { role: firmware_nginx, tags: "firmware_nginx"} # NOCH BAUSTELLE!
     - { role: collectd, tags: "collectd"}

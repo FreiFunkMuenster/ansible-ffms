@@ -28,11 +28,6 @@ domaenenliste:
       dhcp_ende: 10.7.191.255
       server_id: 3
       partner: "nightbounce"
-   "10":
-      dhcp_start: 10.10.128.0
-      dhcp_ende: 10.10.191.255
-      server_id: 3
-      partner: "rowe"
    "20":
       dhcp_start: 10.20.128.0
       dhcp_ende: 10.20.191.255
@@ -143,19 +138,9 @@ domaenenliste:
       dhcp_ende: 10.63.127.255
       server_id: 2
       partner: "automatix"
-   "64":
-      dhcp_start: 10.64.128.0
-      dhcp_ende: 10.64.191.255
-      server_id: 3
-      partner: "nightbounce"
    "65":
       dhcp_start: 10.65.128.0
       dhcp_ende: 10.65.191.255
-      server_id: 3
-      partner: "corny"
-   "67":
-      dhcp_start: 10.67.128.0
-      dhcp_ende: 10.67.191.255
       server_id: 3
       partner: "corny"
    "70":
