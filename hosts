@@ -61,8 +61,9 @@ rowe			ipv4=78.46.85.237	ipv6=2a01:4f8:120:1395::cd		ansible_ssh_host="{{ipv4}}"
 corny			ipv4=144.76.69.56	ipv6=2a01:4f8:191:8224::56		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> FFRL	capacity=1.00	server=hypercorn
 automatix		ipv4=46.4.80.184	ipv6=2a01:4f8:140:616e::82		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=voyager
 hulk			ipv4=185.197.132.145	ipv6=2001:678:894:aa::2			ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=goldelse
+obelix                  ipv4=45.154.111.1       ipv6=2001:678:894::1                    ansible_ssh_host=45.152.127.50     ansible_ssh_port=22     # IPv4 -> AS    IPv6 -> AS      capacity=1.00   server=obelix
 
-[as-router]
+[as_router]
 obelix                  ipv4=45.154.111.1       ipv6=2001:678:894::1                    ansible_ssh_host=45.152.127.50     ansible_ssh_port=22     # IPv4 -> AS    IPv6 -> AS      capacity=1.00   server=obelix
 
 # Server zum bauen und bereitstellen der Firmware

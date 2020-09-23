@@ -1,23 +1,59 @@
 server_id: 18
 vm_id: 18
 
+as_ip: 45.154.111.1
+
 server_besitzer: "FFI"
 hoster: "Interwerk"
 
 use_wlan_slovenija_tunneldigger: true
-ipv4_direkt_ausleiten: true
 ifupdown2: true
+dhcp_type: "kea"
 
 tunnel_interface: "lo"
 
 domaenenliste:
    "06":
-      dhcp_start: 10.6.128.0
-      dhcp_ende: 10.6.191.255
-      server_id: 3
-      partner: "nightbounce"
+      dhcp_start: 10.6.64.0
+      dhcp_ende: 10.6.127.255
+      server_id: 2
 
 tunneldigger:
   interface: "lo"
   max_tunnels: 768
   port_base: 20100
+
+exchanges:
+  "community_ix":
+    source_address: "185.1.74.43"
+    import_filter: |
+      accept;
+    export_filter: |
+      if net = {{ as_parameters.v4_network }} then accept;
+      reject;
+    peers:
+      rs01:
+        neighbor_address: 185.1.74.1
+        neighbor_as_number: 57555
+        password: "{{ peer_passwords.obelix.community_ix.rs01 }}"
+        import_filter:
+        export_filter:
+      rs02:
+        neighbor_address: 185.1.74.2
+        neighbor_as_number: 57555
+        password: "{{ peer_passwords.obelix.community_ix.rs02 }}"
+        import_filter:
+        export_filter:
+      ffnw_ber_a:
+        neighbor_address: 185.1.74.15
+        neighbor_as_number: 206313
+        preference: 90
+      ffnw_ber_b:
+        neighbor_address: 185.1.74.37
+        neighbor_as_number: 206313
+      ffnw_fra_a:
+        neighbor_address: 185.1.74.38
+        neighbor_as_number: 206313
+        preference: 30
+        
+
