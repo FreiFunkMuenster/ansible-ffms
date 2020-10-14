@@ -1,7 +1,9 @@
 # Globale Variablen für alle Server
 build_tunnels_over_ipv6_if_available: false
 
+# TODO: muss nach merge der roles auf eines reduziert werden!
 ipv6backbone64prefixstr: "2a03:2260:115:ffa1::"
+ipv6internalTunnelPrefix: '2a03:2260:115:ffa1::'
 
 domaenen:
   "01":
@@ -736,21 +738,24 @@ routing_table: 42
 
 # Batman Einstellungen
 batman:
+  version: "2020.1" 
   # Bandbreite, die Batman annoncieren soll
   downstream: 1024Mbit
   # Bandbreite, die Batman annoncieren soll
   upstream: 1024Mbit
   version: 2019.4
 
-# Parameter für das eigene Freifunk-Netzwerk
 ff_network:
+  v4_network: 10.0.0.0/8
+  v6_network: 2a03:2260:115::/48
+
+as_parameters:
   # Eindeutige AS-Nummer des Netzwerk
-  #as_number: 65251
   as_number: 209894
   # IPv4 Adressraum
-  v4_network: 10.43.0.0/16
-  # IPv6 adressraum
-  v6_network: 2a03:2260:115::/48
+  v4_network: 45.154.111.0/24
+  # IPv6 Adressraum
+  v6_network: 2001:678:894::/48
 
 administratorenteam:
   - "parad0x"
