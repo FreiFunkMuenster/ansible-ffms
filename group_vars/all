@@ -736,6 +736,7 @@ routing_table: 42
 
 # Batman Einstellungen
 batman:
+  version: "2020.1" 
   # Bandbreite, die Batman annoncieren soll
   downstream: 1024Mbit
   # Bandbreite, die Batman annoncieren soll

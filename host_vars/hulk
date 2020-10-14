@@ -28,11 +28,6 @@ domaenenliste:
       dhcp_ende: 10.7.191.255
       server_id: 3
       partner: "nightbounce"
-   "10":
-      dhcp_start: 10.10.128.0
-      dhcp_ende: 10.10.191.255
-      server_id: 3
-      partner: "rowe"
    "20":
       dhcp_start: 10.20.128.0
       dhcp_ende: 10.20.191.255

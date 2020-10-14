@@ -73,11 +73,6 @@ domaenenliste:
       dhcp_ende: 10.25.191.255
       server_id: 3
       partner: "corny"
-   "39":
-      dhcp_start: 10.39.128.0
-      dhcp_ende: 10.39.191.255
-      server_id: 3
-      partner: "nightbounce"
    "43":
       dhcp_start: 10.43.128.0
       dhcp_ende: 10.43.191.255
