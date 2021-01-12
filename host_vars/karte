@@ -71,11 +71,11 @@ nginx_tiles_cache:
       path: "/opt/tiles_cache/nrw/"
       max_size: 50g
   upstreams:
-    - name: openstreetmap_backend
+    - name: openstreetmapbackend
       servers:
-      - a.tile.openstreetmap.org
-      - b.tile.openstreetmap.org
-      - c.tile.openstreetmap.org
+      - a.tile.openstreetmap.de
+      - b.tile.openstreetmap.de
+      - c.tile.openstreetmap.de
   instances:
     - name: osm_mapnik
       location: "/tiles_cache/osm_mapnik/"
