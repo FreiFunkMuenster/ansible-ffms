@@ -79,7 +79,7 @@ nginx_tiles_cache:
   instances:
     - name: osm_mapnik
       location: "/tiles_cache/osm_mapnik/"
-      dest_url: "http://openstreetmap_backend/"
+      dest_url: "http://openstreetmapbackend/"
       cache_location_name: openstreetmap
       valid_time: 14d
     - name: nrwatlas
