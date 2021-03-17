@@ -4,6 +4,8 @@ vm_id: 4
 server_besitzer: "Marcus Scholz / commander1024"
 hoster: "Hetzner"
 
+use_wlan_slovenija_tunneldigger: true
+
 ffrl_nat_ip: 185.66.193.48/32
     
 ffrl_tun:
