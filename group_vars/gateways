@@ -60,3 +60,5 @@ tunneldigger:
 
 fastd:
   port_base: 21100
+
+batman_version: "2019.4"
