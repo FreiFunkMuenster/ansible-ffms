@@ -738,7 +738,6 @@ routing_table: 42
 
 # Batman Einstellungen
 batman:
-  version: "2020.1" 
   # Bandbreite, die Batman annoncieren soll
   downstream: 1024Mbit
   # Bandbreite, die Batman annoncieren soll
@@ -820,6 +819,8 @@ dns_entries_for_all_tlds:
  - 'www                                              IN  AAAA    2a01:4f8:140:616e::84'
  - '841er                                            IN  A       46.4.80.179'
  - '841er                                            IN  AAAA    2a01:4f8:140:616e::84'
+ - 'inventar                                         IN  A       46.4.80.179'
+ - 'inventar                                         IN  AAAA    2a01:4f8:140:616e::84'
  - 'bautrupp                                         IN  A       46.4.80.179'
  - 'bautrupp                                         IN  AAAA    2a01:4f8:140:616e::84'
  - 'infratafel                                       IN  A       46.4.80.179'
@@ -865,6 +866,7 @@ dns_entries_for_all_tlds:
  - 'dnsmaster                                        IN  AAAA    2a01:4f8:150:4486::a5'
  - 'build                                            IN  AAAA    2a03:2260:115:1000:215:17ff:fefd:4da4'
  - 'mumble                                           IN  A       46.4.80.179'
+ - 'mumble                                           IN  AAAA    2a01:4f8:140:616e::87'
  - 'streamer                                         IN  A       46.4.80.179'
  - 'streamer                                         IN  AAAA    2a01:4f8:140:616e::85'
  - 'streambox                                        IN  AAAA    2a03:2260:115:100:219:99ff:fea5:2746'
@@ -889,8 +891,6 @@ dns_entries_for_all_tlds:
  - 'influx                                           IN  AAAA    2a01:4f8:c0c:bef8::1'
  - 'status                                           IN  A       78.47.11.30'
  - 'status                                           IN  AAAA    2a01:4f8:c17:aeee::1'
-
-
 
 domains:
   "freifunk-muensterland.de":
@@ -1002,3 +1002,45 @@ domains:
       - '@                                                IN  TXT     "google-site-verification=u5yvcYZGB1MK4b8Fh7pQo-7A4bITqyLoIEjhTPBWqmo"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
+
+additional_subzones_for_all_tlds:
+  "as209894":
+    dns_entries:
+      - 'fra-a                                              IN      A       45.154.111.1;'
+      - 'fra-a                                              IN      AAAA    2001:678:894::1;'
+      - 'fra-b                                              IN      A       45.154.111.2;'
+      - 'fra-b                                              IN      AAAA    2001:678:894::2;'
+      - 'ber-a                                              IN      A       45.154.111.11;'
+      - 'ber-a                                              IN      AAAA    2001:678:894::11;'
+      - 'ber-b                                              IN      A       45.154.111.12;'
+      - 'ber-b                                              IN      AAAA    2001:678:894::12;'
+  "standorte":
+    dns_entries:
+      - 'lafp                                               IN      A       91.25.154.149;'
+      - 'lafp                                               IN      AAAA    2003:cc:281e::ff:100;'
+
+reverse_dns:
+  "111.154.45.in-addr.arpa":
+    extern_dns:
+      - 'ns1.freifunk-muensterland.de'
+      - 'ns2.freifunk-muensterland.de'
+      - 'ns3.freifunk-muensterland.de'
+      - 'ns4.freifunk-muensterland.de'
+    email: info@freifunk-muensterland.de
+    dns_entries:
+      - '1                                                IN PTR  fra-a.as209894.freifunk-muensterland.de.'
+      - '2                                                IN PTR  fra-b.as209894.freifunk-muensterland.de.'
+      - '11                                               IN PTR  ber-a.as209894.freifunk-muensterland.de.'
+      - '12                                               IN PTR  ber-b.as209894.freifunk-muensterland.de.'
+  "4.9.8.0.8.7.6.0.1.0.0.2.ip6.arpa":
+    extern_dns:
+      - 'ns1.freifunk-muensterland.de'
+      - 'ns2.freifunk-muensterland.de'
+      - 'ns3.freifunk-muensterland.de'
+      - 'ns4.freifunk-muensterland.de'
+    email: info@freifunk-muensterland.de
+    dns_entries:
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  fra-a.as209894.freifunk-muensterland.de.'
+      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  fra-b.as209894.freifunk-muensterland.de.'
+      - '1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  ber-a.as209894.freifunk-muensterland.de.'
+      - '2.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  ber-b.as209894.freifunk-muensterland.de.'
