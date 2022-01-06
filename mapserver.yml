@@ -8,7 +8,8 @@
     - { role: motd, tags: "motd"}
     - { role: fail2ban, tags: "fail2ban"}
     - { role: tunearpcache, tags: "tunearpcache"}
-    - { role: batman_install, tags: "batman_install"}
+      #    - { role: batman_install, tags: "batman_install"}
+# Batman install Rolle is Kapod! Beim ersten ausführen installiert sie batctl beim zweiten löscht sie es wieder und legt sich auf die Fresse.
     - { role: mapserver_interfaces, tags: "mapserver_interfaces"}
     - { role: mapserver_hopglass-server, tags: "mapserver_hopglass-server"}
     - { role: mapserver_hopglass, tags: "mapserver_hopglass"}
