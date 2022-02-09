@@ -1,6 +1,6 @@
 # Allgemeine Infrastruktur-Server
 [common]
-ansible			ansible_ssh_host=46.4.80.179		ansible_ssh_port=224
+ansible			ansible_ssh_host=46.4.80.179		ansible_ssh_port=226
 unifi			ansible_ssh_host=2a03:2260:115:4300:5054:ff:fe14:bb9f		ansible_ssh_port=22
 unifi-legacy		ansible_ssh_host=2a03:2260:115:4300:5054:ff:fefe:680f		ansible_ssh_port=22
 aircontrol		ansible_ssh_host=2a03:2260:115:1600:5054:ff:fecf:b2fb		ansible_ssh_port=22
