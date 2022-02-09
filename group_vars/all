@@ -10,7 +10,7 @@ domaenen:
     ffv4_network: 10.1.0.0/16
     ffv6_network: 2a03:2260:115:100::/64
     ffv6_additional_networks:
-	- 2001:678:894:100::/64
+        - "2001:678:894:100::/64"
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -27,7 +27,7 @@ domaenen:
     ffv4_network: 10.2.0.0/16
     ffv6_network: 2a03:2260:115:200::/64
     ffv6_additional_networks:
-	- 2001:678:894:200::/64
+        - "2001:678:894:200::/64"
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -38,7 +38,7 @@ domaenen:
     ffv4_network: 10.3.0.0/16
     ffv6_network: 2a03:2260:115:300::/64
     ffv6_additional_networks:
-	- 2001:678:894:300::/64
+        - "2001:678:894:300::/64"
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -49,7 +49,7 @@ domaenen:
     ffv4_network: 10.4.0.0/16
     ffv6_network: 2a03:2260:115:400::/64
     ffv6_additional_networks:
-	- 2001:678:894:400::/64
+        - "2001:678:894:400::/64"
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -60,7 +60,7 @@ domaenen:
     ffv4_network: 10.5.0.0/16
     ffv6_network: 2a03:2260:115:500::/64
     ffv6_additional_networks:
-	- 2001:678:894:500::/64
+        - "2001:678:894:500::/64"
     map_scale: 1.0
     map_show_contact: false
     map_max_age: 14
@@ -71,7 +71,7 @@ domaenen:
     ffv4_network: 10.6.0.0/16
     ffv6_network: 2a03:2260:115:600::/64
     ffv6_additional_networks:
-	- 2001:678:894:600::/64
+        - "2001:678:894:600::/64"
     mesh_babel: true
     map_scale: 1.0
     map_show_contact: false
@@ -83,7 +83,7 @@ domaenen:
     ffv4_network: 10.7.0.0/16
     ffv6_network: 2a03:2260:115:700::/64
     ffv6_additional_networks:
-	- 2001:678:894:700::/64
+        - "2001:678:894:700::/64"
     map_scale: 1.0
     map_show_contact: false
     map_max_age: 14
@@ -94,7 +94,7 @@ domaenen:
     ffv4_network: 10.8.0.0/16
     ffv6_network: 2a03:2260:115:800::/64
     ffv6_additional_networks:
-	- 2001:678:894:800::/64
+        - "2001:678:894:800::/64"
     map_scale: 1.0
     map_show_contact: false
     map_max_age: 14
@@ -105,7 +105,7 @@ domaenen:
     ffv4_network: 10.9.0.0/16
     ffv6_network: 2a03:2260:115:900::/64
     ffv6_additional_networks:
-	- 2001:678:894:900::/64
+        - "2001:678:894:900::/64"
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -116,7 +116,7 @@ domaenen:
     ffv4_network: 10.10.0.0/16
     ffv6_network: 2a03:2260:115:1000::/64
     ffv6_additional_networks:
-	- 2001:678:894:1000::/64
+        - "2001:678:894:1000::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -141,7 +141,7 @@ domaenen:
     ffv4_network: 10.11.0.0/16
     ffv6_network: 2a03:2260:115:1100::/64
     ffv6_additional_networks:
-	- 2001:678:894:b00::/64
+        - "2001:678:894:b00::/64"
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -152,7 +152,7 @@ domaenen:
     ffv4_network: 10.12.0.0/16
     ffv6_network: 2a03:2260:115:1200::/64
     ffv6_additional_networks:
-	- 2001:678:894:c00::/64
+        - "2001:678:894:c00::/64"
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -163,7 +163,7 @@ domaenen:
     ffv4_network: 10.13.0.0/16
     ffv6_network: 2a03:2260:115:1300::/64
     ffv6_additional_networks:
-	- 2001:678:894:d00::/64
+        - "2001:678:894:d00::/64"
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -174,7 +174,7 @@ domaenen:
     ffv4_network: 10.14.0.0/16
     ffv6_network: 2a03:2260:115:1400::/64
     ffv6_additional_networks:
-	- 2001:678:894:e00::/64
+        - "2001:678:894:e00::/64"
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -185,7 +185,7 @@ domaenen:
     ffv4_network: 10.15.0.0/16
     ffv6_network: 2a03:2260:115:1500::/64
     ffv6_additional_networks:
-	- 2001:678:894:f00::/64
+        - "2001:678:894:f00::/64"
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -196,7 +196,7 @@ domaenen:
     ffv4_network: 10.16.0.0/16
     ffv6_network: 2a03:2260:115:1600::/64
     ffv6_additional_networks:
-	- 2001:678:894:1000::/64
+        - "2001:678:894:1000::/64"
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -211,7 +211,7 @@ domaenen:
     ffv4_network: 10.17.0.0/16
     ffv6_network: 2a03:2260:115:1700::/64
     ffv6_additional_networks:
-	- 2001:678:894:1100::/64
+        - "2001:678:894:1100::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -222,7 +222,7 @@ domaenen:
     ffv4_network: 10.18.0.0/16
     ffv6_network: 2a03:2260:115:1800::/64
     ffv6_additional_networks:
-	- 2001:678:894:1200::/64
+        - "2001:678:894:1200::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -233,7 +233,7 @@ domaenen:
     ffv4_network: 10.19.0.0/16
     ffv6_network: 2a03:2260:115:1900::/64
     ffv6_additional_networks:
-	- 2001:678:894:1300::/64
+        - "2001:678:894:1300::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -244,7 +244,7 @@ domaenen:
     ffv4_network: 10.20.0.0/16
     ffv6_network: 2a03:2260:115:2000::/64
     ffv6_additional_networks:
-	- 2001:678:894:2000::/64
+        - "2001:678:894:2000::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -255,7 +255,7 @@ domaenen:
     ffv4_network: 10.21.0.0/16
     ffv6_network: 2a03:2260:115:2100::/64
     ffv6_additional_networks:
-	- 2001:678:894:1500::/64
+        - "2001:678:894:1500::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -266,7 +266,7 @@ domaenen:
     ffv4_network: 10.22.0.0/16
     ffv6_network: 2a03:2260:115:2200::/64
     ffv6_additional_networks:
-	- 2001:678:894:1600::/64
+        - "2001:678:894:1600::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -277,7 +277,7 @@ domaenen:
     ffv4_network: 10.23.0.0/16
     ffv6_network: 2a03:2260:115:2300::/64
     ffv6_additional_networks:
-	- 2001:678:894:1700::/64
+        - "2001:678:894:1700::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -288,7 +288,7 @@ domaenen:
     ffv4_network: 10.24.0.0/16
     ffv6_network: 2a03:2260:115:2400::/64
     ffv6_additional_networks:
-	- 2001:678:894:1800::/64
+        - "2001:678:894:1800::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -299,7 +299,7 @@ domaenen:
     ffv4_network: 10.25.0.0/16
     ffv6_network: 2a03:2260:115:2500::/64
     ffv6_additional_networks:
-	- 2001:678:894:1900::/64
+        - "2001:678:894:1900::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -310,7 +310,7 @@ domaenen:
     ffv4_network: 10.26.0.0/16
     ffv6_network: 2a03:2260:115:2600::/64
     ffv6_additional_networks:
-	- 2001:678:894:1a00::/64
+        - "2001:678:894:1a00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -321,7 +321,7 @@ domaenen:
     ffv4_network: 10.27.0.0/16
     ffv6_network: 2a03:2260:115:2700::/64
     ffv6_additional_networks:
-	- 2001:678:894:1b00::/64
+        - "2001:678:894:1b00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -332,7 +332,7 @@ domaenen:
     ffv4_network: 10.28.0.0/16
     ffv6_network: 2a03:2260:115:2800::/64
     ffv6_additional_networks:
-	- 2001:678:894:1c00::/64
+        - "2001:678:894:1c00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -343,7 +343,7 @@ domaenen:
     ffv4_network: 10.29.0.0/16
     ffv6_network: 2a03:2260:115:2900::/64
     ffv6_additional_networks:
-	- 2001:678:894:1d00::/64
+        - "2001:678:894:1d00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -354,7 +354,7 @@ domaenen:
     ffv4_network: 10.30.0.0/16
     ffv6_network: 2a03:2260:115:3000::/64
     ffv6_additional_networks:
-	- 2001:678:894:3000::/64
+        - "2001:678:894:3000::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -365,7 +365,7 @@ domaenen:
     ffv4_network: 10.31.0.0/16
     ffv6_network: 2a03:2260:115:3100::/64
     ffv6_additional_networks:
-	- 2001:678:894:1f00::/64
+        - "2001:678:894:1f00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -376,7 +376,7 @@ domaenen:
     ffv4_network: 10.32.0.0/16
     ffv6_network: 2a03:2260:115:3200::/64
     ffv6_additional_networks:
-	- 2001:678:894:2000::/64
+        - "2001:678:894:2000::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -387,7 +387,7 @@ domaenen:
     ffv4_network: 10.33.0.0/16
     ffv6_network: 2a03:2260:115:3300::/64
     ffv6_additional_networks:
-	- 2001:678:894:2100::/64
+        - "2001:678:894:2100::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -398,7 +398,7 @@ domaenen:
     ffv4_network: 10.34.0.0/16
     ffv6_network: 2a03:2260:115:3400::/64
     ffv6_additional_networks:
-	- 2001:678:894:2200::/64
+        - "2001:678:894:2200::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -409,7 +409,7 @@ domaenen:
     ffv4_network: 10.35.0.0/16
     ffv6_network: 2a03:2260:115:3500::/64
     ffv6_additional_networks:
-	- 2001:678:894:2300::/64
+        - "2001:678:894:2300::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -420,7 +420,7 @@ domaenen:
     ffv4_network: 10.36.0.0/16
     ffv6_network: 2a03:2260:115:3600::/64
     ffv6_additional_networks:
-	- 2001:678:894:2400::/64
+        - "2001:678:894:2400::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -431,7 +431,7 @@ domaenen:
     ffv4_network: 10.37.0.0/16
     ffv6_network: 2a03:2260:115:3700::/64
     ffv6_additional_networks:
-	- 2001:678:894:2500::/64
+        - "2001:678:894:2500::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -442,7 +442,7 @@ domaenen:
     ffv4_network: 10.38.0.0/16
     ffv6_network: 2a03:2260:115:3800::/64
     ffv6_additional_networks:
-	- 2001:678:894:2600::/64
+        - "2001:678:894:2600::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -453,7 +453,7 @@ domaenen:
     ffv4_network: 10.39.0.0/16
     ffv6_network: 2a03:2260:115:3900::/64
     ffv6_additional_networks:
-	- 2001:678:894:2700::/64
+        - "2001:678:894:2700::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -464,7 +464,7 @@ domaenen:
     ffv4_network: 10.40.0.0/16
     ffv6_network: 2a03:2260:115:4000::/64
     ffv6_additional_networks:
-	- 2001:678:894:4000::/64
+        - "2001:678:894:4000::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -475,7 +475,7 @@ domaenen:
     ffv4_network: 10.41.0.0/16
     ffv6_network: 2a03:2260:115:4100::/64
     ffv6_additional_networks:
-	- 2001:678:894:2900::/64
+        - "2001:678:894:2900::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -486,7 +486,7 @@ domaenen:
     ffv4_network: 10.42.0.0/16
     ffv6_network: 2a03:2260:115:4200::/64
     ffv6_additional_networks:
-	- 2001:678:894:2a00::/64
+        - "2001:678:894:2a00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -497,7 +497,7 @@ domaenen:
     ffv4_network: 10.43.0.0/16
     ffv6_network: 2a03:2260:115:4300::/64
     ffv6_additional_networks:
-	- 2001:678:894:2b00::/64
+        - "2001:678:894:2b00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -516,7 +516,7 @@ domaenen:
     ffv4_network: 10.44.0.0/16
     ffv6_network: 2a03:2260:115:4400::/64
     ffv6_additional_networks:
-	- 2001:678:894:2c00::/64
+        - "2001:678:894:2c00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -527,7 +527,7 @@ domaenen:
     ffv4_network: 10.45.0.0/16
     ffv6_network: 2a03:2260:115:4500::/64
     ffv6_additional_networks:
-	- 2001:678:894:2d00::/64
+        - "2001:678:894:2d00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -538,7 +538,7 @@ domaenen:
     ffv4_network: 10.46.0.0/16
     ffv6_network: 2a03:2260:115:4600::/64
     ffv6_additional_networks:
-	- 2001:678:894:2e00::/64
+        - "2001:678:894:2e00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -549,7 +549,7 @@ domaenen:
     ffv4_network: 10.47.0.0/16
     ffv6_network: 2a03:2260:115:4700::/64
     ffv6_additional_networks:
-	- 2001:678:894:2f00::/64
+        - "2001:678:894:2f00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -560,7 +560,7 @@ domaenen:
     ffv4_network: 10.48.0.0/16
     ffv6_network: 2a03:2260:115:4800::/64
     ffv6_additional_networks:
-	- 2001:678:894:3000::/64
+        - "2001:678:894:3000::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -571,7 +571,7 @@ domaenen:
     ffv4_network: 10.49.0.0/16
     ffv6_network: 2a03:2260:115:4900::/64
     ffv6_additional_networks:
-	- 2001:678:894:3100::/64
+        - "2001:678:894:3100::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -582,7 +582,7 @@ domaenen:
     ffv4_network: 10.50.0.0/16
     ffv6_network: 2a03:2260:115:5000::/64
     ffv6_additional_networks:
-	- 2001:678:894:5000::/64
+        - "2001:678:894:5000::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -593,7 +593,7 @@ domaenen:
     ffv4_network: 10.51.0.0/16
     ffv6_network: 2a03:2260:115:5100::/64
     ffv6_additional_networks:
-	- 2001:678:894:3300::/64
+        - "2001:678:894:3300::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -604,7 +604,7 @@ domaenen:
     ffv4_network: 10.52.0.0/16
     ffv6_network: 2a03:2260:115:5200::/64
     ffv6_additional_networks:
-	- 2001:678:894:3400::/64
+        - "2001:678:894:3400::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -615,7 +615,7 @@ domaenen:
     ffv4_network: 10.53.0.0/16
     ffv6_network: 2a03:2260:115:5300::/64
     ffv6_additional_networks:
-	- 2001:678:894:3500::/64
+        - "2001:678:894:3500::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -626,7 +626,7 @@ domaenen:
     ffv4_network: 10.54.0.0/16
     ffv6_network: 2a03:2260:115:5400::/64
     ffv6_additional_networks:
-	- 2001:678:894:3600::/64
+        - "2001:678:894:3600::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -637,7 +637,7 @@ domaenen:
     ffv4_network: 10.55.0.0/16
     ffv6_network: 2a03:2260:115:5500::/64
     ffv6_additional_networks:
-	- 2001:678:894:3700::/64
+        - "2001:678:894:3700::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -648,7 +648,7 @@ domaenen:
     ffv4_network: 10.56.0.0/16
     ffv6_network: 2a03:2260:115:5600::/64
     ffv6_additional_networks:
-	- 2001:678:894:3800::/64
+        - "2001:678:894:3800::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -659,7 +659,7 @@ domaenen:
     ffv4_network: 10.57.0.0/16
     ffv6_network: 2a03:2260:115:5700::/64
     ffv6_additional_networks:
-	- 2001:678:894:3900::/64
+        - "2001:678:894:3900::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -670,7 +670,7 @@ domaenen:
     ffv4_network: 10.58.0.0/16
     ffv6_network: 2a03:2260:115:5800::/64
     ffv6_additional_networks:
-	- 2001:678:894:3a00::/64
+        - "2001:678:894:3a00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -681,7 +681,7 @@ domaenen:
     ffv4_network: 10.59.0.0/16
     ffv6_network: 2a03:2260:115:5900::/64
     ffv6_additional_networks:
-	- 2001:678:894:3b00::/64
+        - "2001:678:894:3b00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -692,7 +692,7 @@ domaenen:
     ffv4_network: 10.60.0.0/16
     ffv6_network: 2a03:2260:115:6000::/64
     ffv6_additional_networks:
-	- 2001:678:894:6000::/64
+        - "2001:678:894:6000::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -703,7 +703,7 @@ domaenen:
     ffv4_network: 10.61.0.0/16
     ffv6_network: 2a03:2260:115:6100::/64
     ffv6_additional_networks:
-	- 2001:678:894:3d00::/64
+        - "2001:678:894:3d00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -714,7 +714,7 @@ domaenen:
     ffv4_network: 10.62.0.0/16
     ffv6_network: 2a03:2260:115:6200::/64
     ffv6_additional_networks:
-	- 2001:678:894:3e00::/64
+        - "2001:678:894:3e00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -725,7 +725,7 @@ domaenen:
     ffv4_network: 10.63.0.0/16
     ffv6_network: 2a03:2260:115:6300::/64
     ffv6_additional_networks:
-	- 2001:678:894:3f00::/64
+        - "2001:678:894:3f00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -736,7 +736,7 @@ domaenen:
     ffv4_network: 10.64.0.0/16
     ffv6_network: 2a03:2260:115:6400::/64
     ffv6_additional_networks:
-	- 2001:678:894:4000::/64
+        - "2001:678:894:4000::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -747,7 +747,7 @@ domaenen:
     ffv4_network: 10.65.0.0/16
     ffv6_network: 2a03:2260:115:6500::/64
     ffv6_additional_networks:
-	- 2001:678:894:4100::/64
+        - "2001:678:894:4100::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -758,7 +758,7 @@ domaenen:
     ffv4_network: 10.66.0.0/16
     ffv6_network: 2a03:2260:115:6600::/64
     ffv6_additional_networks:
-	- 2001:678:894:4200::/64
+        - "2001:678:894:4200::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -769,7 +769,7 @@ domaenen:
     ffv4_network: 10.67.0.0/16
     ffv6_network: 2a03:2260:115:6700::/64
     ffv6_additional_networks:
-	- 2001:678:894:4300::/64
+        - "2001:678:894:4300::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -780,7 +780,7 @@ domaenen:
     ffv4_network: 10.68.0.0/16
     ffv6_network: 2a03:2260:115:6800::/64
     ffv6_additional_networks:
-	- 2001:678:894:4400::/64
+        - "2001:678:894:4400::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -791,7 +791,7 @@ domaenen:
     ffv4_network: 10.69.0.0/16
     ffv6_network: 2a03:2260:115:6900::/64
     ffv6_additional_networks:
-	- 2001:678:894:4500::/64
+        - "2001:678:894:4500::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -802,7 +802,7 @@ domaenen:
     ffv4_network: 10.70.0.0/16
     ffv6_network: 2a03:2260:115:7000::/64
     ffv6_additional_networks:
-	- 2001:678:894:7000::/64
+        - "2001:678:894:7000::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -813,7 +813,7 @@ domaenen:
     ffv4_network: 10.71.0.0/16
     ffv6_network: 2a03:2260:115:7100::/64
     ffv6_additional_networks:
-	- 2001:678:894:4700::/64
+        - "2001:678:894:4700::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -824,7 +824,7 @@ domaenen:
     ffv4_network: 10.72.0.0/16
     ffv6_network: 2a03:2260:115:7200::/64
     ffv6_additional_networks:
-	- 2001:678:894:4800::/64
+        - "2001:678:894:4800::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -835,7 +835,7 @@ domaenen:
     ffv4_network: 10.73.0.0/16
     ffv6_network: 2a03:2260:115:7300::/64
     ffv6_additional_networks:
-	- 2001:678:894:4900::/64
+        - "2001:678:894:4900::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -846,7 +846,7 @@ domaenen:
     ffv4_network: 10.74.0.0/16
     ffv6_network: 2a03:2260:115:7400::/64
     ffv6_additional_networks:
-	- 2001:678:894:4a00::/64
+        - "2001:678:894:4a00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -857,7 +857,7 @@ domaenen:
     ffv4_network: 10.75.0.0/16
     ffv6_network: 2a03:2260:115:7500::/64
     ffv6_additional_networks:
-	- 2001:678:894:4b00::/64
+        - "2001:678:894:4b00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -868,7 +868,7 @@ domaenen:
     ffv4_network: 10.76.0.0/16
     ffv6_network: 2a03:2260:115:7600::/64
     ffv6_additional_networks:
-	- 2001:678:894:4c00::/64
+        - "2001:678:894:4c00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -879,7 +879,7 @@ domaenen:
     ffv4_network: 10.77.0.0/16
     ffv6_network: 2a03:2260:115:7700::/64
     ffv6_additional_networks:
-	- 2001:678:894:4d00::/64
+        - "2001:678:894:4d00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
