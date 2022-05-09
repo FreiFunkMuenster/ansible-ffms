@@ -79,14 +79,14 @@ nginx_tiles_cache:
   instances:
     - name: osm_mapnik
       location: "/tiles_cache/osm_mapnik/"
-      dest_url: "http://openstreetmapbackend/"
+      dest_url: "https://tile.openstreetmap.de/"
       cache_location_name: openstreetmap
       valid_time: 14d
     - name: nrwatlas
       location: "/tiles_cache/nrwatlas/"
       dest_url: "https://www.wms.nrw.de/"
       cache_location_name: nrwatlas
-      valid_time: 90d
+      valid_time: 14d
 
 
 collectd:
