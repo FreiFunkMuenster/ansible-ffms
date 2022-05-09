@@ -71,6 +71,16 @@ domaenenliste:
       dhcp_ende: 10.77.191.255
       server_id: 3
       partner: "fanlin"
+   "78":
+      dhcp_start: 10.78.128.0
+      dhcp_ende: 10.78.191.255
+      server_id: 3
+      partner: "fanlin"
+   "79":
+      dhcp_start: 10.79.128.0
+      dhcp_ende: 10.79.191.255
+      server_id: 3
+      partner: "fanlin"
 
 ffnw_nat_ip: 185.197.132.36/32
 

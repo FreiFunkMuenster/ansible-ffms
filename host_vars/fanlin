@@ -107,6 +107,16 @@ domaenenliste:
       dhcp_ende: 10.77.127.255
       server_id: 2
       partner: "tj01"
+   "78":
+      dhcp_start: 10.78.64.0
+      dhcp_ende: 10.78.127.255
+      server_id: 2
+      partner: "tj01"
+   "79":
+      dhcp_start: 10.79.64.0
+      dhcp_ende: 10.79.127.255
+      server_id: 2
+      partner: "tj01"
 
 dhcp_type: "kea"
 

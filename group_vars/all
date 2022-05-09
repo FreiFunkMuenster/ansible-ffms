@@ -732,6 +732,24 @@ domaenen:
     map_show_contact: false
     map_max_age: 14
     firmware: domaene77/
+  "78":
+    name: Heppenheim
+    community: Bergstrasse
+    ffv4_network: 10.78.0.0/16
+    ffv6_network: 2a03:2260:115:7800::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene78/
+  "79":
+    name: Heppenheim Umgebung
+    community: Bergstrasse
+    ffv4_network: 10.79.0.0/16
+    ffv6_network: 2a03:2260:115:7900::/64
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene79/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird
 routing_table: 42
