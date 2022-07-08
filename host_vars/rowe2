@@ -82,52 +82,52 @@ domaenenliste:
       server_id: 3
       partner: "fanlin"
 
-ffnw_nat_ip: 185.197.132.36/32
+#ffnw_nat_ip: 185.197.132.36/32
+#
+#ffnw_tun:
+#- name: fra1
+#  gre_target: 185.197.132.3
+#  v4_remote: 100.100.32.18/31
+#  v6_remote: fe80::1/64
+#- name: fra2
+#  gre_target: 185.197.132.4
+#  v4_remote: 100.100.48.18/31
+#  v6_remote: fe80::1/64
+#- name: ber2
+#  gre_target: 185.197.132.8
+#  v4_remote: 100.100.112.18/31
+#  v6_remote: fe80::1/64
+#  bgp_local_pref: 210
+#- name: ber1
+#  gre_target: 185.197.132.7
+#  v4_remote: 100.100.96.18/31
+#  v6_remote: fe80::1/64
+#  bgp_local_pref: 201
 
-ffnw_tun:
-- name: fra1
-  gre_target: 185.197.132.3
-  v4_remote: 100.100.32.18/31
-  v6_remote: fe80::1/64
-- name: fra2
-  gre_target: 185.197.132.4
-  v4_remote: 100.100.48.18/31
-  v6_remote: fe80::1/64
-- name: ber2
-  gre_target: 185.197.132.8
-  v4_remote: 100.100.112.18/31
-  v6_remote: fe80::1/64
-  bgp_local_pref: 210
-- name: ber1
-  gre_target: 185.197.132.7
-  v4_remote: 100.100.96.18/31
-  v6_remote: fe80::1/64
-  bgp_local_pref: 201
-
-ffrl_tun:
-- name: ber1
-  gre_target: 185.66.195.0
-  v4_remote: 100.64.10.90/31
-  v6_remote: 2a03:2260:0:536::1/64
-- name: ber2
-  gre_target: 185.66.195.1
-  v4_remote: 100.64.10.96/31
-  v6_remote: 2a03:2260:0:539::1/64
-- name: dus1
-  gre_target: 185.66.193.0
-  v4_remote: 100.64.10.94/31
-  v6_remote: 2a03:2260:0:538::1/64
-- name: dus2
-  gre_target: 185.66.193.1
-  v4_remote: 100.64.10.100/31
-  v6_remote: 2a03:2260:0:53b::1/64
-- name: fra1
-  gre_target: 185.66.194.0
-  v4_remote: 100.64.10.92/31
-  v6_remote: 2a03:2260:0:537::1/64
-- name: fra2
-  gre_target: 185.66.194.1
-  v4_remote: 100.64.10.98/31
-  v6_remote: 2a03:2260:0:53a::1/64
+#ffrl_tun:
+#- name: ber1
+#  gre_target: 185.66.195.0
+#  v4_remote: 100.64.10.90/31
+#  v6_remote: 2a03:2260:0:536::1/64
+#- name: ber2
+#  gre_target: 185.66.195.1
+#  v4_remote: 100.64.10.96/31
+#  v6_remote: 2a03:2260:0:539::1/64
+#- name: dus1
+#  gre_target: 185.66.193.0
+#  v4_remote: 100.64.10.94/31
+#  v6_remote: 2a03:2260:0:538::1/64
+#- name: dus2
+#  gre_target: 185.66.193.1
+#  v4_remote: 100.64.10.100/31
+#  v6_remote: 2a03:2260:0:53b::1/64
+#- name: fra1
+#  gre_target: 185.66.194.0
+#  v4_remote: 100.64.10.92/31
+#  v6_remote: 2a03:2260:0:537::1/64
+#- name: fra2
+#  gre_target: 185.66.194.1
+#  v4_remote: 100.64.10.98/31
+#  v6_remote: 2a03:2260:0:53a::1/64
 
 dhcp_type: "kea"
