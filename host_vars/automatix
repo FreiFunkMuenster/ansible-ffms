@@ -4,27 +4,28 @@ vm_id: 16
 server_besitzer: "FFI"
 hoster: "Hetzner"
 
-ffnw_nat_ip: 185.197.132.38/32
+#ffnw_nat_ip: 185.197.132.38/32
+ffrl_nat_ip: 185.66.195.23/32
 
-ffnw_tun:
-- name: fra1
-  gre_target: 185.197.132.3
-  v4_remote: 100.100.32.24/31
-  v6_remote: fe80::1/64
-- name: fra2
-  gre_target: 185.197.132.4
-  v4_remote: 100.100.48.24/31
-  v6_remote: fe80::1/64
-- name: ber2
-  gre_target: 185.197.132.8
-  v4_remote: 100.100.112.24/31
-  v6_remote: fe80::1/64
-  bgp_local_pref: 210
-- name: ber1
-  gre_target: 185.197.132.7
-  v4_remote: 100.100.96.24/31
-  v6_remote: fe80::1/64
-  bgp_local_pref: 201
+#ffnw_tun:
+#- name: fra1
+#  gre_target: 185.197.132.3
+#  v4_remote: 100.100.32.24/31
+#  v6_remote: fe80::1/64
+#- name: fra2
+#  gre_target: 185.197.132.4
+#  v4_remote: 100.100.48.24/31
+#  v6_remote: fe80::1/64
+#- name: ber2
+#  gre_target: 185.197.132.8
+#  v4_remote: 100.100.112.24/31
+#  v6_remote: fe80::1/64
+#  bgp_local_pref: 210
+#- name: ber1
+#  gre_target: 185.197.132.7
+#  v4_remote: 100.100.96.24/31
+#  v6_remote: fe80::1/64
+#  bgp_local_pref: 201
 
 ffrl_tun:
 - name: ber1
