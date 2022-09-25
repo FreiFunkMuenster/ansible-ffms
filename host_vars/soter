@@ -1,0 +1,131 @@
+server_id: 18
+vm_id: 18
+
+server_besitzer: "FFI"
+hoster: "Hetzner"
+    
+domaenenliste:
+   "04":
+      dhcp_start: 10.4.128.0
+      dhcp_ende: 10.4.191.255
+      server_id: 3
+      partner: "c1024"
+   "07":
+      dhcp_start: 10.7.128.0
+      dhcp_ende: 10.7.191.255
+      server_id: 3
+      partner: "rowe2"
+   "08":
+      dhcp_start: 10.8.128.0
+      dhcp_ende: 10.8.191.255
+      server_id: 3
+      partner: "automatix"
+   "09":
+      dhcp_start: 10.9.128.0
+      dhcp_ende: 10.9.191.255
+      server_id: 3
+      partner: "c1024"
+   "12":
+      dhcp_start: 10.12.128.0
+      dhcp_ende: 10.12.191.255
+      server_id: 3
+      partner: "corny"
+   "15":
+      dhcp_start: 10.15.128.0
+      dhcp_ende: 10.15.191.255
+      server_id: 3
+      partner: "fanlin"
+   "19":
+      dhcp_start: 10.19.128.0
+      dhcp_ende: 10.19.191.255
+      server_id: 3
+      partner: "fanlin"
+   "21":
+      dhcp_start: 10.21.128.0
+      dhcp_ende: 10.21.191.255
+      server_id: 3
+      partner: "des1"
+   "22":
+      dhcp_start: 10.22.128.0
+      dhcp_ende: 10.22.191.255
+      server_id: 3
+      partner: "corny"
+   "35":
+      dhcp_start: 10.35.128.0
+      dhcp_ende: 10.35.191.255
+      server_id: 3
+      partner: "parad0x"
+   "36":
+      dhcp_start: 10.36.128.0
+      dhcp_ende: 10.36.191.255
+      server_id: 3
+      partner: "remue-09"
+   "54":
+      dhcp_start: 10.54.128.0
+      dhcp_ende: 10.54.191.255
+      server_id: 3
+      partner: "automatix"
+   "56":
+      dhcp_start: 10.56.128.0
+      dhcp_ende: 10.56.191.255
+      server_id: 3
+      partner: "des1"
+   "63":
+      dhcp_start: 10.63.128.0
+      dhcp_ende: 10.63.191.255
+      server_id: 3
+      partner: "remue-09"
+   "65":
+      dhcp_start: 10.65.128.0
+      dhcp_ende: 10.65.191.255
+      server_id: 3
+      partner: "rowe"
+   "69":
+      dhcp_start: 10.69.128.0
+      dhcp_ende: 10.69.191.255
+      server_id: 3
+      partner: "rowe"
+   "74":
+      dhcp_start: 10.74.128.0
+      dhcp_ende: 10.74.191.255
+      server_id: 3
+      partner: "rowe2"
+   "77":
+      dhcp_start: 10.77.128.0
+      dhcp_ende: 10.77.191.255
+      server_id: 3
+      partner: "parad0x"
+
+#ffnw_nat_ip: 185.197.132.40/32
+
+#ffnw_tun:
+#- name: fra1
+#  gre_target: 185.197.132.3
+#  v4_remote: 100.100.32.0/31
+#  v6_remote: fe80::1/64
+#- name: fra2
+#  gre_target: 185.197.132.4
+#  v4_remote: 100.100.48.0/31
+#  v6_remote: fe80::1/64
+#- name: ber2
+#  gre_target: 185.197.132.8
+#  v4_remote: 100.100.112.0/31
+#  v6_remote: fe80::1/64
+#  bgp_local_pref: 210
+#- name: ber1
+#  gre_target: 185.197.132.7
+#  v4_remote: 100.100.96.0/31
+#  v6_remote: fe80::1/64
+#  bgp_local_pref: 201
+
+dhcp_type: "kea"
+
+tunneldigger:
+  instance_per_domain: true
+  interface: "eth0"
+  max_tunnels: 1024
+  port_base: 20100
+  pmtu_discovery: false
+  tunnel_timeout: 60
+
+use_wlan_slovenija_tunneldigger: true

@@ -821,7 +821,7 @@ freifunk:
        AAAA: 2a03:2260:115:1000:215:17ff:fefd:4da4
     "streamer":
        A: 46.4.80.179
-       AAAA: 2a01:4f8:140:616e::85
+       AAAA: 2a01:4f8:202:2086::85
     "streambox":
        A: 10.1.0.15
        AAAA: 2a03:2260:115:100:219:99ff:fea5:2746
@@ -832,21 +832,21 @@ bind_zonemaster:
 
 dns_entries_for_all_tlds:
  - '@                                                IN  A       46.4.80.179'
- - '@                                                IN  AAAA    2a01:4f8:140:616e::84'
+ - '@                                                IN  AAAA    2a01:4f8:202:2086::84'
  - 'www                                              IN  A       46.4.80.179'
- - 'www                                              IN  AAAA    2a01:4f8:140:616e::84'
+ - 'www                                              IN  AAAA    2a01:4f8:202:2086::84'
  - '841er                                            IN  A       46.4.80.179'
- - '841er                                            IN  AAAA    2a01:4f8:140:616e::84'
+ - '841er                                            IN  AAAA    2a01:4f8:202:2086::84'
  - 'inventar                                         IN  A       46.4.80.179'
- - 'inventar                                         IN  AAAA    2a01:4f8:140:616e::84'
+ - 'inventar                                         IN  AAAA    2a01:4f8:202:2086::84'
  - 'bautrupp                                         IN  A       46.4.80.179'
- - 'bautrupp                                         IN  AAAA    2a01:4f8:140:616e::84'
+ - 'bautrupp                                         IN  AAAA    2a01:4f8:202:2086::84'
  - 'infratafel                                       IN  A       46.4.80.179'
- - 'infratafel                                       IN  AAAA    2a01:4f8:140:616e::84'
+ - 'infratafel                                       IN  AAAA    2a01:4f8:202:2086::84'
  - 'vereinsorga                                      IN  A       46.4.80.179'
- - 'vereinsorga                                      IN  AAAA    2a01:4f8:140:616e::84'
+ - 'vereinsorga                                      IN  AAAA    2a01:4f8:202:2086::84'
  - 'karte                                            IN  A       46.4.80.190'
- - 'karte                                            IN  AAAA    2a01:4f8:140:616e::83'
+ - 'karte                                            IN  AAAA    2a01:4f8:202:2086::83'
  - 'mail                                             IN  A       148.251.208.169'
  - 'mail                                             IN  AAAA    2a01:4f8:191:21e1::af'
  - 'dav                                              IN  A       148.251.208.169'
@@ -877,23 +877,23 @@ dns_entries_for_all_tlds:
  - 'unifi-legacy                                     IN  A       46.4.80.179'
  - 'unifi-legacy                                     IN  AAAA    2a03:2260:115:4300:5054:ff:fefe:680f'
  - 'stats                                            IN  A       185.197.132.146'
- - 'grafana                                          IN  A       185.197.132.146'
- - 'graphite                                         IN  A       185.197.132.146'
+ - 'grafana                                          IN  A       217.197.83.217'
+ - 'graphite                                         IN  A       217.197.83.217'
  - 'node-stats                                       IN  A       185.197.132.146'
  - 'dnsmaster                                        IN  A       176.9.38.163'
  - 'dnsmaster                                        IN  AAAA    2a01:4f8:150:4486::a5'
  - 'build                                            IN  AAAA    2a03:2260:115:1000:215:17ff:fefd:4da4'
  - 'mumble                                           IN  A       46.4.80.179'
  - 'streamer                                         IN  A       46.4.80.179'
- - 'streamer                                         IN  AAAA    2a01:4f8:140:616e::85'
+ - 'streamer                                         IN  AAAA    2a01:4f8:202:2086::85'
  - 'streambox                                        IN  AAAA    2a03:2260:115:100:219:99ff:fea5:2746'
  - 'ansible                                          IN  A       46.4.80.179'
- - 'ansible                                          IN  AAAA    2a01:4f8:140:616e::86'
+ - 'ansible                                          IN  AAAA    2a01:4f8:202:2086::86'
  - 'faa-vm-backup                                    IN  AAAA    2a03:2260:115:100:5054:ff:fe73:a614'
  - 'lafp-vm-backup                                   IN  AAAA    2a03:2260:115:400:5054:ff:fe96:b854'
  - 'aircontrol                                       IN  AAAA    2a03:2260:115:1600:5054:ff:fecf:b2fb'
  - 'zulip                                            IN  A       46.4.80.186'
- - 'zulip                                            IN  AAAA    2a01:4f8:140:616e::88'
+ - 'zulip                                            IN  AAAA    2a01:4f8:202:2086::88'
  - 'ldap                                             IN  AAAA    2a01:4f8:162:10d2::a2'
  - 'fredbackend                                      IN  A       159.69.223.64'
  - 'fredbackend                                      IN  AAAA    2a01:4f8:1c1c:8987::1'

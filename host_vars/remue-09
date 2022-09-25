@@ -3,27 +3,28 @@ server_id: 5
 server_besitzer: "Sven Culley / Sense"
 hoster: "Hetzner"
 
-ffnw_nat_ip: 185.197.132.35/32
+#ffnw_nat_ip: 185.197.132.35/32
+ffrl_nat_ip: 185.66.193.50/32
 
-ffnw_tun:
-- name: fra1
-  gre_target: 185.197.132.3
-  v4_remote: 100.100.32.20/31
-  v6_remote: fe80::1/64
-- name: fra2
-  gre_target: 185.197.132.4
-  v4_remote: 100.100.48.20/31
-  v6_remote: fe80::1/64
-- name: ber2
-  gre_target: 185.197.132.8
-  v4_remote: 100.100.112.20/31
-  v6_remote: fe80::1/64
-  bgp_local_pref: 210
-- name: ber1
-  gre_target: 185.197.132.7
-  v4_remote: 100.100.96.20/31
-  v6_remote: fe80::1/64
-  bgp_local_pref: 201
+#ffnw_tun:
+#- name: fra1
+#  gre_target: 185.197.132.3
+#  v4_remote: 100.100.32.20/31
+#  v6_remote: fe80::1/64
+#- name: fra2
+#  gre_target: 185.197.132.4
+#  v4_remote: 100.100.48.20/31
+#  v6_remote: fe80::1/64
+#- name: ber2
+#  gre_target: 185.197.132.8
+#  v4_remote: 100.100.112.20/31
+#  v6_remote: fe80::1/64
+#  bgp_local_pref: 210
+#- name: ber1
+#  gre_target: 185.197.132.7
+#  v4_remote: 100.100.96.20/31
+#  v6_remote: fe80::1/64
+#  bgp_local_pref: 201
 
 ffrl_tun:
 - name: ber1
