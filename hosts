@@ -22,11 +22,10 @@ netbox                  ansible_ssh_host=148.251.208.172        ansible_ssh_port
 #hyperhost		ipv4=			ipv6=				ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22	# Kein Zugriff!
 deshyper-01		ipv4=5.9.86.151		ipv6=2a01:4f8:162:10d2::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
 remue			ipv4=144.76.30.226	ipv6=2a01:4f8:191:21e1::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
-hypercorn		ipv4=144.76.69.37	ipv6=2a01:4f8:191:8224::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22	# Kein Zugriff!
+hypercorn		ipv4=144.76.69.37	ipv6=2a01:4f8:191:8224::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
 unimatrixzero		ipv4=176.9.38.150	ipv6=2a01:4f8:150:4486::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
 voyager			ipv4=46.4.80.179	ipv6=2a01:4f8:202:2086::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
-tj7-hyper		ipv4=176.9.77.90	ipv6=2a01:4f8:151:112b::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22	# Kein Zugriff!
-hyperrob		ipv4=136.243.111.246	ipv6=2a01:4f8:171:124a::1	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22	# Kein Zugriff!
+hyperrob		ipv4=136.243.111.246	ipv6=2a01:4f8:171:124a::1	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
 goldelse		ipv4=217.197.83.217	ipv6=2001:bf0:c000:40::217	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
 
 # Server für Hoppglas Karten
@@ -49,13 +48,13 @@ mumble                  ansible_ssh_host=46.4.80.179            ansible_ssh_port
 # 'capacity' im Kommentar gibt die erwünschte relative Auslastung mit Traffic und L2TP-Verbindungen an
 # 'server' im Kommentar muss angegeben werden, wenn mehrere L2TP-VM auf einem Blech laufen. Der Wert kann frei gewählt werden.
 [gateways]
-rowe2			ipv4=138.201.210.177	ipv6=2a01:4f8:171:124a::3		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> BCKB	IPv6 -> BCKB	capacity=1.00	server=robweisor-01
 parad0x			ipv4=94.130.64.196	ipv6=2a01:4f8:10b:2e6f::100		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=hyperhost
 c1024			ipv4=176.9.88.123	ipv6=2a01:4f8:150:8ff8::5		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00
 fanlin			ipv4=5.199.135.168	ipv6=2001:4ba0:ffa4:3d2:5:199:135:168	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> BCKB	IPv6 -> BCKB	capacity=0.50
 des1			ipv4=5.9.86.154		ipv6=2a01:4f8:162:10d2::a0		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=deshyper-01
 remue-09		ipv4=148.251.208.170	ipv6=2a01:4f8:191:21e1::b0		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL  IPv6 -> BCKB	capacity=0.75	server=remue
-rowe			ipv4=138.201.210.176	ipv6=2a01:4f8:171:124a::2		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=robweisor-01
+rowe			ipv4=138.201.210.176	ipv6=2a01:4f8:171:124a::2		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=hyperrob
+rowe2			ipv4=138.201.210.177	ipv6=2a01:4f8:171:124a::3		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> BCKB	IPv6 -> BCKB	capacity=1.00	server=hyperrob
 corny			ipv4=144.76.69.56	ipv6=2a01:4f8:191:8224::56		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> FFRL	capacity=1.00	server=hypercorn
 automatix		ipv4=46.4.80.184	ipv6=2a01:4f8:202:2086::82		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=voyager
 soter			ipv4=88.99.219.209	ipv6=2a01:4f8:10a:44d3::2		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> BCKB	IPv6 -> BCKB	capacity=1.25
@@ -65,7 +64,7 @@ soter			ipv4=88.99.219.209	ipv6=2a01:4f8:10a:44d3::2		ansible_ssh_host="{{ipv4}}
 #ber-b			ipv4=45.154.111.12	ipv6=2001:678:894::12			ansible_ssh_host=217.197.83.222	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=ber-b
 
 [as_router]
-fra-a			ipv4=45.154.111.1	ipv6=2001:678:894::1			ansible_ssh_host=45.152.127.50	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=fra-a
+#fra-a			ipv4=45.154.111.1	ipv6=2001:678:894::1			ansible_ssh_host=45.152.127.50	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=fra-a
 #fra-b			ipv4=45.154.111.2	ipv6=2001:678:894::2			ansible_ssh_host=194.50.19.2	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=fra-b
 #ber-a			ipv4=45.154.111.11	ipv6=2001:678:894::11			ansible_ssh_host=217.197.83.217	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=ber-a
 #ber-b			ipv4=45.154.111.12	ipv6=2001:678:894::12			ansible_ssh_host=217.197.83.222	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=ber-b
