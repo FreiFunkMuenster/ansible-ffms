@@ -116,3 +116,5 @@ tunneldigger:
   tunnel_timeout: 60
 
 use_wlan_slovenija_tunneldigger: true
+
+is_external_nameserver: true

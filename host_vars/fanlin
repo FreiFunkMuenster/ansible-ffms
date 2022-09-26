@@ -55,7 +55,7 @@ ffrl_tun:
   v6_remote: 2a03:2260:0:4e1::1/64
   bgp_local_pref: 201
 
-is_external_nameserver: true
+#is_external_nameserver: true
 
 domaenenliste:
    "18":
