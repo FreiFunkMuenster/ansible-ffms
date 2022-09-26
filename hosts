@@ -51,7 +51,7 @@ mumble                  ansible_ssh_host=46.4.80.179            ansible_ssh_port
 [gateways]
 parad0x			ipv4=94.130.64.196	ipv6=2a01:4f8:10b:2e6f::100		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=hyperhost
 c1024			ipv4=176.9.88.123	ipv6=2a01:4f8:150:8ff8::5		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00
-fanlin			ipv4=5.199.135.168	ipv6=2001:4ba0:ffa4:3d2:5:199:135:168	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> BCKB	IPv6 -> BCKB	capacity=0.50
+#fanlin			ipv4=5.199.135.168	ipv6=2001:4ba0:ffa4:3d2:5:199:135:168	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> BCKB	IPv6 -> BCKB	capacity=0.50
 des1			ipv4=5.9.86.154		ipv6=2a01:4f8:162:10d2::a0		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=deshyper-01
 remue-09		ipv4=148.251.208.170	ipv6=2a01:4f8:191:21e1::b0		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL  IPv6 -> BCKB	capacity=0.75	server=remue
 rowe			ipv4=138.201.210.176	ipv6=2a01:4f8:171:124a::2		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=hyperrob
