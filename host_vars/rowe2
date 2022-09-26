@@ -6,81 +6,76 @@ hoster: "Hetzner"
 use_wlan_slovenija_tunneldigger: true
 
 domaenenliste:
-   "11":
-      dhcp_start: 10.11.128.0
-      dhcp_ende: 10.11.191.255
+   "01":
+      dhcp_start: 10.1.128.0
+      dhcp_ende: 10.1.191.255
       server_id: 3
-      partner: "parad0x"
-   "15":
-      dhcp_start: 10.15.64.0
-      dhcp_ende: 10.15.127.255
+      partner: "corny"
+   "05":
+      dhcp_start: 10.5.128.0
+      dhcp_ende: 10.5.191.255
+      server_id: 3
+      partner: "c1024"
+   "07":
+      dhcp_start: 10.7.64.0
+      dhcp_ende: 10.7.127.255
       server_id: 2
       partner: "automatix"
-   "20":
-      dhcp_start: 10.20.64.0
-      dhcp_ende: 10.20.127.255
-      server_id: 2
-      partner: "corny2"
-   "22":
-      dhcp_start: 10.22.128.0
-      dhcp_ende: 10.22.191.255
+   "14":
+      dhcp_start: 10.14.128.0
+      dhcp_ende: 10.14.191.255
+      server_id: 3
+      partner: "remue-09"
+   "15":
+      dhcp_start: 10.15.128.0
+      dhcp_ende: 10.15.191.255
       server_id: 3
       partner: "parad0x"
-   "23":
-      dhcp_start: 10.23.64.0
-      dhcp_ende: 10.23.127.255
+   "21":
+      dhcp_start: 10.21.64.0
+      dhcp_ende: 10.21.127.255
       server_id: 2
-      partner: "rowe"
-   "38":
-      dhcp_start: 10.38.128.0
-      dhcp_ende: 10.38.191.255
+      partner: "soter"
+   "28":
+      dhcp_start: 10.28.128.0
+      dhcp_ende: 10.28.191.255
       server_id: 3
-      partner: "des2"
-   "47":
-      dhcp_start: 10.47.128.0
-      dhcp_ende: 10.47.191.255
-      server_id: 3
-      partner: "des2"
-   "53":
-      dhcp_start: 10.53.128.0
-      dhcp_ende: 10.53.191.255
+      partner: "remue-09"
+   "30":
+      dhcp_start: 10.30.128.0
+      dhcp_ende: 10.30.191.255
       server_id: 3
       partner: "des1"
-   "60":
-      dhcp_start: 10.60.64.0
-      dhcp_ende: 10.60.127.255
-      server_id: 2
-      partner: "corny2"
-   "62":
-      dhcp_start: 10.62.64.0
-      dhcp_ende: 10.62.127.255
-      server_id: 2
-      partner: "rowe"
-   "69":
-      dhcp_start: 10.69.128.0
-      dhcp_ende: 10.69.191.255
+   "43":
+      dhcp_start: 10.43.128.0
+      dhcp_ende: 10.43.191.255
+      server_id: 3
+      partner: "c1024"
+   "45":
+      dhcp_start: 10.45.128.0
+      dhcp_ende: 10.45.191.255
       server_id: 3
       partner: "corny"
-   "72":
-      dhcp_start: 10.72.128.0
-      dhcp_ende: 10.72.191.255
+   "55":
+      dhcp_start: 10.55.64.0
+      dhcp_ende: 10.55.127.255
+      server_id: 2
+      partner: "automatix"
+   "59":
+      dhcp_start: 10.59.128.0
+      dhcp_ende: 10.59.191.255
       server_id: 3
-      partner: "corny"
+      partner: "des1"
+   "63":
+      dhcp_start: 10.63.64.0
+      dhcp_ende: 10.63.127.255
+      server_id: 2
+      partner: "soter"
    "77":
       dhcp_start: 10.77.128.0
       dhcp_ende: 10.77.191.255
       server_id: 3
-      partner: "fanlin"
-   "78":
-      dhcp_start: 10.78.128.0
-      dhcp_ende: 10.78.191.255
-      server_id: 3
-      partner: "fanlin"
-   "79":
-      dhcp_start: 10.79.128.0
-      dhcp_ende: 10.79.191.255
-      server_id: 3
-      partner: "fanlin"
+      partner: "parad0x"
 
 #ffnw_nat_ip: 185.197.132.36/32
 #

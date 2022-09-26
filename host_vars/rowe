@@ -68,94 +68,88 @@ ffrl_tun:
 dhcp_type: "kea"
 
 domaenenliste:
-   "01":
-      dhcp_start: 10.1.64.0
-      dhcp_ende: 10.1.127.255
-      server_id: 2
-      partner: "hulk"
+   "02":
+      dhcp_start: 10.2.128.0
+      dhcp_ende: 10.2.191.255
+      server_id: 3
+      partner: "des1"
    "04":
-      dhcp_start: 10.4.64.0
-      dhcp_ende: 10.4.127.255
-      server_id: 2
-      partner: "corny"
-      fastd: true
-   "07":
-      dhcp_start: 10.7.64.0
-      dhcp_ende: 10.7.127.255
-      server_id: 2
-      partner: "hulk"
+      dhcp_start: 10.4.128.0
+      dhcp_ende: 10.4.191.255
+      server_id: 3
+      partner: "des1"
    "10":
-      dhcp_start: 10.10.64.0
-      dhcp_ende: 10.10.127.255
-      server_id: 2
-      partner: "hulk"
-   "14":
-      dhcp_start: 10.14.128.0
-      dhcp_ende: 10.14.191.255
+      dhcp_start: 10.10.128.0
+      dhcp_ende: 10.10.191.255
       server_id: 3
-      partner: "c1024"
-   "23":
-      dhcp_start: 10.23.128.0
-      dhcp_ende: 10.23.191.255
+      partner: "parad0x"
+   "18":
+      dhcp_start: 10.18.128.0
+      dhcp_ende: 10.18.191.255
       server_id: 3
-      partner: "tj01"
-   "34":
-      dhcp_start: 10.34.128.0
-      dhcp_ende: 10.34.191.255
-      server_id: 3
-      partner: "des2"
-   "39":
-      dhcp_start: 10.39.64.0
-      dhcp_ende: 10.39.127.255
+      partner: "remue-09"
+   "20":
+      dhcp_start: 10.20.64.0
+      dhcp_ende: 10.20.127.255
       server_id: 2
       partner: "automatix"
-   "41":
-      dhcp_start: 10.41.128.0
-      dhcp_ende: 10.41.191.255
+   "22":
+      dhcp_start: 10.22.128.0
+      dhcp_ende: 10.22.191.255
       server_id: 3
-      partner: "corny2"
-   "45":
-      dhcp_start: 10.45.128.0
-      dhcp_ende: 10.45.191.255
-      server_id: 3
-      partner: "fanlin"
-   "57":
-      dhcp_start: 10.57.128.0
-      dhcp_ende: 10.57.191.255
-      server_id: 3
-      partner: "corny2"
-   "61":
-      dhcp_start: 10.61.128.0
-      dhcp_ende: 10.61.191.255
-      server_id: 3
-      partner: "des2"
-   "62":
-      dhcp_start: 10.62.128.0
-      dhcp_ende: 10.62.191.255
-      server_id: 3
-      partner: "tj01"
-   "64":
-      dhcp_start: 10.64.64.0
-      dhcp_ende: 10.64.127.255
+      partner: "parad0x"
+   "31":
+      dhcp_start: 10.31.64.0
+      dhcp_ende: 10.31.127.255
       server_id: 2
-      partner: "hulk"
-   "68":
-      dhcp_start: 10.68.128.0
-      dhcp_ende: 10.68.191.255
+      partner: "soter"
+   "32":
+      dhcp_start: 10.32.128.0
+      dhcp_ende: 10.32.191.255
       server_id: 3
       partner: "corny"
-   "73":
-      dhcp_start: 10.73.128.0
-      dhcp_ende: 10.73.191.255
+   "33":
+      dhcp_start: 10.33.128.0
+      dhcp_ende: 10.33.191.255
+      server_id: 3
+      partner: "c1024"
+   "35":
+      dhcp_start: 10.35.64.0
+      dhcp_ende: 10.35.127.255
+      server_id: 2
+      partner: "soter"
+   "36":
+      dhcp_start: 10.36.128.0
+      dhcp_ende: 10.36.191.255
+      server_id: 3
+      partner: "c1024"
+   "44":
+      dhcp_start: 10.44.128.0
+      dhcp_ende: 10.44.191.255
+      server_id: 3
+      partner: "remue-09"
+   "49":
+      dhcp_start: 10.49.64.0
+      dhcp_ende: 10.49.127.255
+      server_id: 2
+      partner: "automatix"
+   "52":
+      dhcp_start: 10.52.128.0
+      dhcp_ende: 10.52.191.255
       server_id: 3
       partner: "corny"
+   "65":
+      dhcp_start: 10.65.64.0
+      dhcp_ende: 10.65.127.255
+      server_id: 2
+      partner: "soter"
+   "67":
+      dhcp_start: 10.67.64.0
+      dhcp_ende: 10.67.127.255
+      server_id: 2
+      partner: "soter"
    "75":
       dhcp_start: 10.75.64.0
       dhcp_ende: 10.75.127.255
       server_id: 2
-      partner: "hulk"
-   "76":
-      dhcp_start: 10.76.64.0
-      dhcp_ende: 10.76.127.255
-      server_id: 2
-      partner: "hulk"
+      partner: "automatix"

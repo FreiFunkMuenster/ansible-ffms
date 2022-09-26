@@ -5,87 +5,86 @@ server_besitzer: "Marius Hellmann / corny456"
 hoster: "Hetzner"
     
 domaenenliste:
-   "04":
-      dhcp_start: 10.4.128.0
-      dhcp_ende: 10.4.191.255
+   "01":
+      dhcp_start: 10.1.64.0
+      dhcp_ende: 10.1.127.255
+      server_id: 2
+      partner: "rowe2"
+   "12":
+      dhcp_start: 10.12.64.0
+      dhcp_ende: 10.12.127.255
+      server_id: 2
+      partner: "soter"
+   "13":
+      dhcp_start: 10.13.128.0
+      dhcp_ende: 10.13.191.255
       server_id: 3
-      partner: "rowe"
-      fastd: true
+      partner: "parad0x"
+   "19":
+      dhcp_start: 10.19.128.0
+      dhcp_ende: 10.19.191.255
+      server_id: 3
+      partner: "c1024"
+   "23":
+      dhcp_start: 10.23.64.0
+      dhcp_ende: 10.23.127.255
+      server_id: 2
+      partner: "automatix"
+   "24":
+      dhcp_start: 10.24.128.0
+      dhcp_ende: 10.24.191.255
+      server_id: 3
+      partner: "remue-09"
    "25":
       dhcp_start: 10.25.64.0
       dhcp_ende: 10.25.127.255
       server_id: 2
+      partner: "soter"
+   "32":
+      dhcp_start: 10.32.64.0
+      dhcp_ende: 10.32.127.255
+      server_id: 2
+      partner: "rowe"
+   "38":
+      dhcp_start: 10.38.64.0
+      dhcp_ende: 10.38.127.255
+      server_id: 2
       partner: "automatix"
-   "42":
-      dhcp_start: 10.42.128.0
-      dhcp_ende: 10.42.191.255
+   "45":
+      dhcp_start: 10.45.64.0
+      dhcp_ende: 10.45.127.255
+      server_id: 2
+      partner: "rowe2"
+   "52":
+      dhcp_start: 10.52.64.0
+      dhcp_ende: 10.52.127.255
+      server_id: 2
+      partner: "rowe"
+   "60":
+      dhcp_start: 10.60.128.0
+      dhcp_ende: 10.60.191.255
       server_id: 3
-      partner: "parad0x"
-   "46":
-      dhcp_start: 10.46.128.0
-      dhcp_ende: 10.46.191.255
+      partner: "remue-09"
+   "61":
+      dhcp_start: 10.61.128.0
+      dhcp_ende: 10.61.191.255
       server_id: 3
       partner: "c1024"
-   "51":
-      dhcp_start: 10.51.128.0
-      dhcp_ende: 10.51.191.255
-      server_id: 3
-      partner: "fanlin"
-   "52":
-      dhcp_start: 10.52.128.0
-      dhcp_ende: 10.52.191.255
-      server_id: 3
-      partner: "remue-09"
-   "58":
-      dhcp_start: 10.58.128.0
-      dhcp_ende: 10.58.191.255
+   "62":
+      dhcp_start: 10.62.128.0
+      dhcp_ende: 10.62.191.255
       server_id: 3
       partner: "des1"
-   "59":
-      dhcp_start: 10.59.128.0
-      dhcp_ende: 10.59.191.255
-      server_id: 3
-      partner: "remue-09"
-   "66":
-      dhcp_start: 10.66.128.0
-      dhcp_ende: 10.66.191.255
-      server_id: 3
-      partner: "des1"
-   "67":
-      dhcp_start: 10.67.64.0
-      dhcp_ende: 10.67.127.255
-      server_id: 2
-      partner: "nightbounce"
-   "68":
-      dhcp_start: 10.68.64.0
-      dhcp_ende: 10.68.127.255
-      server_id: 2
-      partner: "rowe"
    "69":
-      dhcp_start: 10.69.64.0
-      dhcp_ende: 10.69.127.255
-      server_id: 2
-      partner: "tj01"
-   "70":
-      dhcp_start: 10.70.64.0
-      dhcp_ende: 10.70.127.255
-      server_id: 2
-      partner: "des2"
-   "71":
-      dhcp_start: 10.71.64.0
-      dhcp_ende: 10.71.127.255
-      server_id: 2
-      partner: "des2"
-   "72":
-      dhcp_start: 10.72.64.0
-      dhcp_ende: 10.72.127.255
-      server_id: 2
-      partner: "tj01"
-   "73":
-      dhcp_start: 10.73.64.0
-      dhcp_ende: 10.73.127.255
-      server_id: 2
-      partner: "rowe"
+      dhcp_start: 10.69.128.0
+      dhcp_ende: 10.69.191.255
+      server_id: 3
+      partner: "des1"
+   "78":
+      dhcp_start: 10.78.128.0
+      dhcp_ende: 10.78.191.255
+      server_id: 3
+      partner: "parad0x"
 
 
 #ffnw_nat_ip: 185.197.132.33/32
