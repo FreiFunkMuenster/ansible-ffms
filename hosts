@@ -59,16 +59,16 @@ rowe2			ipv4=138.201.210.177	ipv6=2a01:4f8:171:124a::3		ansible_ssh_host="{{ipv4
 corny			ipv4=144.76.69.56	ipv6=2a01:4f8:191:8224::56		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> FFRL	capacity=1.00	server=hypercorn
 automatix		ipv4=46.4.80.184	ipv6=2a01:4f8:202:2086::82		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=voyager
 soter			ipv4=88.99.219.209	ipv6=2a01:4f8:10a:44d3::2		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> BCKB	IPv6 -> BCKB	capacity=1.50
-#fra-a			ipv4=45.154.111.1	ipv6=2001:678:894::1			ansible_ssh_host=45.152.127.50	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=fra-a
-#fra-b			ipv4=45.154.111.2	ipv6=2001:678:894::2			ansible_ssh_host=194.50.19.2	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=fra-b
-#ber-a			ipv4=45.154.111.11	ipv6=2001:678:894::11			ansible_ssh_host=217.197.83.217	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=ber-a
-#ber-b			ipv4=45.154.111.12	ipv6=2001:678:894::12			ansible_ssh_host=217.197.83.222	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=ber-b
+fra-a                   ipv4=45.154.111.1       ipv6=2001:678:894::1                    ansible_ssh_host=45.152.127.50  ansible_ssh_port=22     # IPv4 -> AS    IPv6 -> AS      capacity=1.00   server=fra-a
+fra-b                  ipv4=45.154.111.2       ipv6=2001:678:894::2                    ansible_ssh_host=194.50.19.2    ansible_ssh_port=22     # IPv4 -> AS    IPv6 -> AS      capacity=1.00   server=fra-b
+#ber-a                  ipv4=45.154.111.11      ipv6=2001:678:894::11                   ansible_ssh_host=217.197.83.217 ansible_ssh_port=22     # IPv4 -> AS    IPv6 -> AS      capacity=1.00   server=ber-a
+ber-b                  ipv4=45.154.111.12      ipv6=2001:678:894::12                   ansible_ssh_host=217.197.83.222 ansible_ssh_port=22     # IPv4 -> AS    IPv6 -> AS      capacity=1.00   server=ber-b
 
 [as_router]
-#fra-a			ipv4=45.154.111.1	ipv6=2001:678:894::1			ansible_ssh_host=45.152.127.50	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=fra-a
-#fra-b			ipv4=45.154.111.2	ipv6=2001:678:894::2			ansible_ssh_host=194.50.19.2	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=fra-b
-#ber-a			ipv4=45.154.111.11	ipv6=2001:678:894::11			ansible_ssh_host=217.197.83.217	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=ber-a
-#ber-b			ipv4=45.154.111.12	ipv6=2001:678:894::12			ansible_ssh_host=217.197.83.222	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=ber-b
+fra-a                   ipv4=45.154.111.1       ipv6=2001:678:894::1                    ansible_ssh_host=45.152.127.50  ansible_ssh_port=22     # IPv4 -> AS    IPv6 -> AS      capacity=1.00   server=fra-a
+fra-b                  ipv4=45.154.111.2       ipv6=2001:678:894::2                    ansible_ssh_host=194.50.19.2    ansible_ssh_port=22     # IPv4 -> AS    IPv6 -> AS      capacity=1.00   server=fra-b
+#ber-a                  ipv4=45.154.111.11      ipv6=2001:678:894::11                   ansible_ssh_host=217.197.83.217 ansible_ssh_port=22     # IPv4 -> AS    IPv6 -> AS      capacity=1.00   server=ber-a
+ber-b                  ipv4=45.154.111.12      ipv6=2001:678:894::12                   ansible_ssh_host=217.197.83.222 ansible_ssh_port=22     # IPv4 -> AS    IPv6 -> AS      capacity=1.00   server=ber-b
 
 # Server zum bauen und bereitstellen der Firmware
 [firmwareserver]

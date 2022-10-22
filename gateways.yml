@@ -12,6 +12,7 @@
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: ip_forwarding, tags: "ip_forwarding"}
     - { role: iptables, tags: "iptables"}
+#    - { role: ifupdown-ng, tags: "ifupdown-ng"}
     - { role: gateways_gre_upstream, tags: "gateways_gre_upstream"}
     - { role: backbone_gre_intern, tags: "backbone_gre_intern"}
 #    - { role: batman_install, tags: "batman_install", when:  "domaenenliste is defined"}
