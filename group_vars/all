@@ -1068,7 +1068,7 @@ domains:
     extern_dns:
       - c1024
       - des1
-      - fanlin
+      - automatix
       - parad0x
     email: info@freifunk-muensterland.de
     dns_entries:
@@ -1102,7 +1102,7 @@ domains:
     extern_dns:
       - c1024
       - des1
-      - fanlin
+      - automatix
       - parad0x
     master_server:
     email: info@freifunk-muenster.de
@@ -1117,7 +1117,7 @@ domains:
     extern_dns:
       - c1024
       - des1
-      - fanlin
+      - automatix
       - parad0x
     email: info@freifunk-muensterland.net
     dns_entries:
@@ -1131,7 +1131,7 @@ domains:
     extern_dns:
       - c1024
       - des1
-      - fanlin
+      - automatix
       - parad0x
     email: info@freifunk-muensterland.org
     dns_entries:
@@ -1145,7 +1145,7 @@ domains:
     extern_dns:
       - c1024
       - des1
-      - fanlin
+      - automatix
       - parad0x
     email: info@ffmsl.de
     dns_entries:
@@ -1163,7 +1163,7 @@ domains:
     extern_dns:
       - c1024
       - des1
-      - fanlin
+      - automatix
       - parad0x
     email: info@infrastruktur.ms
     dns_entries:
