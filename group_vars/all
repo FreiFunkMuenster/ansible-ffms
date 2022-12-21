@@ -989,6 +989,8 @@ dns_entries_for_all_tlds:
  - '@                                                IN  AAAA    2a01:4f8:202:2086::84'
  - 'www                                              IN  A       46.4.80.179'
  - 'www                                              IN  AAAA    2a01:4f8:202:2086::84'
+ - 'webmail                                          IN  A       46.4.80.179'
+ - 'webmail                                          IN  AAAA    2a01:4f8:202:2086::84'
  - '841er                                            IN  A       46.4.80.179'
  - '841er                                            IN  AAAA    2a01:4f8:202:2086::84'
  - 'inventar                                         IN  A       46.4.80.179'
