@@ -1205,7 +1205,7 @@ reverse_dns:
       - '2                                                IN PTR  fra-b.as209894.freifunk-muensterland.de.'
       - '11                                               IN PTR  ber-a.as209894.freifunk-muensterland.de.'
       - '12                                               IN PTR  ber-b.as209894.freifunk-muensterland.de.'
-      - '130                                              IN PTR  nextcloud.ffmsl.de.'
+      - '130                                              IN PTR  nextcloud.freifunk-muensterland.de.'
       - '131                                              IN PTR  stats.freifunk-muensterland.de.'
   "4.9.8.0.8.7.6.0.1.0.0.2.ip6.arpa":
     extern_dns:
