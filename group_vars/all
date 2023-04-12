@@ -974,7 +974,7 @@ freifunk:
        A: 10.10.64.10
        AAAA: 2a03:2260:115:1000:215:17ff:fefd:4da4
     "streamer":
-       A: 46.4.80.179
+       A: 46.4.80.131
        AAAA: 2a01:4f8:202:2086::85
     "streambox":
        A: 10.1.0.15
@@ -1064,7 +1064,6 @@ dns_entries_for_all_tlds:
  - 'influx                                           IN  AAAA    2a01:4f8:c0c:bef8::1'
  - 'status                                           IN  A       65.108.150.73'
  - 'status                                           IN  AAAA    2a01:4f9:c010:96f3::1'
-
 
 domains:
   "freifunk-muensterland.de":
