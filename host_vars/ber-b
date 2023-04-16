@@ -55,19 +55,5 @@ exchanges:
         neighbor_address_v6: 2001:7f8:a5::5:7555:2
         neighbor_as_number: 57555
         password: "{{ peer_passwords.ber_b.community_ix.rs02 }}"
-      ffnw_ber_a:
-        neighbor_address_v4: 185.1.74.15
-        neighbor_address_v6: 2001:7f8:a5::20:6313:1
-        neighbor_as_number: 206313
-        preference: 90
-      ffnw_ber_b:
-        neighbor_address_v4: 185.1.74.37
-        neighbor_address_v6: 2001:7f8:a5::20:6313:2
-        neighbor_as_number: 206313
-      ffnw_fra_a:
-        neighbor_address_v4: 185.1.74.38
-        neighbor_address_v6: 2001:7f8:a5::20:6313:3
-        neighbor_as_number: 206313
-        preference: 30
         
 
