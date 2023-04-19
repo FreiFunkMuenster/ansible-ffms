@@ -945,7 +945,7 @@ administratorenteam:
 bind:
   ffnet_zone_type: slave
   ffnet_zone_masters:
-    - 176.9.38.163
+    - 49.12.223.189
 
 logrotate:
   cycle: daily
