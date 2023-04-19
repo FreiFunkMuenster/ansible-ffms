@@ -1058,6 +1058,7 @@ dns_entries_for_all_tlds:
  - 'beamer                                           IN  A       10.1.0.20'
  - 'nextcloud                                        IN  A       45.154.111.130'
 # - 'nextcloud                                        IN  AAAA    2a03:2260:115:4300:5054:ff:fe28:94c0'
+ - 'collabora                                        IN  A       45.154.111.132'
  - 'netbox                                           IN  A       148.251.208.172'
  - 'netbox                                           IN  AAAA    2a01:4f8:191:21e1::3'
  - 'influx                                           IN  A       116.203.108.175'
@@ -1205,8 +1206,10 @@ reverse_dns:
       - '2                                                IN PTR  fra-b.as209894.freifunk-muensterland.de.'
       - '11                                               IN PTR  ber-a.as209894.freifunk-muensterland.de.'
       - '12                                               IN PTR  ber-b.as209894.freifunk-muensterland.de.'
+      - '129                                              IN PTR  ber-a.as209894.freifunk-muensterland.de.'
       - '130                                              IN PTR  nextcloud.freifunk-muensterland.de.'
       - '131                                              IN PTR  stats.freifunk-muensterland.de.'
+      - '132                                              IN PTR  collabora.freifunk-muensterland.de.'
   "4.9.8.0.8.7.6.0.1.0.0.2.ip6.arpa":
     extern_dns:
       - 'ns1.freifunk-muensterland.de'
