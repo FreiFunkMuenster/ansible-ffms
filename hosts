@@ -40,8 +40,7 @@ stats			ansible_ssh_host=45.154.111.131		ansible_ssh_port=22
 [dienste]
 webserver		ansible_ssh_host=46.4.80.179		ansible_ssh_port=223
 ticket			ansible_ssh_host=5.9.86.151		ansible_ssh_port=223
-dnsmaster		ansible_ssh_host=176.9.38.163		ansible_ssh_port=22
-#dnsmaster		ansible_ssh_host=49.12.223.189		ansible_ssh_port=22 #Neuer Nameserver nach umbau!
+dnsmaster		ansible_ssh_host=49.12.223.189		ansible_ssh_port=22
 mumble                  ansible_ssh_host=46.4.80.179            ansible_ssh_port=225
 
 # Multidomänen-L2TP Gateways mit oder ohne Direktanbindung FFRL
