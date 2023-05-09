@@ -66,7 +66,7 @@ ber-b			ipv4=45.154.111.12	ipv6=2001:678:894::12		ansible_ssh_host=217.197.83.22
 # Server zum bauen und bereitstellen der Firmware
 [firmwareserver]
 firmware		ansible_ssh_host=148.251.208.175	ansible_ssh_port=22
-build			ansible_ssh_host=2a03:2260:115:1000:215:17ff:fefd:4da4		ansible_ssh_port=22
+build			ansible_ssh_host=2a03:2260:115:1000:219:99ff:fee2:d079		ansible_ssh_port=22
 
 # Server der ein Monitoring mittels icinga zur verfügung stellt.
 [monitoring]

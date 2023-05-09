@@ -970,9 +970,6 @@ freifunk:
     "aircontrol":
        A: 10.16.0.15
        AAAA: 2a03:2260:115:1600:5054:ff:fecf:b2fb
-    "build":
-       A: 10.10.64.10
-       AAAA: 2a03:2260:115:1000:215:17ff:fefd:4da4
     "streamer":
        A: 46.4.80.131
        AAAA: 2a01:4f8:202:2086::85
@@ -1036,7 +1033,7 @@ dns_entries_for_all_tlds:
  - 'node-stats                                       IN  A       45.154.111.131'
  - 'dnsmaster                                        IN  A       20.157.127.73'
  - 'dnsmaster                                        IN  AAAA    2603:1020:2:3::19a'
- - 'build                                            IN  AAAA    2a03:2260:115:1000:215:17ff:fefd:4da4'
+ - 'build                                            IN  AAAA    2a03:2260:115:1000:219:99ff:fee2:d079'
  - 'mumble                                           IN  A       46.4.80.179'
  - 'streamer                                         IN  A       46.4.80.131'
  - 'streamer                                         IN  AAAA    2a01:4f8:202:2086::85'
