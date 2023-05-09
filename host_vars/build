@@ -1,5 +1,7 @@
 server_besitzer: "Marius Hellmann / corny456"
 
+is_buildserver: true
+
 collectd:
   collect_dhcp: false
   collect_fastd: false
@@ -11,6 +13,3 @@ collectd:
   graphite_target:
     host: "node-stats.{{freifunk.domain}}"
     port: 2003
-
-additionaladmins:
-  - "christian.weiss"
