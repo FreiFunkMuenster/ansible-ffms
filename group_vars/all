@@ -1033,7 +1033,7 @@ dns_entries_for_all_tlds:
  - 'node-stats                                       IN  A       45.154.111.131'
  - 'dnsmaster                                        IN  A       20.157.127.73'
  - 'dnsmaster                                        IN  AAAA    2603:1020:2:3::19a'
- - 'build                                            IN  AAAA    2a03:2260:115:1000:219:99ff:fee2:d079'
+ - 'build                                            IN  CNAME   build.dyndns.freifunk-muensterland.de.'
  - 'mumble                                           IN  A       46.4.80.179'
  - 'streamer                                         IN  A       46.4.80.131'
  - 'streamer                                         IN  AAAA    2a01:4f8:202:2086::85'
