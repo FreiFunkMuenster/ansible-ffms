@@ -36,7 +36,7 @@ stats			ansible_ssh_host=45.154.111.131		ansible_ssh_port=22
 [dienste]
 webserver		ansible_ssh_host=46.4.80.179		ansible_ssh_port=223
 ticket			ansible_ssh_host=5.9.86.151		ansible_ssh_port=223
-dnsmaster		ansible_ssh_host=49.12.223.189		ansible_ssh_port=22
+dnsmaster		ansible_ssh_host=20.157.127.73		ansible_ssh_port=22
 mumble                  ansible_ssh_host=46.4.80.179            ansible_ssh_port=225
 
 # Multidomänen-L2TP Gateways mit oder ohne Direktanbindung FFRL
@@ -66,7 +66,7 @@ ber-b			ipv4=45.154.111.12	ipv6=2001:678:894::12		ansible_ssh_host=217.197.83.22
 # Server zum bauen und bereitstellen der Firmware
 [firmwareserver]
 firmware		ansible_ssh_host=148.251.208.175	ansible_ssh_port=22
-build			ansible_ssh_host=2a03:2260:115:1000:215:17ff:fefd:4da4		ansible_ssh_port=22
+build			ansible_ssh_host=build.dyndns.ffmsl.de	ansible_ssh_port=22
 
 # Server der ein Monitoring mittels icinga zur verfügung stellt.
 [monitoring]
