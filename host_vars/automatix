@@ -149,6 +149,18 @@ domaenenliste:
       dhcp_ende: 10.79.127.255
       server_id: 2
       partner: "soter"
+   "80":
+      dhcp_start: 10.80.64.0
+      dhcp_ende: 10.80.127.255
+      server_id: 2
+   "84":
+      dhcp_start: 10.84.128.0
+      dhcp_ende: 10.84.191.255
+      server_id: 3
+   "89":
+      dhcp_start: 10.89.64.0
+      dhcp_ende: 10.89.127.255
+      server_id: 2
 
 dhcp_type: "kea"
 

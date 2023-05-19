@@ -148,5 +148,17 @@ domaenenliste:
       dhcp_ende: 10.76.191.255
       server_id: 3
       partner: "des1"
+   "80":
+      dhcp_start: 10.80.128.0
+      dhcp_ende: 10.80.191.255
+      server_id: 3
+   "85":
+      dhcp_start: 10.85.64.0
+      dhcp_ende: 10.85.127.255
+      server_id: 2
+   "89":
+      dhcp_start: 10.89.128.0
+      dhcp_ende: 10.89.191.255
+      server_id: 3
 
 dhcp_type: "kea"

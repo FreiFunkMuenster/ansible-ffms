@@ -149,6 +149,14 @@ domaenenliste:
       dhcp_ende: 10.76.127.255
       server_id: 2
       partner: "c1024"
+   "81":
+      dhcp_start: 10.81.128.0
+      dhcp_ende: 10.81.191.255
+      server_id: 3
+   "86":
+      dhcp_start: 10.86.64.0
+      dhcp_ende: 10.86.127.255
+      server_id: 2
 
 dhcp_type: "kea"
 

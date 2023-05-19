@@ -85,6 +85,14 @@ domaenenliste:
       dhcp_ende: 10.78.191.255
       server_id: 3
       partner: "parad0x"
+   "81":
+      dhcp_start: 10.81.64.0
+      dhcp_ende: 10.81.127.255
+      server_id: 2
+   "85":
+      dhcp_start: 10.85.128.0
+      dhcp_ende: 10.85.191.255
+      server_id: 3
 
 
 #ffnw_nat_ip: 185.197.132.33/32

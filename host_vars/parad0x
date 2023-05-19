@@ -138,6 +138,15 @@ domaenenliste:
       dhcp_ende: 10.78.127.255
       server_id: 2
       partner: "corny"
+   "82":
+      dhcp_start: 10.82.64.0
+      dhcp_ende: 10.82.127.255
+      server_id: 2
+   "86":
+      dhcp_start: 10.86.128.0
+      dhcp_ende: 10.86.191.255
+      server_id: 3
+
 
 dhcp_type: "kea"
 

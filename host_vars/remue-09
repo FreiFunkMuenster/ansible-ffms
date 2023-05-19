@@ -133,3 +133,11 @@ domaenenliste:
       dhcp_ende: 10.71.127.255
       server_id: 2
       partner: "automatix"
+   "82":
+      dhcp_start: 10.82.128.0
+      dhcp_ende: 10.82.191.255
+      server_id: 3
+   "87":
+      dhcp_start: 10.87.64.0
+      dhcp_ende: 10.87.127.255
+      server_id: 2
