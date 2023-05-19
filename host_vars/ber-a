@@ -8,7 +8,7 @@ as_ip: 45.154.111.11
 as_ip6: 2001:678:894::11
 
 use_wlan_slovenija_tunneldigger: true
-ifupdown2: true
+ifupdown_ng: true
 dhcp_type: "kea"
 
 tunnel_interface: "lo"
