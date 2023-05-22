@@ -56,6 +56,11 @@ mapconfig:
         maxZoom: 23
         layers: "nw_dop_rgb"
         format: "image/jpeg"
+    - name: "Luftbilder"
+      url: "//server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      config:
+        attribution: "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
+        maxZoom: 20
 
 node_stats:
   graphite_target:
