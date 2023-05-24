@@ -891,6 +891,8 @@ domaenen:
     community: Bergstrasse
     ffv4_network: 10.78.0.0/16
     ffv6_network: 2a03:2260:115:7800::/64
+    ffv6_additional_networks:
+        - "2001:678:894:4e00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -900,6 +902,8 @@ domaenen:
     community: Bergstrasse
     ffv4_network: 10.79.0.0/16
     ffv6_network: 2a03:2260:115:7900::/64
+    ffv6_additional_networks:
+        - "2001:678:894:4f00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -909,6 +913,8 @@ domaenen:
     community: Kreis Steinfurt
     ffv4_network: 10.80.0.0/16
     ffv6_network: 2a03:2260:115:8000::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5000::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -918,6 +924,8 @@ domaenen:
     community: Kreis Steinfurt
     ffv4_network: 10.81.0.0/16
     ffv6_network: 2a03:2260:115:8100::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5100::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -927,6 +935,8 @@ domaenen:
     community: Kreis Steinfurt
     ffv4_network: 10.82.0.0/16
     ffv6_network: 2a03:2260:115:8200::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5200::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -936,6 +946,8 @@ domaenen:
     community: Kreis Steinfurt
     ffv4_network: 10.83.0.0/16
     ffv6_network: 2a03:2260:115:8300::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5300::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -945,6 +957,8 @@ domaenen:
     community: Kreis Steinfurt
     ffv4_network: 10.84.0.0/16
     ffv6_network: 2a03:2260:115:8400::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5400::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -954,6 +968,8 @@ domaenen:
     community: Kreis Steinfurt
     ffv4_network: 10.85.0.0/16
     ffv6_network: 2a03:2260:115:8500::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5500::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -963,6 +979,8 @@ domaenen:
     community: Kreis Steinfurt
     ffv4_network: 10.86.0.0/16
     ffv6_network: 2a03:2260:115:8600::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5600::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -972,6 +990,8 @@ domaenen:
     community: Landkreis Osnabrück
     ffv4_network: 10.87.0.0/16
     ffv6_network: 2a03:2260:115:8700::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5700::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -981,6 +1001,8 @@ domaenen:
     community: Landkreis Osnabrück
     ffv4_network: 10.88.0.0/16
     ffv6_network: 2a03:2260:115:8800::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5800::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -990,6 +1012,8 @@ domaenen:
     community: Landkreis Osnabrück
     ffv4_network: 10.89.0.0/16
     ffv6_network: 2a03:2260:115:8900::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5900::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
