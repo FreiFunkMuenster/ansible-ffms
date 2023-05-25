@@ -73,6 +73,7 @@ domaenenliste:
       dhcp_ende: 10.10.127.255
       server_id: 2
       partner: "rowe"
+      fastd: true
    "13":
       dhcp_start: 10.13.64.0
       dhcp_ende: 10.13.127.255
@@ -103,6 +104,11 @@ domaenenliste:
       dhcp_ende: 10.27.191.255
       server_id: 3
       partner: "des1"
+   "29":
+      dhcp_start: 10.29.128.0
+      dhcp_ende: 10.29.191.255
+      server_id: 3
+      partner: "remue-09"
    "46":
       dhcp_start: 10.46.64.0
       dhcp_ende: 10.46.127.255
