@@ -296,8 +296,8 @@ domaenen:
     map_max_age: 14
     firmware: domaene24/
   "25":
-    name: Kreis Steinfurt Ost
-    community: Kreis Steinfurt
+    name: Premium Ramschdomäne
+    community: Ramschcommunity
     ffv4_network: 10.25.0.0/16
     ffv6_network: 2a03:2260:115:2500::/64
     ffv6_additional_networks:
@@ -745,7 +745,7 @@ domaenen:
     firmware: domaene64/
   "65":
     name: Ramschdomäne
-    community: Ramschdomäne
+    community: Ramschcommunity
     ffv4_network: 10.65.0.0/16
     ffv6_network: 2a03:2260:115:6500::/64
     ffv6_additional_networks:
@@ -891,6 +891,8 @@ domaenen:
     community: Bergstrasse
     ffv4_network: 10.78.0.0/16
     ffv6_network: 2a03:2260:115:7800::/64
+    ffv6_additional_networks:
+        - "2001:678:894:4e00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -900,10 +902,123 @@ domaenen:
     community: Bergstrasse
     ffv4_network: 10.79.0.0/16
     ffv6_network: 2a03:2260:115:7900::/64
+    ffv6_additional_networks:
+        - "2001:678:894:4f00::/64"
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
     firmware: domaene79/
+  "80":
+    name: Hörstel
+    community: Kreis Steinfurt
+    ffv4_network: 10.80.0.0/16
+    ffv6_network: 2a03:2260:115:8000::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5000::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene80/
+  "81":
+    name: Ibbenbüren
+    community: Kreis Steinfurt
+    ffv4_network: 10.81.0.0/16
+    ffv6_network: 2a03:2260:115:8100::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5100::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene81/
+  "82":
+    name: Ladbergen
+    community: Kreis Steinfurt
+    ffv4_network: 10.82.0.0/16
+    ffv6_network: 2a03:2260:115:8200::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5200::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene82/
+  "83":
+    name: Lengerich
+    community: Kreis Steinfurt
+    ffv4_network: 10.83.0.0/16
+    ffv6_network: 2a03:2260:115:8300::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5300::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene83/
+  "84":
+    name: Lienen
+    community: Kreis Steinfurt
+    ffv4_network: 10.84.0.0/16
+    ffv6_network: 2a03:2260:115:8400::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5400::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene84/
+  "85":
+    name: Saerbeck
+    community: Kreis Steinfurt
+    ffv4_network: 10.85.0.0/16
+    ffv6_network: 2a03:2260:115:8500::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5500::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene85/
+  "86":
+    name: Tecklenburg
+    community: Kreis Steinfurt
+    ffv4_network: 10.86.0.0/16
+    ffv6_network: 2a03:2260:115:8600::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5600::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene86/
+  "87":
+    name: Bad Iburg
+    community: Landkreis Osnabrück
+    ffv4_network: 10.87.0.0/16
+    ffv6_network: 2a03:2260:115:8700::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5700::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene87/
+  "88":
+    name: Georgsmarienhütte
+    community: Landkreis Osnabrück
+    ffv4_network: 10.88.0.0/16
+    ffv6_network: 2a03:2260:115:8800::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5800::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene88/
+  "89":
+    name: Hagen am Teutoburger Wald
+    community: Landkreis Osnabrück
+    ffv4_network: 10.89.0.0/16
+    ffv6_network: 2a03:2260:115:8900::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5900::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene89/
+
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird
 routing_table: 42
@@ -934,9 +1049,7 @@ administratorenteam:
   - "descilla"
   - "mpw"
   - "corny"
-  - "peterb"
   - "alucardo"
-  - "p4w"
   - "hoepers"
   - "wurmi"
   - "robwei"
@@ -945,7 +1058,7 @@ administratorenteam:
 bind:
   ffnet_zone_type: slave
   ffnet_zone_masters:
-    - 176.9.38.163
+    - 20.157.127.73
 
 logrotate:
   cycle: daily
@@ -970,11 +1083,8 @@ freifunk:
     "aircontrol":
        A: 10.16.0.15
        AAAA: 2a03:2260:115:1600:5054:ff:fecf:b2fb
-    "build":
-       A: 10.10.64.10
-       AAAA: 2a03:2260:115:1000:215:17ff:fefd:4da4
     "streamer":
-       A: 46.4.80.179
+       A: 46.4.80.131
        AAAA: 2a01:4f8:202:2086::85
     "streambox":
        A: 10.1.0.15
@@ -989,6 +1099,8 @@ dns_entries_for_all_tlds:
  - '@                                                IN  AAAA    2a01:4f8:202:2086::84'
  - 'www                                              IN  A       46.4.80.179'
  - 'www                                              IN  AAAA    2a01:4f8:202:2086::84'
+ - 'webmail                                          IN  A       46.4.80.179'
+ - 'webmail                                          IN  AAAA    2a01:4f8:202:2086::84'
  - '841er                                            IN  A       46.4.80.179'
  - '841er                                            IN  AAAA    2a01:4f8:202:2086::84'
  - 'inventar                                         IN  A       46.4.80.179'
@@ -1024,40 +1136,35 @@ dns_entries_for_all_tlds:
  - 'pop                                              IN  CNAME   mail.freifunk-muensterland.de.'
  - 'ticket                                           IN  A       5.9.86.151'
  - 'ticket                                           IN  AAAA    2a01:4f8:162:10d2::3'
- - 'icinga                                           IN  A       148.251.208.173'
- - 'icinga                                           IN  AAAA    2a01:4f8:191:21e1::b3'
  - 'unifi                                            IN  A       5.9.86.151'
  - 'unifi                                            IN  AAAA    2a03:2260:115:4300:5054:ff:fe14:bb9f'
  - 'unifi-legacy                                     IN  A       46.4.80.179'
  - 'unifi-legacy                                     IN  AAAA    2a03:2260:115:4300:5054:ff:fefe:680f'
- - 'stats                                            IN  A       185.197.132.146'
- - 'grafana                                          IN  A       217.197.83.217'
- - 'graphite                                         IN  A       217.197.83.217'
- - 'node-stats                                       IN  A       185.197.132.146'
- - 'dnsmaster                                        IN  A       176.9.38.163'
- - 'dnsmaster                                        IN  AAAA    2a01:4f8:150:4486::a5'
- - 'build                                            IN  AAAA    2a03:2260:115:1000:215:17ff:fefd:4da4'
+ - 'stats                                            IN  A       45.154.111.131'
+ - 'grafana                                          IN  A       45.154.111.131'
+ - 'graphite                                         IN  A       45.154.111.131'
+ - 'node-stats                                       IN  A       45.154.111.131'
+ - 'dnsmaster                                        IN  A       20.157.127.73'
+ - 'dnsmaster                                        IN  AAAA    2603:1020:2:3::19a'
+ - 'build                                            IN  CNAME   build.dyndns.freifunk-muensterland.de.'
  - 'mumble                                           IN  A       46.4.80.179'
- - 'streamer                                         IN  A       46.4.80.179'
+ - 'streamer                                         IN  A       46.4.80.131'
  - 'streamer                                         IN  AAAA    2a01:4f8:202:2086::85'
  - 'streambox                                        IN  AAAA    2a03:2260:115:100:219:99ff:fea5:2746'
  - 'ansible                                          IN  A       46.4.80.179'
  - 'ansible                                          IN  AAAA    2a01:4f8:202:2086::86'
  - 'faa-vm-backup                                    IN  AAAA    2a03:2260:115:100:5054:ff:fe73:a614'
  - 'lafp-vm-backup                                   IN  AAAA    2a03:2260:115:400:5054:ff:fe96:b854'
- - 'aircontrol                                       IN  AAAA    2a03:2260:115:1600:5054:ff:fecf:b2fb'
  - 'zulip                                            IN  A       46.4.80.186'
  - 'zulip                                            IN  AAAA    2a01:4f8:202:2086::88'
- - 'ldap                                             IN  AAAA    2a01:4f8:162:10d2::a2'
  - 'fredbackend                                      IN  A       159.69.223.64'
  - 'fredbackend                                      IN  AAAA    2a01:4f8:1c1c:8987::1'
  - 'meshviewer                                       IN  A       78.46.117.231'
  - 'meshviewer                                       IN  AAAA    2a01:4f8:1c0c:6b7e::1'
  - 'beamer                                           IN  A       10.1.0.20'
- - 'nextcloud                                        IN  A       185.197.132.147'
- - 'nextcloud                                        IN  AAAA    2a03:2260:115:4300:5054:ff:fe28:94c0'
- - 'netbox                                           IN  A       148.251.208.172'
- - 'netbox                                           IN  AAAA    2a01:4f8:191:21e1::3'
+ - 'nextcloud                                        IN  A       45.154.111.130'
+# - 'nextcloud                                        IN  AAAA    2a03:2260:115:4300:5054:ff:fe28:94c0'
+ - 'collabora                                        IN  A       45.154.111.132'
  - 'influx                                           IN  A       116.203.108.175'
  - 'influx                                           IN  AAAA    2a01:4f8:c0c:bef8::1'
  - 'status                                           IN  A       65.108.150.73'
@@ -1203,6 +1310,10 @@ reverse_dns:
       - '2                                                IN PTR  fra-b.as209894.freifunk-muensterland.de.'
       - '11                                               IN PTR  ber-a.as209894.freifunk-muensterland.de.'
       - '12                                               IN PTR  ber-b.as209894.freifunk-muensterland.de.'
+      - '129                                              IN PTR  ber-a.as209894.freifunk-muensterland.de.'
+      - '130                                              IN PTR  nextcloud.freifunk-muensterland.de.'
+      - '131                                              IN PTR  stats.freifunk-muensterland.de.'
+      - '132                                              IN PTR  collabora.freifunk-muensterland.de.'
   "4.9.8.0.8.7.6.0.1.0.0.2.ip6.arpa":
     extern_dns:
       - 'ns1.freifunk-muensterland.de'

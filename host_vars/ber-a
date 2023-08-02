@@ -1,11 +1,11 @@
-server_id: 8
-vm_id: 8
+server_id: 21
+vm_id: 21
 
-as_ip: 45.154.111.2
-as_ip6: 2001:678:894::2
+server_besitzer: 'FFI'
+hoster: 'IN-Berlin'
 
-server_besitzer: "FFI"
-hoster: "MK-Netzdienste"
+as_ip: 45.154.111.11
+as_ip6: 2001:678:894::11
 
 use_wlan_slovenija_tunneldigger: true
 ifupdown_ng: true
@@ -13,11 +13,11 @@ dhcp_type: "kea"
 
 tunnel_interface: "lo"
 
-domaenenliste:
-   "06":
-      dhcp_start: 10.6.128.0
-      dhcp_ende: 10.6.191.255
-      server_id: 3
+#domaenenliste:
+#   "06":
+#      dhcp_start: 10.6.64.0
+#      dhcp_ende: 10.6.127.255
+#      server_id: 4
 
 tunneldigger:
   interface: "lo"
@@ -27,7 +27,7 @@ tunneldigger:
 additional_ospf_interfaces:
   - interface: eth4
     cost: 500
-  - interface: eth0.2444
+  - interface: bond0.2444
     cost: 750
 
 as_vm_bridges:
@@ -35,13 +35,13 @@ as_vm_bridges:
 
 exchanges:
   "community_ix":
-    source_address_v4: "185.1.74.58"
+    source_address_v4: "185.1.74.55"
     import_filter_v4: |
       accept;
     export_filter_v4: |
       if net = {{ as_parameters.v4_network }} then accept;
       reject;
-    source_address_v6: "2001:7f8:a5::20:9894:3"
+    source_address_v6: "2001:7f8:a5::20:9894:2"
     import_filter_v6: |
       accept;
     export_filter_v6: |
@@ -52,9 +52,10 @@ exchanges:
         neighbor_address_v4: 185.1.74.1
         neighbor_address_v6: 2001:7f8:a5::5:7555:1
         neighbor_as_number: 57555
-        password: "{{ peer_passwords.fra_b.community_ix.rs01 }}"
+        password: "{{ peer_passwords.ber_a.community_ix.rs01 }}"
       rs02:
         neighbor_address_v4: 185.1.74.2
         neighbor_address_v6: 2001:7f8:a5::5:7555:2
         neighbor_as_number: 57555
-        password: "{{ peer_passwords.fra_b.community_ix.rs02 }}"
+        password: "{{ peer_passwords.ber_a.community_ix.rs02 }}"
+

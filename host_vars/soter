@@ -115,6 +115,14 @@ domaenenliste:
       dhcp_ende: 10.79.191.255
       server_id: 3
       partner: "automatix"
+   "83":
+      dhcp_start: 10.83.128.0
+      dhcp_ende: 10.83.191.255
+      server_id: 3
+   "88":
+      dhcp_start: 10.88.64.0
+      dhcp_ende: 10.88.127.255
+      server_id: 2
 
 dhcp_type: "kea"
 

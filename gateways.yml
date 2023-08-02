@@ -2,6 +2,7 @@
 - hosts: gateways
   vars_files:
     - passwords.yml
+    - fastd_keys.yml
   remote_user: root
   roles:
     - { role: hostname, tags: "hostname"}

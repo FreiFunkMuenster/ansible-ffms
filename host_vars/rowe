@@ -78,11 +78,13 @@ domaenenliste:
       dhcp_ende: 10.4.191.255
       server_id: 3
       partner: "des1"
+      fastd: true
    "10":
       dhcp_start: 10.10.128.0
       dhcp_ende: 10.10.191.255
       server_id: 3
       partner: "parad0x"
+      fastd: true
    "18":
       dhcp_start: 10.18.128.0
       dhcp_ende: 10.18.191.255
@@ -153,3 +155,12 @@ domaenenliste:
       dhcp_ende: 10.75.127.255
       server_id: 2
       partner: "automatix"
+   "83":
+      dhcp_start: 10.83.64.0
+      dhcp_ende: 10.83.127.255
+      server_id: 2
+   "87":
+      dhcp_start: 10.87.128.0
+      dhcp_ende: 10.87.191.255
+      server_id: 3
+
