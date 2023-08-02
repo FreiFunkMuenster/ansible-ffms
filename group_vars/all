@@ -59,7 +59,7 @@ domaenen:
     dhcp:
       reservations:
         - ip: "10.4.0.15" #parad0x
-          id: "ec:71:db:a1:1e:8f"
+          id: "38:e7:c0:c3:75:68"
   "05":
     name: Münster Süd
     community: Münster
