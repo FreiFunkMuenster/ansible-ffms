@@ -56,6 +56,10 @@ domaenen:
     map_show_contact: false
     map_max_age: 14
     firmware: domaene04/
+    dhcp:
+      reservations:
+        - ip: "10.4.0.15" #parad0x
+          id: "ec:71:db:a1:1e:8f"
   "05":
     name: Münster Süd
     community: Münster
