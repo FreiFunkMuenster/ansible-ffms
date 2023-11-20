@@ -1288,14 +1288,20 @@ domains:
 additional_subzones_for_all_tlds:
   "as209894":
     dns_entries:
-      - 'fra-a                                              IN      A       45.154.111.1;'
-      - 'fra-a                                              IN      AAAA    2001:678:894::1;'
-      - 'fra-b                                              IN      A       45.154.111.2;'
-      - 'fra-b                                              IN      AAAA    2001:678:894::2;'
-      - 'ber-a                                              IN      A       45.154.111.11;'
-      - 'ber-a                                              IN      AAAA    2001:678:894::11;'
-      - 'ber-b                                              IN      A       45.154.111.12;'
-      - 'ber-b                                              IN      AAAA    2001:678:894::12;'
+      - 'fra-a                                              IN      A       45.154.111.1;' #Nur legacy...
+      - 'fra-a                                              IN      AAAA    2001:678:894::1;' #Nur legacy...
+      - 'fra-b                                              IN      A       45.154.111.2;' #Nur legacy...
+      - 'fra-b                                              IN      AAAA    2001:678:894::2;' #Nur legacy...
+      - 'ber-a                                              IN      A       45.154.111.11;' #Nur legacy...
+      - 'ber-a                                              IN      AAAA    2001:678:894::11;' #Nur legacy...
+      - 'ber-a                                              IN      A       45.154.111.129;'
+      - 'ber-a                                              IN      AAAA    2001:678:894::129;'
+      - 'ber-b                                              IN      A       45.154.111.145;'
+      - 'ber-b                                              IN      AAAA    2001:678:894::145;'
+      - 'fra-a                                              IN      A       45.154.111.161;'
+      - 'fra-a                                              IN      AAAA    2001:678:894::161;'
+      - 'fra-b                                              IN      A       45.154.111.177;'
+      - 'fra-b                                              IN      AAAA    2001:678:894::177;'
   "standorte":
     dns_entries:
       - 'lafp                                               IN      A       91.25.154.149;'
@@ -1310,14 +1316,16 @@ reverse_dns:
       - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
-      - '1                                                IN PTR  fra-a.as209894.freifunk-muensterland.de.'
-      - '2                                                IN PTR  fra-b.as209894.freifunk-muensterland.de.'
-      - '11                                               IN PTR  ber-a.as209894.freifunk-muensterland.de.'
-      - '12                                               IN PTR  ber-b.as209894.freifunk-muensterland.de.'
-      - '129                                              IN PTR  ber-a.as209894.freifunk-muensterland.de.'
+      - '1                                                IN PTR  fra-a.as209894.infrastruktur.ms.' #Nur legacy...
+      - '2                                                IN PTR  fra-b.as209894.infrastruktur.ms.' #Nur legacy...
+      - '11                                               IN PTR  ber-a.as209894.infrastruktur.ms.' #Nur legacy...
+      - '129                                              IN PTR  ber-a.as209894.infrastruktur.ms.'
       - '130                                              IN PTR  nextcloud.freifunk-muensterland.de.'
       - '131                                              IN PTR  stats.freifunk-muensterland.de.'
       - '132                                              IN PTR  collabora.freifunk-muensterland.de.'
+      - '145                                              IN PTR  ber-b.as209894.infrastruktur.ms.'
+      - '161                                              IN PTR  fra-a.as209894.infrastruktur.ms.'
+      - '177                                              IN PTR  fra-b.as209894.infrastruktur.ms.'
   "4.9.8.0.8.7.6.0.1.0.0.2.ip6.arpa":
     extern_dns:
       - 'ns1.freifunk-muensterland.de'
@@ -1326,7 +1334,10 @@ reverse_dns:
       - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
-      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  fra-a.as209894.freifunk-muensterland.de.'
-      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  fra-b.as209894.freifunk-muensterland.de.'
-      - '1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  ber-a.as209894.freifunk-muensterland.de.'
-      - '2.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  ber-b.as209894.freifunk-muensterland.de.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  fra-a.as209894.infrastruktur.ms.' #Nur legacy...
+      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  fra-b.as209894.infrastruktur.ms.' #Nur legacy...
+      - '1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  ber-a.as209894.infrastruktur.ms.' #Nur legacy...
+      - '9.2.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  ber-a.as209894.infrastruktur.ms.'
+      - '5.4.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  ber-b.as209894.infrastruktur.ms.'
+      - '1.6.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  fra-a.as209894.infrastruktur.ms.'
+      - '7.7.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  fra-b.as209894.infrastruktur.ms.'
