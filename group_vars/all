@@ -1284,24 +1284,29 @@ domains:
       - '@                                                IN  TXT     "google-site-verification=u5yvcYZGB1MK4b8Fh7pQo-7A4bITqyLoIEjhTPBWqmo"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
+  "ffi.ms":
+    extern_dns:
+      - c1024
+      - des1
+      - automatix
+      - parad0x
+    email: info@ffi.ms
+    dns_entries:
+      - '@                                                IN  TXT     "v=spf1 mx -all"'
+      - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
+      - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
 
 additional_subzones_for_all_tlds:
   "as209894":
     dns_entries:
-      - 'fra-a                                              IN      A       45.154.111.1;' #Nur legacy...
-      - 'fra-a                                              IN      AAAA    2001:678:894::1;' #Nur legacy...
-      - 'fra-b                                              IN      A       45.154.111.2;' #Nur legacy...
-      - 'fra-b                                              IN      AAAA    2001:678:894::2;' #Nur legacy...
-      - 'ber-a                                              IN      A       45.154.111.11;' #Nur legacy...
-      - 'ber-a                                              IN      AAAA    2001:678:894::11;' #Nur legacy...
       - 'ber-a                                              IN      A       45.154.111.129;'
-      - 'ber-a                                              IN      AAAA    2001:678:894::129;'
+      - 'ber-a                                              IN      AAAA    2001:678:894:fff0::1;'
       - 'ber-b                                              IN      A       45.154.111.145;'
-      - 'ber-b                                              IN      AAAA    2001:678:894::145;'
+      - 'ber-b                                              IN      AAAA    2001:678:894:fff1::1;'
       - 'fra-a                                              IN      A       45.154.111.161;'
-      - 'fra-a                                              IN      AAAA    2001:678:894::161;'
+      - 'fra-a                                              IN      AAAA    2001:678:894:fff2::1;'
       - 'fra-b                                              IN      A       45.154.111.177;'
-      - 'fra-b                                              IN      AAAA    2001:678:894::177;'
+      - 'fra-b                                              IN      AAAA    2001:678:894:fff3::1;'
   "standorte":
     dns_entries:
       - 'lafp                                               IN      A       91.25.154.149;'
@@ -1316,9 +1321,6 @@ reverse_dns:
       - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
-      - '1                                                IN PTR  fra-a.as209894.infrastruktur.ms.' #Nur legacy...
-      - '2                                                IN PTR  fra-b.as209894.infrastruktur.ms.' #Nur legacy...
-      - '11                                               IN PTR  ber-a.as209894.infrastruktur.ms.' #Nur legacy...
       - '129                                              IN PTR  ber-a.as209894.infrastruktur.ms.'
       - '130                                              IN PTR  nextcloud.freifunk-muensterland.de.'
       - '131                                              IN PTR  stats.freifunk-muensterland.de.'
@@ -1334,10 +1336,7 @@ reverse_dns:
       - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
-      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  fra-a.as209894.infrastruktur.ms.' #Nur legacy...
-      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  fra-b.as209894.infrastruktur.ms.' #Nur legacy...
-      - '1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  ber-a.as209894.infrastruktur.ms.' #Nur legacy...
-      - '9.2.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  ber-a.as209894.infrastruktur.ms.'
-      - '5.4.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  ber-b.as209894.infrastruktur.ms.'
-      - '1.6.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  fra-a.as209894.infrastruktur.ms.'
-      - '7.7.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0          IN PTR  fra-b.as209894.infrastruktur.ms.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f.f          IN PTR  ber-a.as209894.infrastruktur.ms.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.f.f.f          IN PTR  ber-b.as209894.infrastruktur.ms.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.f.f.f          IN PTR  fra-a.as209894.infrastruktur.ms.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.f.f.f          IN PTR  fra-b.as209894.infrastruktur.ms.'
