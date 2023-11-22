@@ -1321,13 +1321,14 @@ reverse_dns:
       - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
-      - '129                                              IN PTR  ber-a.as209894.infrastruktur.ms.'
+      - '129                                              IN PTR  ber-a.as209894.ffi.ms.'
       - '130                                              IN PTR  nextcloud.freifunk-muensterland.de.'
       - '131                                              IN PTR  stats.freifunk-muensterland.de.'
       - '132                                              IN PTR  collabora.freifunk-muensterland.de.'
-      - '145                                              IN PTR  ber-b.as209894.infrastruktur.ms.'
-      - '161                                              IN PTR  fra-a.as209894.infrastruktur.ms.'
-      - '177                                              IN PTR  fra-b.as209894.infrastruktur.ms.'
+      - '145                                              IN PTR  ber-b.as209894.ffi.ms.'
+      - '146                                              IN PTR  soter.servers.freifunk-muensterland.de.'
+      - '161                                              IN PTR  fra-a.as209894.ffi.ms.'
+      - '177                                              IN PTR  fra-b.as209894.ffi.ms.'
   "4.9.8.0.8.7.6.0.1.0.0.2.ip6.arpa":
     extern_dns:
       - 'ns1.freifunk-muensterland.de'
@@ -1336,7 +1337,11 @@ reverse_dns:
       - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
-      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f.f          IN PTR  ber-a.as209894.infrastruktur.ms.'
-      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.f.f.f          IN PTR  ber-b.as209894.infrastruktur.ms.'
-      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.f.f.f          IN PTR  fra-a.as209894.infrastruktur.ms.'
-      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.f.f.f          IN PTR  fra-b.as209894.infrastruktur.ms.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f.f          IN PTR  ber-a.as209894.ffi.ms.'
+      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f.f          IN PTR  nextcloud.freifunk-muensterland.de.'
+      - '3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f.f          IN PTR  stats.freifunk-muensterland.de.'
+      - '4.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f.f          IN PTR  collabora.freifunk-muensterland.de.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.f.f.f          IN PTR  ber-b.as209894.ffi.ms.'
+      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.f.f.f          IN PTR  soter.servers.freifunk-muensterland.de.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.f.f.f          IN PTR  fra-a.as209894.ffi.ms.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.f.f.f          IN PTR  fra-b.as209894.ffi.ms.'
