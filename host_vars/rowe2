@@ -76,14 +76,14 @@ domaenenliste:
       dhcp_ende: 10.77.191.255
       server_id: 3
       partner: "parad0x"
-#   "84":
-#      dhcp_start: 10.84.64.0
-#      dhcp_ende: 10.84.127.255
-#      server_id: 2
-#   "88":
-#      dhcp_start: 10.88.128.0
-#      dhcp_ende: 10.88.191.255
-#      server_id: 3
+   "84":
+      dhcp_start: 10.84.64.0
+      dhcp_ende: 10.84.127.255
+      server_id: 2
+   "88":
+      dhcp_start: 10.88.128.0
+      dhcp_ende: 10.88.191.255
+      server_id: 3
 
 
 #ffnw_nat_ip: 185.197.132.36/32
