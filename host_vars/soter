@@ -1,6 +1,8 @@
 server_id: 18
 vm_id: 18
 
+ipv4_direkt_ausleiten: true
+
 server_besitzer: "FFI"
 hoster: "Hetzner"
     
