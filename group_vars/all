@@ -1312,6 +1312,8 @@ additional_subzones_for_all_tlds:
       - 'fra-a                                              IN      AAAA    2001:678:894:fff2::1;'
       - 'fra-b                                              IN      A       45.154.111.177;'
       - 'fra-b                                              IN      AAAA    2001:678:894:fff3::1;'
+      - 'lg                                                 IN      A       128.140.61.120;'
+      - 'lg                                                 IN      AAAA    2a01:4f8:1c17:5b52::1;'
   "standorte":
     dns_entries:
       - 'lafp                                               IN      A       91.25.154.149;'
