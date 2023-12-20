@@ -1022,7 +1022,50 @@ domaenen:
     map_show_contact: false
     map_max_age: 14
     firmware: domaene89/
-
+  "90":
+    name: Datteln
+    community: Ostvest
+    ffv4_network: 10.90.0.0/16
+    ffv6_network: 2a03:2260:115:9000::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5a00::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene90/
+  "91":
+    name: Waltrop
+    community: Ostvest
+    ffv4_network: 10.91.0.0/16
+    ffv6_network: 2a03:2260:115:9100::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5b00::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene91/
+  "92":
+    name: Oer-Erkenschwick  
+    community: Ostvest
+    ffv4_network: 10.92.0.0/16
+    ffv6_network: 2a03:2260:115:9200::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5c00::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene92/
+  "93":
+    name: Castrop-Rauxel
+    community: Ostvest
+    ffv4_network: 10.93.0.0/16
+    ffv6_network: 2a03:2260:115:9300::/64
+    ffv6_additional_networks:
+        - "2001:678:894:5d00::/64"
+    map_scale: 1.1
+    map_show_contact: false
+    map_max_age: 14
+    firmware: domaene93/
 
 # Nummer der Routing Tabelle, die auf den Servern verwendet wird
 routing_table: 42
