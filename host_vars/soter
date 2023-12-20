@@ -125,6 +125,27 @@ domaenenliste:
       dhcp_start: 10.88.64.0
       dhcp_ende: 10.88.127.255
       server_id: 2
+   "90":
+      dhcp_start: 10.90.128.0
+      dhcp_ende: 10.90.191.255
+      server_id: 3
+      partner: "rowe2"
+   "91":
+      dhcp_start: 10.91.128.0
+      dhcp_ende: 10.91.191.255
+      server_id: 3
+      partner: "rowe2"
+   "92":
+      dhcp_start: 10.92.128.0
+      dhcp_ende: 10.92.191.255
+      server_id: 3
+      partner: "rowe2"
+   "93":
+      dhcp_start: 10.93.128.0
+      dhcp_ende: 10.93.191.255
+      server_id: 3
+      partner: "rowe2"
+
 
 dhcp_type: "kea"
 
