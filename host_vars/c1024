@@ -17,7 +17,7 @@ ffrl_tun:
   gre_target: 185.66.195.1
   v4_remote: 100.64.3.60/31
   v6_remote: 2a03:2260:0:4ad::1/64
-  bgp_local_pref: 201
+#  bgp_local_pref: 201
 - name: fra1
   gre_target: 185.66.194.0
   v4_remote: 100.64.3.56/31
