@@ -1380,6 +1380,7 @@ reverse_dns:
       - '161                                              IN PTR  fra-a.as209894.ffi.ms.'
       - '162                                              IN PTR  bitschubse.servers.freifunk-muensterland.de.'
       - '177                                              IN PTR  fra-b.as209894.ffi.ms.'
+      - '178                                              IN PTR  paketschleuder.servers.freifunk-muensterland.de.'
   "4.9.8.0.8.7.6.0.1.0.0.2.ip6.arpa":
     extern_dns:
       - 'ns1.freifunk-muensterland.de'
@@ -1397,3 +1398,4 @@ reverse_dns:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.f.f.f          IN PTR  fra-a.as209894.ffi.ms.'
       - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.f.f.f          IN PTR  bitschubse.servers.freifunk-muensterland.de.'
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.f.f.f          IN PTR  fra-b.as209894.ffi.ms.'
+      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.f.f.f          IN PTR  paketschleuder.servers.freifunk-muensterland.de.'
