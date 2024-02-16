@@ -5,6 +5,7 @@
    remote_user: root
    roles:
     - { role: hostname, tags: "hostname"}
+    - { role: ssh, tags: "ssh"}
     - { role: common, tags: "common"}
     - { role: motd, tags: "motd"}
     - { role: fail2ban, tags: "fail2ban"}
