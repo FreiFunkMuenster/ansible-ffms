@@ -1221,6 +1221,8 @@ dns_entries_for_all_tlds:
  - 'influx                                           IN  AAAA    2a01:4f8:c0c:bef8::1'
  - 'status                                           IN  A       65.108.150.73'
  - 'status                                           IN  AAAA    2a01:4f9:c010:96f3::1'
+ - 'secret                                           IN  A       116.203.56.54'
+ - 'secret                                           IN  AAAA    2a01:4f8:c0c:6cbd::1'
 
 domains:
   "freifunk-muensterland.de":
