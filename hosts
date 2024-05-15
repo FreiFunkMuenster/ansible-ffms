@@ -45,7 +45,7 @@ mumble                  ansible_ssh_host=46.4.80.179            ansible_ssh_port
 # 'capacity' im Kommentar gibt die erwünschte relative Auslastung mit Traffic und L2TP-Verbindungen an
 # 'server' im Kommentar muss angegeben werden, wenn mehrere L2TP-VM auf einem Blech laufen. Der Wert kann frei gewählt werden.
 [gateways]
-parad0x			ipv4=94.130.64.196	ipv6=2a01:4f8:10b:2e6f::100	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=hyperhost
+parad0x			ipv4=94.130.134.8	ipv6=2a01:4f8:13b:35e8::8	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=hyperhost
 c1024			ipv4=176.9.88.123	ipv6=2a01:4f8:150:8ff8::5	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00
 des1			ipv4=5.9.86.154		ipv6=2a01:4f8:162:10d2::a0	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL	IPv6 -> FFRL	capacity=1.00	server=deshyper-01
 remue-09		ipv4=148.251.208.170	ipv6=2a01:4f8:191:21e1::b0	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFRL  IPv6 -> BCKB	capacity=0.75	server=remue

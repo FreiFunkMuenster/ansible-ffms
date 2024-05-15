@@ -4,7 +4,7 @@ server_id: 6
 server_besitzer: "Sebastian Danek / Parad0x"
 hoster: "Hetzner"
 
-is_external_nameserver: true
+#is_external_nameserver: true
 use_wlan_slovenija_tunneldigger: true
 
 #ffnw_nat_ip: 185.197.132.34/32
