@@ -20,10 +20,10 @@ kea:
   dns:
     all_gateways: true
     additional:
-      # FoeBud
-      - "85.214.20.141"
-      # dnscache.berlin.ccc.de
-      - "213.73.91.35"
+#      # FoeBud
+#      - "85.214.20.141"
+#      # dnscache.berlin.ccc.de
+#      - "213.73.91.35"
   routers:
     all_gateways: false
   loggers:
