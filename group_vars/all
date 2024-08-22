@@ -1188,13 +1188,13 @@ dns_entries_for_all_tlds:
  - 'unifi-legacy                                     IN  A       46.4.80.179'
  - 'unifi-legacy                                     IN  AAAA    2a03:2260:115:4300:5054:ff:fefe:680f'
  - 'stats                                            IN  A       45.154.111.131'
- - 'stats                                            IN  AAAA    2001:678:894:fff0::3'
+ - 'stats                                            IN  AAAA    2a14:440:1100::3'
  - 'grafana                                          IN  A       45.154.111.131'
- - 'grafana                                          IN  AAAA    2001:678:894:fff0::3'
+ - 'grafana                                          IN  AAAA    2a14:440:1100::3'
  - 'graphite                                         IN  A       45.154.111.131'
- - 'graphite                                         IN  AAAA    2001:678:894:fff0::3'
+ - 'graphite                                         IN  AAAA    2a14:440:1100::3'
  - 'node-stats                                       IN  A       45.154.111.131'
- - 'node-stats                                       IN  AAAA    2001:678:894:fff0::3'
+ - 'node-stats                                       IN  AAAA    2a14:440:1100::3'
  - 'dnsmaster                                        IN  A       20.157.127.73'
  - 'dnsmaster                                        IN  AAAA    2603:1020:2:3::19a'
  - 'build                                            IN  CNAME   build.dyndns.freifunk-muensterland.de.'
@@ -1214,9 +1214,9 @@ dns_entries_for_all_tlds:
  - 'meshviewer                                       IN  AAAA    2a01:4f8:1c0c:6b7e::1'
  - 'beamer                                           IN  A       10.1.0.20'
  - 'nextcloud                                        IN  A       45.154.111.130'
- - 'nextcloud                                        IN  AAAA    2001:678:894:fff0::2'
+ - 'nextcloud                                        IN  AAAA    2a14:440:1100::2'
  - 'collabora                                        IN  A       45.154.111.132'
- - 'collabora                                        IN  AAAA    2001:678:894:fff0::4'
+ - 'collabora                                        IN  AAAA    2a14:440:1100::4'
  - 'influx                                           IN  A       116.203.108.175'
  - 'influx                                           IN  AAAA    2a01:4f8:c0c:bef8::1'
  - 'status                                           IN  A       65.108.150.73'
@@ -1350,13 +1350,13 @@ additional_subzones_for_all_tlds:
   "as209894":
     dns_entries:
       - 'ber-a                                              IN      A       45.154.111.129;'
-      - 'ber-a                                              IN      AAAA    2001:678:894:fff0::1;'
+      - 'ber-a                                              IN      AAAA    2a14:440:1100::1;'
       - 'ber-b                                              IN      A       45.154.111.145;'
-      - 'ber-b                                              IN      AAAA    2001:678:894:fff1::1;'
+      - 'ber-b                                              IN      AAAA    2a14:440:1200::1;'
       - 'fra-a                                              IN      A       45.154.111.161;'
-      - 'fra-a                                              IN      AAAA    2001:678:894:fff2::1;'
+      - 'fra-a                                              IN      AAAA    2a14:440:2100::1;'
       - 'fra-b                                              IN      A       45.154.111.177;'
-      - 'fra-b                                              IN      AAAA    2001:678:894:fff3::1;'
+      - 'fra-b                                              IN      AAAA    2a14:440:2200::1;'
       - 'lg                                                 IN      A       128.140.61.120;'
       - 'lg                                                 IN      AAAA    2a01:4f8:1c17:5b52::1;'
   "standorte":
@@ -1383,7 +1383,7 @@ reverse_dns:
       - '162                                              IN PTR  bitschubse.servers.freifunk-muensterland.de.'
       - '177                                              IN PTR  fra-b.as209894.ffi.ms.'
       - '178                                              IN PTR  paketschleuder.servers.freifunk-muensterland.de.'
-  "4.9.8.0.8.7.6.0.1.0.0.2.ip6.arpa":
+  "0.4.4.0.4.1.a.2.ip6.arpa":
     extern_dns:
       - 'ns1.freifunk-muensterland.de'
       - 'ns2.freifunk-muensterland.de'
@@ -1391,13 +1391,76 @@ reverse_dns:
       - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
-      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f.f          IN PTR  ber-a.as209894.ffi.ms.'
-      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f.f          IN PTR  nextcloud.freifunk-muensterland.de.'
-      - '3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f.f          IN PTR  stats.freifunk-muensterland.de.'
-      - '4.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f.f          IN PTR  collabora.freifunk-muensterland.de.'
-      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.f.f.f          IN PTR  ber-b.as209894.ffi.ms.'
-      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.f.f.f          IN PTR  soter.servers.freifunk-muensterland.de.'
-      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.f.f.f          IN PTR  fra-a.as209894.ffi.ms.'
-      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.f.f.f          IN PTR  bitschubse.servers.freifunk-muensterland.de.'
-      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.f.f.f          IN PTR  fra-b.as209894.ffi.ms.'
-      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.f.f.f          IN PTR  paketschleuder.servers.freifunk-muensterland.de.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.1         IN PTR  ber-a.as209894.ffi.ms.'
+      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.1         IN PTR  nextcloud.freifunk-muensterland.de.'
+      - '3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.1         IN PTR  stats.freifunk-muensterland.de.'
+      - '4.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.1         IN PTR  collabora.freifunk-muensterland.de.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.1         IN PTR  ber-b.as209894.ffi.ms.'
+      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.1         IN PTR  soter.servers.freifunk-muensterland.de.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.2         IN PTR  fra-a.as209894.ffi.ms.'
+      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.2         IN PTR  bitschubse.servers.freifunk-muensterland.de.'
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.2         IN PTR  fra-b.as209894.ffi.ms.'
+      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.2         IN PTR  paketschleuder.servers.freifunk-muensterland.de.'
+  "1.4.4.0.4.1.a.2.ip6.arpa":
+    extern_dns:
+      - 'ns1.freifunk-muensterland.de'
+      - 'ns2.freifunk-muensterland.de'
+      - 'ns3.freifunk-muensterland.de'
+      - 'ns4.freifunk-muensterland.de'
+    email: info@freifunk-muensterland.de
+    dns_entries:
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
+  "2.4.4.0.4.1.a.2.ip6.arpa":
+    extern_dns:
+      - 'ns1.freifunk-muensterland.de'
+      - 'ns2.freifunk-muensterland.de'
+      - 'ns3.freifunk-muensterland.de'
+      - 'ns4.freifunk-muensterland.de'
+    email: info@freifunk-muensterland.de
+    dns_entries:
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
+  "3.4.4.0.4.1.a.2.ip6.arpa":
+    extern_dns:
+      - 'ns1.freifunk-muensterland.de'
+      - 'ns2.freifunk-muensterland.de'
+      - 'ns3.freifunk-muensterland.de'
+      - 'ns4.freifunk-muensterland.de'
+    email: info@freifunk-muensterland.de
+    dns_entries:
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
+  "4.4.4.0.4.1.a.2.ip6.arpa":
+    extern_dns:
+      - 'ns1.freifunk-muensterland.de'
+      - 'ns2.freifunk-muensterland.de'
+      - 'ns3.freifunk-muensterland.de'
+      - 'ns4.freifunk-muensterland.de'
+    email: info@freifunk-muensterland.de
+    dns_entries:
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
+  "5.4.4.0.4.1.a.2.ip6.arpa":
+    extern_dns:
+      - 'ns1.freifunk-muensterland.de'
+      - 'ns2.freifunk-muensterland.de'
+      - 'ns3.freifunk-muensterland.de'
+      - 'ns4.freifunk-muensterland.de'
+    email: info@freifunk-muensterland.de
+    dns_entries:
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
+  "6.4.4.0.4.1.a.2.ip6.arpa":
+    extern_dns:
+      - 'ns1.freifunk-muensterland.de'
+      - 'ns2.freifunk-muensterland.de'
+      - 'ns3.freifunk-muensterland.de'
+      - 'ns4.freifunk-muensterland.de'
+    email: info@freifunk-muensterland.de
+    dns_entries:
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
+  "7.4.4.0.4.1.a.2.ip6.arpa":
+    extern_dns:
+      - 'ns1.freifunk-muensterland.de'
+      - 'ns2.freifunk-muensterland.de'
+      - 'ns3.freifunk-muensterland.de'
+      - 'ns4.freifunk-muensterland.de'
+    email: info@freifunk-muensterland.de
+    dns_entries:
+      - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
