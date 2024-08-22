@@ -1,8 +1,12 @@
 server_id: 7
 vm_id: 7
 
-server_besitzer: "Marius Hellmann / corny456"
-hoster: "Hetzner"
+server_besitzer: "FFI"
+hoster: "FFI"
+
+ipv4_direkt_ausleiten: true
+use_wlan_slovenija_tunneldigger: true
+dhcp_type: "kea"
     
 domaenenliste:
    "01":
@@ -96,7 +100,7 @@ domaenenliste:
 
 
 #ffnw_nat_ip: 185.197.132.33/32
-ffrl_nat_ip: 185.66.195.22/32
+#ffrl_nat_ip: 185.66.195.22/32
 
 #ffnw_tun:
 #- name: fra1
@@ -119,41 +123,29 @@ ffrl_nat_ip: 185.66.195.22/32
 #  v6_remote: fe80::1/64
 #  bgp_local_pref: 210
 
-ffrl_tun:
-- name: ber1
-  gre_target: 185.66.195.0
-  v4_remote: 100.64.9.54/31
-  v6_remote: 2a03:2260:0:4b0::1/64
-- name: ber2
-  gre_target: 185.66.195.1
-  v4_remote: 100.64.9.60/31
-  v6_remote: 2a03:2260:0:4b3::1/64
-#  bgp_local_pref: 201
-- name: fra1
-  gre_target: 185.66.194.0
-  v4_remote: 100.64.9.56/31
-  v6_remote: 2a03:2260:0:4b1::1/64
-- name: fra2
-  gre_target: 185.66.194.1
-  v4_remote: 100.64.9.62/31
-  v6_remote: 2a03:2260:0:4b4::1/64
-- name: dus1
-  gre_target: 185.66.193.0
-  v4_remote: 100.64.9.58/31
-  v6_remote: 2a03:2260:0:4b2::1/64
-- name: dus2
-  gre_target:  185.66.193.1
-  v4_remote: 100.64.9.64/31
-  v6_remote: 2a03:2260:0:4b5::1/64
-
-dhcp_type: "kea"
-
-tunneldigger:
-  instance_per_domain: true
-  interface: "eth0"
-  max_tunnels: 1024
-  port_base: 20100
-  pmtu_discovery: false
-  tunnel_timeout: 60
-
-use_wlan_slovenija_tunneldigger: true
+#ffrl_tun:
+#- name: ber1
+#  gre_target: 185.66.195.0
+#  v4_remote: 100.64.9.54/31
+#  v6_remote: 2a03:2260:0:4b0::1/64
+#- name: ber2
+#  gre_target: 185.66.195.1
+#  v4_remote: 100.64.9.60/31
+#  v6_remote: 2a03:2260:0:4b3::1/64
+##  bgp_local_pref: 201
+#- name: fra1
+#  gre_target: 185.66.194.0
+#  v4_remote: 100.64.9.56/31
+#  v6_remote: 2a03:2260:0:4b1::1/64
+#- name: fra2
+#  gre_target: 185.66.194.1
+#  v4_remote: 100.64.9.62/31
+#  v6_remote: 2a03:2260:0:4b4::1/64
+#- name: dus1
+#  gre_target: 185.66.193.0
+#  v4_remote: 100.64.9.58/31
+#  v6_remote: 2a03:2260:0:4b2::1/64
+#- name: dus2
+#  gre_target:  185.66.193.1
+#  v4_remote: 100.64.9.64/31
+#  v6_remote: 2a03:2260:0:4b5::1/64

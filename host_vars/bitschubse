@@ -2,10 +2,11 @@ server_id: 13
 vm_id: 13
 
 server_besitzer: "FFI"
-hoster: "Hetzner"
+hoster: "FFI"
 
 ipv4_direkt_ausleiten: true
 use_wlan_slovenija_tunneldigger: true
+dhcp_type: "kea"
 
 domaenenliste:
    "01":
@@ -154,5 +155,3 @@ domaenenliste:
 #  gre_target: 185.66.194.1
 #  v4_remote: 100.64.10.98/31
 #  v6_remote: 2a03:2260:0:53a::1/64
-
-dhcp_type: "kea"
