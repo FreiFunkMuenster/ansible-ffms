@@ -52,7 +52,7 @@ rowe			ipv4=138.201.210.176	ipv6=2a01:4f8:171:124a::2	ansible_ssh_host="{{ipv4}}
 automatix		ipv4=46.4.80.184	ipv6=2a01:4f8:202:2086::82	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> FFNW	IPv6 -> BCKB	capacity=1.00	server=voyager
 soter			ipv4=45.154.111.146	ipv6=2a14:440:1200::2		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> Local	IPv6 -> BCKB	capacity=1.50
 bitschubse		ipv4=45.154.111.162	ipv6=2a14:440:2100::2		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> Local	IPv6 -> BCKB	capacity=1.50
-paketschleuder		ipv4=45.154.111.178	ipv6=2a14:440:2200::2	 	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> Local	IPv6 -> BCKB	capacity=1.50
+paketschle		ipv4=45.154.111.178	ipv6=2a14:440:2200::2	 	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# IPv4 -> Local	IPv6 -> BCKB	capacity=1.50
 
 [as_router]
 fra-a			ipv4=45.154.111.1	ipv6=2a14:440:2100::1		ansible_ssh_host=45.152.127.50	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=fra-a
