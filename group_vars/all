@@ -1158,6 +1158,8 @@ dns_entries_for_all_tlds:
  - 'infratafel                                       IN  AAAA    2a01:4f8:202:2086::84'
  - 'vereinsorga                                      IN  A       46.4.80.179'
  - 'vereinsorga                                      IN  AAAA    2a01:4f8:202:2086::84'
+ - 'domaenenwahl                                     IN  A       46.4.80.179'
+ - 'domaenenwahl                                     IN  AAAA    2a01:4f8:202:2086::84'
  - 'karte                                            IN  A       46.4.80.190'
  - 'karte                                            IN  AAAA    2a01:4f8:202:2086::83'
  - 'mail                                             IN  A       138.201.210.178'
