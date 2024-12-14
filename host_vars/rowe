@@ -6,6 +6,7 @@ hoster: "Hetzner"
 use_wlan_slovenija_tunneldigger: true
 
 ffrl_nat_ip: 185.66.195.20/32
+ffi_nat_ip: 45.154.111.64/32
 
 ffrl_tun:
 - name: ber1
@@ -45,25 +46,23 @@ ffrl_tun:
   v6_local: 2a03:2260:0:2c8::2/64
   v6_remote: 2a03:2260:0:2c8::1/64
 
-#ffnw_tun:
-#- name: fra1
-#  gre_target: 185.197.132.3
-#  v4_remote: 100.100.32.80/31
-#  v6_remote: fe80::1/64
-#- name: fra2
-#  gre_target: 185.197.132.4
-#  v4_remote: 100.100.48.80/31
-#  v6_remote: fe80::1/64
-#- name: ber2
-#  gre_target: 185.197.132.8
-#  v4_remote: 100.100.112.80/31
-#  v6_remote: fe80::1/64
-#  bgp_local_pref: 210
-#- name: ber1
-#  gre_target: 185.197.132.7
-#  v4_remote: 100.100.96.80/31
-#  v6_remote: fe80::1/64
-#  bgp_local_pref: 201
+ffi_tun:
+- name: ber-a
+  gre6_target: 2a14:440:1100::1
+  v4_remote: 100.127.0.0/31
+  v6_remote: 2a14:440:0:1::/127
+- name: ber-b
+  gre6_target: 2a14:440:1200::1
+  v4_remote: 100.127.4.0/31
+  v6_remote: 2a14:440:0:2::/127
+- name: fra-a
+  gre6_target: 2a14:440:2100::1
+  v4_remote: 100.127.8.0/31
+  v6_remote: 2a14:440:0:3::/127
+- name: fra-b
+  gre6_target: 2a14:440:2200::1
+  v4_remote: 100.127.12.0/31
+  v6_remote: 2a14:440:0:4::/127
 
 dhcp_type: "kea"
 
