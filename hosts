@@ -15,9 +15,6 @@ fredbackend		ansible_ssh_host=159.69.223.64		ansible_ssh_port=22
 nextcloud		ansible_ssh_host=45.154.111.130		ansible_ssh_port=22
 status			ansible_ssh_host=65.108.150.73		ansible_ssh_port=22
 collabora		ansible_ssh_host=45.154.111.132		ansible_ssh_port=22
-netbox			ansible_ssh_host=128.140.61.120		ansible_ssh_port=22
-secret			ansible_ssh_host=116.203.56.54		ansible_ssh_port=22
-xwiki			ansible_ssh_host=23.88.112.136		ansible_ssh_port=22
 
 [hypervisors]
 deshyper-01		ipv4=5.9.86.151		ipv6=2a01:4f8:162:10d2::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
