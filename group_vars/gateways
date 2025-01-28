@@ -16,7 +16,11 @@ kea:
   global:
     mtu: 1280
     lease_default: 86400
+    option43_unifi_ip: "5.9.86.151" #DHCP Option 43 für Unifi-APs/Switche
     search_domain: "{{freifunk.search_domain}}"
+    dns_search_list: #DHCP Option 119
+      - "ffmsl.de"
+      - "freifunk-muensterland.de"
   dns:
     all_gateways: true
     additional:
