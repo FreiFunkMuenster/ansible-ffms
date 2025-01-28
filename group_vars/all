@@ -1352,6 +1352,12 @@ domains:
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
       - 'wiki-neu                                         IN  A       23.88.112.136'
       - 'wiki-neu                                         IN  AAAA    2a01:4f8:c013:4a2f::1'
+      - 'lorawan                                          IN  NS      ns1.he.net.'
+      - 'lorawan                                          IN  NS      ns2.he.net.'
+      - 'lorawan                                          IN  NS      ns3.he.net.'
+      - 'lorawan                                          IN  NS      ns4.he.net.'
+      - 'lorawan                                          IN  NS      ns5.he.net.'
+
 
 additional_subzones_for_all_tlds:
   "as209894":
