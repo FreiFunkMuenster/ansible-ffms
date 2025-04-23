@@ -1378,6 +1378,8 @@ additional_subzones_for_all_tlds:
     dns_entries:
       - 'msr-a                                              IN      A       212.3.68.146;'
       - 'msr-a                                              IN      AAAA    2a02:1799:0:8::2;'
+      - 'remue                                              IN      A       144.76.30.226;'
+      - 'remue                                              IN      AAAA    2a01:4f8:191:21e1::2;'
 
 reverse_dns:
   "111.154.45.in-addr.arpa":
