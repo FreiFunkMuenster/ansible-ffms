@@ -1374,6 +1374,10 @@ additional_subzones_for_all_tlds:
     dns_entries:
       - 'lafp                                               IN      A       91.25.154.149;'
       - 'lafp                                               IN      AAAA    2003:cc:281e::ff:100;'
+  "srv":
+    dns_entries:
+      - 'msr-a                                              IN      A       212.3.68.146;'
+      - 'msr-a                                              IN      AAAA    2a02:1799:0:8::2;'
 
 reverse_dns:
   "111.154.45.in-addr.arpa":
@@ -1475,24 +1479,3 @@ reverse_dns:
     email: info@freifunk-muensterland.de
     dns_entries:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
-  "112-119.68.3.212.in-addr.arpa":
-    extern_dns:
-      - 'ns1.freifunk-muensterland.de'
-      - 'ns2.freifunk-muensterland.de'
-      - 'ns3.freifunk-muensterland.de'
-      - 'ns4.freifunk-muensterland.de'
-    email: info@freifunk-muensterland.de
-    dns_entries:
-      - '112                             IN PTR  placeholder.ffi.ms.'
-      - '113                             IN PTR  placeholder.ffi.ms.'
-      - '114                             IN PTR  placeholder.ffi.ms.'
-      - '115                             IN PTR  placeholder.ffi.ms.'
-  "9.0.0.0.9.9.7.1.2.a.2.0.ip6.arpa":
-    extern_dns:
-      - 'ns1.freifunk-muensterland.de'
-      - 'ns2.freifunk-muensterland.de'
-      - 'ns3.freifunk-muensterland.de'
-      - 'ns4.freifunk-muensterland.de'
-    email: info@freifunk-muensterland.de
-    dns_entries:
-      - '1.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
