@@ -63,4 +63,4 @@ ber-b			ipv4=45.154.111.12	ipv6=2a14:440:1200::1		ansible_ssh_host=217.197.83.22
 # Server zum bauen und bereitstellen der Firmware
 [firmwareserver]
 firmware		ansible_ssh_host=148.251.208.175	ansible_ssh_port=22
-build			ansible_ssh_host=build.dyndns.ffmsl.de	ansible_ssh_port=22
+build			ansible_ssh_host=10.10.10.108		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
