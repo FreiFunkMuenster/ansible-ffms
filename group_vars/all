@@ -1147,7 +1147,7 @@ dns_entries_for_all_tlds:
  - '841er                                            IN  CNAME   caddy'
  - 'www                                              IN  CNAME   caddy'
  - 'unifi                                            IN  CNAME   caddy'
- - 'erneuern                                         IN  CNAME   caddy'
+ - 'freifunkrouter-veraltet                          IN  CNAME   caddy'
  - 'zulip                                            IN  A       212.3.68.147'
  - 'zulip                                            IN  AAAA    2a02:1799:9::147'
  - 'karte                                            IN  A       46.4.80.190'
