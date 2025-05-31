@@ -1,20 +1,24 @@
 # Allgemeine Infrastruktur-Server
 [common]
 ansible			ansible_ssh_host=46.4.80.179		ansible_ssh_port=226
-unifi			ansible_ssh_host=2a03:2260:115:4300:5054:ff:fe14:bb9f		ansible_ssh_port=22
-unifi-legacy		ansible_ssh_host=2a03:2260:115:4300:5054:ff:fefe:680f		ansible_ssh_port=22
 aircontrol		ansible_ssh_host=2a03:2260:115:1600:5054:ff:fecf:b2fb		ansible_ssh_port=22
 mail			ansible_ssh_host=138.201.210.178	ansible_ssh_port=22
-wiki			ansible_ssh_host=5.9.86.142		ansible_ssh_port=22
 forum			ansible_ssh_host=138.201.210.179	ansible_ssh_port=22
-streamer		ansible_ssh_host=46.4.80.131		ansible_ssh_port=22
+streamer		ansible_ssh_host=148.251.208.171		ansible_ssh_port=22
 faa-vm-backup		ansible_ssh_host=2a03:2260:115:100:5054:ff:fe73:a614		ansible_ssh_port=22
 lafp-vm-backup		ansible_ssh_host=2a03:2260:115:400:5054:ff:fe96:b854		ansible_ssh_port=22
-zulip			ansible_ssh_host=46.4.80.186		ansible_ssh_port=22
-fredbackend		ansible_ssh_host=159.69.223.64		ansible_ssh_port=22
 nextcloud		ansible_ssh_host=45.154.111.130		ansible_ssh_port=22
 status			ansible_ssh_host=65.108.150.73		ansible_ssh_port=22
 collabora		ansible_ssh_host=45.154.111.132		ansible_ssh_port=22
+
+ticket			ansible_ssh_host=10.10.10.100		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
+wiki			ansible_ssh_host=212.3.68.148		ansible_ssh_port=22
+caddy			ansible_ssh_host=10.10.10.102		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
+wp-ffmsl		ansible_ssh_host=10.10.10.103		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
+wp-ffbor		ansible_ssh_host=10.10.10.104		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
+zulip			ansible_ssh_host=10.10.10.105		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
+unifi			ansible_ssh_host=10.10.10.107		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
+
 
 [hypervisors]
 deshyper-01		ipv4=5.9.86.151		ipv6=2a01:4f8:162:10d2::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
@@ -33,10 +37,8 @@ stats			ansible_ssh_host=45.154.111.131		ansible_ssh_port=22
 
 # Server die diverse Dienste anbieten.
 [dienste]
-webserver		ansible_ssh_host=46.4.80.179		ansible_ssh_port=223
-ticket			ansible_ssh_host=5.9.86.151		ansible_ssh_port=223
 dnsmaster		ansible_ssh_host=20.157.127.73		ansible_ssh_port=22
-mumble                  ansible_ssh_host=46.4.80.179            ansible_ssh_port=225
+mumble                  ansible_ssh_host=148.251.208.169        ansible_ssh_port=22
 
 # Multidomänen-L2TP Gateways mit oder ohne Direktanbindung FFRL
 # 'capacity' im Kommentar gibt die erwünschte relative Auslastung mit Traffic und L2TP-Verbindungen an
@@ -62,14 +64,3 @@ ber-b			ipv4=45.154.111.12	ipv6=2a14:440:1200::1		ansible_ssh_host=217.197.83.22
 [firmwareserver]
 firmware		ansible_ssh_host=148.251.208.175	ansible_ssh_port=22
 build			ansible_ssh_host=build.dyndns.ffmsl.de	ansible_ssh_port=22
-
-# Server der ein Monitoring mittels icinga zur verfügung stellt.
-[monitoring]
-icinga			ansible_ssh_host=148.251.208.173	ansible_ssh_port=22
-
-[monitoringsatellites]
-remue
-#satellite-01		ansible_ssh_host=234.234.234.234	ansible_ssh_port=22
-
-[vipnodes]
-#vip-node-dummy-01	ansible_ssh_host=123.123.123.123	ansible_ssh_port=22
