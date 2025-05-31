@@ -1120,20 +1120,14 @@ freifunk:
   domain: freifunk-muensterland.de
   ffnet_dns_entries_for_internal_tld:
     "firmware":
-       A: 144.76.30.226
+       A: 148.251.208.174
        AAAA: 2a01:4f8:191:21e1::23
     "unifi":
        A: 10.43.128.14
        AAAA: 2a03:2260:115:4300:5054:ff:fe14:bb9f
-    "unifi-legacy":
-       A: 10.43.128.15
-       AAAA: 2a03:2260:115:4300:5054:ff:fefe:680f
-    "aircontrol":
-       A: 10.16.0.15
-       AAAA: 2a03:2260:115:1600:5054:ff:fecf:b2fb
     "streamer":
-       A: 46.4.80.131
-       AAAA: 2a01:4f8:202:2086::85
+       A: 148.251.208.171
+       AAAA: 2a01:4f8:191:21e1::171
     "streambox":
        A: 10.1.0.15
        AAAA: 2a03:2260:115:100:219:99ff:fea5:2746
@@ -1143,18 +1137,19 @@ bind_zonemaster:
   email: info.freifunk-muensterland.de
 
 dns_entries_for_all_tlds:
+ - '@                                                IN  A       212.3.68.147'
+ - '@                                                IN  AAAA    2a02:1799:9::147'
  - 'caddy                                            IN  A       212.3.68.147'
  - 'caddy                                            IN  AAAA    2a02:1799:9::147'
  - 'ticket                                           IN  CNAME   caddy'
  - 'inventar                                         IN  CNAME   caddy'
  - 'domaenenwahl                                     IN  CNAME   caddy'
  - '841er                                            IN  CNAME   caddy'
- - '@                                                IN  A       46.4.80.179'
- - '@                                                IN  AAAA    2a01:4f8:202:2086::84'
- - 'www                                              IN  A       46.4.80.179'
- - 'www                                              IN  AAAA    2a01:4f8:202:2086::84'
- - 'webmail                                          IN  A       46.4.80.179'
- - 'webmail                                          IN  AAAA    2a01:4f8:202:2086::84'
+ - 'www                                              IN  CNAME   caddy'
+ - 'unifi                                            IN  CNAME   caddy'
+ - 'erneuern                                         IN  CNAME   caddy'
+ - 'zulip                                            IN  A       212.3.68.147'
+ - 'zulip                                            IN  AAAA    2a02:1799:9::147'
  - 'karte                                            IN  A       46.4.80.190'
  - 'karte                                            IN  AAAA    2a01:4f8:202:2086::83'
  - 'mail                                             IN  A       138.201.210.178'
@@ -1176,10 +1171,6 @@ dns_entries_for_all_tlds:
  - 'smtp                                             IN  CNAME   mail.freifunk-muensterland.de.'
  - 'imap                                             IN  CNAME   mail.freifunk-muensterland.de.'
  - 'pop                                              IN  CNAME   mail.freifunk-muensterland.de.'
- - 'unifi                                            IN  A       5.9.86.151'
- - 'unifi                                            IN  AAAA    2a03:2260:115:4300:5054:ff:fe14:bb9f'
- - 'unifi-legacy                                     IN  A       46.4.80.179'
- - 'unifi-legacy                                     IN  AAAA    2a03:2260:115:4300:5054:ff:fefe:680f'
  - 'stats                                            IN  A       45.154.111.131'
  - 'stats                                            IN  AAAA    2a14:440:1100::3'
  - 'grafana                                          IN  A       45.154.111.131'
@@ -1191,16 +1182,15 @@ dns_entries_for_all_tlds:
  - 'dnsmaster                                        IN  A       20.157.127.73'
  - 'dnsmaster                                        IN  AAAA    2603:1020:2:3::19a'
  - 'build                                            IN  CNAME   build.dyndns.freifunk-muensterland.de.'
- - 'mumble                                           IN  A       46.4.80.179'
- - 'streamer                                         IN  A       46.4.80.131'
- - 'streamer                                         IN  AAAA    2a01:4f8:202:2086::85'
+ - 'mumble                                           IN  A       148.251.208.169'
+ - 'mumble                                           IN  AAAA    2a01:4f8:191:21e1::169'
+ - 'streamer                                         IN  A       148.251.208.171'
+ - 'streamer                                         IN  AAAA    2a01:4f8:191:21e1::171'
  - 'streambox                                        IN  AAAA    2a03:2260:115:100:219:99ff:fea5:2746'
  - 'ansible                                          IN  A       46.4.80.179'
  - 'ansible                                          IN  AAAA    2a01:4f8:202:2086::86'
  - 'faa-vm-backup                                    IN  AAAA    2a03:2260:115:100:5054:ff:fe73:a614'
  - 'lafp-vm-backup                                   IN  AAAA    2a03:2260:115:400:5054:ff:fe96:b854'
- - 'zulip                                            IN  A       46.4.80.186'
- - 'zulip                                            IN  AAAA    2a01:4f8:202:2086::88'
  - 'fredbackend                                      IN  A       159.69.223.64'
  - 'fredbackend                                      IN  AAAA    2a01:4f8:1c1c:8987::1'
  - 'meshviewer                                       IN  A       78.46.117.231'
