@@ -10,6 +10,7 @@ lafp-vm-backup		ansible_ssh_host=2a03:2260:115:400:5054:ff:fe96:b854		ansible_ss
 nextcloud		ansible_ssh_host=45.154.111.130		ansible_ssh_port=22
 status			ansible_ssh_host=65.108.150.73		ansible_ssh_port=22
 collabora		ansible_ssh_host=45.154.111.132		ansible_ssh_port=22
+monitor			ansible_ssh_host=159.69.223.64		ansible_ssh_port=22
 
 ticket			ansible_ssh_host=10.10.10.100		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
 wiki			ansible_ssh_host=212.3.68.148		ansible_ssh_port=22
