@@ -1167,8 +1167,6 @@ dns_entries_for_all_tlds:
  - 'firmware                                         IN  AAAA    2a01:4f8:191:21e1::23'
  - 'forum                                            IN  A       138.201.210.179'
  - 'forum                                            IN  AAAA    2a01:4f8:171:124a::5'
- - 'wiki                                             IN  A       212.3.68.148'
- - 'wiki                                             IN  AAAA    2a02:1799:9::148'
  - 'smtp                                             IN  CNAME   mail.freifunk-muensterland.de.'
  - 'imap                                             IN  CNAME   mail.freifunk-muensterland.de.'
  - 'pop                                              IN  CNAME   mail.freifunk-muensterland.de.'
@@ -1227,6 +1225,8 @@ domains:
        - '_caldavs._tcp                                    IN  SRV     0 1 443 dav.freifunk-muensterland.de.'
        - '_carddavs._tcp                                   IN  SRV     0 1 443 dav.freifunk-muensterland.de.'
        - '_autodiscover._tcp                               IN  SRV     0 1 443 autodiscover.freifunk-muensterland.de.'
+       - 'wiki                                             IN  A       212.3.68.148'
+       - 'wiki                                             IN  AAAA    2a02:1799:9::148'
        - '; authentication for mailchimp (newsletter distribution)'
        - '; k1._domainkey                                  IN  CNAME   dkim.mcsv.net.'
        - '; @                                              IN  TXT     "v=spf1 include:servers.mcsv.net ?all"'
@@ -1320,6 +1320,8 @@ domains:
       - '@                                                IN  TXT     "google-site-verification=u5yvcYZGB1MK4b8Fh7pQo-7A4bITqyLoIEjhTPBWqmo"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
+      - 'wiki                                             IN  A       23.88.112.136'
+      - 'wiki                                             IN  AAAA    2a01:4f8:c013:4a2f::1'
   "ffi.ms":
     extern_dns:
       - c1024
@@ -1331,6 +1333,8 @@ domains:
       - '@                                                IN  TXT     "v=spf1 mx -all"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
+      - 'wiki                                             IN  A       23.88.112.136'
+      - 'wiki                                             IN  AAAA    2a01:4f8:c013:4a2f::1'
       - 'wiki-neu                                         IN  A       23.88.112.136'
       - 'wiki-neu                                         IN  AAAA    2a01:4f8:c013:4a2f::1'
       - 'lorawan                                          IN  NS      ns1.he.net.'
