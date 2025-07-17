@@ -1149,6 +1149,7 @@ dns_entries_for_all_tlds:
  - 'freifunkrouter-veraltet                          IN  CNAME   caddy'
  - 'ex400                                            IN  CNAME   caddy'
  - 'jenkins                                          IN  CNAME   caddy'
+ - 'api                                              IN  CNAME   caddy'
  - 'zulip                                            IN  A       212.3.68.147'
  - 'zulip                                            IN  AAAA    2a02:1799:9::147'
  - 'karte                                            IN  A       46.4.80.190'
