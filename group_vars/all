@@ -1337,6 +1337,8 @@ domains:
       - 'wiki                                             IN  AAAA    2a01:4f8:c013:4a2f::1'
       - 'wiki-neu                                         IN  A       23.88.112.136'
       - 'wiki-neu                                         IN  AAAA    2a01:4f8:c013:4a2f::1'
+      - 'media-mirror                                     IN  A       45.154.111.163'
+      - 'media-mirror                                     IN  AAAA    2a14:440:2100::3'
       - 'lorawan                                          IN  NS      ns1.he.net.'
       - 'lorawan                                          IN  NS      ns2.he.net.'
       - 'lorawan                                          IN  NS      ns3.he.net.'
@@ -1385,6 +1387,7 @@ reverse_dns:
       - '146                                              IN PTR  soter.servers.freifunk-muensterland.de.'
       - '161                                              IN PTR  fra-a.as209894.ffi.ms.'
       - '162                                              IN PTR  bitschubse.servers.freifunk-muensterland.de.'
+      - '163                                              IN PTR  media-mirror.ffi.ms.'
       - '177                                              IN PTR  fra-b.as209894.ffi.ms.'
       - '178                                              IN PTR  paketschleuder.servers.freifunk-muensterland.de.'
   "0.4.4.0.4.1.a.2.ip6.arpa":
@@ -1403,6 +1406,7 @@ reverse_dns:
       - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.1         IN PTR  soter.servers.freifunk-muensterland.de.'
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.2         IN PTR  fra-a.as209894.ffi.ms.'
       - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.2         IN PTR  bitschubse.servers.freifunk-muensterland.de.'
+      - '3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.2         IN PTR  media-mirror.ffi.ms.'
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.2         IN PTR  fra-b.as209894.ffi.ms.'
       - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.2         IN PTR  paketschleuder.servers.freifunk-muensterland.de.'
   "1.4.4.0.4.1.a.2.ip6.arpa":
