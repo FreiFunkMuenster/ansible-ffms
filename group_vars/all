@@ -1391,6 +1391,15 @@ reverse_dns:
       - '163                                              IN PTR  media-mirror.ffi.ms.'
       - '177                                              IN PTR  fra-b.as209894.ffi.ms.'
       - '178                                              IN PTR  paketschleuder.servers.freifunk-muensterland.de.'
+  "1.70.217.in-addr.arpa":
+    extern_dns:
+      - 'ns1.freifunk-muensterland.de'
+      - 'ns2.freifunk-muensterland.de'
+      - 'ns3.freifunk-muensterland.de'
+      - 'ns4.freifunk-muensterland.de'
+    email: info@freifunk-muensterland.de
+    dns_entries:
+      - '1                                                IN PTR  placeholder.ffi.ms.'
   "0.4.4.0.4.1.a.2.ip6.arpa":
     extern_dns:
       - 'ns1.freifunk-muensterland.de'
