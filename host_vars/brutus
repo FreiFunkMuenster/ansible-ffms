@@ -1,0 +1,124 @@
+server_id: 9
+vm_id: 9
+
+server_besitzer: "FFI"
+hoster: "IONOS"
+
+use_wlan_slovenija_tunneldigger: true
+
+ffrl_nat_ip: 185.66.193.48/32
+    
+ffrl_tun:
+- name: ber1
+  gre_target: 185.66.195.0
+  v4_remote: 100.64.3.54/31
+  v6_remote: 2a03:2260:0:4aa::1/64
+- name: ber2
+  gre_target: 185.66.195.1
+  v4_remote: 100.64.3.60/31
+  v6_remote: 2a03:2260:0:4ad::1/64
+#  bgp_local_pref: 201
+- name: fra1
+  gre_target: 185.66.194.0
+  v4_remote: 100.64.3.56/31
+  v6_remote: 2a03:2260:0:4ab::1/64
+- name: fra2
+  gre_target: 185.66.194.1
+  v4_remote: 100.64.0.108/31
+  v6_remote: 2a03:2260:0:3e::1/64
+- name: dus1
+  gre_target: 185.66.193.0
+  v4_remote: 100.64.3.58/31
+  v6_remote: 2a03:2260:0:4ac::1/64
+- name: dus2
+  gre_target:  185.66.193.1
+  v4_remote: 100.64.0.110/31
+  v6_remote: 2a03:2260:0:3f::1/64
+
+domaenenliste:
+   "05":
+      dhcp_start: 10.5.64.0
+      dhcp_ende: 10.5.127.255
+      server_id: 2
+   "09":
+      dhcp_start: 10.9.64.0
+      dhcp_ende: 10.9.127.255
+      server_id: 2
+   "16":
+      dhcp_start: 10.16.64.0
+      dhcp_ende: 10.16.127.255
+      server_id: 2
+   "19":
+      dhcp_start: 10.19.64.0
+      dhcp_ende: 10.19.127.255
+      server_id: 2
+   "26":
+      dhcp_start: 10.26.64.0
+      dhcp_ende: 10.26.127.255
+      server_id: 2
+   "33":
+      dhcp_start: 10.33.64.0
+      dhcp_ende: 10.33.127.255
+      server_id: 2
+   "34":
+      dhcp_start: 10.34.64.0
+      dhcp_ende: 10.34.127.255
+      server_id: 2
+   "36":
+      dhcp_start: 10.36.64.0
+      dhcp_ende: 10.36.127.255
+      server_id: 2
+   "42":
+      dhcp_start: 10.42.64.0
+      dhcp_ende: 10.42.127.255
+      server_id: 2
+   "43":
+      dhcp_start: 10.43.64.0
+      dhcp_ende: 10.43.127.255
+      server_id: 2
+   "48":
+      dhcp_start: 10.48.64.0
+      dhcp_ende: 10.48.127.255
+      server_id: 2
+   "51":
+      dhcp_start: 10.51.64.0
+      dhcp_ende: 10.51.127.255
+      server_id: 2
+   "53":
+      dhcp_start: 10.53.128.0
+      dhcp_ende: 10.53.191.255
+      server_id: 3
+   "56":
+      dhcp_start: 10.56.64.0
+      dhcp_ende: 10.56.127.255
+      server_id: 2
+   "61":
+      dhcp_start: 10.61.64.0
+      dhcp_ende: 10.61.127.255
+      server_id: 2
+   "66":
+      dhcp_start: 10.66.64.0
+      dhcp_ende: 10.66.127.255
+      server_id: 2
+   "72":
+      dhcp_start: 10.72.64.0
+      dhcp_ende: 10.72.127.255
+      server_id: 2
+   "76":
+      dhcp_start: 10.76.128.0
+      dhcp_ende: 10.76.191.255
+      server_id: 3
+   "80":
+      dhcp_start: 10.80.128.0
+      dhcp_ende: 10.80.191.255
+      server_id: 3
+   "85":
+      dhcp_start: 10.85.64.0
+      dhcp_ende: 10.85.127.255
+      server_id: 2
+   "89":
+      dhcp_start: 10.89.128.0
+      dhcp_ende: 10.89.191.255
+      server_id: 3
+
+dhcp_type: "kea"

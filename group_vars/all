@@ -1374,7 +1374,8 @@ additional_subzones_for_all_tlds:
       - 'asterix                                            IN      AAAA    2a01:4f8:221:d16::1;'
       - 'obelix                                             IN      A       88.99.97.11;'
       - 'obelix                                             IN      AAAA    2a01:4f8:221:d15::1;'
-
+      - 'destructivus                                       IN      A       82.165.189.170;'
+      - 'destructivus                                       IN      AAAA    2001:8d8:1801:802b::1;'
 
 reverse_dns:
   "111.154.45.in-addr.arpa":
