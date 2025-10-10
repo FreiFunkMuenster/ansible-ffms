@@ -148,7 +148,7 @@ domaenen:
     ffv4_network: 10.11.0.0/16
     ffv6_network: 2a03:2260:115:1100::/64
     ffv6_additional_networks:
-        - "2a14:440:1:b:/64"
+        - "2a14:440:1:b::/64"
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
