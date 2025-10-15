@@ -6,6 +6,8 @@ hoster: "IONOS"
 
 use_wlan_slovenija_tunneldigger: true
 
+is_external_nameserver: true
+
 ffrl_nat_ip: 185.66.193.48/32
     
 ffrl_tun:
