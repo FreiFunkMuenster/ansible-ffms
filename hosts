@@ -3,8 +3,8 @@
 ansible			ansible_ssh_host=46.4.80.179		ansible_ssh_port=226
 aircontrol		ansible_ssh_host=2a03:2260:115:1600:5054:ff:fecf:b2fb		ansible_ssh_port=22
 mail			ansible_ssh_host=138.201.210.178	ansible_ssh_port=22
-forum			ansible_ssh_host=138.201.210.179	ansible_ssh_port=22
-streamer		ansible_ssh_host=148.251.208.171		ansible_ssh_port=22
+forum			ansible_ssh_host=88.99.97.7		ansible_ssh_port=22
+streamer		ansible_ssh_host=148.251.208.171	ansible_ssh_port=22
 faa-vm-backup		ansible_ssh_host=2a03:2260:115:100:5054:ff:fe73:a614		ansible_ssh_port=22
 lafp-vm-backup		ansible_ssh_host=2a03:2260:115:400:5054:ff:fe96:b854		ansible_ssh_port=22
 nextcloud		ansible_ssh_host=45.154.111.130		ansible_ssh_port=22
