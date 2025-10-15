@@ -73,7 +73,6 @@ domaenenliste:
       dhcp_ende: 10.10.127.255
       server_id: 2
       partner: "rowe"
-      fastd: true
    "13":
       dhcp_start: 10.13.64.0
       dhcp_ende: 10.13.127.255
