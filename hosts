@@ -2,7 +2,7 @@
 [common]
 ansible			ansible_ssh_host=46.4.80.179		ansible_ssh_port=226
 aircontrol		ansible_ssh_host=2a03:2260:115:1600:5054:ff:fecf:b2fb		ansible_ssh_port=22
-mail			ansible_ssh_host=138.201.210.178	ansible_ssh_port=22
+mail			ansible_ssh_host=88.99.97.6		ansible_ssh_port=22
 forum			ansible_ssh_host=88.99.97.7		ansible_ssh_port=22
 streamer		ansible_ssh_host=148.251.208.171	ansible_ssh_port=22
 faa-vm-backup		ansible_ssh_host=2a03:2260:115:100:5054:ff:fe73:a614		ansible_ssh_port=22
@@ -44,7 +44,7 @@ mumble                  ansible_ssh_host=148.251.208.169        ansible_ssh_port
 [gateways]
 parad0x			ipv4=94.130.134.8	ipv6=2a01:4f8:13b:35e8::8	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00	server=hyperhost
 maestria		ipv4=88.99.118.28	ipv6=2a01:4f8:221:d16::4	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00	server=asterix
-remue-09		ipv4=148.251.208.170	ipv6=2a01:4f8:191:21e1::b0	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00	server=remue
+remue-09		ipv4=148.251.208.170	ipv6=2a01:4f8:191:21e1::b0	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=0.08	server=remue
 falbala			ipv4=88.99.97.8		ipv6=2a01:4f8:221:d15::4	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00	server=obelix
 automatix		ipv4=46.4.80.184	ipv6=2a01:4f8:202:2086::82	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00	server=voyager
 soter			ipv4=45.154.111.146	ipv6=2a14:440:1200::2		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00 server=ber-b
