@@ -76,10 +76,7 @@ domaenen:
     name: Babel-Test
     community: Babel-Test
     ffv4_network: 10.6.0.0/16
-    ffv6_network: 2a03:2260:115:600::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:6::/64"
-    mesh_babel: true
+    ffv6_network: 2a14:440:1:6::/64
     map_scale: 1.0
     map_show_contact: false
     map_max_age: 14
@@ -1081,8 +1078,7 @@ batman:
 
 ff_network:
   v4_network: 10.0.0.0/8
-  v6_network: 2a03:2260:115::/48
-  v6_new_network: 2a14:440:1::/48
+  v6_network: 2a14:440:1::/48
   as_number: 209894
 
 as_parameters:

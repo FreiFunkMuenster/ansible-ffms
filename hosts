@@ -51,6 +51,8 @@ soter			ipv4=45.154.111.146	ipv6=2a14:440:1200::2		ansible_ssh_host="{{ipv4}}"	a
 bitschubse		ipv4=45.154.111.162	ipv6=2a14:440:2100::2		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00 server=fra-a
 paketschle		ipv4=45.154.111.178	ipv6=2a14:440:2200::2	 	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00 server=fra-b
 brutus			ipv4=93.90.193.201	ipv6=2001:8d8:1801:802b::3 	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00 server=destructivus
+erpel			ipv4=148.251.208.173	ipv6=2a01:4f8:191:21e1::173 	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00 server=remue
+enterich		ipv4=188.34.176.57	ipv6=2a01:4f8:c17:1442::1 	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00 server=cloud
 
 [as_router]
 fra-a			ipv4=45.154.111.1	ipv6=2a14:440:2100::1		ansible_ssh_host=45.152.127.50	ansible_ssh_port=22	# IPv4 -> AS	IPv6 -> AS	capacity=1.00	server=fra-a
