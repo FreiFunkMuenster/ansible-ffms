@@ -1489,3 +1489,23 @@ reverse_dns:
     email: info@freifunk-muensterland.de
     dns_entries:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
+
+yanic:
+  nodes:
+    prune_after: "120d"
+    save_interval: "5s"
+    offline_after: "5m"
+  respondd:
+    custom_field:
+      - name: advanced-stats
+        path: nodeinfo.advanced-stats.store-stats
+  meshviewerJson:
+    no_owner: true
+  rawJson:
+    no_owner: false
+  database:
+    delete_after: "7d"
+    delete_interval: "1h"
+    mapserver:
+      address: "meshviewer.ffmsl.de"
+      port: "11001"
