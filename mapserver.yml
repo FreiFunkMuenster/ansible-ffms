@@ -22,7 +22,6 @@
     - { role: mapserver_hopglass, tags: "mapserver_hopglass"}
     - { role: mapserver_nginx, tags: "mapserver_nginx"}
     - { role: py_respondd, tags: "py_respondd"}
-#    - { role: mapserver_stats, tags: "mapserver_stats"}
 
 - hosts: map
   remote_user: root
@@ -30,4 +29,4 @@
     - { role: install_yanic, tags: "install_yanic"}
     - { role: mapserver_yanic, tags: "mapserver_yanic"}
     - { role: mapserver_meshviewer, tags: "mapserver_meshviewer"}
-#    - { role: mapserver_stats, tags: "mapserver_stats"} #ToDo Rolle noch anpassen sodass sie den letzten stand des Scripts mit yanic abbildet.
+    - { role: mapserver_stats, tags: "mapserver_stats"}
