@@ -12,6 +12,22 @@ meshviewer:
         attribution: "&copy; <a href=\\\"https://www.openstreetmap.org/copyright\\\">OpenStreetMap</a>"
         maxZoom: 22
         maxNativeZoom: 19
+    - name: "OSM Mapnik Dark"
+      url: "https://{{inventory_hostname_short}}.{{freifunk.domain}}/tiles_cache/osm_mapnik/{z}/{x}/{y}.png"
+      config:
+        type: "osm"
+        mode: "night"
+        attribution: "&copy; <a href=\\\"https://www.openstreetmap.org/copyright\\\">OpenStreetMap</a>"
+        maxZoom: 22
+        maxNativeZoom: 19
+    - name: "Carto Dark Matter"
+      url: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
+      config:
+        type: "osm"
+        mode: "night"
+        attribution: "Map tiles by <a href=\\\"https://carto.com/attributions\\\">Carto</a>, under <a href=\\\"https://creativecommons.org/licenses/by/3.0/\\\">CC BY 3.0</a>. Data by <a href=\\\"https://www.openstreetmap.org/\\\">OpenStreetMap</a>, under ODbL."
+        maxZoom: 19
+        maxNativeZoom: 19
     - name: "OSM HOT"
       url: "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
       config:
