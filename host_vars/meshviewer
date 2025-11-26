@@ -3,7 +3,7 @@ vm_id: 11
 server_id: 11
 
 meshviewer:
-  version: "v12.4.0"
+  version: "v12.7.0"
   layers:
     - name: "OSM Mapnik"
       url: "https://{{inventory_hostname_short}}.{{freifunk.domain}}/tiles_cache/osm_mapnik/{z}/{x}/{y}.png"
