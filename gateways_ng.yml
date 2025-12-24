@@ -14,21 +14,17 @@
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: ip_forwarding, tags: "ip_forwarding"}
     - { role: iptables, tags: "iptables"}
-    - { role: gateways_if2_vrf, tags: "gateways_ifng_vrf"}
+    - { role: gateways_if2_vrf, tags: "gateways_if2_vrf"}
     - { role: gateways_if2_gre_upstream, tags: "gateways_if2_gre_upstream"}
     - { role: gateways_if2_gre_intern, tags: "gateways_if2_gre_intern"}
     - { role: gateways_if2_batman, tags: "gateways_if2_batman"}
     - { role: gateways_if2_gretap_dom_intern, tags: "gateways_if2_gretap_dom_intern"}
     - { role: gateways_l2tp_slovenija, tags: "gateways_l2tp_slovenija" }
-#    - { role: gateways_fastd, tags: "gateways_fastd", when: "'domaenenliste' in hostvars[inventory_hostname]"}
     - { role: gateways_bird3, tags: "gateways_bird3"}
-    - { role: gateways_dhcp, tags: "gateways_dhcp", when: "'dhcp_type' not in hostvars[inventory_hostname] or dhcp_type == 'isc-dhcp'"}
-#    - { role: gateways_bind, tags: "gateways_bind"}
-#    - { role: collectd, tags: "collectd"}
-#    - { role: gateways_kea_remove_build, tags: "gateways_kea_remove_build", when: "'dhcp_type' in hostvars[inventory_hostname] and dhcp_type == 'kea'"}
-#    - { role: gateways_kea_install, tags: "gateways_kea_install", when: "'dhcp_type' in hostvars[inventory_hostname] and dhcp_type == 'kea'"}
-#    - { role: gateways_kea_configure, tags: "gateways_kea_configure", when: "'dhcp_type' in hostvars[inventory_hostname] and dhcp_type == 'kea'"}
-#    - { role: gateways_respondd, tags: "gateways_respondd"}
+    - { role: gateways_ng_bind, tags: "gateways_ng_bind"}
+    - { role: gateways_ng_kea_install, tags: "gateways_ng_kea_install"}
+    - { role: gateways_kea_configure, tags: "gateways_kea_configure"}
+    - { role: gateways_respondd, tags: "gateways_respondd"}
     - { role: unattended_upgrades, tags: "unattended_upgrades"}
     - { role: gateways_ministats, tags: "gateways_ministats"}
-#    - { role: pause, tags: "pause" }
+    - { role: pause, tags: "pause" }
