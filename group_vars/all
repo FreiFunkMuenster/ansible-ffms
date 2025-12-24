@@ -3,17 +3,16 @@ ansible_python_interpreter: auto_silent
 build_tunnels_over_ipv6_if_available: false
 
 # TODO: muss nach merge der roles auf eines reduziert werden!
-ipv6backbone64prefixstr: "2a03:2260:115:ffa1::"
-ipv6internalTunnelPrefix: '2a03:2260:115:ffa1::'
+ipv6backbone64prefixstr: "2a14:440:1:ffa1::"
+ipv6internalTunnelPrefix: '2a14:440:1:ffa1::'
 
 domaenen:
   "01":
     name: Münster-Mitte-Süd
     community: Münster
     ffv4_network: 10.1.0.0/16
-    ffv6_network: 2a03:2260:115:100::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:1::/64"
+    ffv6_ffrl_network: 2a03:2260:115:100::/64
+    ffv6_ffi_network: 2a14:440:1:1::/64
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -28,9 +27,8 @@ domaenen:
     name: Münster-Ost
     community: Münster
     ffv4_network: 10.2.0.0/16
-    ffv6_network: 2a03:2260:115:200::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:2::/64"
+    ffv6_ffrl_network: 2a03:2260:115:200::/64
+    ffv6_ffi_network: 2a14:440:1:2::/64
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -39,9 +37,8 @@ domaenen:
     name: Münster-Nord
     community: Münster
     ffv4_network: 10.3.0.0/16
-    ffv6_network: 2a03:2260:115:300::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:3::/64"
+    ffv6_ffrl_network: 2a03:2260:115:300::/64
+    ffv6_ffi_network: 2a14:440:1:3::/64
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -50,9 +47,8 @@ domaenen:
     name: Münster-West
     community: Münster
     ffv4_network: 10.4.0.0/16
-    ffv6_network: 2a03:2260:115:400::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:4::/64"
+    ffv6_ffrl_network: 2a03:2260:115:400::/64
+    ffv6_ffi_network: 2a14:440:1:4::/64
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -65,9 +61,8 @@ domaenen:
     name: Münster Süd
     community: Münster
     ffv4_network: 10.5.0.0/16
-    ffv6_network: 2a03:2260:115:500::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:5::/64"
+    ffv6_ffrl_network: 2a03:2260:115:500::/64
+    ffv6_ffi_network: 2a14:440:1:5::/64
     map_scale: 1.0
     map_show_contact: false
     map_max_age: 14
@@ -76,7 +71,8 @@ domaenen:
     name: Babel-Test
     community: Babel-Test
     ffv4_network: 10.6.0.0/16
-    ffv6_network: 2a14:440:1:6::/64
+    ffv6_ffrl_network: 2a03:2260:115:600::/64
+    ffv6_ffi_network: 2a14:440:1:6::/64
     map_scale: 1.0
     map_show_contact: false
     map_max_age: 14
@@ -85,9 +81,8 @@ domaenen:
     name: Telgte
     community: Kreis Warendorf
     ffv4_network: 10.7.0.0/16
-    ffv6_network: 2a03:2260:115:700::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:7::/64"
+    ffv6_ffrl_network: 2a03:2260:115:700::/64
+    ffv6_ffi_network: 2a14:440:1:7::/64
     map_scale: 1.0
     map_show_contact: false
     map_max_age: 14
@@ -96,9 +91,8 @@ domaenen:
     name: Gescher
     community: Westmünsterland
     ffv4_network: 10.8.0.0/16
-    ffv6_network: 2a03:2260:115:800::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:8::/64"
+    ffv6_ffrl_network: 2a03:2260:115:800::/64
+    ffv6_ffi_network: 2a14:440:1:8::/64
     map_scale: 1.0
     map_show_contact: false
     map_max_age: 14
@@ -107,9 +101,8 @@ domaenen:
     name: Stadtlohn
     community: Westmünsterland
     ffv4_network: 10.9.0.0/16
-    ffv6_network: 2a03:2260:115:900::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:9::/64"
+    ffv6_ffrl_network: 2a03:2260:115:900::/64
+    ffv6_ffi_network: 2a14:440:1:9::/64
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -118,9 +111,8 @@ domaenen:
     name: Borken-Nord
     community: Borken
     ffv4_network: 10.10.0.0/16
-    ffv6_network: 2a03:2260:115:1000::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:a::/64"
+    ffv6_ffrl_network: 2a03:2260:115:1000::/64
+    ffv6_ffi_network: 2a14:440:1:a::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -143,9 +135,8 @@ domaenen:
     name: Bocholt
     community: Westmünsterland
     ffv4_network: 10.11.0.0/16
-    ffv6_network: 2a03:2260:115:1100::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:b::/64"
+    ffv6_ffrl_network: 2a03:2260:115:1100::/64
+    ffv6_ffi_network: 2a14:440:1:b::/64
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -154,9 +145,8 @@ domaenen:
     name: Dülmen
     community: Kreis Coesfeld
     ffv4_network: 10.12.0.0/16
-    ffv6_network: 2a03:2260:115:1200::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:c::/64"
+    ffv6_ffrl_network: 2a03:2260:115:1200::/64
+    ffv6_ffi_network: 2a14:440:1:c::/64
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -165,9 +155,8 @@ domaenen:
     name: Rorup
     community: Kreis Coesfeld
     ffv4_network: 10.13.0.0/16
-    ffv6_network: 2a03:2260:115:1300::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:d::/64"
+    ffv6_ffrl_network: 2a03:2260:115:1300::/64
+    ffv6_ffi_network: 2a14:440:1:d::/64
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -176,9 +165,8 @@ domaenen:
     name: Dingden
     community: Dingden
     ffv4_network: 10.14.0.0/16
-    ffv6_network: 2a03:2260:115:1400::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:e::/64"
+    ffv6_ffrl_network: 2a03:2260:115:1400::/64
+    ffv6_ffi_network: 2a14:440:1:e::/64
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -187,9 +175,8 @@ domaenen:
     name: Heek
     community: Westmünsterland
     ffv4_network: 10.15.0.0/16
-    ffv6_network: 2a03:2260:115:1500::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:f::/64"
+    ffv6_ffrl_network: 2a03:2260:115:1500::/64
+    ffv6_ffi_network: 2a14:440:1:f::/64
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -198,9 +185,8 @@ domaenen:
     name: Münster Promenade
     community: Münster
     ffv4_network: 10.16.0.0/16
-    ffv6_network: 2a03:2260:115:1600::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:10::/64"
+    ffv6_ffrl_network: 2a03:2260:115:1600::/64
+    ffv6_ffi_network: 2a14:440:1:10::/64
     map_scale: 0.9
     map_show_contact: false
     map_max_age: 14
@@ -213,9 +199,8 @@ domaenen:
     name: Emsdetten
     community: Kreis Steinfurt
     ffv4_network: 10.17.0.0/16
-    ffv6_network: 2a03:2260:115:1700::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:11::/64"
+    ffv6_ffrl_network: 2a03:2260:115:1700::/64
+    ffv6_ffi_network: 2a14:440:1:11::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -224,9 +209,8 @@ domaenen:
     name: Greven
     community: Kreis Steinfurt
     ffv4_network: 10.18.0.0/16
-    ffv6_network: 2a03:2260:115:1800::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:12::/64"
+    ffv6_ffrl_network: 2a03:2260:115:1800::/64
+    ffv6_ffi_network: 2a14:440:1:12::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -235,9 +219,8 @@ domaenen:
     name: Neuenkirchen
     community: Kreis Steinfurt
     ffv4_network: 10.19.0.0/16
-    ffv6_network: 2a03:2260:115:1900::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:13::/64"
+    ffv6_ffrl_network: 2a03:2260:115:1900::/64
+    ffv6_ffi_network: 2a14:440:1:13::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -246,9 +229,8 @@ domaenen:
     name: Ochtrup
     community: Kreis Steinfurt
     ffv4_network: 10.20.0.0/16
-    ffv6_network: 2a03:2260:115:2000::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:14::/64"
+    ffv6_ffrl_network: 2a03:2260:115:2000::/64
+    ffv6_ffi_network: 2a14:440:1:14::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -257,9 +239,8 @@ domaenen:
     name: Rheine
     community: Kreis Steinfurt
     ffv4_network: 10.21.0.0/16
-    ffv6_network: 2a03:2260:115:2100::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:15::/64"
+    ffv6_ffrl_network: 2a03:2260:115:2100::/64
+    ffv6_ffi_network: 2a14:440:1:15::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -268,9 +249,8 @@ domaenen:
     name: Steinfurt
     community: Kreis Steinfurt
     ffv4_network: 10.22.0.0/16
-    ffv6_network: 2a03:2260:115:2200::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:16::/64"
+    ffv6_ffrl_network: 2a03:2260:115:2200::/64
+    ffv6_ffi_network: 2a14:440:1:16::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -279,9 +259,8 @@ domaenen:
     name: Metelen
     community: Kreis Steinfurt
     ffv4_network: 10.23.0.0/16
-    ffv6_network: 2a03:2260:115:2300::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:17::/64"
+    ffv6_ffrl_network: 2a03:2260:115:2300::/64
+    ffv6_ffi_network: 2a14:440:1:17::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -290,9 +269,8 @@ domaenen:
     name: Wettringen
     community: Kreis Steinfurt
     ffv4_network: 10.24.0.0/16
-    ffv6_network: 2a03:2260:115:2400::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:18::/64"
+    ffv6_ffrl_network: 2a03:2260:115:2400::/64
+    ffv6_ffi_network: 2a14:440:1:18::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -301,9 +279,8 @@ domaenen:
     name: Premium Ramschdomäne
     community: Ramschcommunity
     ffv4_network: 10.25.0.0/16
-    ffv6_network: 2a03:2260:115:2500::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:19::/64"
+    ffv6_ffrl_network: 2a03:2260:115:2500::/64
+    ffv6_ffi_network: 2a14:440:1:19::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -312,9 +289,8 @@ domaenen:
     name: Borken-Zentrum
     community: Borken
     ffv4_network: 10.26.0.0/16
-    ffv6_network: 2a03:2260:115:2600::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:1a::/64"
+    ffv6_ffrl_network: 2a03:2260:115:2600::/64
+    ffv6_ffi_network: 2a14:440:1:1a::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -323,9 +299,8 @@ domaenen:
     name: Selm
     community: Selm
     ffv4_network: 10.27.0.0/16
-    ffv6_network: 2a03:2260:115:2700::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:1b::/64"
+    ffv6_ffrl_network: 2a03:2260:115:2700::/64
+    ffv6_ffi_network: 2a14:440:1:1b::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -334,9 +309,8 @@ domaenen:
     name: Horstmar
     community: Kreis Steinfurt
     ffv4_network: 10.28.0.0/16
-    ffv6_network: 2a03:2260:115:2800::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:1c::/64"
+    ffv6_ffrl_network: 2a03:2260:115:2800::/64
+    ffv6_ffi_network: 2a14:440:1:1c::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -345,9 +319,8 @@ domaenen:
     name: Laer
     community: Kreis Steinfurt
     ffv4_network: 10.29.0.0/16
-    ffv6_network: 2a03:2260:115:2900::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:1d::/64"
+    ffv6_ffrl_network: 2a03:2260:115:2900::/64
+    ffv6_ffi_network: 2a14:440:1:1d::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -356,9 +329,8 @@ domaenen:
     name: Nordwalde
     community: Kreis Steinfurt
     ffv4_network: 10.30.0.0/16
-    ffv6_network: 2a03:2260:115:3000::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:1e::/64"
+    ffv6_ffrl_network: 2a03:2260:115:3000::/64
+    ffv6_ffi_network: 2a14:440:1:1e::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -367,9 +339,8 @@ domaenen:
     name: Altenberge
     community: Kreis Steinfurt
     ffv4_network: 10.31.0.0/16
-    ffv6_network: 2a03:2260:115:3100::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:1f::/64"
+    ffv6_ffrl_network: 2a03:2260:115:3100::/64
+    ffv6_ffi_network: 2a14:440:1:1f::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -378,9 +349,8 @@ domaenen:
     name: Ahlen
     community: Kreis Warendorf
     ffv4_network: 10.32.0.0/16
-    ffv6_network: 2a03:2260:115:3200::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:20::/64"
+    ffv6_ffrl_network: 2a03:2260:115:3200::/64
+    ffv6_ffi_network: 2a14:440:1:20::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -389,9 +359,8 @@ domaenen:
     name: Beckum
     community: Kreis Warendorf
     ffv4_network: 10.33.0.0/16
-    ffv6_network: 2a03:2260:115:3300::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:21::/64"
+    ffv6_ffrl_network: 2a03:2260:115:3300::/64
+    ffv6_ffi_network: 2a14:440:1:21::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -400,9 +369,8 @@ domaenen:
     name: Beelen
     community: Kreis Warendorf
     ffv4_network: 10.34.0.0/16
-    ffv6_network: 2a03:2260:115:3400::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:22::/64"
+    ffv6_ffrl_network: 2a03:2260:115:3400::/64
+    ffv6_ffi_network: 2a14:440:1:22::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -411,9 +379,8 @@ domaenen:
     name: Drensteinfurt
     community: Kreis Warendorf
     ffv4_network: 10.35.0.0/16
-    ffv6_network: 2a03:2260:115:3500::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:23::/64"
+    ffv6_ffrl_network: 2a03:2260:115:3500::/64
+    ffv6_ffi_network: 2a14:440:1:23::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -422,9 +389,8 @@ domaenen:
     name: Ennigerloh
     community: Kreis Warendorf
     ffv4_network: 10.36.0.0/16
-    ffv6_network: 2a03:2260:115:3600::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:24::/64"
+    ffv6_ffrl_network: 2a03:2260:115:3600::/64
+    ffv6_ffi_network: 2a14:440:1:24::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -433,9 +399,8 @@ domaenen:
     name: Everswinkel
     community: Kreis Warendorf
     ffv4_network: 10.37.0.0/16
-    ffv6_network: 2a03:2260:115:3700::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:25::/64"
+    ffv6_ffrl_network: 2a03:2260:115:3700::/64
+    ffv6_ffi_network: 2a14:440:1:25::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -444,9 +409,8 @@ domaenen:
     name: Oelde
     community: Kreis Warendorf
     ffv4_network: 10.38.0.0/16
-    ffv6_network: 2a03:2260:115:3800::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:26::/64"
+    ffv6_ffrl_network: 2a03:2260:115:3800::/64
+    ffv6_ffi_network: 2a14:440:1:26::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -455,9 +419,8 @@ domaenen:
     name: Ostbevern
     community: Kreis Warendorf
     ffv4_network: 10.39.0.0/16
-    ffv6_network: 2a03:2260:115:3900::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:27::/64"
+    ffv6_ffrl_network: 2a03:2260:115:3900::/64
+    ffv6_ffi_network: 2a14:440:1:27::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -466,9 +429,8 @@ domaenen:
     name: Sassenberg
     community: Kreis Warendorf
     ffv4_network: 10.40.0.0/16
-    ffv6_network: 2a03:2260:115:4000::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:28::/64"
+    ffv6_ffrl_network: 2a03:2260:115:4000::/64
+    ffv6_ffi_network: 2a14:440:1:28::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -477,9 +439,8 @@ domaenen:
     name: Sendenhorst
     community: Kreis Warendorf
     ffv4_network: 10.41.0.0/16
-    ffv6_network: 2a03:2260:115:4100::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:29::/64"
+    ffv6_ffrl_network: 2a03:2260:115:4100::/64
+    ffv6_ffi_network: 2a14:440:1:29::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -488,9 +449,8 @@ domaenen:
     name: Wadersloh
     community: Kreis Warendorf
     ffv4_network: 10.42.0.0/16
-    ffv6_network: 2a03:2260:115:4200::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:2a::/64"
+    ffv6_ffrl_network: 2a03:2260:115:4200::/64
+    ffv6_ffi_network: 2a14:440:1:2a::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -499,9 +459,8 @@ domaenen:
     name: Warendorf
     community: Kreis Warendorf
     ffv4_network: 10.43.0.0/16
-    ffv6_network: 2a03:2260:115:4300::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:2b::/64"
+    ffv6_ffrl_network: 2a03:2260:115:4300::/64
+    ffv6_ffi_network: 2a14:440:1:2b::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -518,9 +477,8 @@ domaenen:
     name: Ascheberg
     community: Kreis Coesfeld
     ffv4_network: 10.44.0.0/16
-    ffv6_network: 2a03:2260:115:4400::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:2c::/64"
+    ffv6_ffrl_network: 2a03:2260:115:4400::/64
+    ffv6_ffi_network: 2a14:440:1:2c::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -529,9 +487,8 @@ domaenen:
     name: Billerbeck
     community: Kreis Coesfeld
     ffv4_network: 10.45.0.0/16
-    ffv6_network: 2a03:2260:115:4500::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:2d::/64"
+    ffv6_ffrl_network: 2a03:2260:115:4500::/64
+    ffv6_ffi_network: 2a14:440:1:2d::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -540,9 +497,8 @@ domaenen:
     name: Coesfeld
     community: Kreis Coesfeld
     ffv4_network: 10.46.0.0/16
-    ffv6_network: 2a03:2260:115:4600::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:2e::/64"
+    ffv6_ffrl_network: 2a03:2260:115:4600::/64
+    ffv6_ffi_network: 2a14:440:1:2e::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -551,9 +507,8 @@ domaenen:
     name: Havixbeck
     community: Kreis Coesfeld
     ffv4_network: 10.47.0.0/16
-    ffv6_network: 2a03:2260:115:4700::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:2f::/64"
+    ffv6_ffrl_network: 2a03:2260:115:4700::/64
+    ffv6_ffi_network: 2a14:440:1:2f::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -562,9 +517,8 @@ domaenen:
     name: Lüdinghausen
     community: Kreis Coesfeld
     ffv4_network: 10.48.0.0/16
-    ffv6_network: 2a03:2260:115:4800::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:30::/64"
+    ffv6_ffrl_network: 2a03:2260:115:4800::/64
+    ffv6_ffi_network: 2a14:440:1:30::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -573,9 +527,8 @@ domaenen:
     name: Nordkirchen
     community: Kreis Coesfeld
     ffv4_network: 10.49.0.0/16
-    ffv6_network: 2a03:2260:115:4900::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:31::/64"
+    ffv6_ffrl_network: 2a03:2260:115:4900::/64
+    ffv6_ffi_network: 2a14:440:1:31::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -584,9 +537,8 @@ domaenen:
     name: Nottuln
     community: Kreis Coesfeld
     ffv4_network: 10.50.0.0/16
-    ffv6_network: 2a03:2260:115:5000::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:32::/64"
+    ffv6_ffrl_network: 2a03:2260:115:5000::/64
+    ffv6_ffi_network: 2a14:440:1:32::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -595,9 +547,8 @@ domaenen:
     name: Olfen
     community: Kreis Coesfeld
     ffv4_network: 10.51.0.0/16
-    ffv6_network: 2a03:2260:115:5100::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:33::/64"
+    ffv6_ffrl_network: 2a03:2260:115:5100::/64
+    ffv6_ffi_network: 2a14:440:1:33::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -606,9 +557,8 @@ domaenen:
     name: Rosendahl
     community: Kreis Coesfeld
     ffv4_network: 10.52.0.0/16
-    ffv6_network: 2a03:2260:115:5200::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:34::/64"
+    ffv6_ffrl_network: 2a03:2260:115:5200::/64
+    ffv6_ffi_network: 2a14:440:1:34::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -617,9 +567,8 @@ domaenen:
     name: Senden
     community: Kreis Coesfeld
     ffv4_network: 10.53.0.0/16
-    ffv6_network: 2a03:2260:115:5300::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:35::/64"
+    ffv6_ffrl_network: 2a03:2260:115:5300::/64
+    ffv6_ffi_network: 2a14:440:1:35::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -628,9 +577,8 @@ domaenen:
     name: Ahaus
     community: Westmünsterland
     ffv4_network: 10.54.0.0/16
-    ffv6_network: 2a03:2260:115:5400::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:36::/64"
+    ffv6_ffrl_network: 2a03:2260:115:5400::/64
+    ffv6_ffi_network: 2a14:440:1:36::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -639,9 +587,8 @@ domaenen:
     name: Heiden
     community: Westmünsterland
     ffv4_network: 10.55.0.0/16
-    ffv6_network: 2a03:2260:115:5500::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:37::/64"
+    ffv6_ffrl_network: 2a03:2260:115:5500::/64
+    ffv6_ffi_network: 2a14:440:1:37::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -650,9 +597,8 @@ domaenen:
     name: Isselburg
     community: Westmünsterland
     ffv4_network: 10.56.0.0/16
-    ffv6_network: 2a03:2260:115:5600::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:38::/64"
+    ffv6_ffrl_network: 2a03:2260:115:5600::/64
+    ffv6_ffi_network: 2a14:440:1:38::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -661,9 +607,8 @@ domaenen:
     name: Legden
     community: Westmünsterland
     ffv4_network: 10.57.0.0/16
-    ffv6_network: 2a03:2260:115:5700::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:39::/64"
+    ffv6_ffrl_network: 2a03:2260:115:5700::/64
+    ffv6_ffi_network: 2a14:440:1:39::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -672,9 +617,8 @@ domaenen:
     name: Reken
     community: Westmünsterland
     ffv4_network: 10.58.0.0/16
-    ffv6_network: 2a03:2260:115:5800::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:3a::/64"
+    ffv6_ffrl_network: 2a03:2260:115:5800::/64
+    ffv6_ffi_network: 2a14:440:1:3a::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -683,9 +627,8 @@ domaenen:
     name: Rhede
     community: Westmünsterland
     ffv4_network: 10.59.0.0/16
-    ffv6_network: 2a03:2260:115:5900::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:3b::/64"
+    ffv6_ffrl_network: 2a03:2260:115:5900::/64
+    ffv6_ffi_network: 2a14:440:1:3b::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -694,9 +637,8 @@ domaenen:
     name: Schöppingen
     community: Westmünsterland
     ffv4_network: 10.60.0.0/16
-    ffv6_network: 2a03:2260:115:6000::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:3c::/64"
+    ffv6_ffrl_network: 2a03:2260:115:6000::/64
+    ffv6_ffi_network: 2a14:440:1:3c::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -705,9 +647,8 @@ domaenen:
     name: Südlohn
     community: Westmünsterland
     ffv4_network: 10.61.0.0/16
-    ffv6_network: 2a03:2260:115:6100::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:3d::/64"
+    ffv6_ffrl_network: 2a03:2260:115:6100::/64
+    ffv6_ffi_network: 2a14:440:1:3d::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -716,9 +657,8 @@ domaenen:
     name: Velen
     community: Westmünsterland
     ffv4_network: 10.62.0.0/16
-    ffv6_network: 2a03:2260:115:6200::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:3e::/64"
+    ffv6_ffrl_network: 2a03:2260:115:6200::/64
+    ffv6_ffi_network: 2a14:440:1:3e::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -727,9 +667,8 @@ domaenen:
     name: Vreden
     community: Westmünsterland
     ffv4_network: 10.63.0.0/16
-    ffv6_network: 2a03:2260:115:6300::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:3f::/64"
+    ffv6_ffrl_network: 2a03:2260:115:6300::/64
+    ffv6_ffi_network: 2a14:440:1:3f::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -738,9 +677,8 @@ domaenen:
     name: Borken-Süd
     community: Borken
     ffv4_network: 10.64.0.0/16
-    ffv6_network: 2a03:2260:115:6400::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:40::/64"
+    ffv6_ffrl_network: 2a03:2260:115:6400::/64
+    ffv6_ffi_network: 2a14:440:1:40::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -749,9 +687,8 @@ domaenen:
     name: Ramschdomäne
     community: Ramschcommunity
     ffv4_network: 10.65.0.0/16
-    ffv6_network: 2a03:2260:115:6500::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:41::/64"
+    ffv6_ffrl_network: 2a03:2260:115:6500::/64
+    ffv6_ffi_network: 2a14:440:1:41::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -760,9 +697,8 @@ domaenen:
     name: Bottrop
     community: Emscherland
     ffv4_network: 10.66.0.0/16
-    ffv6_network: 2a03:2260:115:6600::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:42::/64"
+    ffv6_ffrl_network: 2a03:2260:115:6600::/64
+    ffv6_ffi_network: 2a14:440:1:42::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -771,9 +707,8 @@ domaenen:
     name: Dorsten
     community: Emscherland
     ffv4_network: 10.67.0.0/16
-    ffv6_network: 2a03:2260:115:6700::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:43::/64"
+    ffv6_ffrl_network: 2a03:2260:115:6700::/64
+    ffv6_ffi_network: 2a14:440:1:43::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -782,9 +717,8 @@ domaenen:
     name: Gelsenkirchen
     community: Emscherland
     ffv4_network: 10.68.0.0/16
-    ffv6_network: 2a03:2260:115:6800::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:44::/64"
+    ffv6_ffrl_network: 2a03:2260:115:6800::/64
+    ffv6_ffi_network: 2a14:440:1:44::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -793,9 +727,8 @@ domaenen:
     name: Gladbeck
     community: Emscherland
     ffv4_network: 10.69.0.0/16
-    ffv6_network: 2a03:2260:115:6900::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:45::/64"
+    ffv6_ffrl_network: 2a03:2260:115:6900::/64
+    ffv6_ffi_network: 2a14:440:1:45::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -804,9 +737,8 @@ domaenen:
     name: Haltern am See
     community: Emscherland
     ffv4_network: 10.70.0.0/16
-    ffv6_network: 2a03:2260:115:7000::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:46::/64"
+    ffv6_ffrl_network: 2a03:2260:115:7000::/64
+    ffv6_ffi_network: 2a14:440:1:46::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -815,9 +747,8 @@ domaenen:
     name: Herten
     community: Emscherland
     ffv4_network: 10.71.0.0/16
-    ffv6_network: 2a03:2260:115:7100::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:47::/64"
+    ffv6_ffrl_network: 2a03:2260:115:7100::/64
+    ffv6_ffi_network: 2a14:440:1:47::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -826,9 +757,8 @@ domaenen:
     name: Marl
     community: Emscherland
     ffv4_network: 10.72.0.0/16
-    ffv6_network: 2a03:2260:115:7200::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:48::/64"
+    ffv6_ffrl_network: 2a03:2260:115:7200::/64
+    ffv6_ffi_network: 2a14:440:1:48::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -837,9 +767,8 @@ domaenen:
     name: Raesfeld
     community: Borken
     ffv4_network: 10.73.0.0/16
-    ffv6_network: 2a03:2260:115:7300::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:49::/64"
+    ffv6_ffrl_network: 2a03:2260:115:7300::/64
+    ffv6_ffi_network: 2a14:440:1:49::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -848,9 +777,8 @@ domaenen:
     name: Recklinghausen
     community: Emscherland
     ffv4_network: 10.74.0.0/16
-    ffv6_network: 2a03:2260:115:7400::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:4a::/64"
+    ffv6_ffrl_network: 2a03:2260:115:7400::/64
+    ffv6_ffi_network: 2a14:440:1:4a::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -859,9 +787,8 @@ domaenen:
     name: Gronau
     community: Gronau
     ffv4_network: 10.75.0.0/16
-    ffv6_network: 2a03:2260:115:7500::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:4b::/64"
+    ffv6_ffrl_network: 2a03:2260:115:7500::/64
+    ffv6_ffi_network: 2a14:440:1:4b::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -870,9 +797,8 @@ domaenen:
     name: Herne
     community: Emscherland
     ffv4_network: 10.76.0.0/16
-    ffv6_network: 2a03:2260:115:7600::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:4c::/64"
+    ffv6_ffrl_network: 2a03:2260:115:7600::/64
+    ffv6_ffi_network: 2a14:440:1:4c::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -881,9 +807,8 @@ domaenen:
     name: Hamm
     community: Hamm
     ffv4_network: 10.77.0.0/16
-    ffv6_network: 2a03:2260:115:7700::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:4d::/64"
+    ffv6_ffrl_network: 2a03:2260:115:7700::/64
+    ffv6_ffi_network: 2a14:440:1:4d::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -892,9 +817,8 @@ domaenen:
     name: Heppenheim
     community: Bergstrasse
     ffv4_network: 10.78.0.0/16
-    ffv6_network: 2a03:2260:115:7800::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:4e::/64"
+    ffv6_ffrl_network: 2a03:2260:115:7800::/64
+    ffv6_ffi_network: 2a14:440:1:4e::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -903,9 +827,8 @@ domaenen:
     name: Heppenheim Umgebung
     community: Bergstrasse
     ffv4_network: 10.79.0.0/16
-    ffv6_network: 2a03:2260:115:7900::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:4f::/64"
+    ffv6_ffrl_network: 2a03:2260:115:7900::/64
+    ffv6_ffi_network: 2a14:440:1:4f::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -914,9 +837,8 @@ domaenen:
     name: Hörstel
     community: Kreis Steinfurt
     ffv4_network: 10.80.0.0/16
-    ffv6_network: 2a03:2260:115:8000::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:50::/64"
+    ffv6_ffrl_network: 2a03:2260:115:8000::/64
+    ffv6_ffi_network: 2a14:440:1:50::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -925,9 +847,8 @@ domaenen:
     name: Ibbenbüren
     community: Kreis Steinfurt
     ffv4_network: 10.81.0.0/16
-    ffv6_network: 2a03:2260:115:8100::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:51::/64"
+    ffv6_ffrl_network: 2a03:2260:115:8100::/64
+    ffv6_ffi_network: 2a14:440:1:51::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -936,9 +857,8 @@ domaenen:
     name: Ladbergen
     community: Kreis Steinfurt
     ffv4_network: 10.82.0.0/16
-    ffv6_network: 2a03:2260:115:8200::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:52::/64"
+    ffv6_ffrl_network: 2a03:2260:115:8200::/64
+    ffv6_ffi_network: 2a14:440:1:52::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -947,9 +867,8 @@ domaenen:
     name: Lengerich
     community: Kreis Steinfurt
     ffv4_network: 10.83.0.0/16
-    ffv6_network: 2a03:2260:115:8300::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:53::/64"
+    ffv6_ffrl_network: 2a03:2260:115:8300::/64
+    ffv6_ffi_network: 2a14:440:1:53::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -958,9 +877,8 @@ domaenen:
     name: Lienen
     community: Kreis Steinfurt
     ffv4_network: 10.84.0.0/16
-    ffv6_network: 2a03:2260:115:8400::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:54::/64"
+    ffv6_ffrl_network: 2a03:2260:115:8400::/64
+    ffv6_ffi_network: 2a14:440:1:54::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -969,9 +887,8 @@ domaenen:
     name: Saerbeck
     community: Kreis Steinfurt
     ffv4_network: 10.85.0.0/16
-    ffv6_network: 2a03:2260:115:8500::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:55::/64"
+    ffv6_ffrl_network: 2a03:2260:115:8500::/64
+    ffv6_ffi_network: 2a14:440:1:55::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -980,9 +897,8 @@ domaenen:
     name: Tecklenburg
     community: Kreis Steinfurt
     ffv4_network: 10.86.0.0/16
-    ffv6_network: 2a03:2260:115:8600::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:56::/64"
+    ffv6_ffrl_network: 2a03:2260:115:8600::/64
+    ffv6_ffi_network: 2a14:440:1:56::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -991,9 +907,8 @@ domaenen:
     name: Bad Iburg
     community: Landkreis Osnabrück
     ffv4_network: 10.87.0.0/16
-    ffv6_network: 2a03:2260:115:8700::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:57::/64"
+    ffv6_ffrl_network: 2a03:2260:115:8700::/64
+    ffv6_ffi_network: 2a14:440:1:57::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -1002,9 +917,8 @@ domaenen:
     name: Georgsmarienhütte
     community: Landkreis Osnabrück
     ffv4_network: 10.88.0.0/16
-    ffv6_network: 2a03:2260:115:8800::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:58::/64"
+    ffv6_ffrl_network: 2a03:2260:115:8800::/64
+    ffv6_ffi_network: 2a14:440:1:58::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -1013,9 +927,8 @@ domaenen:
     name: Hagen am Teutoburger Wald
     community: Landkreis Osnabrück
     ffv4_network: 10.89.0.0/16
-    ffv6_network: 2a03:2260:115:8900::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:59::/64"
+    ffv6_ffrl_network: 2a03:2260:115:8900::/64
+    ffv6_ffi_network: 2a14:440:1:59::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -1024,9 +937,8 @@ domaenen:
     name: Datteln
     community: Ostvest
     ffv4_network: 10.90.0.0/16
-    ffv6_network: 2a03:2260:115:9000::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:5a::/64"
+    ffv6_ffrl_network: 2a03:2260:115:9000::/64
+    ffv6_ffi_network: 2a14:440:1:5a::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -1035,9 +947,8 @@ domaenen:
     name: Waltrop
     community: Ostvest
     ffv4_network: 10.91.0.0/16
-    ffv6_network: 2a03:2260:115:9100::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:5b::/64"
+    ffv6_ffrl_network: 2a03:2260:115:9100::/64
+    ffv6_ffi_network: 2a14:440:1:5b::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -1046,9 +957,8 @@ domaenen:
     name: Oer-Erkenschwick  
     community: Ostvest
     ffv4_network: 10.92.0.0/16
-    ffv6_network: 2a03:2260:115:9200::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:ac::/64"
+    ffv6_ffrl_network: 2a03:2260:115:9200::/64
+    ffv6_ffi_network: 2a14:440:1:5c::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -1057,9 +967,8 @@ domaenen:
     name: Castrop-Rauxel
     community: Ostvest
     ffv4_network: 10.93.0.0/16
-    ffv6_network: 2a03:2260:115:9300::/64
-    ffv6_additional_networks:
-        - "2a14:440:1:5d::/64"
+    ffv6_ffrl_network: 2a03:2260:115:9300::/64
+    ffv6_ffi_network: 2a14:440:1:5d::/64
     map_scale: 1.1
     map_show_contact: false
     map_max_age: 14
@@ -1079,6 +988,7 @@ batman:
 ff_network:
   v4_network: 10.0.0.0/8
   v6_network: 2a14:440:1::/48
+  v6_ffrl_network: 2a03:2260:115::/48
   as_number: 209894
 
 as_parameters:
