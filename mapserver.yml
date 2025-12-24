@@ -1,6 +1,6 @@
 # Playbook zur Konfiguration aller Servern von services
 
-- hosts: mapserver
+- hosts: mapserver, map
   remote_user: root
   roles:
     - { role: hostname, tags: "hostname"}
@@ -9,12 +9,24 @@
     - { role: motd, tags: "motd"}
     - { role: fail2ban, tags: "fail2ban"}
     - { role: tunearpcache, tags: "tunearpcache"}
-      #    - { role: batman_install, tags: "batman_install"}
+    - { role: collectd, tags: "collectd", when: "'collectd' in hostvars[inventory_hostname]" }
+
+- hosts: mapserver
+  remote_user: root
+  roles:
+    - { role: tunearpcache, tags: "tunearpcache"}
+#    - { role: batman_install, tags: "batman_install"}
 # Batman install Rolle is Kapod! Beim ersten ausführen installiert sie batctl beim zweiten löscht sie es wieder und legt sich auf die Fresse.
     - { role: mapserver_interfaces, tags: "mapserver_interfaces"}
     - { role: mapserver_hopglass-server, tags: "mapserver_hopglass-server"}
     - { role: mapserver_hopglass, tags: "mapserver_hopglass"}
     - { role: mapserver_nginx, tags: "mapserver_nginx"}
-    - { role: collectd, tags: "collectd", when: "'collectd' in hostvars[inventory_hostname]" }
     - { role: py_respondd, tags: "py_respondd"}
-#    - { role: mapserver_stats, tags: "mapserver_stats"}
+
+- hosts: map
+  remote_user: root
+  roles:
+    - { role: install_yanic, tags: "install_yanic"}
+    - { role: mapserver_yanic, tags: "mapserver_yanic"}
+    - { role: mapserver_meshviewer, tags: "mapserver_meshviewer"}
+    - { role: mapserver_stats, tags: "mapserver_stats"}

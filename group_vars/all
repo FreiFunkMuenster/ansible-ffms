@@ -1257,12 +1257,18 @@ additional_subzones_for_all_tlds:
       - 'ber-a                                              IN      AAAA    2a14:440:1100::1;'
       - 'ber-b                                              IN      A       45.154.111.145;'
       - 'ber-b                                              IN      AAAA    2a14:440:1200::1;'
+      - 'atlas-ber                                          IN      A       45.154.111.158;'
+      - 'atlas-ber                                          IN      AAAA    2a14:440:1200::14;'
       - 'fra-a                                              IN      A       45.154.111.161;'
       - 'fra-a                                              IN      AAAA    2a14:440:2100::1;'
       - 'fra-b                                              IN      A       45.154.111.177;'
       - 'fra-b                                              IN      AAAA    2a14:440:2200::1;'
+      - 'atlas-fra                                          IN      A       45.154.111.190;'
+      - 'atlas-fra                                          IN      AAAA    2a14:440:2200::14;'
       - 'netbox                                             IN      A       128.140.61.120;'
       - 'netbox                                             IN      AAAA    2a01:4f8:1c17:5b52::1;'
+      - 'lg                                                 IN      A       212.3.68.149;'
+      - 'lg                                                 IN      AAAA    2a02:1799:9::149'
   "standorte":
     dns_entries:
       - 'lafp                                               IN      A       91.25.154.149;'
@@ -1295,11 +1301,13 @@ reverse_dns:
       - '132                                              IN PTR  collabora.freifunk-muensterland.de.'
       - '145                                              IN PTR  ber-b.as209894.ffi.ms.'
       - '146                                              IN PTR  soter.servers.freifunk-muensterland.de.'
+      - '158                                              IN PTR  atlas-ber.as209894.ffi.ms.'
       - '161                                              IN PTR  fra-a.as209894.ffi.ms.'
       - '162                                              IN PTR  bitschubse.servers.freifunk-muensterland.de.'
       - '163                                              IN PTR  media-mirror.ffi.ms.'
       - '177                                              IN PTR  fra-b.as209894.ffi.ms.'
       - '178                                              IN PTR  paketschleuder.servers.freifunk-muensterland.de.'
+      - '190                                              IN PTR  atlas-fra.as209894.ffi.ms.'
   "1.70.217.in-addr.arpa":
     extern_dns:
       - 'ns1.freifunk-muensterland.de'
@@ -1323,11 +1331,13 @@ reverse_dns:
       - '4.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.1         IN PTR  collabora.freifunk-muensterland.de.'
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.1         IN PTR  ber-b.as209894.ffi.ms.'
       - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.1         IN PTR  soter.servers.freifunk-muensterland.de.'
+      - '4.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.1         IN PTR  atlas-ber.as209894.ffi.ms.'
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.2         IN PTR  fra-a.as209894.ffi.ms.'
       - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.2         IN PTR  bitschubse.servers.freifunk-muensterland.de.'
       - '3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.2         IN PTR  media-mirror.ffi.ms.'
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.2         IN PTR  fra-b.as209894.ffi.ms.'
       - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.2         IN PTR  paketschleuder.servers.freifunk-muensterland.de.'
+      - '4.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.2         IN PTR  atlas-fra.as209894.ffi.ms.'
   "1.4.4.0.4.1.a.2.ip6.arpa":
     extern_dns:
       - 'ns1.freifunk-muensterland.de'
@@ -1391,3 +1401,23 @@ reverse_dns:
     email: info@freifunk-muensterland.de
     dns_entries:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
+
+yanic:
+  nodes:
+    prune_after: "120d"
+    save_interval: "5s"
+    offline_after: "5m"
+  respondd:
+    custom_field:
+      - name: advanced-stats
+        path: nodeinfo.advanced-stats.store-stats
+  meshviewerJson:
+    no_owner: true
+  rawJson:
+    no_owner: false
+  database:
+    delete_after: "7d"
+    delete_interval: "1h"
+    mapserver:
+      address: "meshviewer.ffmsl.de"
+      port: "11001"
