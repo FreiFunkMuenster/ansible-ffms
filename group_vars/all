@@ -1314,6 +1314,17 @@ reverse_dns:
       - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
+      - '64                                               IN PTR  erpel.nat.ffmsl.de.'
+      - '65                                               IN PTR  enterich.nat.ffmsl.de.'
+      - '66                                               IN PTR  parad0x.nat.ffmsl.de.'
+      - '67                                               IN PTR  maestria.nat.ffmsl.de.'
+      - '68                                               IN PTR  remue-09.nat.ffmsl.de.'
+      - '69                                               IN PTR  falbala.nat.ffmsl.de.'
+      - '70                                               IN PTR  automatix.nat.ffmsl.de.'
+      - '71                                               IN PTR  brutus.nat.ffmsl.de.'
+      - '72                                               IN PTR  soter.nat.ffmsl.de.'
+      - '73                                               IN PTR  bitschubse.nat.ffmsl.de.'
+      - '74                                               IN PTR  paketschle.nat.ffmsl.de.'
       - '129                                              IN PTR  ber-a.as209894.ffi.ms.'
       - '130                                              IN PTR  nextcloud.freifunk-muensterland.de.'
       - '131                                              IN PTR  stats.freifunk-muensterland.de.'
