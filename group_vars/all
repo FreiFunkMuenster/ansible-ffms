@@ -1300,6 +1300,8 @@ domains:
       - 'zulip                                            IN  TXT     "v=spf1 mx a a:mail.freifunk-muensterland.de ~all"'
       - 'default._domainkey.zulip                         IN  TXT     "v=DKIM1;k=rsa;t=s;s=email;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQZIftyMw8bVqzP5ecw3818wJze3c9V3HITktC/RvD4Kv54VBsDtDHKoAISiNeLJfHch7cd8/O/9PaLYku5iCyxN5i8zqO84Jm1kvrZ8fSXzVNa3nJbU9cSRC6amx+X3Q372HcCCv7pNolBjnTXK2Pe9DEQclbT/8knYgY78xeiQIDAQAB"'
       - '_dmarc.zulip                                     IN  TXT     "v=DMARC1; p=reject;"'
+      - 'wiki                                             IN  A       23.88.112.136'
+      - 'wiki                                             IN  AAAA    2a01:4f8:c013:4a2f::1'
   "infrastruktur.ms":
     extern_dns:
       - brutus
@@ -1314,8 +1316,6 @@ domains:
       - '@                                                IN  TXT     "google-site-verification=u5yvcYZGB1MK4b8Fh7pQo-7A4bITqyLoIEjhTPBWqmo"'
       - '@                                                IN  MX 10   mail.freifunk-muensterland.de.'
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
-      - 'wiki                                             IN  A       23.88.112.136'
-      - 'wiki                                             IN  AAAA    2a01:4f8:c013:4a2f::1'
   "ffi.ms":
     extern_dns:
       - brutus
@@ -1329,8 +1329,6 @@ domains:
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
       - 'wiki                                             IN  A       23.88.112.136'
       - 'wiki                                             IN  AAAA    2a01:4f8:c013:4a2f::1'
-      - 'wiki-neu                                         IN  A       23.88.112.136'
-      - 'wiki-neu                                         IN  AAAA    2a01:4f8:c013:4a2f::1'
       - 'media-mirror                                     IN  A       45.154.111.163'
       - 'media-mirror                                     IN  AAAA    2a14:440:2100::3'
       - 'lorawan                                          IN  NS      ns1.he.net.'
@@ -1406,7 +1404,19 @@ reverse_dns:
       - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
-      - '1                                                IN PTR  placeholder.ffi.ms.'
+      - '129                                              IN PTR  ber-a.as209894.ffi.ms.'
+      - '130                                              IN PTR  nextcloud.freifunk-muensterland.de.'
+      - '131                                              IN PTR  stats.freifunk-muensterland.de.'
+      - '132                                              IN PTR  collabora.freifunk-muensterland.de.'
+      - '145                                              IN PTR  ber-b.as209894.ffi.ms.'
+      - '146                                              IN PTR  soter.servers.freifunk-muensterland.de.'
+      - '158                                              IN PTR  atlas-ber.as209894.ffi.ms.'
+      - '161                                              IN PTR  fra-a.as209894.ffi.ms.'
+      - '162                                              IN PTR  bitschubse.servers.freifunk-muensterland.de.'
+      - '163                                              IN PTR  media-mirror.ffi.ms.'
+      - '177                                              IN PTR  fra-b.as209894.ffi.ms.'
+      - '178                                              IN PTR  paketschleuder.servers.freifunk-muensterland.de.'
+      - '190                                              IN PTR  atlas-fra.as209894.ffi.ms.'
   "0.4.4.0.4.1.a.2.ip6.arpa":
     extern_dns:
       - 'ns1.freifunk-muensterland.de'
