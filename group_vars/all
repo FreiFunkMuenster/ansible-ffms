@@ -989,7 +989,7 @@ ff_network:
   v4_network: 10.0.0.0/8
   v6_network: 2a14:440:1::/48
   v6_ffrl_network: 2a03:2260:115::/48
-  as_number: 209894
+  as_number: 65251
 
 as_parameters:
   # Eindeutige AS-Nummer des Netzwerk

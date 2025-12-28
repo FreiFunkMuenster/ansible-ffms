@@ -14,7 +14,6 @@
 - hosts: mapserver
   remote_user: root
   roles:
-    - { role: tunearpcache, tags: "tunearpcache"}
 #    - { role: batman_install, tags: "batman_install"}
 # Batman install Rolle is Kapod! Beim ersten ausführen installiert sie batctl beim zweiten löscht sie es wieder und legt sich auf die Fresse.
     - { role: mapserver_interfaces, tags: "mapserver_interfaces"}
@@ -26,6 +25,7 @@
 - hosts: map
   remote_user: root
   roles:
+    - { role: mapserver_interfaces, tags: "mapserver_interfaces"}
     - { role: install_yanic, tags: "install_yanic"}
     - { role: mapserver_yanic, tags: "mapserver_yanic"}
     - { role: mapserver_meshviewer, tags: "mapserver_meshviewer"}
