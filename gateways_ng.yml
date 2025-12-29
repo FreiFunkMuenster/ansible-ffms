@@ -25,6 +25,7 @@
     - { role: gateways_ng_kea_install, tags: "gateways_ng_kea_install"}
     - { role: gateways_kea_configure, tags: "gateways_kea_configure"}
     - { role: gateways_respondd, tags: "gateways_respondd"}
+    - { role: gateways_ng_status, tags: "gateways_ng_status"}
     - { role: unattended_upgrades, tags: "unattended_upgrades"}
     - { role: gateways_ministats, tags: "gateways_ministats"}
     - { role: pause, tags: "pause" }

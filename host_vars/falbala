@@ -5,64 +5,26 @@ server_besitzer: "FFI"
 hoster: "Hetzner"
 use_wlan_slovenija_tunneldigger: true
 
-ffrl_nat_ip: 185.66.195.20/32
-ffi_nat_ip: 45.154.111.64/32
-
-ffrl_tun:
-- name: ber1
-  gre_target: 185.66.195.0
-  v4_local: 100.64.5.135/31
-  v4_remote: 100.64.5.134/31
-  v6_local: 2a03:2260:0:2c4::2/64
-  v6_remote: 2a03:2260:0:2c4::1/64
-- name: ber2
-  gre_target: 185.66.195.1
-  v4_local: 100.64.5.141/31
-  v4_remote: 100.64.5.140/31
-  v6_local: 2a03:2260:0:2c7::2/64
-  v6_remote: 2a03:2260:0:2c7::1/64
-- name: dus1
-  gre_target: 185.66.193.0
-  v4_local: 100.64.5.139/31
-  v4_remote: 100.64.5.138/31
-  v6_local: 2a03:2260:0:2c6::2/64
-  v6_remote: 2a03:2260:0:2c6::1/64
-- name: dus2
-  gre_target: 185.66.193.1
-  v4_local: 100.64.5.145/31
-  v4_remote: 100.64.5.144/31
-  v6_local: 2a03:2260:0:2c9::2/64
-  v6_remote: 2a03:2260:0:2c9::1/64
-- name: fra1
-  gre_target: 185.66.194.0
-  v4_local: 100.64.5.137/31
-  v4_remote: 100.64.5.136/31
-  v6_local: 2a03:2260:0:2c5::2/64
-  v6_remote: 2a03:2260:0:2c5::1/64
-- name: fra2
-  gre_target: 185.66.194.1
-  v4_local: 100.64.5.143/31
-  v4_remote: 100.64.5.142/31
-  v6_local: 2a03:2260:0:2c8::2/64
-  v6_remote: 2a03:2260:0:2c8::1/64
-
+ffi_nat_ip: 217.70.1.69/32
+ffi_v6_loopback: 2a14:440:1:ffff::69/128
+ 
 ffi_tun:
 - name: ber-a
   gre6_target: 2a14:440:1100::1
-  v4_remote: 100.127.0.0/31
-  v6_remote: 2a14:440:0:1::/127
+  v4_remote: 100.127.0.10/31
+  v6_remote: 2a14:440:0:1::a/127
 - name: ber-b
   gre6_target: 2a14:440:1200::1
-  v4_remote: 100.127.4.0/31
-  v6_remote: 2a14:440:0:2::/127
+  v4_remote: 100.127.4.10/31
+  v6_remote: 2a14:440:0:2::a/127
 - name: fra-a
   gre6_target: 2a14:440:2100::1
-  v4_remote: 100.127.8.0/31
-  v6_remote: 2a14:440:0:3::/127
+  v4_remote: 100.127.8.10/31
+  v6_remote: 2a14:440:0:3::a/127
 - name: fra-b
   gre6_target: 2a14:440:2200::1
-  v4_remote: 100.127.12.0/31
-  v6_remote: 2a14:440:0:4::/127
+  v4_remote: 100.127.12.10/31
+  v6_remote: 2a14:440:0:4::a/127
 
 dhcp_type: "kea"
 

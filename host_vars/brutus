@@ -8,34 +8,26 @@ use_wlan_slovenija_tunneldigger: true
 
 is_external_nameserver: true
 
-ffrl_nat_ip: 185.66.193.48/32
-    
-ffrl_tun:
-- name: ber1
-  gre_target: 185.66.195.0
-  v4_remote: 100.64.3.54/31
-  v6_remote: 2a03:2260:0:4aa::1/64
-- name: ber2
-  gre_target: 185.66.195.1
-  v4_remote: 100.64.3.60/31
-  v6_remote: 2a03:2260:0:4ad::1/64
-#  bgp_local_pref: 201
-- name: fra1
-  gre_target: 185.66.194.0
-  v4_remote: 100.64.3.56/31
-  v6_remote: 2a03:2260:0:4ab::1/64
-- name: fra2
-  gre_target: 185.66.194.1
-  v4_remote: 100.64.0.108/31
-  v6_remote: 2a03:2260:0:3e::1/64
-- name: dus1
-  gre_target: 185.66.193.0
-  v4_remote: 100.64.3.58/31
-  v6_remote: 2a03:2260:0:4ac::1/64
-- name: dus2
-  gre_target:  185.66.193.1
-  v4_remote: 100.64.0.110/31
-  v6_remote: 2a03:2260:0:3f::1/64
+ffi_nat_ip: 217.70.1.71/32
+ffi_v6_loopback: 2a14:440:1:ffff::71/128
+ 
+ffi_tun:
+- name: ber-a
+  gre6_target: 2a14:440:1100::1
+  v4_remote: 100.127.0.14/31
+  v6_remote: 2a14:440:0:1::e/127
+- name: ber-b
+  gre6_target: 2a14:440:1200::1
+  v4_remote: 100.127.4.14/31
+  v6_remote: 2a14:440:0:2::e/127
+- name: fra-a
+  gre6_target: 2a14:440:2100::1
+  v4_remote: 100.127.8.14/31
+  v6_remote: 2a14:440:0:3::e/127
+- name: fra-b
+  gre6_target: 2a14:440:2200::1
+  v4_remote: 100.127.12.14/31
+  v6_remote: 2a14:440:0:4::e/127
 
 domaenenliste:
    "05":

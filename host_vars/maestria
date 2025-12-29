@@ -4,68 +4,28 @@ vm_id: 3
 server_besitzer: "FFI"
 hoster: "Hetzner"
 
-ffrl_nat_ip: 185.66.195.21/32
+ffi_nat_ip: 217.70.1.67/32
+ffi_v6_loopback: 2a14:440:1:ffff::67/128
 
-ffrl_tun:
-- name: ber1
-  gre_target: 185.66.195.0
-  v4_local: 100.64.5.103/31
-  v4_remote: 100.64.5.102/31
-  v6_local: 2a03:2260:0:2a7::2/64
-  v6_remote: 2a03:2260:0:2a7::1/64
-#  bgp_local_pref: 202
-- name: ber2
-  gre_target: 185.66.195.1
-  v4_local: 100.64.1.137/31
-  v4_remote: 100.64.1.136/31
-  v6_local: 2a03:2260:0:cc::2/64
-  v6_remote: 2a03:2260:0:cc::1/64
-#  bgp_local_pref: 201
-- name: fra1
-  gre_target: 185.66.194.0
-  v4_local: 100.64.5.105/31
-  v4_remote: 100.64.5.104/31
-  v6_local: 2a03:2260:0:2a8::2/64
-  v6_remote: 2a03:2260:0:2a8::1/64
-- name: fra2
-  gre_target: 185.66.194.1
-  v4_local: 100.64.1.141/31
-  v4_remote: 100.64.1.140/31
-  v6_local: 2a03:2260:0:ce::2/64
-  v6_remote: 2a03:2260:0:ce::1/64
-- name: dus1
-  gre_target: 185.66.193.0
-  v4_local: 100.64.5.107/31
-  v4_remote: 100.64.5.106/31
-  v6_local: 2a03:2260:0:2a9::2/64
-  v6_remote: 2a03:2260:0:2a9::1/64
-- name: dus2
-  gre_target:  185.66.193.1
-  v4_local: 100.64.5.109/31
-  v4_remote: 100.64.5.108/31
-  v6_local: 2a03:2260:0:2aa::2/64
-  v6_remote: 2a03:2260:0:2aa::1/64
+ffi_tun:
+- name: ber-a
+  gre6_target: 2a14:440:1100::1
+  v4_remote: 100.127.0.6/31
+  v6_remote: 2a14:440:0:1::6/127
+- name: ber-b
+  gre6_target: 2a14:440:1200::1
+  v4_remote: 100.127.4.6/31
+  v6_remote: 2a14:440:0:2::6/127
+- name: fra-a
+  gre6_target: 2a14:440:2100::1
+  v4_remote: 100.127.8.6/31
+  v6_remote: 2a14:440:0:3::6/127
+- name: fra-b
+  gre6_target: 2a14:440:2200::1
+  v4_remote: 100.127.12.6/31
+  v6_remote: 2a14:440:0:4::6/127
 
-#ffnw_tun:
-#- name: fra1
-#  gre_target: 185.197.132.3
-#  v4_remote: 100.100.32.78/31
-#  v6_remote: fe80::1/64
-#- name: fra2
-#  gre_target: 185.197.132.4
-#  v4_remote: 100.100.48.78/31
-#  v6_remote: fe80::1/64
-#- name: ber2
-#  gre_target: 185.197.132.8
-#  v4_remote: 100.100.112.78/31
-#  v6_remote: fe80::1/64
-#  bgp_local_pref: 210
-#- name: ber1
-#  gre_target: 185.197.132.7
-#  v4_remote: 100.100.96.78/31
-#  v6_remote: fe80::1/64
-#  bgp_local_pref: 201
-  
+
 is_external_nameserver: true
 
 domaenenliste:
