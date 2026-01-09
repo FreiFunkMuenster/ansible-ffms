@@ -1,8 +1,0 @@
-
-# Variablen für Server 
-
-id: 13
-server_besitzer: "Sven Culley / Sense"
-
-graphite_destination: graphite-node-01.freifunk-muensterland.de
-graphite_destination_port: 2003

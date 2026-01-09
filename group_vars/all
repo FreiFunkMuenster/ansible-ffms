@@ -995,7 +995,7 @@ as_parameters:
   # Eindeutige AS-Nummer des Netzwerk
   as_number: 209894
   # IPv4 Adressraum
-  v4_network: 45.154.111.0/24
+  v4_network: 217.70.1.0/24
   # IPv6 Adressraum
   v6_network: 2a14:440:0001::/48
 
@@ -1073,13 +1073,13 @@ dns_entries_for_all_tlds:
  - 'firmware                                         IN  AAAA    2a01:4f8:191:21e1::23'
  - 'forum                                            IN  A       88.99.97.7'
  - 'forum                                            IN  AAAA    2a01:4f8:221:d16::3'
- - 'stats                                            IN  A       45.154.111.131'
+ - 'stats                                            IN  A       217.70.1.131'
  - 'stats                                            IN  AAAA    2a14:440:1100::3'
- - 'grafana                                          IN  A       45.154.111.131'
+ - 'grafana                                          IN  A       217.70.1.131'
  - 'grafana                                          IN  AAAA    2a14:440:1100::3'
- - 'graphite                                         IN  A       45.154.111.131'
+ - 'graphite                                         IN  A       217.70.1.131'
  - 'graphite                                         IN  AAAA    2a14:440:1100::3'
- - 'node-stats                                       IN  A       45.154.111.131'
+ - 'node-stats                                       IN  A       217.70.1.131'
  - 'node-stats                                       IN  AAAA    2a14:440:1100::3'
  - 'dnsmaster                                        IN  A       20.157.127.73'
  - 'dnsmaster                                        IN  AAAA    2603:1020:2:3::19a'
@@ -1098,9 +1098,9 @@ dns_entries_for_all_tlds:
  - 'meshviewer                                       IN  A       78.46.117.231'
  - 'meshviewer                                       IN  AAAA    2a01:4f8:1c0c:6b7e::1'
  - 'beamer                                           IN  A       10.1.0.20'
- - 'nextcloud                                        IN  A       45.154.111.130'
+ - 'nextcloud                                        IN  A       217.70.1.130'
  - 'nextcloud                                        IN  AAAA    2a14:440:1100::2'
- - 'collabora                                        IN  A       45.154.111.132'
+ - 'collabora                                        IN  A       217.70.1.132'
  - 'collabora                                        IN  AAAA    2a14:440:1100::4'
  - 'influx                                           IN  A       116.203.108.175'
  - 'influx                                           IN  AAAA    2a01:4f8:c0c:bef8::1'
@@ -1238,7 +1238,7 @@ domains:
       - 'dyndns                                           IN  DNAME   dyndns.freifunk-muensterland.de.'
       - 'wiki                                             IN  A       23.88.112.136'
       - 'wiki                                             IN  AAAA    2a01:4f8:c013:4a2f::1'
-      - 'media-mirror                                     IN  A       45.154.111.163'
+      - 'media-mirror                                     IN  A       217.70.1.163'
       - 'media-mirror                                     IN  AAAA    2a14:440:2100::3'
       - 'lorawan                                          IN  NS      ns1.he.net.'
       - 'lorawan                                          IN  NS      ns2.he.net.'
@@ -1250,17 +1250,17 @@ domains:
 additional_subzones_for_all_tlds:
   "as209894":
     dns_entries:
-      - 'ber-a                                              IN      A       45.154.111.129;'
+      - 'ber-a                                              IN      A       217.70.1.129;'
       - 'ber-a                                              IN      AAAA    2a14:440:1100::1;'
-      - 'ber-b                                              IN      A       45.154.111.145;'
+      - 'ber-b                                              IN      A       217.70.1.145;'
       - 'ber-b                                              IN      AAAA    2a14:440:1200::1;'
-      - 'atlas-ber                                          IN      A       45.154.111.158;'
+      - 'atlas-ber                                          IN      A       217.70.1.158;'
       - 'atlas-ber                                          IN      AAAA    2a14:440:1200::14;'
-      - 'fra-a                                              IN      A       45.154.111.161;'
+      - 'fra-a                                              IN      A       217.70.1.161;'
       - 'fra-a                                              IN      AAAA    2a14:440:2100::1;'
-      - 'fra-b                                              IN      A       45.154.111.177;'
+      - 'fra-b                                              IN      A       217.70.1.177;'
       - 'fra-b                                              IN      AAAA    2a14:440:2200::1;'
-      - 'atlas-fra                                          IN      A       45.154.111.190;'
+      - 'atlas-fra                                          IN      A       217.70.1.190;'
       - 'atlas-fra                                          IN      AAAA    2a14:440:2200::14;'
       - 'netbox                                             IN      A       128.140.61.120;'
       - 'netbox                                             IN      AAAA    2a01:4f8:1c17:5b52::1;'
@@ -1325,15 +1325,17 @@ reverse_dns:
       - '73                                               IN PTR  bitschubse.nat.ffmsl.de.'
       - '74                                               IN PTR  paketschle.nat.ffmsl.de.'
       - '129                                              IN PTR  ber-a.as209894.ffi.ms.'
-      - '130                                              IN PTR  nextcloud.freifunk-muensterland.de.'
+      - '130                                              IN PTR  nextcloud.ffi.ms.'
       - '131                                              IN PTR  stats.freifunk-muensterland.de.'
       - '132                                              IN PTR  collabora.freifunk-muensterland.de.'
       - '145                                              IN PTR  ber-b.as209894.ffi.ms.'
       - '146                                              IN PTR  soter.servers.freifunk-muensterland.de.'
+      - '147                                              IN PTR  ns02.as209894.de.'
       - '158                                              IN PTR  atlas-ber.as209894.ffi.ms.'
       - '161                                              IN PTR  fra-a.as209894.ffi.ms.'
       - '162                                              IN PTR  bitschubse.servers.freifunk-muensterland.de.'
       - '163                                              IN PTR  media-mirror.ffi.ms.'
+      - '164                                              IN PTR  hns-ffi.as209894.ms.'
       - '177                                              IN PTR  fra-b.as209894.ffi.ms.'
       - '178                                              IN PTR  paketschleuder.servers.freifunk-muensterland.de.'
       - '190                                              IN PTR  atlas-fra.as209894.ffi.ms.'
@@ -1346,7 +1348,7 @@ reverse_dns:
     email: info@freifunk-muensterland.de
     dns_entries:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.1         IN PTR  ber-a.as209894.ffi.ms.'
-      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.1         IN PTR  nextcloud.freifunk-muensterland.de.'
+      - '2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.1         IN PTR  nextcloud.ffi.ms.'
       - '3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.1         IN PTR  stats.freifunk-muensterland.de.'
       - '4.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.1         IN PTR  collabora.freifunk-muensterland.de.'
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.1         IN PTR  ber-b.as209894.ffi.ms.'
