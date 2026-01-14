@@ -7,7 +7,11 @@ hoster: "FFI"
 ffi_nat_ip: 217.70.1.73/32
 ffi_v6_loopback: 2a14:440:1:ffff::73/128
 
-ffi_on_physical_uplink: true
+ffi_tun:
+  - name: fra-a
+    gre6_target: 2a14:440:2100::1
+    v4_remote: 100.127.8.18/31
+    v6_remote: 2a14:440:0:3::12/127
 
 use_wlan_slovenija_tunneldigger: true
 dhcp_type: "kea"
