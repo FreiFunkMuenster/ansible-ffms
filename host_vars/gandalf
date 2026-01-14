@@ -13,11 +13,6 @@ use_wlan_slovenija_tunneldigger: true
 dhcp_type: "kea"
 
 domaenenliste:
-   "03":
-      dhcp_start: 10.3.128.0
-      dhcp_ende: 10.3.191.255
-      server_id: 3
-      partner: "automatix"
    "08":
       dhcp_start: 10.8.128.0
       dhcp_ende: 10.8.191.255
@@ -27,127 +22,124 @@ domaenenliste:
       dhcp_start: 10.12.128.0
       dhcp_ende: 10.12.191.255
       server_id: 3
-      partner: "corny"
-   "21":
-      dhcp_start: 10.21.128.0
-      dhcp_ende: 10.21.191.255
+      partner: "parad0x"
+   "15":
+      dhcp_start: 10.15.128.0
+      dhcp_ende: 10.15.191.255
       server_id: 3
-      partner: "rowe2"
+      partner: "maestria"
+   "18":
+      dhcp_start: 10.18.128.0
+      dhcp_ende: 10.18.191.255
+      server_id: 3
+      partner: "brutus"
+   "22":
+      dhcp_start: 10.22.128.0
+      dhcp_ende: 10.22.191.255
+      server_id: 3
+      partner: "paketschle"
    "25":
       dhcp_start: 10.25.128.0
       dhcp_ende: 10.25.191.255
       server_id: 3
-      partner: "corny"
-   "26":
-      dhcp_start: 10.26.128.0
-      dhcp_ende: 10.26.191.255
+      partner: "maestria"
+   "28":
+      dhcp_start: 10.28.128.0
+      dhcp_ende: 10.28.191.255
       server_id: 3
-      partner: "c1024"
-   "31":
-      dhcp_start: 10.31.128.0
-      dhcp_ende: 10.31.191.255
+      partner: "falbala"
+   "32":
+      dhcp_start: 10.32.128.0
+      dhcp_ende: 10.32.191.255
       server_id: 3
-      partner: "rowe"
-   "34":
-      dhcp_start: 10.34.128.0
-      dhcp_ende: 10.34.191.255
-      server_id: 3
-      partner: "c1024"
-   "35":
-      dhcp_start: 10.35.128.0
-      dhcp_ende: 10.35.191.255
-      server_id: 3
-      partner: "rowe"
-   "37":
-      dhcp_start: 10.37.128.0
-      dhcp_ende: 10.37.191.255
-      server_id: 3
-      partner: "des1"
+      partner: "falbala"
    "40":
       dhcp_start: 10.40.128.0
       dhcp_ende: 10.40.191.255
       server_id: 3
-      partner: "remue-09"
+      partner: "paketschle"
    "41":
       dhcp_start: 10.41.128.0
       dhcp_ende: 10.41.191.255
       server_id: 3
-      partner: "remue-09"
-   "42":
-      dhcp_start: 10.42.128.0
-      dhcp_ende: 10.42.191.255
+      partner: "bitschubse"
+   "44":
+      dhcp_start: 10.44.128.0
+      dhcp_ende: 10.44.191.255
       server_id: 3
-      partner: "c1024"
-   "50":
-      dhcp_start: 10.50.128.0
-      dhcp_ende: 10.50.191.255
+      partner: "bitschubse"
+   "45":
+      dhcp_start: 10.45.128.0
+      dhcp_ende: 10.45.191.255
+      server_id: 3
+      partner: "falbala"
+   "46":
+      dhcp_start: 10.46.128.0
+      dhcp_ende: 10.46.191.255
+      server_id: 3
+      partner: "bitschubse"
+   "47":
+      dhcp_start: 10.47.128.0
+      dhcp_ende: 10.47.191.255
+      server_id: 3
+      partner: "remue-09"
+   "57":
+      dhcp_start: 10.57.128.0
+      dhcp_ende: 10.57.191.255
+      server_id: 3
+      partner: "maestria"
+   "66":
+      dhcp_start: 10.66.128.0
+      dhcp_ende: 10.66.191.255
+      server_id: 3
+      partner: "brutus"
+   "68":
+      dhcp_start: 10.68.128.0
+      dhcp_ende: 10.68.191.255
       server_id: 3
       partner: "parad0x"
-   "56":
-      dhcp_start: 10.56.128.0
-      dhcp_ende: 10.56.191.255
-      server_id: 3
-      partner: "c1024"
-   "63":
-      dhcp_start: 10.63.128.0
-      dhcp_ende: 10.63.191.255
-      server_id: 3
-      partner: "rowe2"
-   "64":
-      dhcp_start: 10.64.128.0
-      dhcp_ende: 10.64.191.255
-      server_id: 3
-      partner: "automatix"
-   "65":
-      dhcp_start: 10.65.128.0
-      dhcp_ende: 10.65.191.255
-      server_id: 3
-      partner: "rowe"
-   "67":
-      dhcp_start: 10.67.128.0
-      dhcp_ende: 10.67.191.255
-      server_id: 3
-      partner: "rowe"
    "70":
       dhcp_start: 10.70.128.0
       dhcp_ende: 10.70.191.255
       server_id: 3
-      partner: "automatix"
-   "74":
-      dhcp_start: 10.74.128.0
-      dhcp_ende: 10.74.191.255
+      partner: "parad0x"
+   "73":
+      dhcp_start: 10.73.128.0
+      dhcp_ende: 10.73.191.255
       server_id: 3
-      partner: "des1"
-   "79":
-      dhcp_start: 10.79.128.0
-      dhcp_ende: 10.79.191.255
+      partner: "maestria"
+   "77":
+      dhcp_start: 10.77.128.0
+      dhcp_ende: 10.77.191.255
       server_id: 3
-      partner: "automatix"
+      partner: "remue-09"
+   "82":
+      dhcp_start: 10.82.128.0
+      dhcp_ende: 10.82.191.255
+      server_id: 3
+      partner: "bitschubse"
    "83":
       dhcp_start: 10.83.128.0
       dhcp_ende: 10.83.191.255
       server_id: 3
-   "88":
-      dhcp_start: 10.88.64.0
-      dhcp_ende: 10.88.127.255
-      server_id: 2
+      partner: "brutus"
+   "87":
+      dhcp_start: 10.87.128.0
+      dhcp_ende: 10.87.191.255
+      server_id: 3
+      partner: "brutus"
    "90":
       dhcp_start: 10.90.128.0
       dhcp_ende: 10.90.191.255
       server_id: 3
-      partner: "rowe2"
-   "91":
-      dhcp_start: 10.91.128.0
-      dhcp_ende: 10.91.191.255
-      server_id: 3
-      partner: "rowe2"
+      partner: "paketschle"
    "92":
       dhcp_start: 10.92.128.0
       dhcp_ende: 10.92.191.255
       server_id: 3
-      partner: "rowe2"
+      partner: "falbala"
    "93":
       dhcp_start: 10.93.128.0
       dhcp_ende: 10.93.191.255
       server_id: 3
-      partner: "rowe2"
+      partner: "paketschle"

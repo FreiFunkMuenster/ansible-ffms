@@ -29,97 +29,134 @@ ffi_tun:
 dhcp_type: "kea"
 
 domaenenliste:
-   "02":
-      dhcp_start: 10.2.128.0
-      dhcp_ende: 10.2.191.255
+   "01":
+      dhcp_start: 10.1.128.0
+      dhcp_ende: 10.1.191.255
       server_id: 3
-      partner: "des1"
+      partner: "maestria"
    "04":
       dhcp_start: 10.4.128.0
       dhcp_ende: 10.4.191.255
       server_id: 3
-      partner: "des1"
-   "10":
-      dhcp_start: 10.10.128.0
-      dhcp_ende: 10.10.191.255
+      partner: "paketschle"
+   "05":
+      dhcp_start: 10.5.128.0
+      dhcp_ende: 10.5.191.255
+      server_id: 3
+      partner: "bitschubse"
+   "07":
+      dhcp_start: 10.7.128.0
+      dhcp_ende: 10.7.191.255
+      server_id: 3
+      partner: "brutus"
+   "11":
+      dhcp_start: 10.11.128.0
+      dhcp_ende: 10.11.191.255
       server_id: 3
       partner: "parad0x"
-   "18":
-      dhcp_start: 10.18.128.0
-      dhcp_ende: 10.18.191.255
+   "13":
+      dhcp_start: 10.13.128.0
+      dhcp_ende: 10.13.191.255
+      server_id: 3
+      partner: "maestria"
+   "16":
+      dhcp_start: 10.16.128.0
+      dhcp_ende: 10.16.191.255
       server_id: 3
       partner: "remue-09"
-   "20":
-      dhcp_start: 10.20.64.0
-      dhcp_ende: 10.20.127.255
-      server_id: 2
-      partner: "automatix"
-   "22":
-      dhcp_start: 10.22.128.0
-      dhcp_ende: 10.22.191.255
+   "19":
+      dhcp_start: 10.19.128.0
+      dhcp_ende: 10.19.191.255
       server_id: 3
       partner: "parad0x"
-   "31":
-      dhcp_start: 10.31.64.0
-      dhcp_ende: 10.31.127.255
+   "21":
+      dhcp_start: 10.21.128.0
+      dhcp_ende: 10.21.191.255
+      server_id: 3
+      partner: "paketschle"
+   "26":
+      dhcp_start: 10.26.128.0
+      dhcp_ende: 10.26.191.255
+      server_id: 3
+      partner: "bitschubse"
+   "27":
+      dhcp_start: 10.27.128.0
+      dhcp_ende: 10.27.191.255
+      server_id: 3
+      partner: "remue-09"
+   "28":
+      dhcp_start: 10.28.64.0
+      dhcp_ende: 10.28.127.255
       server_id: 2
-      partner: "soter"
+      partner: "gandalf"
    "32":
-      dhcp_start: 10.32.128.0
-      dhcp_ende: 10.32.191.255
-      server_id: 3
-      partner: "corny"
-   "33":
-      dhcp_start: 10.33.128.0
-      dhcp_ende: 10.33.191.255
-      server_id: 3
-      partner: "c1024"
-   "35":
-      dhcp_start: 10.35.64.0
-      dhcp_ende: 10.35.127.255
+      dhcp_start: 10.32.64.0
+      dhcp_ende: 10.32.127.255
       server_id: 2
-      partner: "soter"
-   "36":
-      dhcp_start: 10.36.128.0
-      dhcp_ende: 10.36.191.255
+      partner: "gandalf"
+   "38":
+      dhcp_start: 10.38.128.0
+      dhcp_ende: 10.38.191.255
       server_id: 3
-      partner: "c1024"
-   "44":
-      dhcp_start: 10.44.128.0
-      dhcp_ende: 10.44.191.255
-      server_id: 3
-      partner: "remue-09"
-   "49":
-      dhcp_start: 10.49.64.0
-      dhcp_ende: 10.49.127.255
+      partner: "maestria"
+   "45":
+      dhcp_start: 10.45.64.0
+      dhcp_ende: 10.45.127.255
       server_id: 2
-      partner: "automatix"
-   "52":
-      dhcp_start: 10.52.128.0
-      dhcp_ende: 10.52.191.255
+      partner: "gandalf"
+   "48":
+      dhcp_start: 10.48.128.0
+      dhcp_ende: 10.48.191.255
       server_id: 3
-      partner: "corny"
-   "65":
-      dhcp_start: 10.65.64.0
-      dhcp_ende: 10.65.127.255
-      server_id: 2
-      partner: "soter"
+      partner: "brutus"
+   "53":
+      dhcp_start: 10.53.128.0
+      dhcp_ende: 10.53.191.255
+      server_id: 3
+      partner: "paketschle"
+   "55":
+      dhcp_start: 10.55.128.0
+      dhcp_ende: 10.55.191.255
+      server_id: 3
+      partner: "brutus"
    "67":
-      dhcp_start: 10.67.64.0
-      dhcp_ende: 10.67.127.255
-      server_id: 2
-      partner: "soter"
-   "75":
-      dhcp_start: 10.75.64.0
-      dhcp_ende: 10.75.127.255
-      server_id: 2
-      partner: "automatix"
-   "83":
-      dhcp_start: 10.83.64.0
-      dhcp_ende: 10.83.127.255
-      server_id: 2
-   "87":
-      dhcp_start: 10.87.128.0
-      dhcp_ende: 10.87.191.255
+      dhcp_start: 10.67.128.0
+      dhcp_ende: 10.67.191.255
       server_id: 3
+      partner: "paketschle"
+   "75":
+      dhcp_start: 10.75.128.0
+      dhcp_ende: 10.75.191.255
+      server_id: 3
+      partner: "parad0x"
+   "79":
+      dhcp_start: 10.79.128.0
+      dhcp_ende: 10.79.191.255
+      server_id: 3
+      partner: "parad0x"
+   "81":
+      dhcp_start: 10.81.128.0
+      dhcp_ende: 10.81.191.255
+      server_id: 3
+      partner: "bitschubse"
+   "84":
+      dhcp_start: 10.84.128.0
+      dhcp_ende: 10.84.191.255
+      server_id: 3
+      partner: "brutus"
+   "85":
+      dhcp_start: 10.85.128.0
+      dhcp_ende: 10.85.191.255
+      server_id: 3
+      partner: "bitschubse"
+   "86":
+      dhcp_start: 10.86.128.0
+      dhcp_ende: 10.86.191.255
+      server_id: 3
+      partner: "maestria"
+   "92":
+      dhcp_start: 10.92.64.0
+      dhcp_ende: 10.92.127.255
+      server_id: 2
+      partner: "gandalf"
 

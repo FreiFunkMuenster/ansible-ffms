@@ -26,96 +26,73 @@ ffi_tun:
   v6_remote: 2a14:440:0:4::8/127
 
 domaenenliste:
-   "11":
-      dhcp_start: 10.11.128.0
-      dhcp_ende: 10.11.191.255
+   "16":
+      dhcp_start: 10.16.64.0
+      dhcp_ende: 10.16.127.255
+      server_id: 2
+      partner: "falbala"
+   "17":
+      dhcp_start: 10.17.128.0
+      dhcp_ende: 10.17.191.255
       server_id: 3
-      partner: "des1"
-   "14":
-      dhcp_start: 10.14.64.0
-      dhcp_ende: 10.14.127.255
+      partner: "maestria"
+   "20":
+      dhcp_start: 10.20.64.0
+      dhcp_ende: 10.20.127.255
       server_id: 2
-      partner: "rowe2"
-   "18":
-      dhcp_start: 10.18.64.0
-      dhcp_ende: 10.18.127.255
-      server_id: 2
-      partner: "rowe"
-   "24":
-      dhcp_start: 10.24.64.0
-      dhcp_ende: 10.24.127.255
-      server_id: 2
-      partner: "corny"
-   "28":
-      dhcp_start: 10.28.64.0
-      dhcp_ende: 10.28.127.255
-      server_id: 2
-      partner: "rowe2"
-   "29":
-      dhcp_start: 10.29.64.0
-      dhcp_ende: 10.29.127.255
+      partner: "brutus"
+   "23":
+      dhcp_start: 10.23.64.0
+      dhcp_ende: 10.23.127.255
       server_id: 2
       partner: "parad0x"
-   "39":
-      dhcp_start: 10.39.64.0
-      dhcp_ende: 10.39.127.255
+   "27":
+      dhcp_start: 10.27.64.0
+      dhcp_ende: 10.27.127.255
       server_id: 2
-      partner: "automatix"
-   "40":
-      dhcp_start: 10.40.64.0
-      dhcp_ende: 10.40.127.255
+      partner: "falbala"
+   "37":
+      dhcp_start: 10.37.64.0
+      dhcp_ende: 10.37.127.255
       server_id: 2
-      partner: "soter"
-   "41":
-      dhcp_start: 10.41.64.0
-      dhcp_ende: 10.41.127.255
-      server_id: 2
-      partner: "soter"
-   "44":
-      dhcp_start: 10.44.64.0
-      dhcp_ende: 10.44.127.255
-      server_id: 2
-      partner: "rowe"
+      partner: "parad0x"
    "47":
-      dhcp_start: 10.47.128.0
-      dhcp_ende: 10.47.191.255
+      dhcp_start: 10.47.64.0
+      dhcp_ende: 10.47.127.255
+      server_id: 2
+      partner: "gandalf"
+   "52":
+      dhcp_start: 10.52.64.0
+      dhcp_ende: 10.52.127.255
+      server_id: 2
+      partner: "bitschubse"
+   "56":
+      dhcp_start: 10.56.128.0
+      dhcp_ende: 10.56.191.255
       server_id: 3
-      partner: "des1"
-   "48":
-      dhcp_start: 10.48.128.0
-      dhcp_ende: 10.48.191.255
-      server_id: 3
-      partner: "c1024"
-   "51":
-      dhcp_start: 10.51.128.0
-      dhcp_ende: 10.51.191.255
-      server_id: 3
-      partner: "c1024"
-   "57":
-      dhcp_start: 10.57.64.0
-      dhcp_ende: 10.57.127.255
+      partner: "maestria"
+   "59":
+      dhcp_start: 10.59.64.0
+      dhcp_ende: 10.59.127.255
       server_id: 2
-      partner: "parad0x"
-   "60":
-      dhcp_start: 10.60.64.0
-      dhcp_ende: 10.60.127.255
+      partner: "bitschubse"
+   "69":
+      dhcp_start: 10.69.64.0
+      dhcp_ende: 10.69.127.255
       server_id: 2
-      partner: "corny"
-   "68":
-      dhcp_start: 10.68.64.0
-      dhcp_ende: 10.68.127.255
+      partner: "paketschle"
+   "76":
+      dhcp_start: 10.76.64.0
+      dhcp_ende: 10.76.127.255
       server_id: 2
-      partner: "parad0x"
-   "71":
-      dhcp_start: 10.71.64.0
-      dhcp_ende: 10.71.127.255
+      partner: "brutus"
+   "77":
+      dhcp_start: 10.77.64.0
+      dhcp_ende: 10.77.127.255
       server_id: 2
-      partner: "automatix"
-   "82":
-      dhcp_start: 10.82.128.0
-      dhcp_ende: 10.82.191.255
-      server_id: 3
-   "87":
-      dhcp_start: 10.87.64.0
-      dhcp_ende: 10.87.127.255
+      partner: "gandalf"
+   "88":
+      dhcp_start: 10.88.64.0
+      dhcp_ende: 10.88.127.255
       server_id: 2
+      partner: "paketschle"
