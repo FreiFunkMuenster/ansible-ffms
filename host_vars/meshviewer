@@ -2,6 +2,8 @@ server_besitzer: "FFI"
 vm_id: 11
 server_id: 11
 
+ffi_v6_loopback: 2a14:440:1:ffff::1337/128
+
 meshviewer:
   version: "v12.7.0"
   layers:

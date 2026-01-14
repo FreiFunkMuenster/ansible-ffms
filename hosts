@@ -41,7 +41,7 @@ mumble                  ansible_ssh_host=148.251.208.169        ansible_ssh_port
 [gateways]
 parad0x			ipv4=94.130.134.8	ipv6=2a01:4f8:13b:35e8::8	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00	server=hyperhost
 maestria		ipv4=88.99.118.28	ipv6=2a01:4f8:221:d16::4	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00	server=asterix
-remue-09		ipv4=148.251.208.170	ipv6=2a01:4f8:191:21e1::b0	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=0.08	server=remue
+remue-09		ipv4=148.251.208.170	ipv6=2a01:4f8:191:21e1::b0	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=0.33	server=remue
 falbala			ipv4=88.99.97.8		ipv6=2a01:4f8:221:d15::4	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00	server=obelix
 automatix		ipv4=46.4.80.184	ipv6=2a01:4f8:202:2086::82	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00	server=voyager
 gandalf			ipv4=217.70.1.146	ipv6=2a14:440:1200::2		ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22	# capacity=1.00 server=ber-b
