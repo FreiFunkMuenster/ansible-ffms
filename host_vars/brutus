@@ -30,89 +30,115 @@ ffi_tun:
   v6_remote: 2a14:440:0:4::e/127
 
 domaenenliste:
-   "05":
-      dhcp_start: 10.5.64.0
-      dhcp_ende: 10.5.127.255
+   "07":
+      dhcp_start: 10.7.64.0
+      dhcp_ende: 10.7.127.255
       server_id: 2
-   "09":
-      dhcp_start: 10.9.64.0
-      dhcp_ende: 10.9.127.255
+      partner: "falbala"
+   "18":
+      dhcp_start: 10.18.64.0
+      dhcp_ende: 10.18.127.255
       server_id: 2
-   "16":
-      dhcp_start: 10.16.64.0
-      dhcp_ende: 10.16.127.255
+      partner: "gandalf"
+   "20":
+      dhcp_start: 10.20.128.0
+      dhcp_ende: 10.20.191.255
+      server_id: 3
+      partner: "remue-09"
+   "24":
+      dhcp_start: 10.24.128.0
+      dhcp_ende: 10.24.191.255
+      server_id: 3
+      partner: "maestria"
+   "31":
+      dhcp_start: 10.31.64.0
+      dhcp_ende: 10.31.127.255
       server_id: 2
-   "19":
-      dhcp_start: 10.19.64.0
-      dhcp_ende: 10.19.127.255
-      server_id: 2
-   "26":
-      dhcp_start: 10.26.64.0
-      dhcp_ende: 10.26.127.255
-      server_id: 2
-   "33":
-      dhcp_start: 10.33.64.0
-      dhcp_ende: 10.33.127.255
-      server_id: 2
-   "34":
-      dhcp_start: 10.34.64.0
-      dhcp_ende: 10.34.127.255
-      server_id: 2
+      partner: "bitschubse"
+   "35":
+      dhcp_start: 10.35.128.0
+      dhcp_ende: 10.35.191.255
+      server_id: 3
+      partner: "paketschle"
    "36":
-      dhcp_start: 10.36.64.0
-      dhcp_ende: 10.36.127.255
-      server_id: 2
-   "42":
-      dhcp_start: 10.42.64.0
-      dhcp_ende: 10.42.127.255
-      server_id: 2
+      dhcp_start: 10.36.128.0
+      dhcp_ende: 10.36.191.255
+      server_id: 3
+      partner: "paketschle"
    "43":
       dhcp_start: 10.43.64.0
       dhcp_ende: 10.43.127.255
       server_id: 2
+      partner: "bitschubse"
    "48":
       dhcp_start: 10.48.64.0
       dhcp_ende: 10.48.127.255
       server_id: 2
+      partner: "falbala"
    "51":
-      dhcp_start: 10.51.64.0
-      dhcp_ende: 10.51.127.255
-      server_id: 2
-   "53":
-      dhcp_start: 10.53.128.0
-      dhcp_ende: 10.53.191.255
+      dhcp_start: 10.51.128.0
+      dhcp_ende: 10.51.191.255
       server_id: 3
-   "56":
-      dhcp_start: 10.56.64.0
-      dhcp_ende: 10.56.127.255
+      partner: "maestria"
+   "54":
+      dhcp_start: 10.54.64.0
+      dhcp_ende: 10.54.127.255
       server_id: 2
-   "61":
-      dhcp_start: 10.61.64.0
-      dhcp_ende: 10.61.127.255
+      partner: "bitschubse"
+   "55":
+      dhcp_start: 10.55.64.0
+      dhcp_ende: 10.55.127.255
       server_id: 2
+      partner: "falbala"
+   "58":
+      dhcp_start: 10.58.128.0
+      dhcp_ende: 10.58.191.255
+      server_id: 3
+      partner: "maestria"
+   "60":
+      dhcp_start: 10.60.128.0
+      dhcp_ende: 10.60.191.255
+      server_id: 3
+      partner: "paketschle"
+   "62":
+      dhcp_start: 10.62.128.0
+      dhcp_ende: 10.62.191.255
+      server_id: 3
+      partner: "parad0x"
    "66":
       dhcp_start: 10.66.64.0
       dhcp_ende: 10.66.127.255
       server_id: 2
-   "72":
-      dhcp_start: 10.72.64.0
-      dhcp_ende: 10.72.127.255
-      server_id: 2
+      partner: "gandalf"
+   "71":
+      dhcp_start: 10.71.128.0
+      dhcp_ende: 10.71.191.255
+      server_id: 3
+      partner: "paketschle"
+   "74":
+      dhcp_start: 10.74.128.0
+      dhcp_ende: 10.74.191.255
+      server_id: 3
+      partner: "parad0x"
    "76":
       dhcp_start: 10.76.128.0
       dhcp_ende: 10.76.191.255
       server_id: 3
-   "80":
-      dhcp_start: 10.80.128.0
-      dhcp_ende: 10.80.191.255
-      server_id: 3
-   "85":
-      dhcp_start: 10.85.64.0
-      dhcp_ende: 10.85.127.255
+      partner: "remue-09"
+   "83":
+      dhcp_start: 10.83.64.0
+      dhcp_ende: 10.83.127.255
       server_id: 2
-   "89":
-      dhcp_start: 10.89.128.0
-      dhcp_ende: 10.89.191.255
-      server_id: 3
+      partner: "gandalf"
+   "84":
+      dhcp_start: 10.84.64.0
+      dhcp_ende: 10.84.127.255
+      server_id: 2
+      partner: "falbala"
+   "87":
+      dhcp_start: 10.87.64.0
+      dhcp_ende: 10.87.127.255
+      server_id: 2
+      partner: "gandalf"
 
 dhcp_type: "kea"
