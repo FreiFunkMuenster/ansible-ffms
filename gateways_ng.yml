@@ -14,11 +14,11 @@
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: ip_forwarding, tags: "ip_forwarding"}
     - { role: iptables, tags: "iptables"}
-    - { role: gateways_if2_vrf, tags: "gateways_if2_vrf"}
-    - { role: gateways_if2_gre_upstream, tags: "gateways_if2_gre_upstream"}
-    - { role: gateways_if2_gre_intern, tags: "gateways_if2_gre_intern"}
-    - { role: gateways_if2_batman, tags: "gateways_if2_batman"}
-    - { role: gateways_if2_gretap_dom_intern, tags: "gateways_if2_gretap_dom_intern"}
+    - { role: gateways_ifng_vrf, tags: "gateways_if2_vrf"}
+    - { role: gateways_ifng_gre_upstream, tags: "gateways_if2_gre_upstream"}
+    - { role: gateways_ifng_gre_intern, tags: "gateways_if2_gre_intern"}
+    - { role: gateways_ifng_batman, tags: "gateways_if2_batman"}
+    - { role: gateways_ifng_gretap_dom_intern, tags: "gateways_if2_gretap_dom_intern"}
     - { role: gateways_l2tp_slovenija, tags: "gateways_l2tp_slovenija" }
     - { role: gateways_bird3, tags: "gateways_bird3"}
     - { role: gateways_ng_bind, tags: "gateways_ng_bind"}
@@ -28,4 +28,5 @@
     - { role: gateways_ng_status, tags: "gateways_ng_status"}
     - { role: unattended_upgrades, tags: "unattended_upgrades"}
     - { role: gateways_ministats, tags: "gateways_ministats"}
+    - { role: collectd, tags: "collectd"}
     - { role: pause, tags: "pause" }
