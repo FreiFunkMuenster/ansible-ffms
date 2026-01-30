@@ -1116,7 +1116,6 @@ domains:
     extern_dns:
       - brutus
       - maestria
-      - automatix
       - parad0x
     email: info@freifunk-muensterland.de
     dns_entries:
@@ -1152,7 +1151,6 @@ domains:
     extern_dns:
       - brutus
       - maestria
-      - automatix
       - parad0x
     master_server:
     email: info@freifunk-muenster.de
@@ -1167,7 +1165,6 @@ domains:
     extern_dns:
       - brutus
       - maestria
-      - automatix
       - parad0x
     email: info@freifunk-muensterland.net
     dns_entries:
@@ -1181,7 +1178,6 @@ domains:
     extern_dns:
       - brutus
       - maestria
-      - automatix
       - parad0x
     email: info@freifunk-muensterland.org
     dns_entries:
@@ -1195,7 +1191,6 @@ domains:
     extern_dns:
       - brutus
       - maestria
-      - automatix
       - parad0x
     email: info@ffmsl.de
     dns_entries:
@@ -1215,7 +1210,6 @@ domains:
     extern_dns:
       - brutus
       - maestria
-      - automatix
       - parad0x
     email: info@infrastruktur.ms
     dns_entries:
@@ -1229,7 +1223,6 @@ domains:
     extern_dns:
       - brutus
       - maestria
-      - automatix
       - parad0x
     email: info@ffi.ms
     dns_entries:
@@ -1289,7 +1282,6 @@ reverse_dns:
       - 'ns1.freifunk-muensterland.de'
       - 'ns2.freifunk-muensterland.de'
       - 'ns3.freifunk-muensterland.de'
-      - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
       - '129                                              IN PTR  ber-a.as209894.ffi.ms.'
@@ -1310,7 +1302,6 @@ reverse_dns:
       - 'ns1.freifunk-muensterland.de'
       - 'ns2.freifunk-muensterland.de'
       - 'ns3.freifunk-muensterland.de'
-      - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
       - '64                                               IN PTR  erpel.nat.ffmsl.de.'
@@ -1319,7 +1310,6 @@ reverse_dns:
       - '67                                               IN PTR  maestria.nat.ffmsl.de.'
       - '68                                               IN PTR  remue-09.nat.ffmsl.de.'
       - '69                                               IN PTR  falbala.nat.ffmsl.de.'
-      - '70                                               IN PTR  automatix.nat.ffmsl.de.'
       - '71                                               IN PTR  brutus.nat.ffmsl.de.'
       - '72                                               IN PTR  soter.nat.ffmsl.de.'
       - '73                                               IN PTR  bitschubse.nat.ffmsl.de.'
@@ -1344,7 +1334,6 @@ reverse_dns:
       - 'ns1.freifunk-muensterland.de'
       - 'ns2.freifunk-muensterland.de'
       - 'ns3.freifunk-muensterland.de'
-      - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.1         IN PTR  ber-a.as209894.ffi.ms.'
@@ -1365,7 +1354,6 @@ reverse_dns:
       - 'ns1.freifunk-muensterland.de'
       - 'ns2.freifunk-muensterland.de'
       - 'ns3.freifunk-muensterland.de'
-      - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
@@ -1374,7 +1362,6 @@ reverse_dns:
       - 'ns1.freifunk-muensterland.de'
       - 'ns2.freifunk-muensterland.de'
       - 'ns3.freifunk-muensterland.de'
-      - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
@@ -1383,7 +1370,6 @@ reverse_dns:
       - 'ns1.freifunk-muensterland.de'
       - 'ns2.freifunk-muensterland.de'
       - 'ns3.freifunk-muensterland.de'
-      - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
@@ -1392,7 +1378,6 @@ reverse_dns:
       - 'ns1.freifunk-muensterland.de'
       - 'ns2.freifunk-muensterland.de'
       - 'ns3.freifunk-muensterland.de'
-      - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
@@ -1401,7 +1386,6 @@ reverse_dns:
       - 'ns1.freifunk-muensterland.de'
       - 'ns2.freifunk-muensterland.de'
       - 'ns3.freifunk-muensterland.de'
-      - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
@@ -1410,7 +1394,6 @@ reverse_dns:
       - 'ns1.freifunk-muensterland.de'
       - 'ns2.freifunk-muensterland.de'
       - 'ns3.freifunk-muensterland.de'
-      - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
@@ -1419,7 +1402,6 @@ reverse_dns:
       - 'ns1.freifunk-muensterland.de'
       - 'ns2.freifunk-muensterland.de'
       - 'ns3.freifunk-muensterland.de'
-      - 'ns4.freifunk-muensterland.de'
     email: info@freifunk-muensterland.de
     dns_entries:
       - '1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0         IN PTR  placeholder.ffi.ms.'
