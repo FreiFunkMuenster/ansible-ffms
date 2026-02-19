@@ -1047,6 +1047,7 @@ dns_entries_for_all_tlds:
  - '@                                                IN  AAAA    2a02:1799:9::147'
  - 'caddy                                            IN  A       212.3.68.147'
  - 'caddy                                            IN  AAAA    2a02:1799:9::147'
+ - 'keys                                             IN  CNAME   caddy'
  - 'ticket                                           IN  CNAME   caddy'
  - 'inventar                                         IN  CNAME   caddy'
  - 'domaenenwahl                                     IN  CNAME   caddy'
