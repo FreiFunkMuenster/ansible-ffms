@@ -5,7 +5,7 @@ server_id: 11
 ffi_v6_loopback: 2a14:440:1:ffff::1337/128
 
 meshviewer:
-  version: "v12.7.0"
+  version: "v13.0.0"
   layers:
     - name: "OSM Mapnik"
       url: "https://{{inventory_hostname_short}}.{{freifunk.domain}}/tiles_cache/osm_mapnik/{z}/{x}/{y}.png"
