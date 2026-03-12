@@ -68,8 +68,8 @@ domaenen:
     map_max_age: 14
     firmware: domaene05/
   "06":
-    name: Babel-Test
-    community: Babel-Test
+    name: Default und Testdomäne
+    community: Freifunk Münsterland
     ffv4_network: 10.6.0.0/16
     ffv6_ffrl_network: 2a03:2260:115:600::/64
     ffv6_ffi_network: 2a14:440:1:6::/64
