@@ -1,5 +1,6 @@
 # Globale Variablen für alle Server
-ansible_python_interpreter: auto_silent
+#ansible_python_interpreter: auto_silent
+ansible_python_interpreter: /usr/bin/python3
 build_tunnels_over_ipv6_if_available: false
 
 # TODO: muss nach merge der roles auf eines reduziert werden!
