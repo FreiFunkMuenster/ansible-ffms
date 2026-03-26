@@ -58,7 +58,7 @@ domaenen:
         - ip: "10.4.0.15" #parad0x
           id: "38:e7:c0:c3:75:68"
   "05":
-    name: Münster Süd
+    name: Münster-Süd
     community: Münster
     ffv4_network: 10.5.0.0/16
     ffv6_ffrl_network: 2a03:2260:115:500::/64
@@ -182,7 +182,7 @@ domaenen:
     map_max_age: 14
     firmware: domaene15/
   "16":
-    name: Münster Promenade
+    name: Münster-Promenade
     community: Münster
     ffv4_network: 10.16.0.0/16
     ffv6_ffrl_network: 2a03:2260:115:1600::/64
