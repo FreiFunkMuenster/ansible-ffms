@@ -59,7 +59,7 @@ domaenen:
         - ip: "10.4.0.15" #parad0x
           id: "38:e7:c0:c3:75:68"
   "05":
-    name: Münster Süd
+    name: Münster-Süd
     community: Münster
     ffv4_network: 10.5.0.0/16
     ffv6_ffrl_network: 2a03:2260:115:500::/64
@@ -69,8 +69,8 @@ domaenen:
     map_max_age: 14
     firmware: domaene05/
   "06":
-    name: Babel-Test
-    community: Babel-Test
+    name: Default und Testdomäne
+    community: Freifunk Münsterland
     ffv4_network: 10.6.0.0/16
     ffv6_ffrl_network: 2a03:2260:115:600::/64
     ffv6_ffi_network: 2a14:440:1:6::/64
@@ -183,7 +183,7 @@ domaenen:
     map_max_age: 14
     firmware: domaene15/
   "16":
-    name: Münster Promenade
+    name: Münster-Promenade
     community: Münster
     ffv4_network: 10.16.0.0/16
     ffv6_ffrl_network: 2a03:2260:115:1600::/64
@@ -1048,6 +1048,7 @@ dns_entries_for_all_tlds:
  - '@                                                IN  AAAA    2a02:1799:9::147'
  - 'caddy                                            IN  A       212.3.68.147'
  - 'caddy                                            IN  AAAA    2a02:1799:9::147'
+ - 'keys                                             IN  CNAME   caddy'
  - 'ticket                                           IN  CNAME   caddy'
  - 'inventar                                         IN  CNAME   caddy'
  - 'domaenenwahl                                     IN  CNAME   caddy'

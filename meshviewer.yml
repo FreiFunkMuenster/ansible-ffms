@@ -1,0 +1,7 @@
+# Playbook zur Konfiguration aller Servern von services
+
+- hosts: map
+  remote_user: root
+  roles:
+    - { role: mapserver_yanic, tags: "mapserver_yanic, meshviewer"}
+    - { role: mapserver_meshviewer, tags: "mapserver_meshviewer, meshviewer"}

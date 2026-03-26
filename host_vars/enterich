@@ -23,5 +23,6 @@ domaenenliste:
       dhcp_ende: 10.6.191.255
       server_id: 3
       partner: "erpel"
+      fastd: true
 
 dhcp_type: "kea"
