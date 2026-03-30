@@ -1,6 +1,5 @@
 # Allgemeine Infrastruktur-Server
 [common]
-ansible			ansible_ssh_host=46.4.80.179		ansible_ssh_port=226
 mail			ansible_ssh_host=88.99.97.6		ansible_ssh_port=22
 forum			ansible_ssh_host=88.99.97.7		ansible_ssh_port=22
 streamer		ansible_ssh_host=148.251.208.171	ansible_ssh_port=22
