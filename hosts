@@ -19,9 +19,6 @@ zulip			ansible_ssh_host=10.10.10.105		ansible_ssh_port=22	ansible_ssh_common_ar
 unifi			ansible_ssh_host=10.10.10.107		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
 
 
-[hypervisors]
-voyager			ipv4=46.4.80.179	ipv6=2a01:4f8:202:2086::2	ansible_ssh_host="{{ipv4}}"		ansible_ssh_port=22
-
 # Server für Mesh Karten
 [map]
 meshviewer		ipv4=78.46.117.231	ipv6=2a01:4f8:1c0c:6b7e::1	ansible_ssh_host="{{ipv4}}"	ansible_ssh_port=22
