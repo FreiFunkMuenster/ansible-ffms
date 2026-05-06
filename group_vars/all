@@ -1235,6 +1235,8 @@ domains:
       - 'wiki                                             IN  AAAA    2a01:4f8:c013:4a2f::1'
       - 'media-mirror                                     IN  A       217.70.1.163'
       - 'media-mirror                                     IN  AAAA    2a14:440:2100::3'
+      - 'oob                                              IN  A       188.34.176.57'
+      - 'oob                                              IN  AAAA    2a01:4f8:c17:1442::1'
       - 'lorawan                                          IN  NS      ns1.he.net.'
       - 'lorawan                                          IN  NS      ns2.he.net.'
       - 'lorawan                                          IN  NS      ns3.he.net.'
@@ -1307,7 +1309,6 @@ reverse_dns:
     email: info@freifunk-muensterland.de
     dns_entries:
       - '64                                               IN PTR  erpel.nat.ffmsl.de.'
-      - '65                                               IN PTR  enterich.nat.ffmsl.de.'
       - '66                                               IN PTR  parad0x.nat.ffmsl.de.'
       - '67                                               IN PTR  maestria.nat.ffmsl.de.'
       - '68                                               IN PTR  remue-09.nat.ffmsl.de.'
