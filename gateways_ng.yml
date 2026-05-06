@@ -20,6 +20,7 @@
     - { role: gateways_ifng_batman, tags: "gateways_if2_batman"}
     - { role: gateways_ifng_gretap_dom_intern, tags: "gateways_if2_gretap_dom_intern"}
     - { role: gateways_l2tp_slovenija, tags: "gateways_l2tp_slovenija" }
+    - { role: gateways_l2tp_fastd, tags: "gateways_l2tp_fastd", when: "'domaenenliste' in hostvars[inventory_hostname]"}
     - { role: gateways_bird3, tags: "gateways_bird3"}
     - { role: gateways_ng_bind, tags: "gateways_ng_bind"}
     - { role: gateways_ng_kea_install, tags: "gateways_ng_kea_install"}
