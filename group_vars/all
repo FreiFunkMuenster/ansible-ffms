@@ -1245,6 +1245,7 @@ domains:
       - 'lorawan                                          IN  NS      ns3.he.net.'
       - 'lorawan                                          IN  NS      ns4.he.net.'
       - 'lorawan                                          IN  NS      ns5.he.net.'
+      - 'dev                                              IN  CNAME   caddy'
 
 
 additional_subzones_for_all_tlds:
