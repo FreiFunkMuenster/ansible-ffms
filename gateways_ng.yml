@@ -14,11 +14,11 @@
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: ip_forwarding, tags: "ip_forwarding"}
     - { role: iptables, tags: "iptables"}
-    - { role: gateways_ifng_vrf, tags: "gateways_if2_vrf"}
-    - { role: gateways_ifng_gre_upstream, tags: "gateways_if2_gre_upstream"}
-    - { role: gateways_ifng_gre_intern, tags: "gateways_if2_gre_intern"}
-    - { role: gateways_ifng_batman, tags: "gateways_if2_batman"}
-    - { role: gateways_ifng_gretap_dom_intern, tags: "gateways_if2_gretap_dom_intern"}
+    - { role: gateways_ifng_vrf, tags: "gateways_ifng_vrf"}
+    - { role: gateways_ifng_gre_upstream, tags: "gateways_ifng_gre_upstream"}
+    - { role: gateways_ifng_gre_intern, tags: "gateways_ifng_gre_intern"}
+    - { role: gateways_ifng_batman, tags: "gateways_ifng_batman"}
+    - { role: gateways_ifng_gretap_dom_intern, tags: "gateways_ifng_gretap_dom_intern"}
     - { role: gateways_l2tp_slovenija, tags: "gateways_l2tp_slovenija" }
     - { role: gateways_l2tp_fastd, tags: "gateways_l2tp_fastd", when: "'domaenenliste' in hostvars[inventory_hostname]"}
     - { role: gateways_bird3, tags: "gateways_bird3"}
