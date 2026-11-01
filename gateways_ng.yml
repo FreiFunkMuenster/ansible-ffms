@@ -28,6 +28,7 @@
     - { role: gateways_respondd, tags: "gateways_respondd"}
     - { role: gateways_ng_status, tags: "gateways_ng_status"}
     - { role: unattended_upgrades, tags: "unattended_upgrades"}
+    - { role: patchmon_agent, tags: "patchmon_agent"}
     - { role: gateways_ministats, tags: "gateways_ministats"}
     - { role: collectd, tags: "collectd"}
     - { role: pause, tags: "pause" }

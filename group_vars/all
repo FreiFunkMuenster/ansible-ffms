@@ -7,6 +7,9 @@ build_tunnels_over_ipv6_if_available: false
 ipv6backbone64prefixstr: "2a14:440:1:ffa1::"
 ipv6internalTunnelPrefix: '2a14:440:1:ffa1::'
 
+patchmon:
+  server: "https://patchmon.ffi.ms"
+
 domaenen:
   "01":
     name: Münster-Mitte-Süd
@@ -1060,6 +1063,7 @@ dns_entries_for_all_tlds:
  - 'jenkins                                          IN  CNAME   caddy'
  - 'api                                              IN  CNAME   caddy'
  - 'todo                                             IN  CNAME   caddy'
+ - 'patchmon                                         IN  CNAME   caddy'
  - 'zulip                                            IN  A       212.3.68.147'
  - 'zulip                                            IN  AAAA    2a02:1799:9::147'
  - 'karte                                            IN  CNAME   meshviewer.freifunk-muensterland.de.'
@@ -1103,8 +1107,7 @@ dns_entries_for_all_tlds:
  - 'beamer                                           IN  A       10.1.0.20'
  - 'nextcloud                                        IN  A       217.70.1.130'
  - 'nextcloud                                        IN  AAAA    2a14:440:1100::2'
- - 'collabora                                        IN  A       217.70.1.132'
- - 'collabora                                        IN  AAAA    2a14:440:1100::4'
+ - 'collabora                                        IN  CNAME   nextcloud'
  - 'influx                                           IN  A       116.203.108.175'
  - 'influx                                           IN  AAAA    2a01:4f8:c0c:bef8::1'
  - 'status                                           IN  A       65.108.150.73'

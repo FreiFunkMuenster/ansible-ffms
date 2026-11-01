@@ -5,3 +5,4 @@
   roles:
     - { role: mapserver_yanic, tags: "mapserver_yanic, meshviewer"}
     - { role: mapserver_meshviewer, tags: "mapserver_meshviewer, meshviewer"}
+    - { role: patchmon_agent, tags: "patchmon_agent"}

@@ -7,8 +7,6 @@ faa-vm-backup		ansible_ssh_host=2a14:440:1:1:5054:ff:fe73:a614		ansible_ssh_port
 lafp-vm-backup		ansible_ssh_host=2a14:440:1:4:5054:ff:fe96:b854		ansible_ssh_port=22
 nextcloud		ansible_ssh_host=217.70.1.130		ansible_ssh_port=22
 status			ansible_ssh_host=65.108.150.73		ansible_ssh_port=22
-collabora		ansible_ssh_host=217.70.1.132		ansible_ssh_port=22
-
 ticket			ansible_ssh_host=10.10.10.100		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
 wiki			ansible_ssh_host=212.3.68.148		ansible_ssh_port=22
 caddy			ansible_ssh_host=10.10.10.102		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
@@ -53,5 +51,5 @@ ber-b			ipv4=217.70.1.145	ipv6=2a14:440:1200::1		ansible_ssh_host=217.197.83.222
 
 # Server zum bauen und bereitstellen der Firmware
 [firmwareserver]
-firmware		ansible_ssh_host=148.251.208.175	ansible_ssh_port=22
+firmware		ansible_ssh_host=148.251.208.174	ansible_ssh_port=22
 build			ansible_ssh_host=10.10.10.108		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost

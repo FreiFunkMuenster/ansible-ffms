@@ -16,3 +16,4 @@
     - { role: dienste_mumble, tags: "dienste_mumble", when: "'install_mumble' in hostvars[inventory_hostname] and install_mumble == true"}
     - { role: dienste_passbolt, tags: "dienste_passbolt", when: "'install_passbolt' in hostvars[inventory_hostname] and install_passbolt == true"}
     - { role: unattended_upgrades, tags: "unattended_upgrades"}
+    - { role: patchmon_agent, tags: "patchmon_agent"}

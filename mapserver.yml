@@ -10,6 +10,7 @@
     - { role: fail2ban, tags: "fail2ban"}
     - { role: tunearpcache, tags: "tunearpcache"}
     - { role: collectd, tags: "collectd", when: "'collectd' in hostvars[inventory_hostname]" }
+    - { role: patchmon_agent, tags: "patchmon_agent"}
 
 - hosts: mapserver
   remote_user: root
