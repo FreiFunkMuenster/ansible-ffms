@@ -1,8 +1,8 @@
 server_besitzer: "FFI"
 
 administratorenteam:
-  - "parad0x"
-  - "mpw"
+  - "robwei"
+  - "descilla"
   - "corny"
 
 borg_backups:
@@ -42,3 +42,6 @@ borg_backups:
     postbackupcommands:
       - 'CURRENTPATH=$(pwd) && cd /var/www/nextcloud && sudo -u www-data php occ maintenance:mode --off && cd $CURRENTPATH'
     borg_prune: '--keep-daily=7 --keep-weekly=4 --keep-monthly=6'
+
+unattended_upgrades:
+  reboot_mode: "none" #Verschlüsseltes root fs bootet nicht automatisch. 

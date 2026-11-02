@@ -16,3 +16,6 @@ borg_backup_target:
     backup_user: borgbkp
     backup_group: borgbkp
     path_to_repo_pool: '/home/borgbkp/ffms-backups'
+
+unattended_upgrades:
+  reboot_time: "12:00"

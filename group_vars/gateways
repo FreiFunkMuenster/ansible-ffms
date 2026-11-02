@@ -62,4 +62,7 @@ fastd:
 batman_version: "2019.4"
 
 unattended_upgrades:
+  include_security: true
+  include_updates: true
+  include_point_releases: true
   reboot_mode: cron_weekly
