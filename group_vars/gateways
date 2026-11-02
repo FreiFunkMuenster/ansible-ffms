@@ -60,3 +60,6 @@ fastd:
   port_base: 21000
 
 batman_version: "2019.4"
+
+unattended_upgrades:
+  reboot_mode: cron_weekly
