@@ -54,3 +54,6 @@ nginx_tiles_cache:
       dest_url: "https://tile.openstreetmap.de/"
       cache_location_name: openstreetmap
       valid_time: 7d
+
+unattended_upgrades:
+  reboot_mode: "none"

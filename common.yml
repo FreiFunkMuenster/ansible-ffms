@@ -9,4 +9,5 @@
     - { role: common, tags: "common"}
     - { role: motd, tags: "motd"}
     - { role: fail2ban, tags: "fail2ban"}
+    - { role: unattended_upgrades, tags: "unattended_upgrades"}
     - { role: patchmon_agent, tags: "patchmon_agent"}

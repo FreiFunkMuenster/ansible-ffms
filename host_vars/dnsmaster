@@ -11,3 +11,6 @@ bind:
   ns_name: ns01
   ffms_for_groups:
     - domaene-06
+
+unattended_upgrades:
+  reboot_mode: "none"

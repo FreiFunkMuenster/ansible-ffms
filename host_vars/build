@@ -13,3 +13,6 @@ collectd:
   graphite_target:
     host: "node-stats.{{freifunk.domain}}"
     port: 2003
+
+unattended_upgrades:
+  reboot_mode: "none"

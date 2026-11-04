@@ -18,3 +18,9 @@ borg_backups:
     borg_options: '-v --stats --list --filter=AME --compression lzma'
     borg_prune: '--keep-daily=7 --keep-weekly=4 --keep-monthly=6'
 
+unattended_upgrades:
+  enabled: true
+  include_security: true
+  include_updates: false
+  include_point_releases: false
+  reboot_mode: "none"

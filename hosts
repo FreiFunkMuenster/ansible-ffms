@@ -13,7 +13,7 @@ wp-ffmsl		ansible_ssh_host=10.10.10.103		ansible_ssh_port=22	ansible_ssh_common_
 wp-ffbor		ansible_ssh_host=10.10.10.104		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
 zulip			ansible_ssh_host=10.10.10.105		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
 unifi			ansible_ssh_host=10.10.10.107		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
-
+todo			ansible_ssh_host=10.10.10.109		ansible_ssh_port=22	ansible_ssh_common_args='-o ProxyCommand="ssh -p22 -W %h:%p -q root@msr-a.srv.ffi.ms"' #JumpHost
 
 # Server für Mesh Karten
 [map]

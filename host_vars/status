@@ -1,0 +1,4 @@
+server_besitzer: "FFI"
+
+unattended_upgrades:
+  reboot_time: "06:00"
